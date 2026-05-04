@@ -1,13 +1,37 @@
 import { NextRequest, NextResponse } from "next/server";
-import { Resend } from "resend";
+import nodemailer, { type Transporter } from "nodemailer";
 import { contactSchema } from "@/lib/validations";
 
-const resendApiKey = process.env.RESEND_API_KEY;
-const toEmail = process.env.CONTACT_TO_EMAIL || "med@viena.by";
-const fromEmail = process.env.CONTACT_FROM_EMAIL || "onboarding@resend.dev";
-const replyToFallback = process.env.CONTACT_REPLY_TO;
+export const runtime = "nodejs";
 
-const resend = resendApiKey ? new Resend(resendApiKey) : null;
+const SMTP_HOST = process.env.SMTP_HOST || "smtp.yandex.ru";
+const SMTP_PORT = Number(process.env.SMTP_PORT || 465);
+const SMTP_USER = process.env.SMTP_USER;
+const SMTP_PASS = process.env.SMTP_PASS;
+const SMTP_SECURE =
+  process.env.SMTP_SECURE !== undefined
+    ? process.env.SMTP_SECURE === "true"
+    : SMTP_PORT === 465;
+
+const TO_EMAIL = process.env.CONTACT_TO_EMAIL || SMTP_USER || "med@viena.by";
+const FROM_NAME = process.env.CONTACT_FROM_NAME || "VIENA — заявки с сайта";
+// Яндекс отвергает письма, если адрес отправителя не равен учётной записи SMTP.
+// Поэтому всегда подставляем SMTP_USER, игнорируя CONTACT_FROM_EMAIL, если он
+// отличается.
+const FROM_EMAIL = SMTP_USER || process.env.CONTACT_FROM_EMAIL;
+
+let cachedTransporter: Transporter | null = null;
+function getTransporter(): Transporter | null {
+  if (!SMTP_USER || !SMTP_PASS) return null;
+  if (cachedTransporter) return cachedTransporter;
+  cachedTransporter = nodemailer.createTransport({
+    host: SMTP_HOST,
+    port: SMTP_PORT,
+    secure: SMTP_SECURE,
+    auth: { user: SMTP_USER, pass: SMTP_PASS },
+  });
+  return cachedTransporter;
+}
 
 function escapeHtml(value: string): string {
   return value
@@ -116,26 +140,30 @@ export async function POST(req: NextRequest) {
         </div>
       </div>`;
 
-    if (!resend) {
-      console.warn("RESEND_API_KEY not set — logging submission only");
-      console.log("📬 Contact form submission:", {
+    const transporter = getTransporter();
+
+    if (!transporter || !FROM_EMAIL) {
+      console.warn(
+        "SMTP credentials not set — logging submission only (set SMTP_USER & SMTP_PASS to enable email delivery)"
+      );
+      console.log("Contact form submission:", {
         name, company, phone, email, subject, message, items, submittedAt,
       });
       return NextResponse.json({ success: true, dev: true }, { status: 200 });
     }
 
-    const { error } = await resend.emails.send({
-      from: fromEmail,
-      to: [toEmail],
-      replyTo: email || replyToFallback,
-      subject: `[viena.by] ${subject} — ${name}`,
-      text: textBody,
-      html: htmlBody,
-      headers: { "X-Entity-Ref-ID": `viena-${Date.now()}` },
-    });
-
-    if (error) {
-      console.error("Resend error:", error);
+    try {
+      await transporter.sendMail({
+        from: { name: FROM_NAME, address: FROM_EMAIL },
+        to: TO_EMAIL,
+        replyTo: email,
+        subject: `[viena.by] ${subject} — ${name}`,
+        text: textBody,
+        html: htmlBody,
+        headers: { "X-Entity-Ref-ID": `viena-${Date.now()}` },
+      });
+    } catch (smtpErr) {
+      console.error("SMTP error:", smtpErr);
       return NextResponse.json(
         { error: "Не удалось отправить письмо. Попробуйте позже или напишите напрямую на med@viena.by" },
         { status: 502 }
