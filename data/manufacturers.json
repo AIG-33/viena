@@ -1,0 +1,492 @@
+[
+  {
+    "id": "mfr-001",
+    "slug": "greiner-bio-one",
+    "name": "Greiner Bio-One",
+    "fullName": "Greiner Bio-One GmbH",
+    "country": "Австрия",
+    "tagline": "Vacuette® · MiniCollect® · VeinViewer®",
+    "shortDescription": "Мировой эталон преаналитики: вакуумные системы взятия крови, MiniCollect, визуализаторы вен и расходные материалы для лабораторий.",
+    "longDescription": "Greiner Bio-One — австрийский производитель преаналитических систем с глобальной географией поставок. ВИЕНА МЕДИКАЛ работает с Greiner с 2009 года: вакуумные пробирки Vacuette®, капиллярные пробирки MiniCollect®, иглы и держатели, визуализаторы вен VeinViewer®. Все продуктовые линейки сертифицированы по ISO 13485 и поставляются напрямую с европейских производственных площадок.",
+    "website": "https://www.gbo.com",
+    "categories": ["vacuum-systems", "equipment", "consumables"],
+    "matches": ["Greiner Bio-One GmbH", "Greiner Bio-One", "Greiner"],
+    "featured": true,
+    "logo": "/images/manufacturers/greiner-bio-one.png",
+    "i18n": {
+      "en": {
+        "country": "Austria",
+        "shortDescription": "A global benchmark in preanalytics: vacuum blood collection systems, MiniCollect, vein visualisers and laboratory consumables.",
+        "longDescription": "Greiner Bio-One is an Austrian manufacturer of preanalytical systems with global reach. VIENA MEDICAL has worked with Greiner since 2009: Vacuette® vacuum tubes, MiniCollect® capillary tubes, needles and holders, VeinViewer® vein visualisers. All product lines are ISO 13485 certified and shipped directly from the European production sites."
+      },
+      "zh": {
+        "country": "奥地利",
+        "shortDescription": "分析前阶段的全球标杆品牌:真空采血系统、MiniCollect、静脉显像仪及实验室耗材。",
+        "longDescription": "Greiner Bio-One 是奥地利分析前阶段产品的制造商,业务遍及全球。VIENA MEDICAL 自 2009 年起与 Greiner 合作,产品包括 Vacuette® 真空采血管、MiniCollect® 毛细采血管、采血针与持针器、VeinViewer® 静脉显像仪。所有产品线均符合 ISO 13485 标准,直接由欧洲产线供货。"
+      }
+    }
+  },
+  {
+    "id": "mfr-002",
+    "slug": "thermo-fisher-scientific",
+    "name": "Thermo Fisher Scientific",
+    "fullName": "Thermo Fisher Scientific Inc.",
+    "country": "США",
+    "tagline": "Антитела · ферменты · культуральные среды",
+    "shortDescription": "Крупнейший в мире поставщик научных приборов и реагентов для life sciences: антитела, ферменты, культуральные среды, хроматография.",
+    "longDescription": "Thermo Fisher Scientific — глобальный лидер в области научных приборов и расходных материалов для биомедицинских исследований. Через ВИЕНА МЕДИКАЛ доступен полный портфель брендов Thermo: Invitrogen, Applied Biosystems, Gibco, Fisher Scientific. Поставки антител, ферментов, реагентов для ПЦР и культивирования клеток, хроматографических колонок и расходных материалов.",
+    "website": "https://www.thermofisher.com",
+    "categories": ["scientific-reagents"],
+    "matches": ["Thermo Fisher Scientific", "Thermo Fisher", "ThermoFisher"],
+    "featured": true,
+    "logo": "/images/manufacturers/thermo-fisher-scientific.png",
+    "i18n": {
+      "en": {
+        "country": "USA",
+        "tagline": "Antibodies · enzymes · cell culture media",
+        "shortDescription": "The world’s largest supplier of life-science instruments and reagents: antibodies, enzymes, cell culture media, chromatography.",
+        "longDescription": "Thermo Fisher Scientific is a global leader in scientific instruments and consumables for biomedical research. Through VIENA MEDICAL the entire Thermo brand portfolio is available: Invitrogen, Applied Biosystems, Gibco, Fisher Scientific. We supply antibodies, enzymes, PCR and cell-culture reagents, chromatography columns and laboratory consumables."
+      },
+      "zh": {
+        "country": "美国",
+        "tagline": "抗体 · 酶 · 细胞培养基",
+        "shortDescription": "全球最大的生命科学仪器与试剂供应商:抗体、酶、细胞培养基、色谱产品等。",
+        "longDescription": "Thermo Fisher Scientific 是全球生命科学仪器与生物医学耗材的领导者。VIENA MEDICAL 提供其旗下完整品牌组合:Invitrogen、Applied Biosystems、Gibco、Fisher Scientific 等,涵盖抗体、酶、PCR 与细胞培养试剂、色谱柱及实验耗材。"
+      }
+    }
+  },
+  {
+    "id": "mfr-003",
+    "slug": "illumina",
+    "name": "Illumina",
+    "fullName": "Illumina, Inc.",
+    "country": "США",
+    "tagline": "NGS-секвенирование · NovaSeq · NextSeq · MiSeq",
+    "shortDescription": "Мировой лидер NGS-секвенирования. Платформы и реагенты для анализа геномики, экспрессии генов и таргетного секвенирования.",
+    "longDescription": "Illumina — компания №1 в мире по технологиям секвенирования следующего поколения (NGS). Платформы NovaSeq, NextSeq, MiSeq и iSeq, реагенты для подготовки библиотек, наборы для целевого и whole-genome секвенирования. ВИЕНА МЕДИКАЛ обеспечивает поставку реагентов и расходных материалов Illumina для научных и клинических лабораторий региона.",
+    "website": "https://www.illumina.com",
+    "categories": ["scientific-reagents"],
+    "matches": ["Illumina"],
+    "featured": true,
+    "logo": "/images/manufacturers/illumina.png",
+    "i18n": {
+      "en": {
+        "country": "USA",
+        "tagline": "NGS sequencing · NovaSeq · NextSeq · MiSeq",
+        "shortDescription": "The world leader in next-generation sequencing. Platforms and reagents for genomics, gene-expression analysis and targeted sequencing.",
+        "longDescription": "Illumina is the world’s #1 company for next-generation sequencing (NGS). NovaSeq, NextSeq, MiSeq and iSeq platforms, library-prep reagents, kits for targeted and whole-genome sequencing. VIENA MEDICAL supplies Illumina reagents and consumables to research and clinical laboratories across the region."
+      },
+      "zh": {
+        "country": "美国",
+        "tagline": "NGS 测序 · NovaSeq · NextSeq · MiSeq",
+        "shortDescription": "全球领先的二代测序公司。覆盖基因组、基因表达分析与目标测序的平台与试剂。",
+        "longDescription": "Illumina 是全球二代测序 (NGS) 领域的领先企业,产品包括 NovaSeq、NextSeq、MiSeq、iSeq 等平台,以及文库构建试剂、目标测序与全基因组测序试剂盒。VIENA MEDICAL 为本地区科研与临床实验室提供 Illumina 试剂与耗材的稳定供应。"
+      }
+    }
+  },
+  {
+    "id": "mfr-004",
+    "slug": "qiagen",
+    "name": "Qiagen",
+    "fullName": "QIAGEN N.V.",
+    "country": "Нидерланды",
+    "tagline": "Sample-prep · экстракция НК · молекулярная диагностика",
+    "shortDescription": "Эталон выделения нуклеиновых кислот и молекулярной диагностики: наборы экстракции ДНК/РНК, ПЦР-диагностика, sample-to-insight решения.",
+    "longDescription": "Qiagen — мировой лидер в области пробоподготовки и молекулярной диагностики. Колонки QIAamp, наборы DNeasy и RNeasy, реагенты QuantiTect и QuantiNova, диагностические ПЦР-системы Rotor-Gene. Через ВИЕНА МЕДИКАЛ доступны как исследовательские, так и IVD-сертифицированные продукты Qiagen.",
+    "website": "https://www.qiagen.com",
+    "categories": ["scientific-reagents"],
+    "matches": ["Qiagen", "QIAGEN"],
+    "featured": true,
+    "logo": "/images/manufacturers/qiagen.png",
+    "i18n": {
+      "en": {
+        "country": "Netherlands",
+        "tagline": "Sample prep · NA extraction · molecular diagnostics",
+        "shortDescription": "A benchmark for nucleic-acid extraction and molecular diagnostics: DNA/RNA prep kits, PCR diagnostics, sample-to-insight solutions.",
+        "longDescription": "Qiagen is a global leader in sample preparation and molecular diagnostics. QIAamp columns, DNeasy and RNeasy kits, QuantiTect and QuantiNova reagents, Rotor-Gene PCR diagnostic systems. Both research-use-only and IVD-certified Qiagen products are available through VIENA MEDICAL."
+      },
+      "zh": {
+        "country": "荷兰",
+        "tagline": "样本前处理 · 核酸提取 · 分子诊断",
+        "shortDescription": "核酸提取与分子诊断领域的标杆品牌:DNA/RNA 提取试剂盒、PCR 诊断、整体方案。",
+        "longDescription": "Qiagen 是全球样本前处理与分子诊断领域的领导者。VIENA MEDICAL 可提供 QIAamp 提取柱、DNeasy 与 RNeasy 试剂盒、QuantiTect 与 QuantiNova 试剂以及 Rotor-Gene 诊断 PCR 系统等科研用与 IVD 认证产品。"
+      }
+    }
+  },
+  {
+    "id": "mfr-005",
+    "slug": "promega",
+    "name": "Promega",
+    "fullName": "Promega Corporation",
+    "country": "США",
+    "tagline": "Клеточная биология · CellTiter-Glo · Wizard kits",
+    "shortDescription": "Реагенты для клеточной биологии и молекулярного анализа: CellTiter-Glo, Wizard, GoTaq, наборы для трансфекции и репортёрных систем.",
+    "longDescription": "Promega Corporation — американский производитель реагентов и наборов для клеточной биологии, ферментативного анализа и молекулярной диагностики. CellTiter-Glo® для оценки жизнеспособности клеток, Wizard® для очистки ДНК, GoTaq® для ПЦР, репортёрные системы Dual-Luciferase. ВИЕНА МЕДИКАЛ — авторизованный поставщик Promega в регионе.",
+    "website": "https://www.promega.com",
+    "categories": ["scientific-reagents"],
+    "matches": ["Promega"],
+    "featured": true,
+    "logo": "/images/manufacturers/promega.png",
+    "i18n": {
+      "en": {
+        "country": "USA",
+        "tagline": "Cell biology · CellTiter-Glo · Wizard kits",
+        "shortDescription": "Reagents for cell biology and molecular analysis: CellTiter-Glo, Wizard, GoTaq, transfection and reporter systems.",
+        "longDescription": "Promega Corporation is a US manufacturer of reagents and kits for cell biology, enzymatic assays and molecular diagnostics. CellTiter-Glo® for cell-viability assays, Wizard® for DNA purification, GoTaq® for PCR, Dual-Luciferase reporter systems. VIENA MEDICAL is an authorised supplier of Promega in the region."
+      },
+      "zh": {
+        "country": "美国",
+        "tagline": "细胞生物学 · CellTiter-Glo · Wizard 试剂盒",
+        "shortDescription": "细胞生物学与分子分析试剂:CellTiter-Glo、Wizard、GoTaq、转染与报告系统。",
+        "longDescription": "Promega Corporation 是美国细胞生物学、酶学分析与分子诊断试剂的制造商,产品包括用于细胞活力检测的 CellTiter-Glo®、用于 DNA 纯化的 Wizard®、PCR 用 GoTaq® 及 Dual-Luciferase 报告基因系统。VIENA MEDICAL 是 Promega 在本地区的授权供应商。"
+      }
+    }
+  },
+  {
+    "id": "mfr-006",
+    "slug": "new-england-biolabs",
+    "name": "New England Biolabs",
+    "fullName": "New England Biolabs, Inc.",
+    "country": "США",
+    "tagline": "Ферменты молекулярной биологии · NGS · клонирование",
+    "shortDescription": "Эталон по ферментам молекулярной биологии: рестриктазы, полимеразы, реагенты для клонирования и подготовки NGS-библиотек.",
+    "longDescription": "New England Biolabs (NEB) — некоммерческая исследовательская компания со штаб-квартирой в США, известная своим качеством ферментов для молекулярной биологии. Полный портфель рестрикционных эндонуклеаз, ДНК- и РНК-полимераз, лигаз, наборов NEBNext® для NGS и Q5® High-Fidelity для амплификации. ВИЕНА МЕДИКАЛ обеспечивает прямую поставку с холодовой цепью.",
+    "website": "https://www.neb.com",
+    "categories": ["scientific-reagents"],
+    "matches": ["New England Biolabs", "NEB"],
+    "featured": true,
+    "logo": "/images/manufacturers/new-england-biolabs.png",
+    "i18n": {
+      "en": {
+        "country": "USA",
+        "tagline": "Molecular biology enzymes · NGS · cloning",
+        "shortDescription": "A benchmark in molecular-biology enzymes: restriction enzymes, polymerases, cloning and NGS library-prep reagents.",
+        "longDescription": "New England Biolabs (NEB) is a US-headquartered non-profit research company famous for the quality of its molecular-biology enzymes. A complete portfolio of restriction endonucleases, DNA and RNA polymerases, ligases, NEBNext® NGS kits and Q5® High-Fidelity polymerase. VIENA MEDICAL ensures direct supply with cold-chain integrity."
+      },
+      "zh": {
+        "country": "美国",
+        "tagline": "分子生物学酶 · NGS · 克隆",
+        "shortDescription": "分子生物学酶领域的标杆品牌:限制性内切酶、聚合酶、克隆与 NGS 文库构建试剂。",
+        "longDescription": "New England Biolabs (NEB) 是美国一家以分子生物学酶质量闻名的非营利研究公司,提供完整的限制性内切酶、DNA 与 RNA 聚合酶、连接酶、NEBNext® NGS 试剂盒以及 Q5® 高保真聚合酶。VIENA MEDICAL 提供完整冷链直供。"
+      }
+    }
+  },
+  {
+    "id": "mfr-007",
+    "slug": "miltenyi-biotec",
+    "name": "Miltenyi Biotec",
+    "fullName": "Miltenyi Biotec B.V. & Co. KG",
+    "country": "Германия",
+    "tagline": "MACS · иммуномагнитная сепарация · цитокины",
+    "shortDescription": "Иммуномагнитная сепарация клеток (MACS), факторы роста и цитокины, проточная цитометрия — для иммунологии и клеточной терапии.",
+    "longDescription": "Miltenyi Biotec — немецкая компания, мировой лидер в технологиях магнитной сепарации клеток MACS®. Реагенты для выделения субпопуляций T- и B-клеток, цитокины и факторы роста MACS GMP, проточные цитометры MACSQuant®, расходные материалы для культивирования. ВИЕНА МЕДИКАЛ работает с Miltenyi для научных и клинических заказчиков.",
+    "website": "https://www.miltenyibiotec.com",
+    "categories": ["scientific-reagents"],
+    "matches": ["Miltenyi Biotec", "Miltenyi"],
+    "featured": true,
+    "logo": "/images/manufacturers/miltenyi-biotec.png",
+    "i18n": {
+      "en": {
+        "country": "Germany",
+        "tagline": "MACS · immunomagnetic separation · cytokines",
+        "shortDescription": "Immunomagnetic cell separation (MACS), growth factors and cytokines, flow cytometry — for immunology and cell therapy.",
+        "longDescription": "Miltenyi Biotec is a German company that pioneered MACS® magnetic cell separation. Reagents for the isolation of T- and B-cell subpopulations, MACS GMP cytokines and growth factors, MACSQuant® flow cytometers, culture consumables. VIENA MEDICAL serves both research and clinical customers from Miltenyi."
+      },
+      "zh": {
+        "country": "德国",
+        "tagline": "MACS · 免疫磁性分选 · 细胞因子",
+        "shortDescription": "MACS 免疫磁性细胞分选、生长因子与细胞因子、流式细胞分析 —— 服务免疫学与细胞治疗。",
+        "longDescription": "Miltenyi Biotec 是 MACS® 磁性细胞分选技术的开创者(德国)。产品包括 T 细胞与 B 细胞亚群分离试剂、MACS GMP 细胞因子与生长因子、MACSQuant® 流式分析仪及培养耗材。VIENA MEDICAL 同时服务科研与临床客户。"
+      }
+    }
+  },
+  {
+    "id": "mfr-008",
+    "slug": "nimagen",
+    "name": "Nimagen",
+    "fullName": "NimaGen B.V.",
+    "country": "Нидерланды",
+    "tagline": "STR · NGS-библиотеки · молекулярная диагностика",
+    "shortDescription": "Наборы реагентов для NGS-библиотек, STR-анализа, диагностики инфекционных заболеваний и судебной генетики.",
+    "longDescription": "NimaGen — нидерландский производитель реагентов для молекулярной диагностики и подготовки NGS-библиотек. Наборы для STR-генотипирования, амплификации mtDNA, SARS-CoV-2 и других вирусных инфекций. Совместимы с платформами Illumina и Ion Torrent. ВИЕНА МЕДИКАЛ — официальный дистрибьютор Nimagen.",
+    "website": "https://www.nimagen.com",
+    "categories": ["scientific-reagents"],
+    "matches": ["Nimagen", "NimaGen"],
+    "featured": true,
+    "logo": "/images/manufacturers/nimagen.png",
+    "i18n": {
+      "en": {
+        "country": "Netherlands",
+        "tagline": "STR · NGS libraries · molecular diagnostics",
+        "shortDescription": "Reagent kits for NGS library prep, STR analysis, infectious-disease diagnostics and forensic genetics.",
+        "longDescription": "NimaGen is a Dutch manufacturer of reagents for molecular diagnostics and NGS library preparation. Kits for STR genotyping, mtDNA amplification, SARS-CoV-2 and other viral infections. Compatible with Illumina and Ion Torrent platforms. VIENA MEDICAL is the official Nimagen distributor."
+      },
+      "zh": {
+        "country": "荷兰",
+        "tagline": "STR · NGS 文库 · 分子诊断",
+        "shortDescription": "面向 NGS 文库构建、STR 分析、传染病诊断与法医遗传学的试剂盒。",
+        "longDescription": "NimaGen 是荷兰分子诊断与 NGS 文库构建试剂制造商,产品包括 STR 基因分型、线粒体 DNA 扩增、SARS-CoV-2 及其他病毒检测试剂盒,兼容 Illumina 与 Ion Torrent 平台。VIENA MEDICAL 是 NimaGen 的官方代理商。"
+      }
+    }
+  },
+  {
+    "id": "mfr-009",
+    "slug": "biovitrum",
+    "name": "BioVitrum",
+    "fullName": "БиоВитрум",
+    "country": "Россия",
+    "tagline": "Гистология · окраски · парафиновые среды",
+    "shortDescription": "Российский лидер по патоморфологии: формалины, эозины, гематоксилины, парафин, декальцинирующие растворы и расходные материалы для гистологии.",
+    "longDescription": "БиоВитрум — российский производитель и поставщик реагентов и оборудования для патоморфологии и гистологии. Производственная линейка включает гематоксилины Майера и Эрлиха, эозины, формалины 10% забуференные, парафиновые среды Histomix, декальцинирующие растворы и краски для специальных окрасок. Все продукты ВИЕНА МЕДИКАЛ поставляет напрямую с производства.",
+    "website": "https://biovitrum.ru",
+    "categories": ["pathomorphology"],
+    "matches": ["BioVitrum", "БиоВитрум", "Биовитрум"],
+    "featured": true,
+    "logo": "/images/manufacturers/biovitrum.png",
+    "i18n": {
+      "en": {
+        "country": "Russia",
+        "tagline": "Histology · stains · paraffin media",
+        "shortDescription": "A Russian leader in pathology: formalins, eosins, haematoxylins, paraffin media, decalcifying solutions and histology consumables.",
+        "longDescription": "BioVitrum is a Russian manufacturer and supplier of reagents and equipment for pathology and histology. The product range includes Mayer and Ehrlich haematoxylins, eosins, 10 % buffered formalin, Histomix paraffin media, decalcifying solutions and special stains. VIENA MEDICAL delivers all products directly from the production site."
+      },
+      "zh": {
+        "country": "俄罗斯",
+        "tagline": "组织学 · 染色 · 石蜡介质",
+        "shortDescription": "俄罗斯病理形态学的领先品牌:福尔马林、伊红、苏木素、石蜡、脱钙液及组织学耗材。",
+        "longDescription": "BioVitrum 是俄罗斯病理与组织学试剂及设备的制造商,产品涵盖 Mayer 与 Ehrlich 苏木素、伊红、10 % 缓冲福尔马林、Histomix 石蜡介质、脱钙液与特殊染色试剂。VIENA MEDICAL 直接由产线供货。"
+      }
+    }
+  },
+  {
+    "id": "mfr-010",
+    "slug": "amplisens",
+    "name": "АмплиСенс",
+    "fullName": "Интерлабсервис · ЦНИИ Эпидемиологии Роспотребнадзора",
+    "country": "Россия",
+    "tagline": "ПЦР-диагностика · TORCH · ВИЧ · гепатиты",
+    "shortDescription": "Эталон ПЦР-диагностики инфекционных заболеваний в РФ и РБ: наборы АмплиСенс® для TORCH, ВИЧ, гепатитов, ОРВИ и онкомаркеров.",
+    "longDescription": "АмплиСенс® — линейка наборов реагентов для молекулярно-биологической диагностики, разработанная ЦНИИ Эпидемиологии Роспотребнадзора и производимая компанией «Интерлабсервис». Сотни IVD-сертифицированных наборов для выявления инфекционных агентов, вирусной нагрузки, генетических исследований. Совместимы с большинством отечественных и зарубежных ПЦР-амплификаторов.",
+    "website": "https://interlabservice.ru",
+    "categories": ["reagents"],
+    "matches": ["АмплиСенс", "Amplisens", "AmpliSens", "Интерлабсервис"],
+    "featured": true,
+    "logo": "/images/manufacturers/amplisens.png",
+    "i18n": {
+      "en": {
+        "name": "AmpliSens",
+        "country": "Russia",
+        "tagline": "PCR diagnostics · TORCH · HIV · hepatitis",
+        "shortDescription": "A regional benchmark for PCR diagnostics of infectious diseases: AmpliSens® kits for TORCH, HIV, hepatitis, respiratory viruses and oncomarkers.",
+        "longDescription": "AmpliSens® is a line of reagent kits for molecular-biology diagnostics developed by the Central Research Institute of Epidemiology and produced by InterLabService. Hundreds of IVD-certified kits for the detection of infectious agents, viral load monitoring and genetic testing. Compatible with most domestic and international PCR cyclers."
+      },
+      "zh": {
+        "name": "AmpliSens",
+        "country": "俄罗斯",
+        "tagline": "PCR 诊断 · TORCH · HIV · 肝炎",
+        "shortDescription": "传染病 PCR 诊断的区域标杆品牌:针对 TORCH、HIV、肝炎、呼吸道病毒及肿瘤标志物的 AmpliSens® 试剂盒。",
+        "longDescription": "AmpliSens® 是由俄罗斯流行病学中心研究所研发、由 InterLabService 生产的分子生物学诊断试剂盒系列,提供数百种获 IVD 认证的传染病检测、病毒载量监测及遗传学检测试剂盒,兼容多数国内外 PCR 仪。"
+      }
+    }
+  },
+  {
+    "id": "mfr-011",
+    "slug": "bionote",
+    "name": "Bionote",
+    "fullName": "BioNote, Inc.",
+    "country": "Корея",
+    "tagline": "Vcheck V200 · H6 · C10 · ветеринарные тесты",
+    "shortDescription": "Корейский производитель ветеринарных анализаторов Vcheck: иммунофлуоресценция, гематология, биохимия и линейка экспресс-тестов.",
+    "longDescription": "BioNote — южнокорейская биотехнологическая компания, специализирующаяся на быстрой in-clinic диагностике для ветеринарии. Линейка Vcheck включает флуориметрический анализатор V200 (биомаркеры, гормоны, инфекции), 6-diff гематологический H6, картриджный C10 (биохимия + иммуноанализ + электролиты + анализ мочи) и десятки экспресс-тестов. Точность подтверждена ведущими ветеринарными клиниками.",
+    "website": "https://www.bionote.co.kr",
+    "categories": ["veterinary"],
+    "matches": ["Bionote", "BioNote", "Vcheck", "VCheck", "Rapid"],
+    "featured": true,
+    "logo": "/images/manufacturers/bionote.png",
+    "i18n": {
+      "en": {
+        "country": "South Korea",
+        "tagline": "Vcheck V200 · H6 · C10 · veterinary tests",
+        "shortDescription": "A South Korean manufacturer of Vcheck veterinary analysers: immunofluorescence, haematology, biochemistry and a range of rapid tests.",
+        "longDescription": "BioNote is a South Korean biotech company focused on rapid in-clinic veterinary diagnostics. The Vcheck range includes the V200 fluorometric analyser (biomarkers, hormones, infections), the H6 6-diff haematology unit, the C10 cartridge analyser (biochemistry + immunoassay + electrolytes + urinalysis) and dozens of rapid tests. Accuracy validated by leading veterinary clinics."
+      },
+      "zh": {
+        "country": "韩国",
+        "tagline": "Vcheck V200 · H6 · C10 · 兽医快检",
+        "shortDescription": "韩国兽医快检品牌 Vcheck:免疫荧光、血液学、生化以及多款床旁快检产品。",
+        "longDescription": "BioNote 是韩国专注于兽医床旁快速诊断的生物科技公司。Vcheck 系列包括 V200 荧光免疫分析仪(生物标志物、激素、传染病)、H6 六分类血液分析仪、C10 卡式综合分析仪(生化 + 免疫 + 电解质 + 尿液)及数十种快速检测产品,临床准确性获多家领先动物医院验证。"
+      }
+    }
+  },
+  {
+    "id": "mfr-012",
+    "slug": "seamaty",
+    "name": "Seamaty",
+    "fullName": "Seamaty Technology Co., Ltd.",
+    "country": "Китай",
+    "tagline": "SMT-120V · VG2 · «сухая химия»",
+    "shortDescription": "Биохимические анализаторы и иммунофлуоресцентные системы для ветеринарии: технология «сухой химии», результат за 12 минут.",
+    "longDescription": "Seamaty — китайский производитель компактных in-clinic анализаторов для ветеринарии и POCT. Биохимический SMT-120V/VP с интегрированной центрифугой и QR-калибровкой, мультимодальный VG2 (флуоресцентный иммуноанализ + газы крови + электролиты). Технология «сухой химии», результат до 35 параметров за 12 минут из 90–120 мкл образца.",
+    "website": "https://www.seamaty.com",
+    "categories": ["veterinary"],
+    "matches": ["Seamaty", "Seamaty®", "SMT-120", "SMT120", " VG2"],
+    "featured": true,
+    "logo": "/images/manufacturers/seamaty.png",
+    "i18n": {
+      "en": {
+        "country": "China",
+        "tagline": "SMT-120V · VG2 · dry-chemistry",
+        "shortDescription": "Veterinary biochemistry analysers and fluorescent immunoassay systems based on dry-chemistry technology — results in 12 minutes.",
+        "longDescription": "Seamaty is a Chinese manufacturer of compact in-clinic analysers for veterinary use and POCT. The SMT-120V/VP biochemistry analyser features an integrated centrifuge and QR-code calibration; the multimodal VG2 combines fluorescent immunoassay with blood gases and electrolytes. Dry-chemistry technology delivers up to 35 parameters in 12 minutes from a 90–120 µL sample."
+      },
+      "zh": {
+        "country": "中国",
+        "tagline": "SMT-120V · VG2 · 干式生化",
+        "shortDescription": "面向兽医及 POCT 的生化与荧光免疫分析仪 —— 干式化学技术,12 分钟出结果。",
+        "longDescription": "Seamaty 是中国紧凑型院内分析仪的制造商,面向兽医与 POCT 应用。SMT-120V/VP 生化分析仪集成离心机与 QR 码校准;VG2 多模态机型则将荧光免疫与血气、电解质合并。干式化学技术在 90–120 µL 样本上可在 12 分钟内输出多达 35 项参数。"
+      }
+    }
+  },
+  {
+    "id": "mfr-013",
+    "slug": "tianlong",
+    "name": "Tianlong",
+    "fullName": "Xi'an Tianlong Science and Technology Co., Ltd.",
+    "country": "Китай",
+    "tagline": "Gentier · Genesy · ПЦР real-time и термоциклеры",
+    "shortDescription": "Производитель ПЦР-амплификаторов реального времени и классических термоциклеров: Gentier 96E, Gentier X3 Series, Genesy 96T.",
+    "longDescription": "Tianlong — крупнейший китайский производитель ПЦР-оборудования и реагентов для молекулярной диагностики. Real-time системы Gentier 96E и трёхблочный Gentier X3 Series (32×3 лунки, 6 каналов флуоресценции), классический термоциклер Genesy 96T с градиентным контролем температуры. ВИЕНА МЕДИКАЛ поставляет приборы Tianlong в составе комплексных решений «оборудование + реагенты».",
+    "website": "https://en.tianlongsci.com",
+    "categories": ["equipment"],
+    "matches": ["Tianlong", "Xi'an Tianlong"],
+    "featured": true,
+    "i18n": {
+      "en": {
+        "country": "China",
+        "tagline": "Gentier · Genesy · real-time PCR and thermocyclers",
+        "shortDescription": "Manufacturer of real-time PCR systems and classic thermocyclers: Gentier 96E, Gentier X3 Series, Genesy 96T.",
+        "longDescription": "Tianlong is China’s largest manufacturer of PCR equipment and molecular-diagnostics reagents. The portfolio includes the Gentier 96E real-time system, the three-block Gentier X3 Series (32×3 wells, 6 fluorescence channels) and the Genesy 96T classic thermocycler with gradient temperature control. VIENA MEDICAL supplies Tianlong instruments as part of bundled “equipment + reagents” solutions."
+      },
+      "zh": {
+        "country": "中国",
+        "tagline": "Gentier · Genesy · 实时荧光定量 PCR 与热循环仪",
+        "shortDescription": "实时荧光定量 PCR 仪及经典热循环仪制造商:Gentier 96E、Gentier X3 系列、Genesy 96T。",
+        "longDescription": "Tianlong 是中国 PCR 设备及分子诊断试剂的大型制造商,产品包括 Gentier 96E 实时 PCR 系统、Gentier X3 三模块系列(32×3 反应孔、6 个荧光通道)以及 Genesy 96T 经典热循环仪(带梯度温度控制)。VIENA MEDICAL 将 Tianlong 设备纳入「设备 + 试剂」一体化方案中提供。"
+      }
+    }
+  },
+  {
+    "id": "mfr-014",
+    "slug": "microlit",
+    "name": "Microlit",
+    "fullName": "Microlit India Pvt. Ltd.",
+    "country": "Индия",
+    "tagline": "RBO · пипеточные дозаторы · автоклавируемые",
+    "shortDescription": "Механические одно- и многоканальные пипеточные дозаторы переменного и фиксированного объёма. Полностью автоклавируемые при 121 °C.",
+    "longDescription": "Microlit — индийский производитель лабораторных пипеточных дозаторов с экспортом более чем в 70 стран. Линейка RBO: одноканальные дозаторы переменного и фиксированного объёма от 0,2 мкл до 10 мл, 8- и 12-канальные мультиканалы. Все модели автоклавируются при 121 °C и поддерживают УФ-стерилизацию. ВИЕНА МЕДИКАЛ — авторизованный дистрибьютор Microlit.",
+    "website": "https://www.microlit.com",
+    "categories": ["equipment"],
+    "matches": ["Microlit"],
+    "featured": true,
+    "logo": "/images/manufacturers/microlit.png",
+    "i18n": {
+      "en": {
+        "country": "India",
+        "tagline": "RBO · pipettors · fully autoclavable",
+        "shortDescription": "Single- and multi-channel mechanical pipettors of variable and fixed volume — fully autoclavable at 121 °C.",
+        "longDescription": "Microlit is an Indian manufacturer of laboratory pipettors exporting to more than 70 countries. The RBO range covers single-channel pipettors of variable and fixed volume from 0.2 µL to 10 mL, plus 8- and 12-channel multichannels. All models are autoclavable at 121 °C and support UV sterilisation. VIENA MEDICAL is an authorised Microlit distributor."
+      },
+      "zh": {
+        "country": "印度",
+        "tagline": "RBO · 移液器 · 全可灭菌",
+        "shortDescription": "单道与多道机械移液器,涵盖可变量与固定量,可整支 121 °C 高温灭菌。",
+        "longDescription": "Microlit 是印度移液器制造商,出口超过 70 个国家。RBO 系列包括量程 0.2 µL 至 10 mL 的单道可变量与固定量移液器,以及 8 道与 12 道多道型号。全系产品可整支 121 °C 高压蒸汽灭菌并支持紫外线消毒。VIENA MEDICAL 是 Microlit 的授权代理商。"
+      }
+    }
+  },
+  {
+    "id": "mfr-015",
+    "slug": "lianfa",
+    "name": "Lianfa",
+    "fullName": "Lianfa Medical",
+    "country": "Китай",
+    "tagline": "Безопасные ланцеты · 17G–30G",
+    "shortDescription": "Производитель безопасных автоматических ланцетов для капиллярного забора крови. Размеры 17G–30G, индивидуальная стерильная упаковка.",
+    "longDescription": "Lianfa Medical — китайский производитель медицинских изделий одноразового применения. Линейка безопасных ланцетов с автоматическим скрытием иглы после использования: размеры от 17G до 30G, длиной 1,5–2 мм, для разных возрастных групп и типов исследований. Соответствуют ISO 13485 и CE.",
+    "website": "https://www.lianfa-medical.com",
+    "categories": ["lancets"],
+    "matches": ["Lianfa"],
+    "featured": true,
+    "i18n": {
+      "en": {
+        "country": "China",
+        "tagline": "Safety lancets · 17G–30G",
+        "shortDescription": "Manufacturer of safety auto-retract lancets for capillary blood collection — gauges 17G–30G, individually sterile-packed.",
+        "longDescription": "Lianfa Medical is a Chinese manufacturer of single-use medical devices. The safety-lancet range automatically retracts the needle after use, in sizes from 17G to 30G and depths of 1.5–2 mm for different age groups and test types. Compliant with ISO 13485 and CE."
+      },
+      "zh": {
+        "country": "中国",
+        "tagline": "安全采血针 · 17G–30G",
+        "shortDescription": "毛细血管采血用全自动回针采血器制造商,规格 17G–30G,独立无菌包装。",
+        "longDescription": "Lianfa Medical 是中国一次性医疗器械制造商,主营使用后自动回针的安全采血器,规格涵盖 17G–30G,穿刺深度 1.5–2 毫米,适用于不同年龄段与检测类型。产品符合 ISO 13485 与 CE 标准。"
+      }
+    }
+  },
+  {
+    "id": "mfr-017",
+    "slug": "huida",
+    "name": "Huida",
+    "fullName": "Jiangsu Huida Medical Instruments Co., Ltd.",
+    "country": "Китай",
+    "tagline": "Расходники · слайды · кассеты · пробирки",
+    "shortDescription": "Один из крупнейших китайских производителей лабораторных и патоморфологических расходных материалов: предметные стёкла, гистологические кассеты, центрифужные пробирки, чашки Петри.",
+    "longDescription": "Jiangsu Huida Medical Instruments Co., Ltd. — высокотехнологичная компания, основанная в 2003 году. Специализация — одноразовые медицинские расходные материалы для лабораторной диагностики, патоморфологии, молекулярной биологии и базовых клинических исследований. В портфеле предметные стёкла и покровные стёкла для микроскопии, гистологические кассеты, центрифужные пробирки, чашки Петри, лабораторное стекло, наконечники для дозаторов и пробирки для ПЦР. Производство сертифицировано по ISO 13485. Продукция экспортируется в Европу, США и Юго-Восточную Азию.",
+    "website": "https://www.chinahuida.cn",
+    "logo": "/images/manufacturers/huida.png",
+    "categories": ["consumables"],
+    "matches": ["Huida", "Jiangsu Huida"],
+    "featured": true,
+    "i18n": {
+      "en": {
+        "country": "China",
+        "tagline": "Consumables · slides · cassettes · tubes",
+        "shortDescription": "One of the largest Chinese manufacturers of laboratory and pathology consumables: microscope slides, histology cassettes, centrifuge tubes, Petri dishes.",
+        "longDescription": "Jiangsu Huida Medical Instruments Co., Ltd. is a high-tech company founded in 2003. It specialises in single-use medical consumables for laboratory diagnostics, pathology, molecular biology and basic clinical research. The portfolio includes microscope slides and coverslips, histology cassettes, centrifuge tubes, Petri dishes, lab glassware, pipette tips and PCR tubes. Production is ISO 13485 certified, with exports to Europe, the USA and Southeast Asia."
+      },
+      "zh": {
+        "country": "中国",
+        "tagline": "耗材 · 载玻片 · 包埋盒 · 离心管",
+        "shortDescription": "中国规模较大的实验室及病理耗材制造商之一:显微载玻片、组织包埋盒、离心管、培养皿等。",
+        "longDescription": "江苏华达医疗器械股份有限公司创立于 2003 年,是一家高科技企业,专注于实验室诊断、病理形态学、分子生物学及基础临床研究领域的一次性医疗耗材。产品包括显微载玻片与盖玻片、组织包埋盒、离心管、培养皿、实验室玻璃器皿、移液器吸头与 PCR 管。生产通过 ISO 13485 认证,产品出口欧洲、美国及东南亚。"
+      }
+    }
+  },
+  {
+    "id": "mfr-016",
+    "slug": "lepy-medical-technology",
+    "name": "Lepy Medical Technology",
+    "fullName": "Lepy Medical Technology Co., Ltd.",
+    "country": "Китай",
+    "tagline": "Nexor 96 · автоматическая экстракция НК",
+    "shortDescription": "Автоматические станции выделения нуклеиновых кислот на магнитных частицах. Nexor 96: до 96 образцов за 30–45 минут.",
+    "longDescription": "Lepy Medical Technology — китайский производитель автоматизированных систем для пробоподготовки в молекулярной диагностике. Флагман Nexor 96 — открытая система магнитной экстракции НК на 32/96 образцов с УФ-стерилизацией, контролем температуры 4–100 °C и совместимостью с реагентами разных производителей. Воспроизводимая чистота выделения с эффективностью адсорбции > 95%.",
+    "website": "https://www.lepymed.com",
+    "categories": ["equipment"],
+    "matches": ["Lepy Medical Technology", "Lepy"],
+    "featured": true,
+    "i18n": {
+      "en": {
+        "country": "China",
+        "tagline": "Nexor 96 · automated NA extraction",
+        "shortDescription": "Automated nucleic-acid extraction workstations using magnetic beads. Nexor 96 — up to 96 samples in 30–45 minutes.",
+        "longDescription": "Lepy Medical Technology is a Chinese manufacturer of automated sample-prep systems for molecular diagnostics. The Nexor 96 flagship is an open magnetic NA-extraction platform for 32/96 samples with UV sterilisation, temperature control of 4–100 °C and compatibility with reagents from different manufacturers. Reproducible isolation purity with > 95 % adsorption efficiency."
+      },
+      "zh": {
+        "country": "中国",
+        "tagline": "Nexor 96 · 自动化核酸提取",
+        "shortDescription": "基于磁珠法的自动化核酸提取工作站。Nexor 96 可在 30–45 分钟内处理多达 96 个样本。",
+        "longDescription": "Lepy Medical Technology 是一家中国分子诊断自动化样本前处理系统制造商。旗舰产品 Nexor 96 是一款开放式磁珠核酸提取平台,可同时处理 32/96 个样本,具备紫外线灭菌、4–100 °C 温度控制,并兼容多家厂商试剂。提取重现性优,吸附效率超过 95 %。"
+      }
+    }
+  }
+]

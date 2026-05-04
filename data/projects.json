@@ -1,0 +1,113 @@
+[
+  {
+    "id": "proj-001",
+    "title": "Партнёрство с Вьетнамом",
+    "client": "Республика Вьетнам",
+    "year": 2017,
+    "description": "27 июня 2017 года, по итогам переговоров президентов Беларуси и Вьетнама — Александра Лукашенко и Чан Дай Куанга, — было подписано совместное заявление о всестороннем и углублённом развитии отношений. В присутствии лидеров двух стран ВИЕНА МЕДИКАЛ со стороны Республики Беларусь стала подписантом межгосударственного соглашения о развитии сотрудничества в сфере здравоохранения.",
+    "images": [
+      "/images/projects/vietnam.jpg",
+      "/images/projects/vietnam-partnership.jpg",
+      "/images/projects/vietnam-asia.jpg"
+    ],
+    "categories": ["partnership"],
+    "tags": ["Межгосударственное", "Азия", "Здравоохранение"],
+    "i18n": {
+      "en": {
+        "title": "Partnership with Vietnam",
+        "client": "Republic of Vietnam",
+        "description": "On 27 June 2017, following the talks between the presidents of Belarus and Vietnam — Alexander Lukashenko and Tran Dai Quang — a joint statement on a comprehensive and deepened partnership was signed. In the presence of the leaders of both countries, VIENA MEDICAL became, on the Belarusian side, a signatory to the inter-state cooperation agreement in the field of healthcare.",
+        "tags": ["Inter-state", "Asia", "Healthcare"]
+      },
+      "zh": {
+        "title": "与越南的合作",
+        "client": "越南共和国",
+        "description": "2017 年 6 月 27 日,在白俄罗斯总统亚历山大·卢卡申科与越南国家主席陈大光会谈后,双方签署关于全面深化合作的联合声明。在两国领导人见证下,VIENA MEDICAL 作为白方签署了双方关于医疗卫生领域合作发展的政府间协议。",
+        "tags": ["政府间", "亚洲", "医疗卫生"]
+      }
+    }
+  },
+  {
+    "id": "proj-002",
+    "title": "Export Plaza · Сеул",
+    "client": "KOTRA · Республика Корея",
+    "year": 2016,
+    "description": "Участие в бизнес-форуме Export Gateway Biz Plaza 2016 по приглашению Посольства Кореи и Корейского агентства по содействию торговле и инвестициям (KOTRA). Более 650 корейских поставщиков, серия предварительно запланированных индивидуальных встреч на стенде A-54 Viena Medical. По итогам подписан крупный контракт на консалтинг для проектировщика медицинского центра «Газпром» в Минске.",
+    "images": [
+      "/images/projects/korea-seoul.jpg",
+      "/images/projects/korea-seoul2.jpg",
+      "/images/projects/korea.jpg"
+    ],
+    "categories": ["partnership"],
+    "tags": ["Сеул · Корея", "Бизнес-форум", "Контракт"],
+    "i18n": {
+      "en": {
+        "title": "Export Plaza · Seoul",
+        "client": "KOTRA · Republic of Korea",
+        "description": "Participation in the Export Gateway Biz Plaza 2016 forum at the invitation of the Embassy of Korea and the Korea Trade-Investment Promotion Agency (KOTRA). Over 650 Korean suppliers, a series of pre-arranged one-to-one meetings at the Viena Medical A-54 booth. The forum resulted in a major consulting contract for the architects of the Gazprom medical centre in Minsk.",
+        "tags": ["Seoul · Korea", "Business forum", "Contract"]
+      },
+      "zh": {
+        "title": "出口平台 · 首尔",
+        "client": "KOTRA · 大韩民国",
+        "description": "应韩国大使馆与大韩贸易投资振兴公社 (KOTRA) 邀请,参加 Export Gateway Biz Plaza 2016 商务论坛。论坛汇聚 650 余家韩国供应商,在 Viena Medical 的 A-54 展位上进行了一系列事先安排的一对一会谈。本次论坛后,签署了为明斯克 Gazprom 医疗中心设计方提供咨询的重要合同。",
+        "tags": ["首尔 · 韩国", "商务论坛", "签约"]
+      }
+    }
+  },
+  {
+    "id": "proj-003",
+    "title": "Программа BMWi · ФРГ",
+    "client": "Министерство экономики ФРГ",
+    "year": 2016,
+    "description": "Учредитель ВИЕНА МЕДИКАЛ Максим Сергеевич Горбацевич участвовал в межгосударственной белорусско-немецкой программе подготовки управленческих кадров для экономики Беларуси. Программа BMWi — повышение профессиональных, межкультурных и управленческих компетенций: семинары, тренинги, посещение немецких предприятий, торгово-промышленных палат и специализированных медицинских выставок.",
+    "images": [
+      "/images/projects/germany-2.jpg",
+      "/images/projects/germany.jpg",
+      "/images/projects/germany-1.jpg"
+    ],
+    "categories": ["education"],
+    "tags": ["Германия", "Управленческое образование", "BMWi"],
+    "i18n": {
+      "en": {
+        "title": "BMWi programme · Germany",
+        "client": "Federal Ministry for Economic Affairs (BMWi)",
+        "description": "Maksim Harbatsevich, founder of VIENA MEDICAL, took part in the German-Belarusian inter-state programme for training executives for the Belarusian economy. The BMWi programme is focused on professional, intercultural and managerial competencies: seminars, trainings, visits to German companies, chambers of commerce and specialised medical trade fairs.",
+        "tags": ["Germany", "Executive education", "BMWi"]
+      },
+      "zh": {
+        "title": "BMWi 项目 · 德国",
+        "client": "德国联邦经济部",
+        "description": "VIENA MEDICAL 创始人 Maksim Harbatsevich 参加了德国与白俄罗斯政府间合作的高级管理人才培训计划。BMWi 项目旨在提升专业能力、跨文化沟通能力与管理能力:培训研讨、企业访问、商会与医疗专业展会考察。",
+        "tags": ["德国", "高管教育", "BMWi"]
+      }
+    }
+  },
+  {
+    "id": "proj-004",
+    "title": "Работа с Минздравом Беларуси",
+    "client": "МЗ Республики Беларусь",
+    "year": 2018,
+    "description": "С 2018 года ВИЕНА МЕДИКАЛ выступает с рядом предложений в адрес Министерства здравоохранения Республики Беларусь по совершенствованию системы здравоохранения: демонополизация рынка медицинских товаров, рост конкуренции при государственных закупках, оптимизация бюджетных затрат на изделия медицинского назначения и развитие внебюджетной деятельности в лабораторной диагностике.",
+    "images": [
+      "/images/projects/belarus-moh.jpg"
+    ],
+    "categories": ["public-affairs"],
+    "tags": ["Беларусь", "Госсектор", "С 2018 года"],
+    "href": "/projects/moh",
+    "i18n": {
+      "en": {
+        "title": "Work with the Ministry of Health of Belarus",
+        "client": "Ministry of Health of the Republic of Belarus",
+        "description": "Since 2018 VIENA MEDICAL has been submitting policy proposals to the Ministry of Health of the Republic of Belarus on improving the healthcare system: demonopolisation of the medical-device market, more competition in public procurement, optimisation of budget spending on medical devices and the development of self-funded activities in laboratory diagnostics.",
+        "tags": ["Belarus", "Public sector", "Since 2018"]
+      },
+      "zh": {
+        "title": "与白俄罗斯卫生部的工作",
+        "client": "白俄罗斯共和国卫生部",
+        "description": "自 2018 年起,VIENA MEDICAL 持续向白俄罗斯共和国卫生部提交一系列改善卫生体系的建议:医疗器械市场去垄断、公共采购中的竞争提升、医疗器械预算的优化使用,以及实验室诊断领域非预算经营活动的发展。",
+        "tags": ["白俄罗斯", "公共部门", "自 2018 年"]
+      }
+    }
+  }
+]

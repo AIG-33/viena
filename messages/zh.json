@@ -1,0 +1,674 @@
+{
+  "meta": {
+    "brand": "VIENA MEDICAL",
+    "siteTitle": "VIENA MEDICAL — 实验室设备、试剂和耗材",
+    "siteDescription": "实验室与医疗设备、试剂、耗材的直接供应商,合作品牌均为全球知名厂商。我们绝不以「同类品」悄悄替代,拥有自有服务团队,并公开推动市场开放。",
+    "city": "明斯克",
+    "skipToContent": "跳转到主要内容"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "catalog": "产品目录",
+    "manufacturers": "厂商品牌",
+    "services": "服务",
+    "projects": "项目案例",
+    "moh": "白卫生部",
+    "mohLong": "与白俄罗斯卫生部的工作",
+    "contacts": "联系我们",
+    "menu": "菜单",
+    "openMenu": "打开菜单",
+    "closeMenu": "关闭菜单",
+    "language": "语言"
+  },
+  "common": {
+    "phone": "+375 29 392-02-73",
+    "phoneOffice": "+375 17 392-02-55",
+    "email": "med@viena.by",
+    "address": "白俄罗斯明斯克市 Radialnaya 街 54B 号 67 室,邮编 220070",
+    "addressShort": "明斯克 · Radialnaya 街 54B",
+    "schedule": "周一至周五 · 09:00 — 18:00",
+    "more": "了解更多",
+    "moreArrow": "了解更多 →",
+    "all": "全部",
+    "back": "返回",
+    "cooperation": "合作",
+    "cooperationArrow": "合作 →",
+    "request": "询价",
+    "send": "发送",
+    "submit": "提交",
+    "loading": "加载中…",
+    "year": "年",
+    "years": "年",
+    "from": "自",
+    "since": "自",
+    "and": "及",
+    "or": "或",
+    "viewAll": "查看全部",
+    "showMore": "显示更多",
+    "showLess": "收起",
+    "search": "搜索",
+    "searchPlaceholder": "在产品目录中搜索…",
+    "category": "类别",
+    "manufacturer": "厂商",
+    "country": "国家",
+    "filters": "筛选",
+    "reset": "重置",
+    "apply": "应用",
+    "noResults": "未找到结果",
+    "addToQuote": "加入询价单",
+    "inQuote": "已在询价单",
+    "removeFromQuote": "移除",
+    "openWebsite": "厂商官网",
+    "downloadDatasheet": "下载技术文档"
+  },
+  "header": {
+    "cart": "询价单",
+    "getQuote": "获取报价",
+    "phoneTooltip": "致电我们"
+  },
+  "footer": {
+    "tagline": "实验室诊断领域的专家。我们汇集全球领先厂商的现代医疗设备与试剂。",
+    "catalogHeading": "产品目录",
+    "fullCatalog": "完整目录 →",
+    "manufacturersLink": "厂商品牌 →",
+    "aboutLink": "关于我们 →",
+    "mohLink": "与卫生部的工作 →",
+    "contactsHeading": "联系方式",
+    "requisitesHeading": "公司信息",
+    "company": "Viena Medical 私人企业",
+    "unp": "纳税号 192599105",
+    "shopLink": "shop.viena.by →",
+    "rights": "© {year} Viena Medical. 版权所有.",
+    "privacy": "隐私政策 · Cookies"
+  },
+  "productCard": {
+    "inStock": "现货",
+    "byOrder": "可订",
+    "askPrice": "价格请询",
+    "increase": "增加",
+    "decrease": "减少",
+    "details": "详情"
+  },
+  "productPage": {
+    "specifications": "技术参数",
+    "description": "产品介绍",
+    "options": "选项",
+    "manufacturer": "厂商",
+    "category": "类别",
+    "sku": "货号",
+    "inStock": "现货",
+    "byOrder": "可订",
+    "addToQuote": "加入询价单",
+    "inQuote": "已加入购物车",
+    "related": "相关产品",
+    "back": "返回产品目录",
+    "quantityShort": "件",
+    "addToCart": "加入购物车",
+    "requestPrice": "申请报价",
+    "dataTable": {
+      "defaultTitle": "产品参考表",
+      "itemCount": "{count, plural, other {# 项}}"
+    },
+    "gallery": {
+      "placeholder": "图片更新中",
+      "photoAlt": "{name} — 图片 {index}"
+    }
+  },
+  "languageSwitcher": {
+    "label": "语言",
+    "ru": "Русский",
+    "en": "English",
+    "zh": "中文",
+    "ruShort": "RU",
+    "enShort": "EN",
+    "zhShort": "ZH"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "成立于 2017 年 · 实验室诊断",
+      "titleLine1": "我们坚持",
+      "titleLine2": "把事情做",
+      "titleLine2Accent": "对",
+      "titleLine2End": ",",
+      "titleLine3": "而不是按要求做得",
+      "titleLine3Accent": "「敷衍」.",
+      "subtitle": "自 2017 年起,我们只与有认证的厂商合作,绝不以所谓「同类品」悄悄替代。实验室拿到的就是规格中所写的产品 —— 我们与客户共同对结果负责。",
+      "ctaPrimary": "获取报价",
+      "ctaSecondary": "浏览产品目录",
+      "categoryCard": {
+        "itemCount": "{count, plural, other {# 件}}"
+      }
+    },
+    "trustBand": {
+      "eyebrow": "直接合同与战略伙伴",
+      "eyebrowPill": "合作伙伴",
+      "eyebrowText": "直接合同",
+      "title": "30 余家全球厂商",
+      "titleArrow": "30 余家全球厂商 →",
+      "subtitle": "下方仅为部分合作品牌,完整名单请参见「厂商品牌」页面。",
+      "benefits": [
+        {
+          "title": "以质量为先",
+          "desc": "对每一项工作保持严谨的科学态度。"
+        },
+        {
+          "title": "稳定可靠",
+          "desc": "通过风险规划与控制,按期履约。"
+        },
+        {
+          "title": "专业能力",
+          "desc": "由经验丰富的专家组成,拥有大量成功案例。"
+        },
+        {
+          "title": "多年经验",
+          "desc": "在政府类与国际化项目中积累了深厚经验。"
+        }
+      ]
+    },
+    "categoriesTeaser": {
+      "eyebrow": "产品目录",
+      "title": "设备分类",
+      "subtitle": "从真空采血系统到科研级试剂与床旁检测 (POCT) 设备。",
+      "viewAll": "查看完整目录 →"
+    },
+    "projectsTeaser": {
+      "eyebrow": "项目案例",
+      "titleLine1": "国际",
+      "titleAccent1": "合作",
+      "titleLine2": "与",
+      "titleAccent2": "公共部门项目.",
+      "viewAll": "查看全部项目 →"
+    },
+    "aboutSection": {
+      "eyebrow": "关于我们",
+      "titlePre": "实验室诊断的",
+      "titleAccent": "专业供应商。",
+      "p1": "VIENA MEDICAL 是白俄罗斯共和国领先的实验室与医疗设备、试剂及耗材 B2B 分销商之一,自 2009 年起直接为诊所、实验室与科研机构供货。",
+      "ctaServices": "服务",
+      "ctaProjects": "项目案例",
+      "stats": [
+        { "n": "15+", "l": "年市场经验" },
+        { "n": "500+", "l": "个项目" },
+        { "n": "30+", "l": "家全球品牌" },
+        { "n": "24/7", "l": "技术支持" }
+      ]
+    },
+    "principles": {
+      "eyebrow": "工作原则",
+      "title": "我们如何工作",
+      "items": [
+        {
+          "title": "直接合同",
+          "text": "我们直接与厂商合作,不经过灰色渠道或层层转手。"
+        },
+        {
+          "title": "拒绝悄悄替换",
+          "text": "若规格中写明 Greiner Bio-One,交付的就是 Greiner Bio-One,而不是「相同性能」的无品牌耗材。"
+        },
+        {
+          "title": "服务",
+          "text": "自有工程师团队、人员培训、对实验室的保修支持。"
+        },
+        {
+          "title": "公开立场",
+          "text": "我们支持透明市场,并与监管机构公开协作,推动市场进一步开放。"
+        }
+      ]
+    },
+    "cta": {
+      "title": "随时可以讨论您的项目",
+      "subtitle": "我们将根据实验室任务,为您选定设备、试剂与耗材。",
+      "button": "联系我们 →"
+    },
+    "contactSection": {
+      "eyebrow": "联系我们",
+      "titlePre": "随时为您处理",
+      "titleAccent": "任何形式的需求。",
+      "subtitle": "我们会在一个工作日内回复。如有紧急事项,请直接致电。",
+      "infoLabels": {
+        "phone": "电话",
+        "email": "邮箱",
+        "schedule": "工作时间",
+        "address": "地址"
+      },
+      "card": {
+        "eyebrow": "询价",
+        "eyebrowText": "提交报价请求",
+        "title1": "为您量身搭配",
+        "title2": "解决方案."
+      },
+      "form": {
+        "name": "姓名 *",
+        "namePlaceholder": "您的姓名",
+        "phone": "电话 *",
+        "phonePlaceholder": "+",
+        "email": "邮箱 *",
+        "emailPlaceholder": "you@clinic.com",
+        "message": "留言 *",
+        "messagePlaceholder": "请描述需求 —— 需要哪些设备或耗材",
+        "submit": "提交需求",
+        "submitting": "正在发送…",
+        "errorBanner": "发送失败。请致电:+375 29 392-02-73",
+        "successTitle": "已提交",
+        "successText": "我们会在一个工作日内回复。",
+        "successAgain": "再次提交 →",
+        "guarantees": ["✓ 1 小时内回复", "✓ 提供 PDF 报价单", "✓ 不发送营销信息"]
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "关于我们 · 自 2017 年",
+      "titleLine1Pre": "做",
+      "titleLine1Accent": "对的事",
+      "titleLine1Post": " — ",
+      "titleLine2Pre": "即便它并",
+      "titleLine2Accent": "不容易.",
+      "description": "VIENA MEDICAL 是一家私人企业,自 2017 年起为白俄罗斯实验室提供有认证的设备、试剂与耗材。我们直接与厂商合作,绝不以「同类品」悄悄替代 —— 实验室拿到的就是规格中所写的产品,我们与客户共同对结果负责。",
+      "stats": {
+        "year": "已在市场",
+        "yearNote": "自创立以来",
+        "manufacturers": "家厂商",
+        "manufacturersNote": "直接合同",
+        "deliveries": "次交付",
+        "deliveriesNote": "项目累计",
+        "letters": "封政策性信函",
+        "lettersNote": "致卫生部、反垄断局、国控委"
+      }
+    },
+    "manifesto": {
+      "eyebrow": "驱动我们的初心",
+      "title": "我们存在的意义,不是为了",
+      "titleAccent": "妥协",
+      "p1": "实验室往往不知道,惯用供应商之外还有哪些可用方案,而供应商也不愿意主动告诉他们。这一信息差距让一整套生态系统得以延续数十年:封闭式分析系统、独家招标和价格翻倍的采购。",
+      "p2": "我们于 2017 年创立 VIENA MEDICAL,希望换一种方式做事:不是为了赢下一次招标,而是让市场逐渐变得更透明,让预算变得更高效。这是一项缓慢、有时并不舒服的工作 —— 我们会和客户争论、和监管机构争论,有时也会丢掉订单。这是为了「保持有用」所必须付出的合理代价。",
+      "p3": "我们公开向卫生部、反垄断与贸易部、国家监督委员会乃至国家安全委员会写信,并把这些工作公开发布在网站上。不是因为我们享受冲突,而是因为没有诚实的公开对话,任何系统性的改变都不会发生。",
+      "quote": "「实验室拿到的就是规格中所写的产品 —— 我们与客户共同对结果负责。」"
+    },
+    "principles": {
+      "directContracts": {
+        "title": "直接合同",
+        "text": "我们直接与厂商合作,不经过区域转销商或灰色渠道。"
+      },
+      "noSubstitution": {
+        "title": "拒绝「同类品」替换",
+        "text": "若目录中写明 Greiner Bio-One,交付的就是 Greiner Bio-One,而不是「相同性能」的无品牌耗材。"
+      },
+      "openMarket": {
+        "title": "开放的市场",
+        "text": "我们持续推动已注册的同类设备进入「封闭式」实验室系统,以打破单一供应。"
+      },
+      "dialog": {
+        "title": "专业对话",
+        "text": "与实验室专家、监管机构、国际行业协会平等对话,只谈实质问题。"
+      }
+    },
+    "moh": {
+      "eyebrow": "公开立场",
+      "eyebrowSub": "与监管机构合作",
+      "title": "8 年的对话 ——",
+      "titleAccent": "完全公开.",
+      "p1": "自 2018 年起,我们持续向卫生部、反垄断与贸易部、国家监督委员会和国家安全委员会提交关于实验室采购的系统性分析:垄断价格如何形成、「封闭式」系统如何排除同类产品、可以如何改进。",
+      "p2": "我们的部分提案已被纳入法规 —— 例如:对持有 FDA/CE 的医疗器械实施简化注册、豁免现场检查、首次允许同类产品进入市场。还有一些问题至今悬而未决,我们仍在持续提出。这些信函在短期内对公司本身并无好处:每一封都是在扩大我们自身参与的市场竞争。",
+      "ctaPrimary": "查看信函时间线 →",
+      "ctaSecondary": "全部项目"
+    },
+    "timeline": {
+      "topic2018": "《行动方案 1.0》",
+      "hint2018": "向国家安全委员会提交的系统性来函。",
+      "topic2021": "「封闭式」系统的同类产品",
+      "hint2021": "白俄罗斯多家医疗机构的 13 封询函。",
+      "topic2023": "《行动方案 2.0》",
+      "hint2023": "外包、平行进口。",
+      "topic2025": "致白俄罗斯总统的信函",
+      "hint2025": "转向以「采购检测」为核心。",
+      "topic2026a": "POCT 监管议题",
+      "hint2026a": "将 POCT 设为独立的设备类别。",
+      "topic2026b": "MyLab 牌照案",
+      "hint2026b": "向卫生部提交的案例分析。"
+    },
+    "founder": {
+      "eyebrow": "关于创始人",
+      "monogram": "МГ",
+      "name": "Maksim S.\nHarbatsevich",
+      "role": "创始人 · Viena Medical 私人企业",
+      "title1": "他只是一个",
+      "titleAccent": "真心在乎",
+      "title2": "实验室如何运转的人.",
+      "p1": "Maksim 于 2017 年创立 VIENA MEDICAL。在此之前,他在行业中工作了十多年:从售后工程,到产品线管理,再到与各级实验室(从地区医院到国家级中心)的客户沟通。公司今天所秉持的所有原则,都是从这些一线实践中自然生长出来的。",
+      "p2": "工作性质决定他常与国际实验室专业社群交流 —— 对于希望理解实验室诊断不只局限于某一国家做法的人来说,这是再自然不过的环境。",
+      "p3": "这些经历并非目的,而是 Maksim 真正关心的事情自然产生的副产品 —— 他真正关心的是:分析前阶段、新型诊断模式以及合理的监管。如果可以选择,他大概会用更少的证书,换更多与实验室主任面对面交流的时间。",
+      "credentials": {
+        "eflm": {
+          "eyebrow": "EFLM",
+          "title": "专家顾问",
+          "note": "欧洲临床化学与实验室医学联合会(EFLM)。第二届 EFLM 战略大会与会者(2018)。"
+        },
+        "iso": {
+          "eyebrow": "ISO TC 212",
+          "title": "国际委员会成员",
+          "note": "ISO 临床实验室诊断技术委员会 —— 白俄罗斯共和国代表。"
+        },
+        "publication": {
+          "eyebrow": "学术发表",
+          "title": "采血针形态学研究合著者",
+          "note": "与维罗纳大学 Giuseppe Lippi 教授合作,采用扫描电镜分析 21G 采血针的内径,差异可达 35 % —— 这是影响分析前阶段质量的真实因素。"
+        },
+        "patent": {
+          "eyebrow": "专利",
+          "title": "实验室可穿戴扫描仪",
+          "note": "白俄罗斯本国专利,以及国际申请:腕戴式生物样本条形码扫描设备,支持 HL7 FHIR 协议。"
+        },
+        "rome": {
+          "eyebrow": "EuroMedLab · WorldLab 2023",
+          "title": "罗马大会演讲",
+          "note": "提出实验室服务的「优步化」平台 —— 上门采集与固定实验室对接的整合方案。"
+        },
+        "vietnam": {
+          "eyebrow": "2017.06.27 · 明斯克",
+          "title": "与越南的合作协议",
+          "note": "在两国总统见证下,作为白方签署方签订医疗卫生领域的政府间合作协议。"
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "欢迎",
+      "eyebrowSub": "进行专业交流",
+      "title": "如果您也认同我们的思考方式 —— 请来信。",
+      "subtitle": "我们欢迎实验室主任、工程师、媒体记者、监管机构代表以及业内同行的来信。没有预设话术,只谈实质问题。",
+      "button": "联系我们 →"
+    }
+  },
+  "catalog": {
+    "hero": {
+      "eyebrow": "产品目录 · 8 大类",
+      "titleLine1": "医疗设备与",
+      "titleLine1Accent": "实验耗材",
+      "titleLine2Pre": "完整",
+      "titleLine2Accent": "产品目录.",
+      "description": "覆盖实验室设备、试剂与耗材的完整目录。来自全球领先厂商的直接供应 —— 可按类别、厂商或关键词进行筛选。"
+    },
+    "filters": {
+      "title": "筛选",
+      "categories": "类别",
+      "manufacturers": "厂商",
+      "search": "搜索",
+      "searchPlaceholder": "名称、货号、厂商…",
+      "showAll": "显示全部",
+      "showLess": "收起",
+      "products": "件产品",
+      "product": "件产品",
+      "productsFew": "件产品",
+      "reset": "重置筛选",
+      "applied": "已应用"
+    },
+    "productCount": "{count, plural, other {# 件产品}}",
+    "empty": {
+      "title": "未找到匹配项",
+      "subtitle": "请尝试调整搜索条件或重置筛选。",
+      "reset": "重置筛选"
+    }
+  },
+  "manufacturersPage": {
+    "breadcrumbsHome": "首页",
+    "breadcrumbsList": "厂商品牌",
+    "detail": {
+      "products": "{count, plural, other {目录中 # 件产品}}",
+      "openCatalog": "在产品目录中查看 →",
+      "websiteCta": "厂商官网 ↗",
+      "categoriesLabel": "类别:",
+      "productsTitlePre": "来自",
+      "viewAllCount": "查看全部 {count} 件产品 →"
+    },
+    "hero": {
+      "eyebrow": "厂商品牌 · {count} 家",
+      "titleLine1": "与全球",
+      "titleLine1Accent": "顶级厂商",
+      "titleLine2Pre": "建立",
+      "titleLine2Accent": "直接合同.",
+      "description": "VIENA MEDICAL 直接与厂商合作 —— 不经任何中间环节。共 {sku} 件产品的完整组合,涵盖分析前阶段、分子诊断、病理形态学、兽医诊断与科研试剂等领域。",
+      "stats": [
+        { "k": "自 2017 年", "v": "直接供应" },
+        { "k": "证书", "v": "ISO 13485 · CE" },
+        { "k": "仓库", "v": "明斯克 · 白俄罗斯" }
+      ]
+    },
+    "filters": {
+      "all": "全部",
+      "category": "类别"
+    },
+    "list": {
+      "titlePre": "合作伙伴",
+      "titleAccent": "全景。",
+      "subtitle": "点击卡片即可查看品牌简介、所属国家及进入产品目录"
+    },
+    "card": {
+      "products": "{count, plural, other {目录中 # 件产品}}",
+      "viewProducts": "查看产品 →",
+      "website": "官网"
+    },
+    "cta": {
+      "eyebrow": "CTA",
+      "eyebrowText": "没有找到合适的厂商?",
+      "titlePre": "我们可以为您",
+      "titleAccent": "定向寻源。",
+      "subtitle": "我们持续扩展合作品牌 —— 告诉我们您需要的试剂或设备,我们会代为联络厂商并确认条款。",
+      "button": "提交需求 →"
+    }
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "服务 · 全周期",
+      "titleLine1": "实验室",
+      "titleLine1Accent": "全周期",
+      "titleLine2": "服务",
+      "titleLine2Accent": "支持.",
+      "description": "从初次咨询到多年期的设备维护服务,涵盖四大服务方向与六个工作阶段。",
+      "stats": [
+        { "k": "响应", "v": "1 个工作日内回复" },
+        { "k": "覆盖", "v": "白俄罗斯全境" },
+        { "k": "保障", "v": "证书 + 售后服务" }
+      ]
+    },
+    "process": {
+      "eyebrow": "流程",
+      "title": "从需求到投入运行的六个阶段",
+      "steps": [
+        { "n": "01", "title": "需求", "desc": "梳理任务、实验室团队结构、检测项目与预算范围。" },
+        { "n": "02", "title": "选型", "desc": "根据检测量与协议匹配设备、试剂与耗材方案。" },
+        { "n": "03", "title": "报价", "desc": "提供透明清单、规格与交期,提前商定可替代方案。" },
+        { "n": "04", "title": "交付", "desc": "全程物流,如需提供冷链与完整认证文件。" },
+        { "n": "05", "title": "投运", "desc": "安装、验证、操作培训以及与 LIS 的对接。" },
+        { "n": "06", "title": "服务", "desc": "保修、预防性维护、远程支持及工程师快速上门。" }
+      ]
+    },
+    "list": {
+      "titlePre": "我们能为您",
+      "titleAccent": "提供什么。",
+      "subtitle": "展开卡片即可查看完整工作列表"
+    },
+    "cta": {
+      "eyebrow": "CTA",
+      "eyebrowText": "下一步",
+      "titlePre": "需要",
+      "titleAccent": "专业咨询?",
+      "subtitle": "请告诉我们具体任务 —— 我们将提供合适的方案、交期与预算。",
+      "button": "提交需求 →"
+    }
+  },
+  "projects": {
+    "hero": {
+      "eyebrow": "合作 · 4 个方向",
+      "titleLine1": "国际",
+      "titleLine1Accent": "合作",
+      "titleLine2Pre": "与",
+      "titleLine2Accent": "公共部门项目.",
+      "description": "VIENA MEDICAL 参与多项国家与政府间医疗合作 —— 从与越南的协议、KOTRA 首尔论坛、德国 BMWi 项目,到向白俄罗斯卫生部提交的政策建议。"
+    },
+    "card": {
+      "details": "了解更多 →",
+      "cooperation": "合作 →"
+    },
+    "closed": {
+      "eyebrow": "保密",
+      "eyebrowSub": "保密项目",
+      "text": "除公开案例外,我们已在白俄罗斯与俄罗斯完成 500 余项交付与实验室整体建设。完整作品集需在签署保密协议后提供。",
+      "button": "申请完整作品集 →"
+    }
+  },
+  "moh": {
+    "hero": {
+      "eyebrowProjects": "项目",
+      "eyebrowSection": "白卫生部 · 自 2018 年",
+      "titleLine1Accent": "8 年",
+      "titleLine1": "对话",
+      "titleLine2Pre": "推动",
+      "titleLine2Accent": "系统性改革.",
+      "description": "向卫生部、反垄断与贸易部、国家监督委员会、国家安全委员会以及白俄罗斯共和国总统提交的系统性信函,涉及医疗器械市场去垄断化、转向「采购检测」模式、医疗器械注册、医疗活动许可与床旁检测(POCT)等议题。",
+      "stats": {
+        "years": "年",
+        "yearsRange": "2018–2026",
+        "letters": "封信",
+        "lettersNote": "聚焦实质",
+        "addressees": "家机构",
+        "addresseesNote": "收件方",
+        "topics": "个议题",
+        "topicsNote": "系统性方向"
+      }
+    },
+    "illustration": {
+      "eyebrow": "系统性工作",
+      "title": "去垄断化 · 采购检测 · POCT",
+      "badge": "9 封信函 · 6 个方向",
+      "summaryHeading": "我们向监管系统提出的建议",
+      "items": [
+        "由「采购设备与试剂」转向「采购检测项目」",
+        "允许已注册的同类设备进入「封闭式」实验室系统",
+        "改革医疗器械注册与售后服务体系",
+        "推动实验室服务外包与上门诊断",
+        "将 POCT 设为独立的监管类别",
+        "建立监管机构与创新项目之间的专业对话机制"
+      ]
+    },
+    "timeline": {
+      "eyebrow": "时间线",
+      "titleLine1": "从首份《行动方案》到 POCT 议题。",
+      "titleLine2": "由新到旧。",
+      "letters": "{count, plural, other {# 封}}",
+      "topicsLabel": "核心要点",
+      "addresseePrefix": "↳",
+      "origin": "系统性工作的起点"
+    },
+    "cta": {
+      "eyebrow": "公开",
+      "eyebrowSub": "面向监管机构与媒体",
+      "title": "信函与附件全文 —— 应需提供。",
+      "subtitle": "我们倡导专业对话。如果您是监管机构、行业主管部门、媒体或科研界代表,我们将提供原始信函、回复以及分析材料的完整副本。",
+      "button": "申请相关材料 →"
+    }
+  },
+  "contacts": {
+    "meta": {
+      "title": "联系我们",
+      "description": "联系 VIENA MEDICAL —— 电话、地址、留言表单。"
+    },
+    "hero": {
+      "eyebrow": "联系我们 · 白俄罗斯明斯克",
+      "titleLine1": "随时",
+      "titleLine1Accent": "提供",
+      "titleLine2Pre": "任何",
+      "titleLine2Accent": "形式的支持。",
+      "description": "我们将在一个工作日内回复。如有紧急事项,请直接致电。如需常规供货,请使用下方表单并附上需求清单。"
+    },
+    "info": {
+      "phoneLand": "固定电话",
+      "phoneMobile": "移动电话",
+      "email": "邮箱",
+      "addressHeading": "办公室与仓库地址",
+      "addressValue": "白俄罗斯明斯克市 Radialnaya 街 54B 号 67 室,邮编 220070",
+      "schedule": "周一至周五:09:00—18:00 · 周六、周日:休息",
+      "requisites": "公司信息",
+      "company": "Viena Medical 私人企业",
+      "unp": "纳税号 192599105",
+      "shopLink": "shop.viena.by →"
+    },
+    "form": {
+      "eyebrowPill": "询价",
+      "eyebrowText": "提交报价请求",
+      "title1": "为您量身搭配",
+      "title2": "解决方案。",
+      "requiredHint": "必填项",
+      "name": "姓名",
+      "namePlaceholder": "您的姓名",
+      "company": "单位",
+      "companyPlaceholder": "诊所 / 实验室",
+      "phone": "电话",
+      "phonePlaceholder": "+",
+      "email": "邮箱",
+      "emailPlaceholder": "you@clinic.com",
+      "subject": "主题",
+      "message": "留言",
+      "messagePlaceholder": "请描述需求或列出所需产品。",
+      "submit": "提交需求",
+      "submitting": "正在发送…",
+      "successTitle": "已提交",
+      "successText": "我们会在一个工作日内回复。",
+      "successAgain": "再次提交 →",
+      "errorBanner": "发送失败。请致电:+375 29 392-02-73",
+      "guarantees": ["✓ 1 小时内回复", "✓ 提供 PDF 报价单", "✓ 不发送营销信息"]
+    },
+    "subjects": {
+      "consultation": "选型咨询",
+      "rfq": "申请报价",
+      "service": "售后与维护",
+      "partnership": "合作 / 厂商",
+      "other": "其他"
+    },
+    "validation": {
+      "nameMin": "请输入姓名(至少 2 个字符)",
+      "phoneMin": "请输入有效的电话号码",
+      "phoneFormat": "电话格式不正确",
+      "emailInvalid": "请输入有效的邮箱",
+      "subjectRequired": "请选择主题",
+      "messageMin": "留言过短(至少 10 个字符)"
+    },
+    "cart": {
+      "loadingLabel": "加载中…",
+      "itemSingular": "项",
+      "itemFew": "项",
+      "itemPlural": "项",
+      "headingLabel": "询价单",
+      "title": "您选择的",
+      "titleAccent": "产品",
+      "clear": "清空",
+      "clearMobile": "清空询价单 ×",
+      "intro1": "将产品加入询价单",
+      "introHighlight1": "并非必需",
+      "intro2": "—— 您也可以直接在上方表单中描述需求。本网站展示的产品不到全部目录的",
+      "introHighlight2": "1%",
+      "intro3": "。如未找到所需产品,请直接来信,我们会代您寻源。",
+      "emptyTitle": "询价单为空",
+      "emptyText": "请在产品目录中标记感兴趣的项目,它们会显示在此处。",
+      "emptyCta": "前往产品目录 →",
+      "qtyDecrease": "减少",
+      "qtyIncrease": "增加",
+      "remove": "移除",
+      "noImage": "无图片",
+      "footerNote": "↑ 此清单将随表单一并发送给负责经理"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "页面未找到",
+      "description": "看起来您点击了失效链接,或该页面已不存在。",
+      "cta": "返回首页 →"
+    },
+    "general": {
+      "title": "出现了一些问题",
+      "description": "我们已收到错误信息。请尝试刷新页面或返回首页。",
+      "retry": "重试",
+      "home": "返回首页"
+    }
+  }
+}

@@ -1,0 +1,219 @@
+[
+  {
+    "id": "sci-001",
+    "slug": "thermo-fisher-scientific",
+    "name": "Thermo Fisher Scientific",
+    "shortDescription": "Производитель антител, ферментов, культуральных сред, реагентов и колонок для хроматографии.",
+    "description": "Производитель антител, ферментов, культуральных сред, реагентов и колонок для хроматографии.",
+    "categoryId": "scientific-reagents",
+    "images": [],
+    "specs": [
+      {
+        "key": "Страна",
+        "value": "США"
+      }
+    ],
+    "options": [],
+    "tags": [],
+    "featured": true,
+    "inStock": true,
+    "createdAt": "2024-01-01",
+    "manufacturer": "thermo-fisher-scientific",
+    "i18n": {
+      "en": {
+        "shortDescription": "Manufacturer of antibodies, enzymes, culture media, reagents and chromatography columns.",
+        "description": "Manufacturer of antibodies, enzymes, culture media, reagents and chromatography columns."
+      },
+      "zh": {
+        "shortDescription": "抗体、酶、培养基、试剂及色谱柱的生产商.",
+        "description": "抗体、酶、培养基、试剂及色谱柱的生产商."
+      }
+    }
+  },
+  {
+    "id": "sci-002",
+    "slug": "nimagen",
+    "name": "Nimagen",
+    "shortDescription": "Поставщик наборов реагентов для молекулярной диагностики и секвенирования.",
+    "description": "Поставщик наборов реагентов для молекулярной диагностики и секвенирования.",
+    "categoryId": "scientific-reagents",
+    "images": [],
+    "specs": [
+      {
+        "key": "Страна",
+        "value": "Нидерланды"
+      }
+    ],
+    "options": [],
+    "tags": [],
+    "featured": true,
+    "inStock": true,
+    "createdAt": "2024-01-01",
+    "manufacturer": "nimagen",
+    "i18n": {
+      "en": {
+        "shortDescription": "Supplier of molecular-diagnostics and sequencing reagent kits.",
+        "description": "Supplier of molecular-diagnostics and sequencing reagent kits."
+      },
+      "zh": {
+        "shortDescription": "分子诊断与测序试剂盒供应商.",
+        "description": "分子诊断与测序试剂盒供应商."
+      }
+    }
+  },
+  {
+    "id": "sci-003",
+    "slug": "illumina",
+    "name": "Illumina",
+    "shortDescription": "Мировой лидер в производстве систем и реагентов для секвенирования и анализа экспрессии генов.",
+    "description": "Мировой лидер в производстве систем и реагентов для секвенирования и анализа экспрессии генов.",
+    "categoryId": "scientific-reagents",
+    "images": [],
+    "specs": [
+      {
+        "key": "Страна",
+        "value": "США"
+      }
+    ],
+    "options": [],
+    "tags": [],
+    "featured": true,
+    "inStock": true,
+    "createdAt": "2024-01-01",
+    "manufacturer": "illumina",
+    "i18n": {
+      "en": {
+        "shortDescription": "A global leader in systems and reagents for sequencing and gene-expression analysis.",
+        "description": "A global leader in systems and reagents for sequencing and gene-expression analysis."
+      },
+      "zh": {
+        "shortDescription": "测序与基因表达分析系统及试剂的全球领导者.",
+        "description": "测序与基因表达分析系统及试剂的全球领导者."
+      }
+    }
+  },
+  {
+    "id": "sci-004",
+    "slug": "qiagen",
+    "name": "Qiagen",
+    "shortDescription": "Производитель наборов для экстракции нуклеиновых кислот и анализа генов.",
+    "description": "Производитель наборов для экстракции нуклеиновых кислот и анализа генов.",
+    "categoryId": "scientific-reagents",
+    "images": [],
+    "specs": [
+      {
+        "key": "Страна",
+        "value": "Нидерланды"
+      }
+    ],
+    "options": [],
+    "tags": [],
+    "featured": false,
+    "inStock": true,
+    "createdAt": "2024-01-01",
+    "manufacturer": "qiagen",
+    "i18n": {
+      "en": {
+        "shortDescription": "Manufacturer наборов for экстракции нуклеиновых кислот and analysis генов.",
+        "description": "Manufacturer наборов for экстракции нуклеиновых кислот and analysis генов."
+      },
+      "zh": {
+        "shortDescription": "生产商 наборов 用于 экстракции нуклеиновых кислот 和 分析 генов.",
+        "description": "生产商 наборов 用于 экстракции нуклеиновых кислот 和 分析 генов."
+      }
+    }
+  },
+  {
+    "id": "sci-005",
+    "slug": "promega",
+    "name": "Promega",
+    "shortDescription": "Производитель реагентов для клеточной биологии и молекулярного анализа.",
+    "description": "Производитель реагентов для клеточной биологии и молекулярного анализа.",
+    "categoryId": "scientific-reagents",
+    "images": [],
+    "specs": [
+      {
+        "key": "Страна",
+        "value": "США"
+      }
+    ],
+    "options": [],
+    "tags": [],
+    "featured": false,
+    "inStock": true,
+    "createdAt": "2024-01-01",
+    "manufacturer": "promega",
+    "i18n": {
+      "en": {
+        "shortDescription": "Manufacturer реагентов for клеточной биологии and молекулярного analysis.",
+        "description": "Manufacturer реагентов for клеточной биологии and молекулярного analysis."
+      },
+      "zh": {
+        "shortDescription": "生产商 реагентов 用于 клеточной биологии 和 молекулярного 分析.",
+        "description": "生产商 реагентов 用于 клеточной биологии 和 молекулярного 分析."
+      }
+    }
+  },
+  {
+    "id": "sci-006",
+    "slug": "miltenyi-biotec",
+    "name": "Miltenyi Biotec",
+    "shortDescription": "Поставщик реагентов для иммуномагнитной сепарации и факторов роста.",
+    "description": "Поставщик реагентов для иммуномагнитной сепарации и факторов роста.",
+    "categoryId": "scientific-reagents",
+    "images": [],
+    "specs": [
+      {
+        "key": "Страна",
+        "value": "Германия"
+      }
+    ],
+    "options": [],
+    "tags": [],
+    "featured": false,
+    "inStock": true,
+    "createdAt": "2024-01-01",
+    "manufacturer": "miltenyi-biotec",
+    "i18n": {
+      "en": {
+        "shortDescription": "Supplier реагентов for иммуномагнитной сепарации and факторов роста.",
+        "description": "Supplier реагентов for иммуномагнитной сепарации and факторов роста."
+      },
+      "zh": {
+        "shortDescription": "供应商 реагентов 用于 иммуномагнитной сепарации 和 факторов роста.",
+        "description": "供应商 реагентов 用于 иммуномагнитной сепарации 和 факторов роста."
+      }
+    }
+  },
+  {
+    "id": "sci-007",
+    "slug": "new-england-biolabs",
+    "name": "New England Biolabs",
+    "shortDescription": "Производитель ферментов и реагентов для амплификации ДНК и NGS.",
+    "description": "Производитель ферментов и реагентов для амплификации ДНК и NGS.",
+    "categoryId": "scientific-reagents",
+    "images": [],
+    "specs": [
+      {
+        "key": "Страна",
+        "value": "США"
+      }
+    ],
+    "options": [],
+    "tags": [],
+    "featured": false,
+    "inStock": true,
+    "createdAt": "2024-01-01",
+    "manufacturer": "new-england-biolabs",
+    "i18n": {
+      "en": {
+        "shortDescription": "Manufacturer ферментов and реагентов for амплификации ДНК and NGS.",
+        "description": "Manufacturer ферментов and реагентов for амплификации ДНК and NGS."
+      },
+      "zh": {
+        "shortDescription": "生产商 ферментов 和 реагентов 用于 амплификации ДНК 和 NGS.",
+        "description": "生产商 ферментов 和 реагентов 用于 амплификации ДНК 和 NGS."
+      }
+    }
+  }
+]

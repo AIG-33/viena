@@ -1,0 +1,425 @@
+[
+  {
+    "slug": "poct-2026",
+    "date": "2026",
+    "year": 2026,
+    "outgoing": "Встречи с МЗ · 2026",
+    "title": "POCT-оборудование: адаптация регуляторных требований",
+    "addressee": "Министерство здравоохранения · Абельская И.С.",
+    "summary": "Предложение выделить POCT (Point-of-Care Testing) в отдельную регуляторную категорию и вывести устройства с замкнутым циклом из-под требований к стационарным лабораториям.",
+    "tags": ["POCT", "Регуляторика", "Доступность"],
+    "topics": [
+      "Замкнутый аналитический цикл устраняет риски контаминации, на которые рассчитаны действующие лабораторные требования.",
+      "POCT не нуждается в зонировании, спецпомещениях и отдельной лицензии — оборудование используется врачом у постели пациента.",
+      "Прецеденты регуляторов: FDA одобрила домашний POCT-ПЦР (LUCIRA), ВОЗ рекомендует GeneXpert; ЕС, Великобритания и Австралия имеют отдельные рамки для POCT.",
+      "Система GeneXpert безопасно эксплуатируется в РБ более 12 лет — практический аргумент в пользу выделения POCT в самостоятельный класс.",
+      "Предлагается единый регуляторный документ: критерии замкнутого цикла, требования к регистрации, контроль качества, утилизация расходников."
+    ],
+    "i18n": {
+      "en": {
+        "outgoing": "Meetings with MoH · 2026",
+        "title": "POCT equipment: adapting the regulatory requirements",
+        "addressee": "Ministry of Health · I. Abelskaya",
+        "summary": "A proposal to make Point-of-Care Testing a separate regulatory category and to exempt closed-cycle devices from the rules designed for stationary laboratories.",
+        "tags": ["POCT", "Regulation", "Access"],
+        "topics": [
+          "A closed analytical cycle removes the contamination risks that today’s lab requirements were designed for.",
+          "POCT does not need zoning, special premises or a separate licence — the device is used by the physician at the patient’s bedside.",
+          "Regulatory precedents: the FDA cleared home-use POCT PCR (LUCIRA); the WHO recommends GeneXpert; the EU, the UK and Australia have dedicated POCT frameworks.",
+          "GeneXpert has been operated safely in Belarus for more than 12 years — a practical argument for treating POCT as its own class.",
+          "We propose a single regulatory document: criteria for the closed cycle, registration requirements, quality control, disposal of consumables."
+        ]
+      },
+      "zh": {
+        "outgoing": "与卫生部会议 · 2026",
+        "title": "POCT 设备:监管要求的适配方案",
+        "addressee": "卫生部 · I. Abelskaya",
+        "summary": "建议将床旁检测 (POCT) 划为独立的监管类别,并将封闭式设备从面向常规实验室的要求中豁免。",
+        "tags": ["POCT", "监管", "可及性"],
+        "topics": [
+          "封闭式分析流程已从结构上消除了现行实验室要求所针对的污染风险。",
+          "POCT 不需要分区、专用房间或单独许可,可由医生在患者床旁直接使用。",
+          "监管先例:FDA 批准家用 POCT PCR (LUCIRA);世界卫生组织推荐 GeneXpert;欧盟、英国与澳大利亚均设有独立的 POCT 监管框架。",
+          "GeneXpert 在白俄罗斯安全运行已逾 12 年 —— 这本身就是将 POCT 设为独立类别的有力佐证。",
+          "建议出台统一的监管文件:封闭式循环判定标准、注册要求、质量控制以及耗材处置规范。"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "mylab-licensing-2026",
+    "date": "2026",
+    "year": 2026,
+    "outgoing": "Встречи с МЗ · 2026",
+    "title": "Системные вопросы лицензирования медицинской деятельности",
+    "addressee": "Министерство здравоохранения · Абельская И.С.",
+    "summary": "Кейс проекта MyLab (ООО «МЕДЭКС-ЛАБ»): приостановка лицензии 9 октября 2025 без предварительного диалога, при том что комиссия МЗ затем подтвердила соответствие лицензионным требованиям.",
+    "tags": ["Лицензирование", "MyLab", "Диалог с регулятором"],
+    "topics": [
+      "9 октября 2025 — приостановка лицензии до проведения проверки; немедленная остановка операционной деятельности.",
+      "20–26 ноября 2025 — комиссия МЗ подтверждает соответствие; замечания формальные (документация, поверка приборов), угрозы пациентам нет.",
+      "2 декабря 2025 — разъяснение МЗ налоговой инспекции противоречит Постановлению МЗ №123 от 2016 года, согласно которому взятие крови — самостоятельная медицинская услуга.",
+      "Пострадавшие категории граждан: инвалиды, онкобольные, дети, пожилые, жители удалённых районов — те, для кого MyLab делал генетические исследования доступными на дому.",
+      "Системный вопрос: отсутствие предварительного профессионального диалога между МЗ и инновационными медицинскими сервисами до запуска необратимых административных процедур."
+    ],
+    "i18n": {
+      "en": {
+        "outgoing": "Meetings with MoH · 2026",
+        "title": "Systemic issues in medical-activity licensing",
+        "addressee": "Ministry of Health · I. Abelskaya",
+        "summary": "The MyLab case (Medex-Lab LLC): the licence was suspended on 9 October 2025 without prior dialogue, even though a Ministry of Health commission later confirmed compliance with the licensing requirements.",
+        "tags": ["Licensing", "MyLab", "Dialogue with the regulator"],
+        "topics": [
+          "9 October 2025 — licence suspended pending an inspection; operations stopped immediately.",
+          "20–26 November 2025 — the MoH commission confirms compliance; the remarks are formal (documentation, instrument verification) and pose no risk to patients.",
+          "2 December 2025 — the MoH clarification to the tax authority contradicts MoH Decree No. 123 of 2016, according to which blood collection is a stand-alone medical service.",
+          "Affected groups of citizens: people with disabilities, oncology patients, children, the elderly and residents of remote areas — those for whom MyLab made genetic testing available at home.",
+          "The systemic issue: there is no professional dialogue between the MoH and innovative medical services before irreversible administrative procedures are launched."
+        ]
+      },
+      "zh": {
+        "outgoing": "与卫生部会议 · 2026",
+        "title": "医疗活动许可中的系统性问题",
+        "addressee": "卫生部 · I. Abelskaya",
+        "summary": "MyLab(Medex-Lab 有限公司)案例:2025 年 10 月 9 日,许可在没有任何前置沟通的情况下被中止;此后卫生部委员会的检查反而确认其符合许可要求。",
+        "tags": ["许可", "MyLab", "与监管的对话"],
+        "topics": [
+          "2025 年 10 月 9 日 —— 许可被暂停,等待检查,经营立即中断。",
+          "2025 年 11 月 20–26 日 —— 卫生部检查组确认企业符合要求,意见仅为形式性问题(文件、仪器检定),对患者无风险。",
+          "2025 年 12 月 2 日 —— 卫生部对税务机关的解释与 2016 年第 123 号决议相矛盾,该决议明确指出采血属于独立的医疗服务。",
+          "受影响的人群:残障人士、肿瘤患者、儿童、老年人以及偏远地区居民 —— 正是 MyLab 让他们能够在家完成基因检测的那部分群体。",
+          "系统性问题:在启动不可逆的行政程序之前,卫生部与创新医疗服务之间缺乏专业沟通机制。"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "president-2025",
+    "date": "16.04.2025",
+    "year": 2025,
+    "outgoing": "Исх. б/н",
+    "title": "Формализм антимонопольного контроля и переход к закупке исследований",
+    "addressee": "Президент Республики Беларусь · Председатель КГК",
+    "summary": "После изменений в Закон о госзакупках 2024 года МАРТ применяет «птичку» о неаффилированности формально, игнорируя признаки взаимосвязанности участников и наказывая добросовестных поставщиков.",
+    "tags": ["Антимонополия", "МАРТ", "Закупка исследований", "Бюджет"],
+    "topics": [
+      "По итогам аукциона №auc0002276259 «Виена Медикал» технически не успела поставить «птичку» в 3 дня после победы — компанию включили в список недобросовестных поставщиков, несмотря на снижение цены и многолетнюю историю работы.",
+      "Лот №52 в auc0002281421 — пять участников с очевидными признаками аффилированности (совпадающие адреса, время подачи заявок), все формально отметили независимость; МАРТ принял самозаявление как достаточное.",
+      "Сумма закупок лабораторных реагентов в 2024 году — 437,5 млн BYN (18% всех закупок здравоохранения), при этом среднее снижение цены — 11%, ежегодный перерасход бюджета свыше 50 млн BYN.",
+      "Доля торгов между Siemens, Roche, Abbott и Beckman Coulter за всю историю суверенной Беларуси — 0%. Закупки идут от технических характеристик оборудования, а не от потребности в исследованиях.",
+      "Предложение: перейти к закупке медицинских исследований комплексно (оборудование + реагенты + контроли + ТО), допустить аутсорсинг и параллельный импорт, разрешить подписание заявления о неаффилированности одновременно с договором."
+    ],
+    "i18n": {
+      "en": {
+        "outgoing": "No outgoing No.",
+        "title": "Formalistic antitrust control and the move to procurement of medical investigations",
+        "addressee": "President of the Republic of Belarus · Chair of the State Control Committee",
+        "summary": "Following the 2024 amendments to the public-procurement law, the antimonopoly authority applies the “no-affiliation tick-box” mechanically, ignoring obvious signs of related parties while penalising bona-fide suppliers.",
+        "tags": ["Antitrust", "MART", "Procurement of investigations", "Budget"],
+        "topics": [
+          "In auction No. auc0002276259 Viena Medical was technically late ticking the no-affiliation box within three days after winning — the company was placed on the list of unreliable suppliers despite the price cut and many years of clean work.",
+          "Lot 52 in auc0002281421: five participants with obvious affiliation flags (identical addresses, near-identical submission times) — all formally declared they were unrelated, and the antimonopoly authority accepted the self-declaration as sufficient.",
+          "Spending on laboratory reagents in 2024 reached BYN 437.5 million (18 % of all healthcare procurement); the average price reduction was 11 %, with an annual budget overspend of more than BYN 50 million.",
+          "The share of tenders with real bidding between Siemens, Roche, Abbott and Beckman Coulter over the entire history of independent Belarus is 0 %. Procurement is driven by equipment specifications, not by the demand for investigations.",
+          "Proposal: switch to procuring medical investigations end-to-end (equipment + reagents + controls + service), permit outsourcing and parallel imports, and allow the no-affiliation declaration to be signed simultaneously with the contract."
+        ]
+      },
+      "zh": {
+        "outgoing": "无文号",
+        "title": "形式化的反垄断管控与转向「采购检测项目」",
+        "addressee": "白俄罗斯共和国总统 · 国家监督委员会主席",
+        "summary": "2024 年公共采购法修订后,反垄断机构机械化适用「无关联声明打勾」机制,忽视明显的关联企业迹象,反而处罚守信的供应商。",
+        "tags": ["反垄断", "MART", "采购检测项目", "预算"],
+        "topics": [
+          "在编号 auc0002276259 的招标中,Viena Medical 在中标后未能在三日内及时勾选无关联声明 —— 尽管报价下降明显且公司多年合规经营,仍被列入不诚信供应商名单。",
+          "auc0002281421 第 52 标段:五家投标方存在明显关联(地址相同、提交时间高度相近),却都形式性地声明「无关联」,反垄断机构仅以自我声明作为依据。",
+          "2024 年实验室试剂采购总额达 4.375 亿白俄罗斯卢布(占医疗采购总额的 18 %),平均降价幅度仅 11 %,年度预算超支超过 5000 万白俄罗斯卢布。",
+          "在白俄罗斯独立后的全部历史中,Siemens、Roche、Abbott 与 Beckman Coulter 之间真正展开竞争的招标占比为 0 %。采购始终围绕设备技术参数,而非检测项目需求。",
+          "建议:转向「检测项目」整体采购(设备 + 试剂 + 质控 + 售后);允许外包与平行进口;允许在签订合同时同步提交无关联声明。"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "gomel-medtech-2024",
+    "date": "12.12.2024",
+    "year": 2024,
+    "outgoing": "Исх. №148",
+    "title": "Неэффективность закупок Медтехники г. Гомель",
+    "addressee": "МЗ РБ · МАРТ · ГУБОПиК МВД · Гомельский облисполком · Белмедтехника",
+    "summary": "Анализ работы Гомельской Медтехники за первое полугодие 2024 показал самый низкий показатель снижения цены среди районных отделов и признаки систематической неконкурентной среды.",
+    "tags": ["Госзакупки", "Гомель", "Конкуренция", "Анализ данных"],
+    "topics": [
+      "Тендер MT 810-24 на наконечники для дозаторов: закупочная комиссия требовала «подтвердить одноразовость», что лишено смысла и формально ограничило круг участников.",
+      "Снижение цены на закупках Медтехники Гомель — 16% против 20% у Республиканского отдела Белмедтехники; 65% контрактов первого полугодия 2024 — со снижением менее 10%.",
+      "Закупка автоматического иммунохимического и биохимического анализаторов — около 3 млн BYN, при том что аналогичное оборудование другие УЗ получают по «нулевой» цене вместе с реагентами.",
+      "Ежегодный тендер на реагенты к NanoChecker 710 проходит без допуска аналогов; стоимость одного теста — 8–9 USD, при наличии зарегистрированных в РБ альтернатив за 3–4 USD.",
+      "Запрос системного вмешательства и проверки на соответствие действий сотрудников статьям 3 и 9 Закона «О государственной службе»."
+    ],
+    "i18n": {
+      "en": {
+        "outgoing": "Outgoing No. 148",
+        "title": "Procurement inefficiency at Medtekhnika Gomel",
+        "addressee": "MoH · MART · MoI Anti-Corruption Bureau · Gomel Regional Executive Committee · Belmedtekhnika",
+        "summary": "Analysis of Medtekhnika Gomel for H1 2024 shows the lowest price reduction among district branches and signs of a systematically uncompetitive environment.",
+        "tags": ["Public procurement", "Gomel", "Competition", "Data analysis"],
+        "topics": [
+          "Tender MT 810-24 for pipette tips: the procurement commission demanded a “confirmation that the tip is single-use” — a request that makes no sense and de facto restricted the bidder pool.",
+          "Average price reduction at Medtekhnika Gomel was 16 % vs. 20 % at the Republican branch of Belmedtekhnika; 65 % of H1 2024 contracts saw a reduction below 10 %.",
+          "Procurement of automated immunochemistry and biochemistry analysers — about BYN 3 million, while other healthcare facilities obtain comparable equipment essentially free of charge as part of reagent contracts.",
+          "The annual tender for NanoChecker 710 reagents is run without admitting analogs; the cost per test is USD 8–9 while alternatives registered in Belarus exist at USD 3–4.",
+          "Request for systemic intervention and a check of staff actions against Articles 3 and 9 of the Law on Public Service."
+        ]
+      },
+      "zh": {
+        "outgoing": "第 148 号函",
+        "title": "戈梅利市 Medtekhnika 采购效率问题",
+        "addressee": "卫生部 · MART · 内务部反腐败总局 · 戈梅利州执委会 · Belmedtekhnika",
+        "summary": "对戈梅利 Medtekhnika 2024 年上半年工作的分析显示:其价格下降幅度在所有地区分支机构中最低,且呈现系统性的非竞争环境。",
+        "tags": ["公共采购", "戈梅利", "竞争", "数据分析"],
+        "topics": [
+          "MT 810-24 移液器吸头招标:采购委员会要求供应商「证明吸头为一次性用品」 —— 这一要求毫无意义,事实上限制了投标方范围。",
+          "戈梅利 Medtekhnika 的平均降价幅度为 16 %,而 Belmedtekhnika 共和分支机构为 20 %;2024 年上半年 65 % 的合同降价幅度低于 10 %。",
+          "采购自动免疫化学分析仪与生化分析仪共耗资约 300 万白俄罗斯卢布,而其他医疗机构在同类设备上几乎可以零成本获得(由试剂合同覆盖)。",
+          "NanoChecker 710 试剂年度招标始终拒绝同类产品入围;每次检测成本 8–9 美元,而本国已注册的替代产品仅需 3–4 美元。",
+          "建议进行系统性干预,并对照《公共服务法》第 3 条与第 9 条核查相关人员的行为是否合规。"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "ceiz-huida-2023",
+    "date": "19.04.2023",
+    "year": 2023,
+    "outgoing": "Исх. №69",
+    "title": "Инспекция производства Jiangsu Huida (Китай)",
+    "addressee": "РУП «ЦЭИЗ» · Злотникова М.И.",
+    "summary": "Постановление МЗ №37 от 7 марта 2023 освобождает от инспекции производства, имеющие FDA или CE; продукция Jiangsu Huida зарегистрирована в РБ, имеет FDA, поставляется с 2020 года без рекламаций.",
+    "tags": ["Регистрация ИМН", "ЦЭИЗ", "Huida", "Параллельный импорт"],
+    "topics": [
+      "С 2020 по 2023 год в УЗ МЗ РБ поставлено продукции Jiangsu Huida на сумму около 1 млн евро через государственные закупки.",
+      "Конкуренты в тендерах — производители из Германии; в случае исключения Huida перерасход бюджета составит не менее 500 000 USD.",
+      "Требование инспекции производства противоречит действующему Постановлению МЗ №37 от 07.03.2023 и регламентам ЕС (EU) 2017/745 и (EU) 2017/746.",
+      "В случае приостановки регистрационного удостоверения собранная информация будет передана в Генеральную прокуратуру для оценки действий сотрудников ЦЭИЗ.",
+      "Системная связь: с 2017 года направляются предложения в МЗ, КГБ, Администрацию Президента, Генпрокуратуру по «Комплексу мер» — текущий кейс встроен в эту работу."
+    ],
+    "i18n": {
+      "en": {
+        "outgoing": "Outgoing No. 69",
+        "title": "On-site inspection of Jiangsu Huida (China)",
+        "addressee": "RUE “CEIZ” · M. Zlotnikova",
+        "summary": "MoH Decree No. 37 of 7 March 2023 exempts from on-site inspection any manufacturer holding an FDA or CE clearance. Jiangsu Huida is registered in Belarus, holds FDA clearance and has been supplied since 2020 with no complaints.",
+        "tags": ["Device registration", "CEIZ", "Huida", "Parallel import"],
+        "topics": [
+          "Between 2020 and 2023 about EUR 1 million worth of Jiangsu Huida products were supplied to Belarusian healthcare facilities through public tenders.",
+          "Competitors in those tenders are German manufacturers; excluding Huida would translate into a budget overrun of at least USD 500 000.",
+          "The demand for an on-site inspection contradicts MoH Decree No. 37 of 7 March 2023 and EU Regulations 2017/745 and 2017/746.",
+          "If the registration certificate is suspended, the collected materials will be submitted to the Prosecutor General’s Office for an assessment of CEIZ staff actions.",
+          "Systemic context: since 2017 we have submitted policy proposals to the MoH, KGB, Presidential Administration and Prosecutor General’s Office — this case is part of that ongoing work."
+        ]
+      },
+      "zh": {
+        "outgoing": "第 69 号函",
+        "title": "关于江苏华达(中国)生产现场检查的事宜",
+        "addressee": "国有单一制企业「CEIZ」 · M. Zlotnikova",
+        "summary": "卫生部 2023 年 3 月 7 日第 37 号决议规定,持有 FDA 或 CE 批准的厂商可豁免现场检查。江苏华达已在白俄罗斯注册并持有 FDA,自 2020 年起持续供货,从未发生质量投诉。",
+        "tags": ["医疗器械注册", "CEIZ", "华达", "平行进口"],
+        "topics": [
+          "2020 至 2023 年间,通过公共采购向白俄罗斯医疗机构供应江苏华达产品价值约 100 万欧元。",
+          "招标中的竞争对手为德国厂商;若将华达排除在外,预算超支至少 50 万美元。",
+          "对生产现场提出检查要求,与 2023 年 3 月 7 日卫生部第 37 号决议及欧盟 (EU) 2017/745、2017/746 法规相抵触。",
+          "若注册证遭暂停,我们将把整理的材料提交总检察院,以评估 CEIZ 工作人员的行为是否合规。",
+          "系统背景:自 2017 年起,我们持续向卫生部、国家安全委员会、总统办公厅及总检察院提交「综合措施」相关建议,本案亦是这一长期工作的一部分。"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "kompleks-2-2023",
+    "date": "03.01.2023",
+    "year": 2023,
+    "outgoing": "Исх. №1",
+    "title": "Комплекс мер 2.0: пять лет спустя",
+    "addressee": "Министерство здравоохранения · Пиневич Д.Л.",
+    "summary": "Через пять лет после первого «Комплекса мер» — обновлённый перечень предложений: упрощённая регистрация ИМН, демонополизация госзакупок, параллельный импорт, аутсорсинг лабораторных услуг, услуги на дому.",
+    "tags": ["Реформа", "Комплекс мер", "Аутсорсинг"],
+    "topics": [
+      "Регистрация ИМН: проверка достоверности FDA/CE-сертификатов вместо требования легализованных копий; рассмотреть опыт Армении и Кыргызстана; альтернатива монополии ЦЭИЗ — отдел при МЗ или Госстандарте.",
+      "Демонополизация закупок: системный допуск зарегистрированных аналогов к «закрытым» системам с поставкой оборудования другого производителя в виде товарной скидки.",
+      "Параллельный импорт и реформа технического обслуживания: убрать монополию ЦЭИЗ на сервис, передать ответственность УЗ.",
+      "Аутсорсинг лабораторных услуг — пилотный проект на базе одного УЗ с привлечением Synevo, Invitro, Synlab; модель уже работает в Казахстане.",
+      "Развитие законодательства об оказании медицинских услуг на дому и внебюджетной деятельности государственных лабораторий."
+    ],
+    "i18n": {
+      "en": {
+        "outgoing": "Outgoing No. 1",
+        "title": "Action plan 2.0: five years on",
+        "addressee": "Ministry of Health · D. Pinevich",
+        "summary": "Five years after the first “Action plan”, an updated set of proposals: simplified registration of medical devices, demonopolisation of public procurement, parallel imports, outsourcing of laboratory services and home-based diagnostics.",
+        "tags": ["Reform", "Action plan", "Outsourcing"],
+        "topics": [
+          "Device registration: verify the authenticity of FDA/CE certificates instead of demanding legalised copies; consider the experience of Armenia and Kyrgyzstan; an alternative to the CEIZ monopoly is a small unit at the MoH or at the standardisation agency.",
+          "Demonopolising procurement: a systematic admission of registered analogs to “closed” systems with supplying equipment from another manufacturer as an in-kind discount.",
+          "Parallel imports and a reform of technical service: remove the CEIZ monopoly on servicing and place responsibility with the healthcare facilities themselves.",
+          "Outsourcing of laboratory services — a pilot project at a single facility with Synevo, Invitro, Synlab; the model already works in Kazakhstan.",
+          "Develop the legal framework for at-home medical services and for self-funded activities of state laboratories."
+        ]
+      },
+      "zh": {
+        "outgoing": "第 1 号函",
+        "title": "「综合措施 2.0」:五年之后",
+        "addressee": "卫生部 · D. Pinevich",
+        "summary": "首份《综合措施》五年之后的更新版建议:简化医疗器械注册、公共采购去垄断、平行进口、实验室服务外包、上门诊断。",
+        "tags": ["改革", "综合措施", "外包"],
+        "topics": [
+          "医疗器械注册:不再要求 FDA/CE 证书的合法化副本,而通过核验真实性来确认;参考亚美尼亚与吉尔吉斯斯坦的做法;在 CEIZ 之外可由卫生部或标准化机构下设小型注册部门。",
+          "公共采购去垄断:系统性允许已注册的同类产品进入「封闭式」系统,设备由其他厂商以实物折扣形式提供。",
+          "平行进口与售后服务改革:取消 CEIZ 在售后服务上的垄断,将责任交回医疗机构本身。",
+          "实验室服务外包 —— 与 Synevo、Invitro、Synlab 合作,在单一医疗机构进行试点;该模式在哈萨克斯坦已成熟运行。",
+          "完善上门医疗服务的法律框架以及国有实验室开展非预算经营活动的法律基础。"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "analogi-part-2-2022",
+    "date": "15.06.2022",
+    "year": 2022,
+    "outgoing": "Исх. №___",
+    "title": "Аналоги «закрытых» систем — часть 2",
+    "addressee": "МЗ РБ · Пиневич Д.Л. · МАРТ · Белмедтехника",
+    "summary": "Систематический анализ тендеров после первого письма: УЗ массово отказывают в допуске аналогов к i-Chroma, Easy Reader, FREND, NanoChecker и другим закрытым системам, что превращает закупки в монопольные.",
+    "tags": ["Аналоги", "Закрытые системы", "Тендеры"],
+    "topics": [
+      "Шаблонный отказ заказчиков: «рассмотрим только тесты на имеющийся анализатор» — фактически закрепляет монополию официального дистрибьютора.",
+      "Закрытые системы (i-Chroma, Easy Reader, FREND, NanoChecker) делают «требование адаптации» невыполнимым по определению — других тестов к ним не существует.",
+      "Таблица из десятков аукционов на goszakupki.by и butb.by с одинаковой логикой отказа в допуске аналогов.",
+      "Стоимость анализаторов — менее 1000 BYN, при этом тесты к ним закупаются на десятки тысяч BYN ежегодно; альтернатива — товарная скидка в виде нового анализатора.",
+      "Запрос системного решения МЗ совместно с МАРТ и Белмедтехникой по выработке единого механизма допуска аналогов."
+    ],
+    "i18n": {
+      "en": {
+        "outgoing": "Outgoing No. ___",
+        "title": "Analogs of “closed” systems — part 2",
+        "addressee": "MoH · D. Pinevich · MART · Belmedtekhnika",
+        "summary": "A systematic analysis of tenders following the first letter: healthcare facilities routinely refuse to admit analogs for i-Chroma, Easy Reader, FREND, NanoChecker and other closed systems, turning the procurement into single-bidder events.",
+        "tags": ["Analogs", "Closed systems", "Tenders"],
+        "topics": [
+          "Standard refusal language: “we will only consider tests for the analyser already in place” — effectively cementing the monopoly of the official distributor.",
+          "Closed systems (i-Chroma, Easy Reader, FREND, NanoChecker) make the “adaptation requirement” unsatisfiable by definition — no other tests exist for them.",
+          "A table of dozens of auctions on goszakupki.by and butb.by with the same pattern of refusing analogs.",
+          "The analysers themselves cost less than BYN 1 000, while the tests for them are purchased for tens of thousands of BYN every year; an alternative is to provide a new analyser as an in-kind discount.",
+          "A request for the MoH, together with MART and Belmedtekhnika, to develop a unified mechanism for admitting analogs."
+        ]
+      },
+      "zh": {
+        "outgoing": "函号待定",
+        "title": "「封闭式」系统的同类替代 —— 第二部分",
+        "addressee": "卫生部 · D. Pinevich · MART · Belmedtekhnika",
+        "summary": "在首封信件之后对招标情况的系统分析显示:医疗机构普遍拒绝允许 i-Chroma、Easy Reader、FREND、NanoChecker 等封闭系统的同类产品参标,从而使采购演变为单一供应商招标。",
+        "tags": ["同类产品", "封闭式系统", "招标"],
+        "topics": [
+          "招标方常见的标准答复:「仅考虑现有分析仪所使用的试剂」 —— 实际上巩固了官方代理商的垄断地位。",
+          "i-Chroma、Easy Reader、FREND、NanoChecker 等封闭式系统使「适配性要求」从定义上无法被满足,因为不存在其他试剂。",
+          "在 goszakupki.by 与 butb.by 上数十次招标显示出完全相同的拒绝同类产品的逻辑。",
+          "分析仪本身价格不足 1000 白俄罗斯卢布,而每年用于其试剂的采购额可达数万卢布;一种替代方案是以新的分析仪作为实物折扣交付。",
+          "建议卫生部联合 MART 与 Belmedtekhnika 制定统一的同类产品准入机制。"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "analogi-part-1-2021",
+    "date": "10.11.2021",
+    "year": 2021,
+    "outgoing": "Исх. №179",
+    "title": "Аналоги «закрытых» систем — часть 1",
+    "addressee": "МЗ РБ · Андросюк Б.Н. · МАРТ",
+    "summary": "Первое системное обращение по аналогам: реагенты к закрытым системам закупаются вне конкурентной среды, нарушая п. 4 ст. 21 Закона о госзакупках; приложены 13 запросов и ответов от УЗ.",
+    "tags": ["Аналоги", "Закон о госзакупках", "Преаналитика"],
+    "topics": [
+      "Постановление коллегии МЗ №14.4 от 25.07.2018 поручило перейти к закупке «реагентов вместе с аналитическими системами» — на практике механизм не реализован.",
+      "Использование товарных знаков и наименований производителя в техзадании — злоупотребление абзацем четвёртым пункта 4 статьи 21 Закона о госзакупках.",
+      "Оборудование для быстрого скрининга недорогое, но монопольная цена на тесты экономически выгоднее поставщику закрытой системы.",
+      "13 запросов в УЗ Беларуси (Копыль, Кобрин, Пинск, Несвиж, Столин, Мядель, Вилейка, Слуцк, Солигорск, Клецк и др.) — все отказали в допуске аналогов.",
+      "Запрос разработать систему допуска зарегистрированного аналогичного оборудования с реагентами — для расширения круга участников и снижения бюджетных затрат."
+    ],
+    "i18n": {
+      "en": {
+        "outgoing": "Outgoing No. 179",
+        "title": "Analogs of “closed” systems — part 1",
+        "addressee": "MoH · B. Androsyuk · MART",
+        "summary": "The first systemic letter on analogs: reagents for closed systems are purchased without a competitive environment, in violation of clause 4 of Article 21 of the Public Procurement Law; 13 requests and replies from healthcare facilities are attached.",
+        "tags": ["Analogs", "Public procurement law", "Preanalytics"],
+        "topics": [
+          "MoH board decree No. 14.4 of 25.07.2018 instructed the system to switch to procuring “reagents together with analytical systems” — in practice the mechanism is not implemented.",
+          "Using brand names and manufacturer names in the terms of reference is an abuse of paragraph 4 of clause 4 of Article 21 of the Public Procurement Law.",
+          "Rapid-screening equipment is inexpensive, but the monopoly price on the tests is economically more attractive to the closed-system supplier.",
+          "13 requests to Belarusian healthcare facilities (Kopyl, Kobrin, Pinsk, Nesvizh, Stolin, Myadel, Vileyka, Slutsk, Soligorsk, Kletsk, etc.) — all refused to admit analogs.",
+          "Request to design a system for admitting registered analog equipment with reagents — to widen the bidder pool and reduce budget spending."
+        ]
+      },
+      "zh": {
+        "outgoing": "第 179 号函",
+        "title": "「封闭式」系统的同类替代 —— 第一部分",
+        "addressee": "卫生部 · B. Androsyuk · MART",
+        "summary": "首封关于同类产品的系统性信函:封闭系统的试剂在缺乏竞争的环境下被采购,违反《公共采购法》第 21 条第 4 款;附 13 份医疗机构的询问与答复。",
+        "tags": ["同类产品", "公共采购法", "分析前阶段"],
+        "topics": [
+          "2018 年 7 月 25 日卫生部第 14.4 号决议要求转向「设备与试剂一并采购」 —— 但该机制在实践中并未落实。",
+          "在招标技术要求中直接使用商标与厂商名称,违反《公共采购法》第 21 条第 4 款的相关规定。",
+          "快速筛查设备本身价格不高,但封闭系统供应商在试剂上的垄断价格更具经济吸引力。",
+          "向白俄罗斯多家医疗机构(Kopyl、Kobrin、Pinsk、Nesvizh、Stolin、Myadel、Vileyka、Slutsk、Soligorsk、Kletsk 等)共发出 13 份询问 —— 全部拒绝允许同类产品参标。",
+          "请求设计「已注册同类设备 + 试剂」的准入机制,以扩大投标方范围并降低预算支出。"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "kgb-kompleks-2018",
+    "date": "13.09.2018",
+    "year": 2018,
+    "outgoing": "Исх. №73",
+    "title": "Комплекс мер 1.0 (исходный)",
+    "addressee": "Комитет государственной безопасности · по месту требования",
+    "summary": "Первое системное обращение, заложившее основу всей последующей работы: пять проблем системы здравоохранения и предложения по их решению.",
+    "tags": ["Основа", "Комплекс мер", "КГБ", "Системная реформа"],
+    "topics": [
+      "Проблема 1 — формальная регистрация ИМН в ЦЭИЗ: барьер для «неугодной» продукции и одновременно регистрация продукции, не прошедшей FDA/EU/RU.",
+      "Проблема 2 — отсутствие реального контроля на стадии эксплуатации: рекламации не подаются, республиканский контроль качества формален.",
+      "Проблема 3 — закупки по техзаданиям на конкретные ИМН ведут к ЗОИ и монопольным ценам; решение — закупать исследования, а не оборудование и реагенты по отдельности.",
+      "Проблема 4 — потеря квалификации кадров и отсутствие международного опыта; курсы английского, привлечение международных консалтингов, использование опыта Вьетнама (соглашение от 27.06.2017).",
+      "Проблема 5 — отсутствие фундамента для информатизации: переработка приказа №1123 о преаналитике, государственный справочник на основе LOINC, открытые протоколы интеграции МИС."
+    ],
+    "i18n": {
+      "en": {
+        "outgoing": "Outgoing No. 73",
+        "title": "Action plan 1.0 (the original)",
+        "addressee": "State Security Committee · to whom it may concern",
+        "summary": "The first systemic letter, which laid the groundwork for everything that followed: five problems in the healthcare system and the corresponding proposals.",
+        "tags": ["Foundation", "Action plan", "KGB", "Systemic reform"],
+        "topics": [
+          "Problem 1 — formal device registration at CEIZ: a barrier for “unwanted” products while at the same time registering products that have not passed FDA/EU/RU clearance.",
+          "Problem 2 — no real control during the in-use phase: complaints are not filed and the republican quality programme is purely formal.",
+          "Problem 3 — terms of reference written for a specific device lead to single-bidder events and monopoly prices; the solution is to procure investigations rather than equipment and reagents separately.",
+          "Problem 4 — loss of staff qualifications and the absence of international experience; English-language training, engagement of international consultancies, use of the Vietnamese experience (agreement of 27.06.2017).",
+          "Problem 5 — no foundation for digitalisation: reworking Order No. 1123 on the preanalytical phase, building a national catalogue of investigations on top of LOINC and requiring open integration protocols for laboratory information systems."
+        ]
+      },
+      "zh": {
+        "outgoing": "第 73 号函",
+        "title": "「综合措施 1.0」(原始版本)",
+        "addressee": "国家安全委员会 · 凡相关单位",
+        "summary": "奠定后续所有工作基础的首封系统性信函:列出医疗体系中的五个核心问题及对应建议。",
+        "tags": ["基础", "综合措施", "KGB", "系统改革"],
+        "topics": [
+          "问题一 —— CEIZ 形式化的医疗器械注册:对「不受欢迎」产品形成壁垒,同时却批准了未通过 FDA/EU/RU 批准的产品。",
+          "问题二 —— 使用阶段缺乏真正的监管:不会有人提交投诉,共和国质量控制流程仅为形式。",
+          "问题三 —— 围绕某一具体设备撰写技术要求会导致单一投标方与垄断价格;解决方案是采购检测项目,而非分别采购设备与试剂。",
+          "问题四 —— 人员资质下降且缺乏国际经验;建议开设英语培训、引入国际咨询机构,并借鉴越南经验(2017 年 6 月 27 日协议)。",
+          "问题五 —— 信息化缺乏基础:修订关于分析前阶段的第 1123 号命令、基于 LOINC 建立国家检测项目目录、强制要求实验室信息系统采用开放的集成协议。"
+        ]
+      }
+    }
+  }
+]

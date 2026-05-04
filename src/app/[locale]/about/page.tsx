@@ -1,0 +1,336 @@
+import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
+import { PageHero } from "@/components/layout/PageHero";
+import type { Locale } from "@/i18n/routing";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "about.hero" });
+  const tNav = await getTranslations({ locale, namespace: "nav" });
+  return {
+    title: tNav("about"),
+    description: t("description"),
+  };
+}
+
+export default async function AboutPage({
+  params,
+}: {
+  params: Promise<{ locale: Locale }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+  const t = await getTranslations("about");
+
+  const principleKeys = ["directContracts", "noSubstitution", "openMarket", "dialog"] as const;
+  const credentialKeys = [
+    "eflm",
+    "iso",
+    "publication",
+    "patent",
+    "rome",
+    "vietnam",
+  ] as const;
+
+  // Mini-timeline blocks shown next to the MoH CTA (year + topic + hint live in messages later if needed)
+  const timelineRows = [
+    { year: "2018", topicKey: "topic2018", hintKey: "hint2018" },
+    { year: "2021", topicKey: "topic2021", hintKey: "hint2021" },
+    { year: "2023", topicKey: "topic2023", hintKey: "hint2023" },
+    { year: "2025", topicKey: "topic2025", hintKey: "hint2025" },
+    { year: "2026", topicKey: "topic2026a", hintKey: "hint2026a" },
+    { year: "2026", topicKey: "topic2026b", hintKey: "hint2026b" },
+  ] as const;
+
+  return (
+    <>
+      <PageHero
+        eyebrow={t("hero.eyebrow")}
+        title={
+          <>
+            {t("hero.titleLine1Pre")}{" "}
+            <span className="text-grad-green">{t("hero.titleLine1Accent")}</span>
+            {t("hero.titleLine1Post")}
+            <br />
+            {t("hero.titleLine2Pre")}{" "}
+            <span className="text-grad-green">{t("hero.titleLine2Accent")}</span>
+          </>
+        }
+        description={t("hero.description")}
+        aside={
+          <div className="grid grid-cols-2 gap-3">
+            <StatCard value="2017" label={t("hero.stats.year")} note={t("hero.stats.yearNote")} />
+            <StatCard value="30+" label={t("hero.stats.manufacturers")} note={t("hero.stats.manufacturersNote")} />
+            <StatCard value="500+" label={t("hero.stats.deliveries")} note={t("hero.stats.deliveriesNote")} />
+            <StatCard value="9" label={t("hero.stats.letters")} note={t("hero.stats.lettersNote")} />
+          </div>
+        }
+      />
+
+      {/* Manifesto */}
+      <section className="bg-white py-14 md:py-20">
+        <div className="max-w-[1100px] mx-auto px-4 md:px-10 lg:px-14">
+          <span className="eyebrow">
+            <span className="dot" />
+            {t("manifesto.eyebrow")}
+          </span>
+          <h2 className="display-heading text-[28px] md:text-[44px] text-ink-900 mt-4 leading-[1.05]">
+            {t("manifesto.title")}{" "}
+            <span className="serif-accent text-green-700">{t("manifesto.titleAccent")}</span>.
+          </h2>
+
+          <div className="mt-8 grid lg:grid-cols-[1.4fr_1fr] gap-8 lg:gap-12">
+            <div className="space-y-5 text-[15px] md:text-[16px] leading-relaxed text-ink-700">
+              <p>{t("manifesto.p1")}</p>
+              <p>{t("manifesto.p2")}</p>
+              <p>{t("manifesto.p3")}</p>
+              <blockquote className="pl-5 border-l-2 border-green-500 italic text-ink-900 text-[16px] md:text-[18px] leading-relaxed">
+                {t("manifesto.quote")}
+              </blockquote>
+            </div>
+
+            <aside className="space-y-3">
+              {principleKeys.map((k) => (
+                <PrincipleRow
+                  key={k}
+                  title={t(`principles.${k}.title`)}
+                  text={t(`principles.${k}.text`)}
+                />
+              ))}
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      {/* Open position — link to MOH */}
+      <section className="bg-paper-50 py-14 md:py-20 relative overflow-hidden">
+        <div
+          aria-hidden
+          className="absolute -top-32 -right-24 h-[360px] w-[360px] rounded-full bg-green-200/50 blur-[80px] pointer-events-none"
+        />
+        <div className="relative max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
+          <div className="grid lg:grid-cols-[1.1fr_1fr] gap-10 lg:gap-16 items-center">
+            <div>
+              <span className="eyebrow">
+                <span className="pill pill-green">{t("moh.eyebrow")}</span>
+                {t("moh.eyebrowSub")}
+              </span>
+              <h2 className="display-heading text-[28px] md:text-[42px] text-ink-900 mt-4 leading-[1.05]">
+                {t("moh.title")}
+                <br />
+                <span className="serif-accent text-green-700">{t("moh.titleAccent")}</span>
+              </h2>
+              <div className="mt-6 space-y-4 text-[15px] leading-relaxed text-ink-700 max-w-xl">
+                <p>{t("moh.p1")}</p>
+                <p>{t("moh.p2")}</p>
+              </div>
+              <div className="mt-7 flex flex-wrap items-center gap-3">
+                <Link href="/projects/moh" className="btn btn-green">
+                  {t("moh.ctaPrimary")}
+                </Link>
+                <Link href="/projects" className="btn btn-ghost">
+                  {t("moh.ctaSecondary")}
+                </Link>
+              </div>
+            </div>
+
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {timelineRows.map((it, i) => (
+                <li
+                  key={`${it.year}-${i}`}
+                  className="card p-4 hover:border-green-300 transition-colors"
+                >
+                  <div className="font-mono text-[11px] tracking-[0.16em] uppercase text-green-700 font-bold">
+                    {it.year}
+                  </div>
+                  <div className="font-display text-[15px] font-bold text-ink-900 mt-1">
+                    {t(`timeline.${it.topicKey}`)}
+                  </div>
+                  <div className="text-[12px] text-ink-600 mt-1">
+                    {t(`timeline.${it.hintKey}`)}
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder */}
+      <section className="bg-white py-14 md:py-20">
+        <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
+          <div className="grid lg:grid-cols-[auto_1fr] gap-10 lg:gap-14 items-start">
+            <div className="lg:sticky lg:top-28 max-w-[280px] mx-auto lg:mx-0">
+              <div
+                className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-paper-200"
+                style={{
+                  background:
+                    "linear-gradient(135deg, var(--color-green-100) 0%, var(--color-paper-100) 55%, var(--color-paper-50) 100%)",
+                }}
+              >
+                <div
+                  aria-hidden
+                  className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-green-300/40 blur-3xl"
+                />
+                <div
+                  aria-hidden
+                  className="absolute -bottom-12 -left-8 h-44 w-44 rounded-full bg-green-200/50 blur-3xl"
+                />
+                <div className="relative h-full grid place-items-center">
+                  <div className="text-center">
+                    <div className="font-display text-[112px] font-extrabold leading-none text-ink-900 tracking-[-0.06em]">
+                      {t("founder.monogram")}
+                    </div>
+                    <div className="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/70 backdrop-blur-sm border border-white/80 text-[10px] tracking-[0.16em] uppercase font-bold text-ink-700">
+                      <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
+                      EFLM · ISO TC 212
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-4">
+                <div className="font-display text-[18px] font-bold text-ink-900 leading-tight whitespace-pre-line">
+                  {t("founder.name")}
+                </div>
+                <div className="text-[12px] text-ink-600 mt-1.5">
+                  {t("founder.role")}
+                </div>
+              </div>
+            </div>
+
+            <div className="max-w-[760px]">
+              <span className="eyebrow">
+                <span className="dot" />
+                {t("founder.eyebrow")}
+              </span>
+              <h2 className="display-heading text-[28px] md:text-[42px] text-ink-900 mt-4 leading-[1.05]">
+                {t("founder.title1")}
+                <br />
+                <span className="serif-accent text-green-700">
+                  {t("founder.titleAccent")}
+                </span>{" "}
+                {t("founder.title2")}
+              </h2>
+
+              <div className="mt-7 space-y-5 text-[15px] md:text-[16px] leading-relaxed text-ink-700">
+                <p>{t("founder.p1")}</p>
+                <p>{t("founder.p2")}</p>
+
+                <div className="grid sm:grid-cols-2 gap-3 mt-2">
+                  {credentialKeys.map((k) => (
+                    <CredentialCard
+                      key={k}
+                      eyebrow={t(`founder.credentials.${k}.eyebrow`)}
+                      title={t(`founder.credentials.${k}.title`)}
+                      note={t(`founder.credentials.${k}.note`)}
+                    />
+                  ))}
+                </div>
+
+                <p>{t("founder.p3")}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Closing CTA */}
+      <section className="bg-paper-50 py-14 md:py-18">
+        <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
+          <div
+            className="rounded-3xl p-8 md:p-12 grid md:grid-cols-[1fr_auto] items-center gap-6"
+            style={{
+              background:
+                "linear-gradient(120deg, var(--color-green-100) 0%, var(--color-paper-100) 60%)",
+            }}
+          >
+            <div className="max-w-2xl">
+              <span className="eyebrow">
+                <span className="pill">{t("cta.eyebrow")}</span>
+                {t("cta.eyebrowSub")}
+              </span>
+              <h3 className="font-display text-[22px] md:text-[30px] font-bold text-ink-900 mt-3 leading-tight">
+                {t("cta.title")}
+              </h3>
+              <p className="text-[14px] md:text-[15px] text-ink-700 mt-3">
+                {t("cta.subtitle")}
+              </p>
+            </div>
+            <Link href="/contacts" className="btn btn-green shrink-0">
+              {t("cta.button")}
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+function StatCard({
+  value,
+  label,
+  note,
+}: {
+  value: string;
+  label: string;
+  note?: string;
+}) {
+  return (
+    <div className="glass-card p-4">
+      <div className="font-display text-[28px] md:text-[32px] font-bold leading-none text-ink-900">
+        {value}
+      </div>
+      <div className="text-[11px] uppercase tracking-[0.1em] font-bold text-green-700 mt-1.5">
+        {label}
+      </div>
+      {note && (
+        <div className="font-mono text-[10px] text-ink-500 tracking-[0.08em] uppercase mt-1">
+          {note}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function PrincipleRow({ title, text }: { title: string; text: string }) {
+  return (
+    <div className="card p-4 hover:border-green-300 transition-colors">
+      <div className="flex items-baseline gap-2">
+        <span aria-hidden className="h-1.5 w-1.5 rounded-full bg-green-500 mt-1.5" />
+        <div className="font-display text-[15px] font-bold text-ink-900">
+          {title}
+        </div>
+      </div>
+      <p className="text-[13px] text-ink-700 leading-relaxed mt-1.5 pl-3.5">
+        {text}
+      </p>
+    </div>
+  );
+}
+
+function CredentialCard({
+  eyebrow,
+  title,
+  note,
+}: {
+  eyebrow: string;
+  title: string;
+  note: string;
+}) {
+  return (
+    <div className="rounded-xl border border-paper-200 bg-paper-50 p-4 hover:border-green-300 hover:bg-white transition-colors">
+      <div className="font-mono text-[10px] tracking-[0.14em] uppercase font-bold text-green-700">
+        {eyebrow}
+      </div>
+      <div className="font-display text-[14px] font-bold text-ink-900 mt-1.5 leading-snug">
+        {title}
+      </div>
+      <p className="text-[12px] text-ink-600 leading-relaxed mt-1.5">{note}</p>
+    </div>
+  );
+}

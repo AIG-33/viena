@@ -1,0 +1,674 @@
+{
+  "meta": {
+    "brand": "VIENA MEDICAL",
+    "siteTitle": "VIENA MEDICAL — laboratory equipment, reagents and consumables",
+    "siteDescription": "Direct supplier of laboratory and medical equipment, reagents and consumables from leading global manufacturers. No silent substitution with «analogs», in-house service team and a public stance on opening up the market.",
+    "city": "Minsk",
+    "skipToContent": "Skip to content"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "catalog": "Catalog",
+    "manufacturers": "Manufacturers",
+    "services": "Services",
+    "projects": "Projects",
+    "moh": "MoH BY",
+    "mohLong": "Work with the Ministry of Health",
+    "contacts": "Contact",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
+  },
+  "common": {
+    "phone": "+375 29 392-02-73",
+    "phoneOffice": "+375 17 392-02-55",
+    "email": "med@viena.by",
+    "address": "220070, Minsk, Radialnaya str., 54B, office 67",
+    "addressShort": "Minsk, Radialnaya str., 54B",
+    "schedule": "Mon–Fri · 09:00 — 18:00",
+    "more": "More",
+    "moreArrow": "Learn more →",
+    "all": "All",
+    "back": "Back",
+    "cooperation": "Cooperation",
+    "cooperationArrow": "Cooperation →",
+    "request": "Request",
+    "send": "Send",
+    "submit": "Submit",
+    "loading": "Loading…",
+    "year": "year",
+    "years": "years",
+    "from": "from",
+    "since": "since",
+    "and": "and",
+    "or": "or",
+    "viewAll": "View all",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "search": "Search",
+    "searchPlaceholder": "Search the catalog…",
+    "category": "Category",
+    "manufacturer": "Manufacturer",
+    "country": "Country",
+    "filters": "Filters",
+    "reset": "Reset",
+    "apply": "Apply",
+    "noResults": "No results",
+    "addToQuote": "Add to RFQ",
+    "inQuote": "In RFQ",
+    "removeFromQuote": "Remove",
+    "openWebsite": "Manufacturer website",
+    "downloadDatasheet": "Download datasheet"
+  },
+  "header": {
+    "cart": "RFQ cart",
+    "getQuote": "Request a quote",
+    "phoneTooltip": "Call us"
+  },
+  "footer": {
+    "tagline": "An expert in laboratory diagnostics. Modern medical equipment and reagents from the leading global manufacturers.",
+    "catalogHeading": "Catalog",
+    "fullCatalog": "Full catalog →",
+    "manufacturersLink": "Manufacturers →",
+    "aboutLink": "About the company →",
+    "mohLink": "Work with the Ministry of Health →",
+    "contactsHeading": "Contact",
+    "requisitesHeading": "Legal details",
+    "company": "Viena Medical Private Enterprise",
+    "unp": "Tax ID 192599105",
+    "shopLink": "shop.viena.by →",
+    "rights": "© {year} Viena Medical. All rights reserved.",
+    "privacy": "Privacy policy · Cookies"
+  },
+  "productCard": {
+    "inStock": "in stock",
+    "byOrder": "by order",
+    "askPrice": "Price on request",
+    "increase": "Increase",
+    "decrease": "Decrease",
+    "details": "Details"
+  },
+  "productPage": {
+    "specifications": "Specifications",
+    "description": "Description",
+    "options": "Options",
+    "manufacturer": "Manufacturer",
+    "category": "Category",
+    "sku": "SKU",
+    "inStock": "In stock",
+    "byOrder": "By order",
+    "addToQuote": "Add to RFQ",
+    "inQuote": "In cart",
+    "related": "Related products",
+    "back": "Back to catalog",
+    "quantityShort": "pcs",
+    "addToCart": "Add to cart",
+    "requestPrice": "Request a quote",
+    "dataTable": {
+      "defaultTitle": "Product reference table",
+      "itemCount": "{count, plural, one {# item} other {# items}}"
+    },
+    "gallery": {
+      "placeholder": "photo coming soon",
+      "photoAlt": "{name} — photo {index}"
+    }
+  },
+  "languageSwitcher": {
+    "label": "Language",
+    "ru": "Русский",
+    "en": "English",
+    "zh": "中文",
+    "ruShort": "RU",
+    "enShort": "EN",
+    "zhShort": "ZH"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Since 2017 · Laboratory diagnostics",
+      "titleLine1": "We do things",
+      "titleLine2": "the way",
+      "titleLine2Accent": "they should be done",
+      "titleLine2End": ",",
+      "titleLine3": "not the way you’re",
+      "titleLine3Accent": "asked to.",
+      "subtitle": "Since 2017 we have been picking certified manufacturers and never silently swapping them for «analogs». The lab gets exactly what was specified — and we share responsibility for the result.",
+      "ctaPrimary": "Request a quote",
+      "ctaSecondary": "Open the catalog",
+      "categoryCard": {
+        "itemCount": "{count, plural, one {# item} other {# items}}"
+      }
+    },
+    "trustBand": {
+      "eyebrow": "Direct contracts and partners",
+      "eyebrowPill": "partners",
+      "eyebrowText": "direct contracts",
+      "title": "30+ global manufacturers",
+      "titleArrow": "30+ global manufacturers →",
+      "subtitle": "A part of our portfolio is below. The full list is on the Manufacturers page.",
+      "benefits": [
+        {
+          "title": "Focus on quality",
+          "desc": "A strictly scientific approach to every project we run."
+        },
+        {
+          "title": "Reliability",
+          "desc": "Risk planning and mitigation so commitments are met on time."
+        },
+        {
+          "title": "Competence",
+          "desc": "Strong specialists with a long track record of successful cases."
+        },
+        {
+          "title": "Years of experience",
+          "desc": "Deep experience with public-sector and international projects."
+        }
+      ]
+    },
+    "categoriesTeaser": {
+      "eyebrow": "Catalog",
+      "title": "Equipment categories",
+      "subtitle": "From vacuum blood collection systems to research-grade reagents and POCT devices.",
+      "viewAll": "Open the full catalog →"
+    },
+    "projectsTeaser": {
+      "eyebrow": "Projects",
+      "titleLine1": "International",
+      "titleAccent1": "partnerships",
+      "titleLine2": "and work with the",
+      "titleAccent2": "public sector.",
+      "viewAll": "All projects →"
+    },
+    "aboutSection": {
+      "eyebrow": "About",
+      "titlePre": "An expert in",
+      "titleAccent": "laboratory diagnostics.",
+      "p1": "VIENA MEDICAL is one of the leading B2B distributors of laboratory and medical equipment, reagents and consumables in the Republic of Belarus. We supply clinics, laboratories and research institutions directly — and have been doing so since 2009.",
+      "ctaServices": "Services",
+      "ctaProjects": "Completed projects",
+      "stats": [
+        { "n": "15+", "l": "years on the market" },
+        { "n": "500+", "l": "projects" },
+        { "n": "30+", "l": "global brands" },
+        { "n": "24/7", "l": "support" }
+      ]
+    },
+    "principles": {
+      "eyebrow": "Principles",
+      "title": "How we work",
+      "items": [
+        {
+          "title": "Direct contracts",
+          "text": "We work with manufacturers directly — no grey channels or middlemen."
+        },
+        {
+          "title": "No substitution",
+          "text": "If the spec says Greiner Bio-One, that is exactly what is delivered. Not «the same» unbranded tip."
+        },
+        {
+          "title": "Service",
+          "text": "Our own engineers, staff training, warranty support for laboratories."
+        },
+        {
+          "title": "Open stance",
+          "text": "We stand for a transparent market and openly work on opening it up with the regulator."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to discuss your project",
+      "subtitle": "We will pick the equipment, reagents and consumables to fit your laboratory’s task.",
+      "button": "Get in touch →"
+    },
+    "contactSection": {
+      "eyebrow": "Get in touch",
+      "titlePre": "Ready to help with",
+      "titleAccent": "any request.",
+      "subtitle": "We get back within one business day. For urgent matters — please call us directly.",
+      "infoLabels": {
+        "phone": "Phone",
+        "email": "Email",
+        "schedule": "Hours",
+        "address": "Address"
+      },
+      "card": {
+        "eyebrow": "RFQ",
+        "eyebrowText": "Request a proposal",
+        "title1": "We will scope the kit",
+        "title2": "to your task."
+      },
+      "form": {
+        "name": "Name *",
+        "namePlaceholder": "Your name",
+        "phone": "Phone *",
+        "phonePlaceholder": "+",
+        "email": "Email *",
+        "emailPlaceholder": "you@clinic.com",
+        "message": "Message *",
+        "messagePlaceholder": "Tell us what equipment or consumables you are looking for",
+        "submit": "Send the request",
+        "submitting": "Sending…",
+        "errorBanner": "Could not send. Please call: +375 29 392-02-73",
+        "successTitle": "Request sent",
+        "successText": "We will get back within one business day.",
+        "successAgain": "Send another →",
+        "guarantees": ["✓ Reply within 1 hour", "✓ PDF price list", "✓ No spam"]
+      }
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About · Since 2017",
+      "titleLine1Pre": "Doing things",
+      "titleLine1Accent": "right",
+      "titleLine1Post": " — ",
+      "titleLine2Pre": "even when it’s",
+      "titleLine2Accent": "not easy.",
+      "description": "Viena Medical is a private company that has been supplying certified equipment, reagents and consumables to laboratories in Belarus since 2017. We work with manufacturers directly and never silently swap them for «analogs» — the lab gets exactly what was specified, and we share responsibility for the result.",
+      "stats": {
+        "year": "on the market",
+        "yearNote": "since founding",
+        "manufacturers": "manufacturers",
+        "manufacturersNote": "direct contracts",
+        "deliveries": "deliveries",
+        "deliveriesNote": "to date",
+        "letters": "policy letters",
+        "lettersNote": "to MoH, MART, SCC"
+      }
+    },
+    "manifesto": {
+      "eyebrow": "What drives us",
+      "title": "We don’t exist in order to",
+      "titleAccent": "agree",
+      "p1": "Laboratories rarely know what alternatives exist to their usual supplier. The supplier rarely has an interest in telling them. An entire industry has lived in that gap for decades — «closed» systems, single-bidder tenders and double-priced procurement.",
+      "p2": "We started in 2017 to do things differently. Not to win a single tender — but to slowly make the market more transparent and the budget more efficient. It is slow, sometimes uncomfortable work: we argue with customers, we argue with the regulator, we lose deals. That is the fair price for being useful.",
+      "p3": "We openly write to the Ministry of Health, the antimonopoly authority, the State Control Committee and even to the State Security Committee — and we just as openly publish that work. Not because we enjoy conflict, but because no systemic change happens without an honest public conversation.",
+      "quote": "“The lab gets exactly what was specified — and we share responsibility for the result.”"
+    },
+    "principles": {
+      "directContracts": {
+        "title": "Direct contracts",
+        "text": "We work with manufacturers directly — no regional resellers, no grey channels."
+      },
+      "noSubstitution": {
+        "title": "No silent substitution",
+        "text": "If the catalog says Greiner Bio-One, then Greiner Bio-One is what gets delivered. Not «the same» unbranded tip."
+      },
+      "openMarket": {
+        "title": "An open market",
+        "text": "We systematically push for registered analog devices to be admitted to «closed» laboratory systems."
+      },
+      "dialog": {
+        "title": "Professional dialogue",
+        "text": "With laboratory specialists, regulators and international associations — as equals, on substance."
+      }
+    },
+    "moh": {
+      "eyebrow": "Open stance",
+      "eyebrowSub": "Working with the regulator",
+      "title": "8 years of dialogue —",
+      "titleAccent": "in plain sight.",
+      "p1": "Since 2018 we have been sharing a systemic analysis of laboratory procurement with the Ministry of Health, the antimonopoly authority, the State Control Committee and the State Security Committee: where monopoly pricing forms, how «closed» systems exclude analogs, what could be done differently.",
+      "p2": "Some of our proposals have already made it into regulations — simplified registration of medical devices with FDA/CE clearance, exemption from on-site inspections, the first attempts to admit analogs. Some questions remain open — and we keep asking them. Not a single one of those letters is convenient for us as a company in the short term: every one of them widens the competition we ourselves participate in.",
+      "ctaPrimary": "Letter timeline →",
+      "ctaSecondary": "All projects"
+    },
+    "timeline": {
+      "topic2018": "“Action plan 1.0”",
+      "hint2018": "Systemic letter to the State Security Committee.",
+      "topic2021": "Analogs for «closed» systems",
+      "hint2021": "13 enquiries from Belarusian healthcare institutions.",
+      "topic2023": "“Action plan 2.0”",
+      "hint2023": "Outsourcing, parallel imports.",
+      "topic2025": "Letter to the President of Belarus",
+      "hint2025": "Switching to procurement of medical investigations.",
+      "topic2026a": "POCT regulation",
+      "hint2026a": "Point-of-care as a separate device class.",
+      "topic2026b": "MyLab licensing",
+      "hint2026b": "A case review for the Ministry of Health."
+    },
+    "founder": {
+      "eyebrow": "About the founder",
+      "monogram": "MH",
+      "name": "Maksim S.\nHarbatsevich",
+      "role": "Founder, Viena Medical Private Enterprise",
+      "title1": "Just a person who",
+      "titleAccent": "actually cares",
+      "title2": "how a laboratory works.",
+      "p1": "Maksim founded Viena Medical in 2017. Before that — more than ten years in the field: service engineering, product lines, talking to customers from district laboratories to national reference centres. The principles the company lives by today grew out of that practice.",
+      "p2": "By the nature of the work he spends a lot of time inside the international laboratory community — that is the natural environment for anyone who wants to understand how laboratory diagnostics works beyond a single country.",
+      "p3": "These things are not the goal — they are a side effect of what Maksim is genuinely interested in: the preanalytical phase, new diagnostic formats, sane regulation. If the trade-off were fewer certificates and more time talking with heads of clinical labs, he would probably pick the second one.",
+      "credentials": {
+        "eflm": {
+          "eyebrow": "EFLM",
+          "title": "Expert consultant",
+          "note": "European Federation of Clinical Chemistry and Laboratory Medicine. Attendee of the 2nd EFLM Strategic Conference, 2018."
+        },
+        "iso": {
+          "eyebrow": "ISO TC 212",
+          "title": "Member of the international committee",
+          "note": "ISO Technical Committee for clinical laboratory diagnostics — representative of the Republic of Belarus."
+        },
+        "publication": {
+          "eyebrow": "Scientific publication",
+          "title": "Co-author of a paper on needle morphology",
+          "note": "Together with Prof. Giuseppe Lippi (University of Verona) — analysis of the inner diameter of 21G blood collection needles by scanning electron microscopy. Differences of up to 35 % — a real factor in preanalytical quality."
+        },
+        "patent": {
+          "eyebrow": "Patent",
+          "title": "A wearable scanner for laboratories",
+          "note": "Belarus and an international application: a wrist-worn device for scanning biospecimen barcodes with HL7 FHIR support."
+        },
+        "rome": {
+          "eyebrow": "EuroMedLab · WorldLab 2023",
+          "title": "Talk in Rome",
+          "note": "A platform for «uberising» laboratory services — at-home sample collection integrated with stationary laboratories."
+        },
+        "vietnam": {
+          "eyebrow": "27.06.2017 · Minsk",
+          "title": "Agreement with Vietnam",
+          "note": "Signatory to an inter-state cooperation agreement on healthcare in the presence of the presidents of both countries."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Open",
+      "eyebrowSub": "For a conversation",
+      "title": "If the way we think resonates with you — write to us.",
+      "subtitle": "We are always glad to talk to laboratory heads, engineers, journalists, regulators and just colleagues from the field. No pre-cooked scripts — just a conversation on substance.",
+      "button": "Get in touch →"
+    }
+  },
+  "catalog": {
+    "hero": {
+      "eyebrow": "Catalog · 8 categories",
+      "titleLine1": "Catalog of",
+      "titleLine1Accent": "medical equipment",
+      "titleLine2Pre": "and",
+      "titleLine2Accent": "consumables.",
+      "description": "The full catalog of laboratory equipment, reagents and consumables. Direct supply from the leading global manufacturers — browse by category, manufacturer or with keyword search."
+    },
+    "filters": {
+      "title": "Filters",
+      "categories": "Categories",
+      "manufacturers": "Manufacturers",
+      "search": "Search",
+      "searchPlaceholder": "Name, SKU, manufacturer…",
+      "showAll": "Show all",
+      "showLess": "Show less",
+      "products": "products",
+      "product": "product",
+      "productsFew": "products",
+      "reset": "Reset filters",
+      "applied": "Applied"
+    },
+    "productCount": "{count, plural, one {# product} other {# products}}",
+    "empty": {
+      "title": "No matches",
+      "subtitle": "Try refining the query or resetting the filters.",
+      "reset": "Reset filters"
+    }
+  },
+  "manufacturersPage": {
+    "breadcrumbsHome": "Home",
+    "breadcrumbsList": "Manufacturers",
+    "detail": {
+      "products": "{count, plural, one {# product in catalog} other {# products in catalog}}",
+      "openCatalog": "Open catalog with this manufacturer →",
+      "websiteCta": "Manufacturer website ↗",
+      "categoriesLabel": "Categories:",
+      "productsTitlePre": "Products from",
+      "viewAllCount": "All {count} products →"
+    },
+    "hero": {
+      "eyebrow": "Manufacturers · {count} brands",
+      "titleLine1": "Direct",
+      "titleLine1Accent": "contracts",
+      "titleLine2Pre": "with",
+      "titleLine2Accent": "global leaders.",
+      "description": "VIENA MEDICAL works with manufacturers directly — no middlemen. The full portfolio of {sku} SKUs covers preanalytics, molecular diagnostics, pathology, veterinary and research reagents.",
+      "stats": [
+        { "k": "Since 2017", "v": "Direct supply" },
+        { "k": "Certificates", "v": "ISO 13485 · CE" },
+        { "k": "Warehouse", "v": "Minsk · Belarus" }
+      ]
+    },
+    "filters": {
+      "all": "All",
+      "category": "Category"
+    },
+    "list": {
+      "titlePre": "Partner",
+      "titleAccent": "portfolio.",
+      "subtitle": "Open a card to see the description, country and a jump into the catalog"
+    },
+    "card": {
+      "products": "{count, plural, one {# product in catalog} other {# products in catalog}}",
+      "viewProducts": "Browse products →",
+      "website": "Website"
+    },
+    "cta": {
+      "eyebrow": "CTA",
+      "eyebrowText": "Don’t see your manufacturer?",
+      "titlePre": "We will find",
+      "titleAccent": "the right fit.",
+      "subtitle": "We keep expanding the portfolio — tell us what reagents or equipment you need and we will source the supplier and the terms.",
+      "button": "Send a request →"
+    }
+  },
+  "services": {
+    "hero": {
+      "eyebrow": "Services · end-to-end",
+      "titleLine1": "End-to-end",
+      "titleLine1Accent": "laboratory",
+      "titleLine2": "service",
+      "titleLine2Accent": "lifecycle.",
+      "description": "From the first consultation to multi-year ongoing support of the equipment. Four service streams across six process steps.",
+      "stats": [
+        { "k": "SLA", "v": "Reply within 1 business day" },
+        { "k": "Geography", "v": "All of Belarus" },
+        { "k": "Coverage", "v": "Certificates + service" }
+      ]
+    },
+    "process": {
+      "eyebrow": "Process",
+      "title": "Six steps from request to go-live",
+      "steps": [
+        { "n": "01", "title": "Request", "desc": "We capture the task, the laboratory team, the test menu and the budget envelope." },
+        { "n": "02", "title": "Scoping", "desc": "We assemble a configuration: equipment, reagents, consumables sized to volumes and protocols." },
+        { "n": "03", "title": "Quote", "desc": "A transparent estimate, specifications and timelines. Substitutions and alternatives are agreed up-front." },
+        { "n": "04", "title": "Delivery", "desc": "Turnkey logistics with cold-chain handling where required and full certification documentation." },
+        { "n": "05", "title": "Go-live", "desc": "Installation, validation, user training and integration with the LIS." },
+        { "n": "06", "title": "Service", "desc": "Warranty, preventive maintenance, remote support and rapid on-site engineer dispatch." }
+      ]
+    },
+    "list": {
+      "titlePre": "What we",
+      "titleAccent": "offer.",
+      "subtitle": "Expand a card to see the full list of activities"
+    },
+    "cta": {
+      "eyebrow": "CTA",
+      "eyebrowText": "Next step",
+      "titlePre": "Need a",
+      "titleAccent": "consultation?",
+      "subtitle": "Tell us about the task — we will scope the solution, timeline and budget.",
+      "button": "Submit a request →"
+    }
+  },
+  "projects": {
+    "hero": {
+      "eyebrow": "Partnerships · 4 directions",
+      "titleLine1": "International",
+      "titleLine1Accent": "partnerships",
+      "titleLine2Pre": "and work with the",
+      "titleLine2Accent": "public sector.",
+      "description": "Viena Medical takes part in national and inter-state healthcare initiatives — from the agreement with Vietnam and the KOTRA forum in Seoul to the BMWi programme in Germany and policy proposals to the Ministry of Health of Belarus."
+    },
+    "card": {
+      "details": "Learn more →",
+      "cooperation": "Cooperation →"
+    },
+    "closed": {
+      "eyebrow": "NDA",
+      "eyebrowSub": "Closed projects",
+      "text": "Beyond the public cases we have completed more than 500 deliveries and full laboratory build-outs across Belarus and Russia. The complete portfolio is available under NDA, on request.",
+      "button": "Request the portfolio →"
+    }
+  },
+  "moh": {
+    "hero": {
+      "eyebrowProjects": "Projects",
+      "eyebrowSection": "MoH BY · Since 2018",
+      "titleLine1Accent": "8 years",
+      "titleLine1": "of dialogue",
+      "titleLine2Pre": "on reforming the",
+      "titleLine2Accent": "system.",
+      "description": "Systemic letters to the Ministry of Health, the antimonopoly authority, the State Control Committee, the State Security Committee and the President of the Republic of Belarus — on demonopolising the medical-device market, switching to procurement of medical investigations, registration of devices, licensing of medical activities and Point-of-Care Testing.",
+      "stats": {
+        "years": "years",
+        "yearsRange": "2018–2026",
+        "letters": "letters",
+        "lettersNote": "on substance",
+        "addressees": "agencies",
+        "addresseesNote": "addressees",
+        "topics": "topics",
+        "topicsNote": "systemic directions"
+      }
+    },
+    "illustration": {
+      "eyebrow": "Systemic work",
+      "title": "Demonopolisation · Procurement of investigations · POCT",
+      "badge": "9 letters · 6 directions",
+      "summaryHeading": "What we proposed to the system",
+      "items": [
+        "Switching from procurement of equipment and reagents to procurement of medical investigations",
+        "Admitting analog devices to «closed» laboratory systems",
+        "Reforming registration of medical devices and after-sales service",
+        "Outsourcing of laboratory services and home-based diagnostics",
+        "POCT as a standalone regulatory category",
+        "Professional dialogue between the regulator and innovative projects"
+      ]
+    },
+    "timeline": {
+      "eyebrow": "Timeline",
+      "titleLine1": "From the first “Action plan” to POCT.",
+      "titleLine2": "Newest first.",
+      "letters": "{count, plural, one {# letter} other {# letters}}",
+      "topicsLabel": "Key points",
+      "addresseePrefix": "↳",
+      "origin": "Where the systemic work began"
+    },
+    "cta": {
+      "eyebrow": "Open",
+      "eyebrowSub": "For regulators and media",
+      "title": "Full texts of the letters and attachments — on request.",
+      "subtitle": "We believe in professional dialogue. If you represent a regulator, a sector authority, the media or the scientific community — we are happy to share the original scans of the outgoing letters, replies and analytical materials.",
+      "button": "Request the materials →"
+    }
+  },
+  "contacts": {
+    "meta": {
+      "title": "Contact",
+      "description": "Get in touch with VIENA MEDICAL — phone, address, contact form."
+    },
+    "hero": {
+      "eyebrow": "Get in touch · Minsk, Belarus",
+      "titleLine1": "Ready",
+      "titleLine1Accent": "to help",
+      "titleLine2Pre": "with",
+      "titleLine2Accent": "any request.",
+      "description": "We reply within one business day. For urgent matters call us directly. For regular orders use the form below with the list of items."
+    },
+    "info": {
+      "phoneLand": "Office line",
+      "phoneMobile": "Mobile",
+      "email": "Email",
+      "addressHeading": "Office and warehouse",
+      "addressValue": "220070, Minsk, Radialnaya str., 54B, office 67",
+      "schedule": "Mon—Fri: 09:00—18:00 · Sat—Sun: closed",
+      "requisites": "Legal details",
+      "company": "Viena Medical Private Enterprise",
+      "unp": "Tax ID 192599105",
+      "shopLink": "shop.viena.by →"
+    },
+    "form": {
+      "eyebrowPill": "RFQ",
+      "eyebrowText": "Request a proposal",
+      "title1": "We will scope the kit",
+      "title2": "to your task.",
+      "requiredHint": "required field",
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "company": "Organisation",
+      "companyPlaceholder": "Clinic / laboratory",
+      "phone": "Phone",
+      "phonePlaceholder": "+",
+      "email": "Email",
+      "emailPlaceholder": "you@clinic.com",
+      "subject": "Subject",
+      "message": "Message",
+      "messagePlaceholder": "Describe the task or list the items you need.",
+      "submit": "Send the request",
+      "submitting": "Sending…",
+      "successTitle": "Request sent",
+      "successText": "We will reply within one business day.",
+      "successAgain": "Send another →",
+      "errorBanner": "Could not send. Please call: +375 29 392-02-73",
+      "guarantees": ["✓ Reply within 1 hour", "✓ PDF price list", "✓ No spam"]
+    },
+    "subjects": {
+      "consultation": "Equipment consultation",
+      "rfq": "Request for quotation",
+      "service": "Service and maintenance",
+      "partnership": "Partnership / suppliers",
+      "other": "Other"
+    },
+    "validation": {
+      "nameMin": "Please enter your name (at least 2 characters)",
+      "phoneMin": "Please enter a valid phone number",
+      "phoneFormat": "Invalid phone format",
+      "emailInvalid": "Please enter a valid email",
+      "subjectRequired": "Please pick a subject",
+      "messageMin": "The message is too short (at least 10 characters)"
+    },
+    "cart": {
+      "loadingLabel": "Loading…",
+      "itemSingular": "item",
+      "itemFew": "items",
+      "itemPlural": "items",
+      "headingLabel": "RFQ cart",
+      "title": "Items of",
+      "titleAccent": "interest",
+      "clear": "Clear",
+      "clearMobile": "Clear the cart ×",
+      "intro1": "Adding items to the cart is",
+      "introHighlight1": "optional",
+      "intro2": "— you can simply describe what you need in the form above. The site lists less than",
+      "introHighlight2": "1% of the available SKUs",
+      "intro3": "; if you don’t find what you need, just write to us and we will find it.",
+      "emptyTitle": "The cart is empty",
+      "emptyText": "Mark the items you are interested in across the catalog and they will appear here.",
+      "emptyCta": "Open the catalog →",
+      "qtyDecrease": "Decrease",
+      "qtyIncrease": "Increase",
+      "remove": "Remove",
+      "noImage": "no image",
+      "footerNote": "↑ This list will be sent to the manager together with the form"
+    }
+  },
+  "errors": {
+    "notFound": {
+      "title": "Page not found",
+      "description": "It looks like you followed a broken link or this page does not exist anymore.",
+      "cta": "Go home →"
+    },
+    "general": {
+      "title": "Something went wrong",
+      "description": "We already know about the issue. Try refreshing the page or going back to the homepage.",
+      "retry": "Try again",
+      "home": "Go home"
+    }
+  }
+}

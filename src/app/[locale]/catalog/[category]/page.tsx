@@ -1,0 +1,85 @@
+import { notFound } from "next/navigation";
+import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
+import {
+  getAllCategories,
+  getCategoryById,
+  getProductsByCategoryId,
+} from "@/lib/data";
+import { ProductGrid } from "@/components/catalog/ProductGrid";
+import type { Metadata } from "next";
+import type { Locale } from "@/i18n/routing";
+import { routing } from "@/i18n/routing";
+
+interface CategoryPageProps {
+  params: Promise<{ locale: Locale; category: string }>;
+}
+
+export function generateStaticParams() {
+  const categories = getAllCategories();
+  const out: { locale: Locale; category: string }[] = [];
+  for (const locale of routing.locales) {
+    for (const cat of categories) {
+      out.push({ locale: locale as Locale, category: cat.id });
+    }
+  }
+  return out;
+}
+
+export async function generateMetadata({
+  params,
+}: CategoryPageProps): Promise<Metadata> {
+  const { locale, category } = await params;
+  const cat = getCategoryById(category, locale);
+  if (!cat) return {};
+  return { title: cat.name, description: cat.description };
+}
+
+export default async function CategoryPage({ params }: CategoryPageProps) {
+  const { locale, category } = await params;
+  setRequestLocale(locale);
+  const cat = getCategoryById(category, locale);
+  if (!cat) notFound();
+
+  const products = getProductsByCategoryId(category, locale);
+  const tNav = await getTranslations("nav");
+  const tCatalog = await getTranslations("catalog");
+
+  return (
+    <>
+      <section className="bg-paper-100 pt-8 md:pt-12 pb-10 md:pb-12 border-b border-paper-200">
+        <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
+          <nav className="flex items-center gap-2 text-[12px] text-ink-500 mb-6">
+            <Link href="/" className="hover:text-green-700 transition-colors">{tNav("home")}</Link>
+            <span>/</span>
+            <Link href="/catalog" className="hover:text-green-700 transition-colors">{tNav("catalog")}</Link>
+            <span>/</span>
+            <span className="text-ink-900 font-medium truncate">{cat.name}</span>
+          </nav>
+
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
+            <div>
+              <span className="eyebrow">
+                <span className="dot" />
+                {tCatalog("productCount", { count: products.length })}
+              </span>
+              <h1 className="display-heading text-ink-900 text-4xl md:text-5xl lg:text-6xl mt-4">
+                {cat.name}
+              </h1>
+              <p className="text-[15px] text-ink-600 max-w-2xl mt-3">{cat.description}</p>
+            </div>
+            <Link href="/catalog" className="btn btn-ghost shrink-0">
+              ← {tCatalog("filters.categories")}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white pt-8 md:pt-10 pb-20">
+        <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
+          <ProductGrid products={products} />
+        </div>
+      </section>
+    </>
+  );
+}

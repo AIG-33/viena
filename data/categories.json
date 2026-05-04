@@ -1,0 +1,146 @@
+[
+  {
+    "id": "consumables",
+    "name": "Расходные материалы",
+    "description": "Высококачественные изделия для проведения медицинских процедур",
+    "icon": "package",
+    "color": "#38bdf8",
+    "image": "/images/categories/consumables.jpg",
+    "i18n": {
+      "en": {
+        "name": "Consumables",
+        "description": "High-quality consumables for everyday medical procedures"
+      },
+      "zh": {
+        "name": "耗材",
+        "description": "用于日常医疗操作的高品质耗材"
+      }
+    }
+  },
+  {
+    "id": "vacuum-systems",
+    "name": "Вакуумные системы",
+    "description": "Расходные материалы для преаналитического этапа взятия крови",
+    "icon": "droplet",
+    "color": "#67d2f0",
+    "image": "/images/categories/vacuum-systems.jpg",
+    "i18n": {
+      "en": {
+        "name": "Vacuum systems",
+        "description": "Consumables for the preanalytical phase of blood collection"
+      },
+      "zh": {
+        "name": "真空采血系统",
+        "description": "用于采血分析前阶段的耗材"
+      }
+    }
+  },
+  {
+    "id": "equipment",
+    "name": "Оборудование",
+    "description": "Современные и надёжные устройства для диагностики и мониторинга",
+    "icon": "cpu",
+    "color": "#0ea5e9",
+    "image": "/images/categories/equipment.jpg",
+    "i18n": {
+      "en": {
+        "name": "Equipment",
+        "description": "Modern and reliable instruments for diagnostics and monitoring"
+      },
+      "zh": {
+        "name": "实验设备",
+        "description": "用于诊断与监测的现代化、可靠仪器"
+      }
+    }
+  },
+  {
+    "id": "reagents",
+    "name": "Реагенты",
+    "description": "Химические вещества для проведения лабораторных исследований",
+    "icon": "flask",
+    "color": "#38bdf8",
+    "image": "/images/categories/reagents.jpg",
+    "i18n": {
+      "en": {
+        "name": "Reagents",
+        "description": "Chemicals and test systems for laboratory diagnostics"
+      },
+      "zh": {
+        "name": "试剂",
+        "description": "用于实验室检测的化学品与试剂体系"
+      }
+    }
+  },
+  {
+    "id": "pathomorphology",
+    "name": "Патоморфология",
+    "description": "Решения для гистологии и иммуногистохимии",
+    "icon": "microscope",
+    "color": "#67d2f0",
+    "image": "/images/categories/pathomorphology.jpg",
+    "i18n": {
+      "en": {
+        "name": "Pathology",
+        "description": "Solutions for histology and immunohistochemistry"
+      },
+      "zh": {
+        "name": "病理形态学",
+        "description": "组织学与免疫组化整体解决方案"
+      }
+    }
+  },
+  {
+    "id": "veterinary",
+    "name": "Ветеринария",
+    "description": "Товары и расходные материалы для здоровья животных",
+    "icon": "heart",
+    "color": "#0ea5e9",
+    "image": "/images/categories/veterinary.jpg",
+    "i18n": {
+      "en": {
+        "name": "Veterinary",
+        "description": "Diagnostics and consumables for animal health"
+      },
+      "zh": {
+        "name": "兽医",
+        "description": "动物健康诊断与相关耗材"
+      }
+    }
+  },
+  {
+    "id": "scientific-reagents",
+    "name": "Научные реагенты",
+    "description": "Материалы исследовательского класса для научной деятельности",
+    "icon": "beaker",
+    "color": "#38bdf8",
+    "image": "/images/categories/scientific-reagents.jpg",
+    "i18n": {
+      "en": {
+        "name": "Research reagents",
+        "description": "Research-grade reagents for scientific applications"
+      },
+      "zh": {
+        "name": "科研试剂",
+        "description": "面向科研用途的研究级试剂"
+      }
+    }
+  },
+  {
+    "id": "lancets",
+    "name": "Ланцеты",
+    "description": "Устройства для взятия капиллярной крови с автоматическим убором иглы",
+    "icon": "syringe",
+    "color": "#67d2f0",
+    "image": "/images/categories/lancets.jpg",
+    "i18n": {
+      "en": {
+        "name": "Lancets",
+        "description": "Capillary blood collection devices with automatic needle retraction"
+      },
+      "zh": {
+        "name": "采血针",
+        "description": "采集毛细血管血样的自动回针采血器"
+      }
+    }
+  }
+]

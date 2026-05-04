@@ -1,0 +1,150 @@
+[
+  {
+    "id": "service-001",
+    "title": "Поставка медицинских расходников",
+    "description": "Регулярные поставки расходных материалов для медицинских учреждений любого масштаба. Работаем напрямую с ведущими европейскими производителями.",
+    "icon": "truck",
+    "details": [
+      "Прямые поставки от производителей без посредников",
+      "Гибкие условия договоров для клиник и больниц",
+      "Постоянное наличие на складе ключевых позиций",
+      "Экспресс-доставка при срочной необходимости",
+      "Полный пакет сертификационной документации"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Supply of medical consumables",
+        "description": "Regular supply of consumables for healthcare facilities of any size. We work directly with leading European manufacturers.",
+        "details": [
+          "Direct supply from manufacturers — no middlemen",
+          "Flexible contract terms for clinics and hospitals",
+          "Key items kept in stock at all times",
+          "Express delivery for urgent needs",
+          "Full set of certification documents"
+        ]
+      },
+      "zh": {
+        "title": "医疗耗材供应",
+        "description": "面向各类规模医疗机构的耗材定期供应。我们与欧洲领先厂商直接合作。",
+        "details": [
+          "厂商直供 —— 不经中间商",
+          "诊所与医院的合同条款灵活",
+          "关键品类常备库存",
+          "紧急情况下提供加急配送",
+          "提供完整的认证文件"
+        ]
+      }
+    }
+  },
+  {
+    "id": "service-002",
+    "title": "Техническое обслуживание оборудования",
+    "description": "Сервисное обслуживание и ремонт лабораторного оборудования. Авторизованные специалисты с многолетним опытом работы.",
+    "icon": "wrench",
+    "details": [
+      "Плановое техническое обслуживание",
+      "Гарантийный и постгарантийный ремонт",
+      "Калибровка и метрологическая поверка",
+      "Обучение персонала работе с оборудованием",
+      "Договоры на сервисное обслуживание"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Equipment maintenance and service",
+        "description": "Service and repair of laboratory equipment. Authorised engineers with many years of field experience.",
+        "details": [
+          "Scheduled preventive maintenance",
+          "Warranty and post-warranty repair",
+          "Calibration and metrological verification",
+          "Operator training on the installed equipment",
+          "Long-term service contracts"
+        ]
+      },
+      "zh": {
+        "title": "设备技术维护",
+        "description": "实验室设备的服务与维修。具备多年现场经验的授权工程师团队。",
+        "details": [
+          "定期预防性维护",
+          "保修期内及保修期外维修",
+          "校准与计量检定",
+          "面向操作人员的设备使用培训",
+          "长期服务合同"
+        ]
+      }
+    }
+  },
+  {
+    "id": "service-003",
+    "title": "Консультации по лабораторной диагностике",
+    "description": "Экспертные консультации по подбору оборудования, реагентов и расходных материалов для вашей лаборатории.",
+    "icon": "clipboard",
+    "details": [
+      "Анализ потребностей лаборатории",
+      "Подбор оптимального оборудования под бюджет",
+      "Помощь в организации лабораторного пространства",
+      "Рекомендации по автоматизации процессов",
+      "Поддержка при аккредитации лаборатории"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Laboratory diagnostics consulting",
+        "description": "Expert advice on selecting equipment, reagents and consumables for your laboratory.",
+        "details": [
+          "Analysis of laboratory needs",
+          "Selection of equipment that fits the budget",
+          "Help with laboratory space planning",
+          "Recommendations on workflow automation",
+          "Support during laboratory accreditation"
+        ]
+      },
+      "zh": {
+        "title": "实验室诊断咨询",
+        "description": "在设备、试剂与耗材选型方面的专家建议。",
+        "details": [
+          "实验室需求分析",
+          "在预算范围内为您选定设备",
+          "实验室空间规划协助",
+          "工作流程自动化建议",
+          "实验室认证流程支持"
+        ]
+      }
+    }
+  },
+  {
+    "id": "service-004",
+    "title": "Обучение и тренинги",
+    "description": "Образовательные программы для лаборантов и врачей по работе с современным оборудованием и интерпретации результатов.",
+    "icon": "graduation",
+    "details": [
+      "Вводные инструктажи по работе с новым оборудованием",
+      "Практические мастер-классы",
+      "Онлайн-вебинары с ведущими специалистами",
+      "Обучение на рабочем месте",
+      "Выдача сертификатов об обучении"
+    ],
+    "i18n": {
+      "en": {
+        "title": "Training and education",
+        "description": "Education programmes for laboratory technicians and physicians — modern equipment, methodology and result interpretation.",
+        "details": [
+          "Introductory training on new equipment",
+          "Hands-on masterclasses",
+          "Online webinars with leading specialists",
+          "On-site training at the workplace",
+          "Certificates of completion"
+        ]
+      },
+      "zh": {
+        "title": "培训与教育",
+        "description": "面向化验师与医师的培训项目 —— 涵盖现代设备使用、方法学与结果判读。",
+        "details": [
+          "新设备入门培训",
+          "实操技能工作坊",
+          "由资深专家主讲的在线网络研讨会",
+          "工位现场培训",
+          "颁发培训完成证书"
+        ]
+      }
+    }
+  }
+]

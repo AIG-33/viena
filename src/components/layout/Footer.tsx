@@ -1,0 +1,160 @@
+import Image from "next/image";
+import { getLocale, getTranslations } from "next-intl/server";
+import { Link } from "@/i18n/navigation";
+import { getAllCategories } from "@/lib/data";
+import type { Locale } from "@/i18n/routing";
+
+const SOCIAL = [
+  { name: "Telegram", url: "https://t.me/viena_medical_bot", letter: "T" },
+  { name: "Instagram", url: "https://www.instagram.com/vienamedical/", letter: "I" },
+  { name: "Facebook", url: "https://www.facebook.com/vienamedical", letter: "F" },
+  { name: "LinkedIn", url: "#", letter: "L" },
+];
+
+export async function Footer() {
+  const locale = (await getLocale()) as Locale;
+  const t = await getTranslations("footer");
+  const tMeta = await getTranslations("meta");
+  const tCommon = await getTranslations("common");
+  const categories = getAllCategories(locale);
+
+  return (
+    <footer className="relative bg-paper-100 text-ink-700 border-t border-paper-200">
+      <div className="max-w-[1440px] mx-auto px-4 md:px-10 lg:px-14 pt-14 pb-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] gap-10">
+          {/* Logo + about */}
+          <div>
+            <Link href="/" aria-label={tMeta("brand")} className="inline-flex">
+              <Image
+                src="/images/logo-dark.png"
+                alt={tMeta("brand")}
+                width={748}
+                height={285}
+                className="h-9 w-auto"
+              />
+            </Link>
+            <p className="text-[13px] leading-relaxed mt-4 max-w-xs text-ink-600">
+              {t("tagline")}
+            </p>
+            <div className="flex gap-2.5 mt-5">
+              {SOCIAL.map((s) => (
+                <a
+                  key={s.name}
+                  href={s.url}
+                  aria-label={s.name}
+                  className="w-9 h-9 rounded-xl bg-white border border-paper-200 grid place-items-center text-[12px] font-bold text-ink-700 hover:border-green-500 hover:text-green-700 transition-colors"
+                >
+                  {s.letter}
+                </a>
+              ))}
+            </div>
+          </div>
+
+          {/* Catalog */}
+          <div>
+            <div className="text-[11px] tracking-[0.16em] uppercase font-bold text-ink-500 mb-4">
+              {t("catalogHeading")}
+            </div>
+            <ul className="space-y-2">
+              {categories.slice(0, 5).map((cat) => (
+                <li key={cat.id}>
+                  <Link
+                    href={`/catalog/${cat.id}`}
+                    className="text-[13px] text-ink-700 hover:text-green-700 transition-colors"
+                  >
+                    {cat.name}
+                  </Link>
+                </li>
+              ))}
+              <li className="pt-1">
+                <Link
+                  href="/catalog"
+                  className="inline-flex items-center gap-1 text-[13px] font-semibold text-green-700 hover:text-green-600"
+                >
+                  {t("fullCatalog")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/manufacturers"
+                  className="inline-flex items-center gap-1 text-[13px] font-semibold text-green-700 hover:text-green-600"
+                >
+                  {t("manufacturersLink")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/about"
+                  className="inline-flex items-center gap-1 text-[13px] font-semibold text-green-700 hover:text-green-600"
+                >
+                  {t("aboutLink")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/projects/moh"
+                  className="inline-flex items-center gap-1 text-[13px] font-semibold text-green-700 hover:text-green-600"
+                >
+                  {t("mohLink")}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contacts */}
+          <div>
+            <div className="text-[11px] tracking-[0.16em] uppercase font-bold text-ink-500 mb-4">
+              {t("contactsHeading")}
+            </div>
+            <ul className="space-y-1.5 text-[13px]">
+              <li>
+                <a href="tel:+375173920255" className="hover:text-green-700">
+                  {tCommon("phoneOffice")}
+                </a>
+              </li>
+              <li>
+                <a href="tel:+375293920273" className="hover:text-green-700">
+                  {tCommon("phone")}
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:${tCommon("email")}`} className="hover:text-green-700">
+                  {tCommon("email")}
+                </a>
+              </li>
+              <li className="pt-2 text-ink-600 leading-relaxed whitespace-pre-line">
+                {tCommon("address")}
+              </li>
+            </ul>
+          </div>
+
+          {/* Requisites */}
+          <div>
+            <div className="text-[11px] tracking-[0.16em] uppercase font-bold text-ink-500 mb-4">
+              {t("requisitesHeading")}
+            </div>
+            <ul className="space-y-1.5 text-[13px]">
+              <li className="font-medium text-ink-900">{t("company")}</li>
+              <li className="text-ink-600">{t("unp")}</li>
+              <li className="pt-2">
+                <a
+                  href="https://shop.viena.by"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-center gap-1 text-green-700 font-semibold hover:text-green-600"
+                >
+                  {t("shopLink")}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-10 pt-5 border-t border-paper-200 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 text-[12px] text-ink-500">
+          <span>{t("rights", { year: new Date().getFullYear() })}</span>
+          <span>{t("privacy")}</span>
+        </div>
+      </div>
+    </footer>
+  );
+}
