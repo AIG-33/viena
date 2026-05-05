@@ -353,25 +353,26 @@
     "name": "Tianlong",
     "fullName": "Xi'an Tianlong Science and Technology Co., Ltd.",
     "country": "Китай",
-    "tagline": "Gentier · Genesy · ПЦР real-time и термоциклеры",
-    "shortDescription": "Производитель ПЦР-амплификаторов реального времени и классических термоциклеров: Gentier 96E, Gentier X3 Series, Genesy 96T.",
-    "longDescription": "Tianlong — крупнейший китайский производитель ПЦР-оборудования и реагентов для молекулярной диагностики. Real-time системы Gentier 96E и трёхблочный Gentier X3 Series (32×3 лунки, 6 каналов флуоресценции), классический термоциклер Genesy 96T с градиентным контролем температуры. ВИЕНА МЕДИКАЛ поставляет приборы Tianlong в составе комплексных решений «оборудование + реагенты».",
-    "website": "https://en.tianlongsci.com",
+    "tagline": "Gentier · GeneRotex · Panall · NMPA · CE · FDA",
+    "shortDescription": "С 1997 года — китайский лидер по молекулярной диагностике: ПЦР-системы Gentier, экстракторы НК GeneRotex, all-in-one платформы Panall, более 600 совместимых наборов реагентов.",
+    "longDescription": "Xi'an Tianlong Science and Technology — основанная в 1997 году компания, один из пионеров китайского рынка ПЦР-оборудования и реагентов для генетических исследований и молекулярной диагностики. В портфеле: ПЦР-системы реального времени Gentier (96E, X3 Series — 6 каналов флуоресценции), классические термоциклеры, автоматические экстракторы нуклеиновых кислот серии GeneRotex (магнитные шарики, RMT-технология) и all-in-one решения Panall 8000 (декапсуляция, экстракция, постановка ПЦР, детекция и анализ — в одном приборе). Более 600 совместимых наборов для экстракции и детекции, 90+ регистраций NMPA Китая и 300+ международных сертификатов (CE, FDA и др.). Продукция Tianlong применяется более чем в 100 странах в клинической диагностике, эпидемиологическом надзоре, контроле пищевых продуктов и научных исследованиях. ВИЕНА МЕДИКАЛ поставляет оборудование Tianlong в составе комплексных решений «оборудование + реагенты».",
+    "website": "https://www.medtl.net",
     "categories": ["equipment"],
-    "matches": ["Tianlong", "Xi'an Tianlong"],
+    "matches": ["Tianlong", "Xi'an Tianlong", "天隆", "Xian Tianlong"],
     "featured": true,
+    "logo": "/images/manufacturers/tianlong.png",
     "i18n": {
       "en": {
         "country": "China",
-        "tagline": "Gentier · Genesy · real-time PCR and thermocyclers",
-        "shortDescription": "Manufacturer of real-time PCR systems and classic thermocyclers: Gentier 96E, Gentier X3 Series, Genesy 96T.",
-        "longDescription": "Tianlong is China’s largest manufacturer of PCR equipment and molecular-diagnostics reagents. The portfolio includes the Gentier 96E real-time system, the three-block Gentier X3 Series (32×3 wells, 6 fluorescence channels) and the Genesy 96T classic thermocycler with gradient temperature control. VIENA MEDICAL supplies Tianlong instruments as part of bundled “equipment + reagents” solutions."
+        "tagline": "Gentier · GeneRotex · Panall · NMPA · CE · FDA",
+        "shortDescription": "Since 1997 — a Chinese leader in molecular diagnostics: Gentier real-time PCR, GeneRotex nucleic-acid extractors, Panall all-in-one platforms and 600+ compatible reagent kits.",
+        "longDescription": "Xi'an Tianlong Science and Technology, founded in 1997, is one of the pioneers of China's PCR equipment and molecular-diagnostics reagent industry. The portfolio includes Gentier real-time PCR systems (96E, X3 Series — 6 fluorescence channels), classic thermocyclers, GeneRotex automated magnetic-bead nucleic-acid extractors (RMT technology) and the Panall 8000 all-in-one platform (sample decapping, extraction, PCR setup, detection and analysis in a single instrument). Over 600 compatible extraction and detection kits, 90+ Chinese NMPA approvals and 300+ international certifications (CE, FDA and others). Tianlong products are used in over 100 countries for clinical diagnostics, epidemic surveillance, food-safety monitoring and scientific research. VIENA MEDICAL supplies Tianlong instruments as part of bundled “equipment + reagents” solutions."
       },
       "zh": {
         "country": "中国",
-        "tagline": "Gentier · Genesy · 实时荧光定量 PCR 与热循环仪",
-        "shortDescription": "实时荧光定量 PCR 仪及经典热循环仪制造商:Gentier 96E、Gentier X3 系列、Genesy 96T。",
-        "longDescription": "Tianlong 是中国 PCR 设备及分子诊断试剂的大型制造商,产品包括 Gentier 96E 实时 PCR 系统、Gentier X3 三模块系列(32×3 反应孔、6 个荧光通道)以及 Genesy 96T 经典热循环仪(带梯度温度控制)。VIENA MEDICAL 将 Tianlong 设备纳入「设备 + 试剂」一体化方案中提供。"
+        "tagline": "Gentier · GeneRotex · Panall · NMPA · CE · FDA",
+        "shortDescription": "自 1997 年起,中国分子诊断领军企业:Gentier 实时荧光定量 PCR、GeneRotex 核酸提取仪、Panall 一体化平台,以及 600 余款配套试剂盒。",
+        "longDescription": "西安天隆科技有限公司成立于 1997 年,是国内 PCR 设备与分子诊断试剂行业的开拓者之一。产品组合包括 Gentier 实时荧光 PCR 系统(96E、X3 系列 —— 6 通道荧光)、经典热循环仪、GeneRotex 系列磁珠法核酸提取仪(RMT 技术)以及 Panall 8000 一体化平台(样本开盖/扩增/检测/分析一站完成)。超过 600 款配套提取与检测试剂盒,90+ 项中国 NMPA 注册及 300+ 项国际认证(CE、FDA 等)。Tianlong 产品已应用于全球 100 多个国家和地区,涵盖临床诊断、疫情监测、食品安全与科研领域。VIENA MEDICAL 将 Tianlong 设备纳入「设备 + 试剂」一体化方案中提供。"
       }
     }
   },
@@ -407,28 +408,29 @@
   {
     "id": "mfr-015",
     "slug": "lianfa",
-    "name": "Lianfa",
-    "fullName": "Lianfa Medical",
+    "name": "Linkfar (Lianfa)",
+    "fullName": "Shandong Lianfa Medical Plastic Products Co., Ltd.",
     "country": "Китай",
-    "tagline": "Безопасные ланцеты · 17G–30G",
-    "shortDescription": "Производитель безопасных автоматических ланцетов для капиллярного забора крови. Размеры 17G–30G, индивидуальная стерильная упаковка.",
-    "longDescription": "Lianfa Medical — китайский производитель медицинских изделий одноразового применения. Линейка безопасных ланцетов с автоматическим скрытием иглы после использования: размеры от 17G до 30G, длиной 1,5–2 мм, для разных возрастных групп и типов исследований. Соответствуют ISO 13485 и CE.",
-    "website": "https://www.lianfa-medical.com",
+    "tagline": "Linkfar · безопасные ланцеты · ланцетные устройства · неонатальные blade",
+    "shortDescription": "Профильный китайский производитель ланцетов и устройств для капиллярного забора крови: безопасные lancet, twist lancet, lancing devices и неонатальные heel blade.",
+    "longDescription": "Shandong Lianfa Medical Plastic Products Co., Ltd. (бренд Linkfar) — специализированная китайская компания, занимающаяся производством, R&D и продажами устройств для периферического (капиллярного) забора крови. Основана в 2010 году в Цзинане (провинция Шаньдун). Предприятие занимает 21 000 м², в том числе 9 000 м² «чистых помещений» класса 100 000 и 2 000 м² класса 10 000. Продуктовый портфель включает: pressure-activated safety lancets, twist lancets, lancing devices с механизмом эжекции иглы (Soft, Mini, Adjustable с 5 регулировками глубины) и серию неонатальных heel-blade (Lance Newborn, Micro Preemie, Preemie, Toddler) для безопасного забора крови у новорождённых. Все изделия — одноразовые, индивидуальная стерильная упаковка, соответствие ISO 13485 и CE.",
+    "website": "https://www.linkfarmedical.com",
     "categories": ["lancets"],
-    "matches": ["Lianfa"],
+    "matches": ["Lianfa", "Linkfar", "Shandong Lianfa", "linkfar"],
     "featured": true,
+    "logo": "/images/manufacturers/lianfa.png",
     "i18n": {
       "en": {
         "country": "China",
-        "tagline": "Safety lancets · 17G–30G",
-        "shortDescription": "Manufacturer of safety auto-retract lancets for capillary blood collection — gauges 17G–30G, individually sterile-packed.",
-        "longDescription": "Lianfa Medical is a Chinese manufacturer of single-use medical devices. The safety-lancet range automatically retracts the needle after use, in sizes from 17G to 30G and depths of 1.5–2 mm for different age groups and test types. Compliant with ISO 13485 and CE."
+        "tagline": "Linkfar · safety lancets · lancing devices · neonatal heel blades",
+        "shortDescription": "A specialised Chinese manufacturer of lancets and capillary blood-collection devices: safety and twist lancets, lancing devices and neonatal heel blades.",
+        "longDescription": "Shandong Lianfa Medical Plastic Products Co., Ltd. (brand Linkfar) is a focused Chinese manufacturer integrating production, R&D and sales of peripheral (capillary) blood-collection devices. Founded in 2010 in Jinan, Shandong, the plant covers 21,000 m² including 9,000 m² of class-100,000 and 2,000 m² of class-10,000 cleanrooms. The product portfolio includes pressure-activated safety lancets, twist lancets, lancing devices with needle-ejection (Soft, Mini, Adjustable — 5 depth settings) and a complete neonatal heel-blade series (Lance Newborn, Micro Preemie, Preemie, Toddler) for safe capillary collection in newborns. All items are single-use, individually sterile-packed and compliant with ISO 13485 and CE."
       },
       "zh": {
         "country": "中国",
-        "tagline": "安全采血针 · 17G–30G",
-        "shortDescription": "毛细血管采血用全自动回针采血器制造商,规格 17G–30G,独立无菌包装。",
-        "longDescription": "Lianfa Medical 是中国一次性医疗器械制造商,主营使用后自动回针的安全采血器,规格涵盖 17G–30G,穿刺深度 1.5–2 毫米,适用于不同年龄段与检测类型。产品符合 ISO 13485 与 CE 标准。"
+        "tagline": "Linkfar · 安全采血针 · 采血器械 · 新生儿足跟针",
+        "shortDescription": "专注于采血针与毛细血管采血器械的中国制造商:安全采血针、扭式采血针、采血笔与新生儿足跟针等。",
+        "longDescription": "山东联发医疗塑胶制品有限公司(品牌 Linkfar)集生产、研发与销售于一体,专注于外周(毛细血管)采血针具。公司成立于 2010 年,位于山东济南,占地 21 000 平方米,其中 9 000 平方米十万级洁净车间和 2 000 平方米万级洁净车间。产品组合包括压力触发式安全采血针、扭式采血针、带退针机构的采血笔(Soft、Mini、可调式 5 档深度)以及完整的新生儿足跟针系列(Lance Newborn、Micro Preemie、Preemie、Toddler),用于新生儿安全采血。所有产品均为一次性使用、独立无菌包装,符合 ISO 13485 与 CE 标准。"
       }
     }
   },
@@ -464,28 +466,29 @@
   {
     "id": "mfr-016",
     "slug": "lepu-medical-technology",
-    "name": "Lepu Medical Technology",
-    "fullName": "Lepu Medical Technology Co., Ltd.",
+    "name": "Lepu Medical",
+    "fullName": "Lepu Medical Technology (Beijing) Co., Ltd.",
     "country": "Китай",
-    "tagline": "Nexor 96 · автоматическая экстракция НК",
-    "shortDescription": "Автоматические станции выделения нуклеиновых кислот на магнитных частицах. Nexor 96: до 96 образцов за 30–45 минут.",
-    "longDescription": "Lepu Medical Technology — китайский производитель автоматизированных систем для пробоподготовки в молекулярной диагностике. Флагман Nexor 96 — открытая система магнитной экстракции НК на 32/96 образцов с УФ-стерилизацией, контролем температуры 4–100 °C и совместимостью с реагентами разных производителей. Воспроизводимая чистота выделения с эффективностью адсорбции > 95%.",
-    "website": "https://www.lepumedical.com",
+    "tagline": "Кардиоваскулярные изделия · IVD · ECG · Nexor 96 · 160+ стран",
+    "shortDescription": "Один из крупнейших мировых производителей кардиоваскулярных и in-vitro диагностических изделий: PCI-стенты, окклюдеры, IVD-линейка (молекулярная диагностика, иммунохимия, гематология, POCT), ECG и расходники для ИВЛ-терапии.",
+    "longDescription": "Lepu Medical Technology (Beijing) Co., Ltd. — один из лидеров глобальной кардиоваскулярной и инвазивной медицины. Под брендом Lepu выпускаются коронарные стенты, баллоны (PTCA, NC, IVL — Vesscrack), катетеры и направляющие проводники, окклюдеры (включая первый в мире биорезорбируемый окклюдер PFO MemoSorb), системы для гемодиализа, ECG-холтеры, патиентные мониторы и пульсоксиметры, хирургические инструменты, ортопедические импланты и API-фармацевтические препараты. Отдельная линия In-Vitro Diagnostics включает иммуноанализ (ELISA, CLIA, FIA), молекулярную диагностику (автоматические экстракторы НК серий ADC CH196 и Nexor 96, real-time PCR, наборы реагентов), гематологию (тромбоэластография, групповая принадлежность крови, агрегация тромбоцитов) и POCT. Каналы продаж охватывают 160+ стран, локальные регистрации в 60+ странах, более 3 000 действующих патентов, 214 продуктов с CE и 34 — с FDA. ВИЕНА МЕДИКАЛ работает с Lepu по линиям молекулярной диагностики и оборудования для лабораторий.",
+    "website": "https://en.lepumedical.com",
     "categories": ["equipment"],
-    "matches": ["Lepu Medical Technology", "Lepu", "Lepy Medical Technology", "Lepy"],
+    "matches": ["Lepu Medical Technology", "Lepu Medical", "Lepu", "Lepy Medical Technology", "Lepy", "LEPU"],
     "featured": true,
+    "logo": "/images/manufacturers/lepu-medical-technology.png",
     "i18n": {
       "en": {
         "country": "China",
-        "tagline": "Nexor 96 · automated NA extraction",
-        "shortDescription": "Automated nucleic-acid extraction workstations using magnetic beads. Nexor 96 — up to 96 samples in 30–45 minutes.",
-        "longDescription": "Lepu Medical Technology is a Chinese manufacturer of automated sample-prep systems for molecular diagnostics. The Nexor 96 flagship is an open magnetic NA-extraction platform for 32/96 samples with UV sterilisation, temperature control of 4–100 °C and compatibility with reagents from different manufacturers. Reproducible isolation purity with > 95 % adsorption efficiency."
+        "tagline": "Cardiovascular · IVD · ECG · Nexor 96 · 160+ countries",
+        "shortDescription": "One of the world's largest manufacturers of cardiovascular and in-vitro diagnostic devices: PCI stents, occluders, IVD (molecular diagnostics, immunoassay, haematology, POCT), ECG and ICU consumables.",
+        "longDescription": "Lepu Medical Technology (Beijing) Co., Ltd. is a global leader in cardiovascular and interventional medicine. Under the Lepu brand the group manufactures coronary stents, balloons (PTCA, NC, IVL — Vesscrack), catheters and guidewires, occluders (including the world's first biodegradable PFO occluder MemoSorb), hemodialysis systems, ECG Holters, patient monitors and oximeters, surgical instruments, orthopaedic implants and API pharmaceuticals. A dedicated In-Vitro Diagnostics line covers immunoassay (ELISA, CLIA, FIA), molecular diagnostics (ADC CH196 and Nexor 96 nucleic-acid extractors, real-time PCR, reagent kits), haematology (thrombelastography, blood grouping, platelet aggregation) and POCT. Sales channels cover 160+ countries, with local registrations in 60+, more than 3,000 active patents and 214 CE-marked plus 34 FDA-cleared products. VIENA MEDICAL works with Lepu on molecular diagnostics and laboratory equipment lines."
       },
       "zh": {
         "country": "中国",
-        "tagline": "Nexor 96 · 自动化核酸提取",
-        "shortDescription": "基于磁珠法的自动化核酸提取工作站。Nexor 96 可在 30–45 分钟内处理多达 96 个样本。",
-        "longDescription": "Lepu Medical Technology 是一家中国分子诊断自动化样本前处理系统制造商。旗舰产品 Nexor 96 是一款开放式磁珠核酸提取平台,可同时处理 32/96 个样本,具备紫外线灭菌、4–100 °C 温度控制,并兼容多家厂商试剂。提取重现性优,吸附效率超过 95 %。"
+        "tagline": "心血管 · IVD · ECG · Nexor 96 · 160+ 国家",
+        "shortDescription": "全球规模较大的心血管与体外诊断器械制造商之一:PCI 支架、封堵器、IVD(分子诊断、免疫化学、血液学、POCT)、ECG 与重症监护耗材等。",
+        "longDescription": "乐普医疗(北京)股份有限公司(Lepu Medical)是全球心血管与介入医疗领域的领先企业。在 Lepu 品牌下,集团生产冠脉支架、球囊(PTCA、NC、IVL —— Vesscrack)、导管与导丝、封堵器(包括全球首款可降解 PFO 封堵器 MemoSorb)、血液透析系统、ECG 动态心电、监护仪与血氧仪、外科器械、骨科植入物与原料药等。专门的 IVD 产品线涵盖免疫分析(ELISA、CLIA、FIA)、分子诊断(ADC CH196 与 Nexor 96 核酸提取仪、实时荧光 PCR、配套试剂)、血液学(血栓弹力图、血型鉴定、血小板聚集)与 POCT。销售网络覆盖 160 多个国家和地区,在 60+ 国家完成本地注册,拥有 3 000+ 项有效专利,以及 214 项 CE 认证和 34 项 FDA 批准产品。VIENA MEDICAL 在分子诊断与实验室设备领域与 Lepu 开展合作。"
       }
     }
   }
