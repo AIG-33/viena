@@ -65,7 +65,7 @@
   "header": {
     "cart": "RFQ cart",
     "getQuote": "Request a quote",
-    "shop": "Research reagents shop",
+    "shop": "Research reagents",
     "shopShort": "shop.viena.by",
     "phoneTooltip": "Call us"
   },
@@ -214,8 +214,8 @@
     "shopHighlight": {
       "eyebrow": "shop.viena.by",
       "badge": "Dedicated marketplace",
-      "title": "A dedicated shop for",
-      "titleAccent": "research reagents",
+      "title": "Research",
+      "titleAccent": "reagents.",
       "description": "Thousands of research-grade reagents and lab consumables with direct online ordering, a Minsk warehouse and CIS-wide delivery.",
       "feature1": "Direct contracts with manufacturers",
       "feature2": "Online catalog with fast search",
@@ -523,7 +523,7 @@
         "badge": "Full catalog · shop.viena.by",
         "openShopCta": "Open at shop.viena.by",
         "title": "Full catalog — on shop.viena.by",
-        "description": "Thousands of items from this manufacturer live in our research-reagents shop. Direct supply, Minsk warehouse, CIS-wide delivery."
+        "description": "Thousands of items from this manufacturer live in our «Research reagents» catalog at shop.viena.by. Direct supply, Minsk warehouse, CIS-wide delivery."
       }
     },
     "hero": {

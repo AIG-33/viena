@@ -65,7 +65,7 @@
   "header": {
     "cart": "询价单",
     "getQuote": "获取报价",
-    "shop": "科研试剂商城",
+    "shop": "科研试剂",
     "shopShort": "shop.viena.by",
     "phoneTooltip": "致电我们"
   },
@@ -214,8 +214,8 @@
     "shopHighlight": {
       "eyebrow": "shop.viena.by",
       "badge": "独立商城",
-      "title": "大型",
-      "titleAccent": "科研试剂商城",
+      "title": "科研",
+      "titleAccent": "试剂",
       "description": "数千款科研级试剂与实验室耗材,支持在线下单、明斯克仓库直发并覆盖独联体配送。",
       "feature1": "与厂商直接合作",
       "feature2": "在线目录与快速搜索",
@@ -523,7 +523,7 @@
         "badge": "完整目录 · shop.viena.by",
         "openShopCta": "前往 shop.viena.by",
         "title": "完整产品目录在 shop.viena.by",
-        "description": "本厂商的数千款产品均上架于我们的科研试剂商城。厂商直供,明斯克仓储,覆盖独联体配送。"
+        "description": "本厂商的数千款产品均上架于 shop.viena.by 上的「科研试剂」目录。厂商直供,明斯克仓储,覆盖独联体配送。"
       }
     },
     "hero": {
