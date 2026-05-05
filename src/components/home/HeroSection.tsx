@@ -35,19 +35,29 @@ export function HeroSection({ categories }: Props) {
     <section className="relative overflow-hidden bg-paper-50">
       <div aria-hidden className="absolute inset-0 z-0">
         <Image
-          src="/images/categories/equipment.jpg"
+          src="/images/hero/hero-vacuum-tubes.jpg"
           alt=""
           fill
           priority
           fetchPriority="high"
           sizes="100vw"
-          className="object-cover object-center"
+          className="object-cover object-[65%_center] md:object-[60%_center]"
+          style={{ filter: "saturate(1.06) contrast(1.04)" }}
         />
+        {/* Mobile/tablet: vertical white-to-clear veil — keeps headline legible above the photo. */}
         <div
-          className="absolute inset-0"
+          className="absolute inset-0 md:hidden"
           style={{
             background:
-              "linear-gradient(120deg, rgba(255,255,255,0.96) 0%, rgba(255,255,255,0.55) 50%, rgba(34,197,142,0.18) 100%)",
+              "linear-gradient(180deg, rgba(255,255,255,0.94) 0%, rgba(255,255,255,0.72) 38%, rgba(255,255,255,0.18) 78%, rgba(255,255,255,0.04) 100%)",
+          }}
+        />
+        {/* Desktop: diagonal veil — opaque under the headline, fully clear under the photo so the tubes pop. */}
+        <div
+          className="absolute inset-0 hidden md:block"
+          style={{
+            background:
+              "linear-gradient(105deg, rgba(255,255,255,0.94) 0%, rgba(255,255,255,0.78) 28%, rgba(255,255,255,0.18) 55%, rgba(255,255,255,0.04) 80%, rgba(34,197,142,0.10) 100%)",
           }}
         />
       </div>
