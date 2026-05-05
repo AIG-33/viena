@@ -33,34 +33,19 @@ export function HeroSection({ categories }: Props) {
 
   return (
     <section className="relative overflow-hidden bg-paper-50">
-      <div aria-hidden className="absolute inset-0 z-0">
-        <Image
-          src="/images/hero/hero-vacuum-tubes.jpg"
-          alt=""
-          fill
-          priority
-          fetchPriority="high"
-          sizes="100vw"
-          className="object-cover object-[65%_center] md:object-[60%_center]"
-          style={{ filter: "saturate(1.06) contrast(1.04)" }}
-        />
-        {/* Mobile/tablet: vertical white-to-clear veil — keeps headline legible above the photo. */}
-        <div
-          className="absolute inset-0 md:hidden"
-          style={{
-            background:
-              "linear-gradient(180deg, rgba(255,255,255,0.94) 0%, rgba(255,255,255,0.72) 38%, rgba(255,255,255,0.18) 78%, rgba(255,255,255,0.04) 100%)",
-          }}
-        />
-        {/* Desktop: diagonal veil — opaque under the headline, fully clear under the photo so the tubes pop. */}
-        <div
-          className="absolute inset-0 hidden md:block"
-          style={{
-            background:
-              "linear-gradient(105deg, rgba(255,255,255,0.94) 0%, rgba(255,255,255,0.78) 28%, rgba(255,255,255,0.18) 55%, rgba(255,255,255,0.04) 80%, rgba(34,197,142,0.10) 100%)",
-          }}
-        />
-      </div>
+      {/* Decorative ambient gradient — keeps the hero bright and on-brand without dimming any photography. */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-0"
+        style={{
+          background:
+            "radial-gradient(1100px 520px at 92% -10%, rgba(34,197,142,0.18), rgba(34,197,142,0) 60%), radial-gradient(900px 480px at 8% 110%, rgba(34,197,142,0.10), rgba(34,197,142,0) 65%), linear-gradient(180deg, #ffffff 0%, #f7f8f5 100%)",
+        }}
+      />
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-paper-200/70 z-0"
+      />
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 md:px-10 lg:px-14 pt-10 md:pt-14 pb-14 md:pb-20 grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-12 items-center">
         <motion.div
@@ -99,14 +84,40 @@ export function HeroSection({ categories }: Props) {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
-          className="relative rounded-3xl border border-white/80 p-5 md:p-6"
+          className="relative rounded-3xl border border-white/80 p-5 md:p-6 overflow-hidden"
           style={{
-            background: "rgba(255,255,255,0.72)",
+            background: "rgba(255,255,255,0.78)",
             backdropFilter: "blur(28px)",
             WebkitBackdropFilter: "blur(28px)",
             boxShadow: "var(--shadow-2)",
           }}
         >
+          {/* VACUETTE® product cover — official press shot from Greiner Bio-One press kit. */}
+          <Link
+            href="/catalog/vacuum-systems"
+            className="group relative -mx-5 -mt-5 md:-mx-6 md:-mt-6 mb-5 block overflow-hidden bg-paper-50"
+          >
+            <Image
+              src="/images/hero/vacuette-tubes-press.jpg"
+              alt="VACUETTE® — линейка вакуумных пробирок Greiner Bio-One для венепункции"
+              width={763}
+              height={456}
+              priority
+              sizes="(max-width: 1024px) 100vw, 640px"
+              className="w-full h-auto"
+            />
+            <div className="absolute top-3 left-3 inline-flex items-center gap-2 px-2.5 py-1.5 rounded-full bg-white/95 ring-1 ring-paper-200 shadow-[var(--shadow-1)] backdrop-blur-md">
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-green-500" />
+              <span className="text-[10px] font-bold tracking-[0.14em] uppercase text-ink-800">
+                {t("vacuetteBadge")}
+              </span>
+            </div>
+            <div className="absolute bottom-3 right-3 inline-flex items-center gap-1 px-2 py-1 rounded-full bg-ink-900/85 text-white text-[10px] font-display font-bold tracking-tight backdrop-blur-md group-hover:bg-ink-900 transition-colors">
+              <span>{t("vacuetteCta")}</span>
+              <span aria-hidden className="transition-transform group-hover:translate-x-0.5">→</span>
+            </div>
+          </Link>
+
           <div className="flex justify-between items-center mb-4">
             <span className="text-[11px] font-bold tracking-[0.16em] uppercase text-green-700">
               {tCat("title")}
