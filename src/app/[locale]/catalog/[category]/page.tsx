@@ -9,6 +9,12 @@ import {
 } from "@/lib/data";
 import { ProductGrid } from "@/components/catalog/ProductGrid";
 import { VacuumCatalog } from "@/components/catalog/VacuumCatalog";
+import { JsonLd } from "@/components/seo/JsonLd";
+import {
+  buildBreadcrumbJsonLd,
+  buildCategoryJsonLd,
+  localePath,
+} from "@/lib/seo";
 import type { Metadata } from "next";
 import type { Locale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
@@ -58,8 +64,20 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
       )
     : products.length;
 
+  const categoryJsonLd = buildCategoryJsonLd({
+    category: cat,
+    products,
+    locale,
+  });
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: tNav("home"), url: localePath(locale, "/") },
+    { name: tNav("catalog"), url: localePath(locale, "/catalog") },
+    { name: cat.name, url: localePath(locale, `/catalog/${cat.id}`) },
+  ]);
+
   return (
     <>
+      <JsonLd data={[categoryJsonLd, breadcrumbJsonLd]} />
       <section className="bg-paper-100 pt-8 md:pt-12 pb-10 md:pb-12 border-b border-paper-200">
         <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
           <nav className="flex items-center gap-2 text-[12px] text-ink-500 mb-6">

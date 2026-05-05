@@ -70,7 +70,6 @@ export function ProductCard({ product, index = 0 }: ProductCardProps) {
             fill
             sizes="(max-width:768px) 50vw, 25vw"
             className="object-contain group-hover:scale-[1.04] transition-transform duration-500 p-2"
-            unoptimized
           />
         ) : (
           <div className="absolute inset-0 grid place-items-center text-ink-300">

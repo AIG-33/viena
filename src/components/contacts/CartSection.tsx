@@ -128,8 +128,8 @@ export function CartSection() {
                       alt={item.name}
                       width={64}
                       height={64}
+                      sizes="64px"
                       className="w-full h-full object-contain p-1"
-                      unoptimized
                     />
                   ) : (
                     <span className="text-[9px] uppercase text-ink-300">{t("noImage")}</span>

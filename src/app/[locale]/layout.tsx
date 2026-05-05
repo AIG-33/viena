@@ -8,6 +8,7 @@ import {
 } from "next-intl/server";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { Analytics, AnalyticsNoScript } from "@/components/analytics/Analytics";
 import { CartProvider } from "@/context/CartContext";
 import { routing, type Locale } from "@/i18n/routing";
 
@@ -77,6 +78,25 @@ export async function generateMetadata({
     languages[HTML_LANG[l]] = `${SITE_URL}/${l}`;
   }
 
+  const verification: Metadata["verification"] = {};
+  if (process.env.NEXT_PUBLIC_YANDEX_VERIFICATION) {
+    verification.yandex = process.env.NEXT_PUBLIC_YANDEX_VERIFICATION;
+  }
+  if (process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION) {
+    verification.google = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+  }
+  if (process.env.NEXT_PUBLIC_BING_VERIFICATION) {
+    // Next.js renders `verification.other.<name>` as <meta name="<name>">.
+    // Bing Webmaster expects `<meta name="msvalidate.01" content="…">`.
+    verification.other = {
+      "msvalidate.01": process.env.NEXT_PUBLIC_BING_VERIFICATION,
+    };
+  }
+  const hasVerification =
+    !!verification.yandex ||
+    !!verification.google ||
+    !!verification.other;
+
   return {
     metadataBase: new URL(SITE_URL),
     title: {
@@ -112,6 +132,7 @@ export async function generateMetadata({
         "max-video-preview": -1,
       },
     },
+    verification: hasVerification ? verification : undefined,
     category: "medical",
   };
 }
@@ -186,6 +207,7 @@ export default async function LocaleLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col antialiased" suppressHydrationWarning>
+        <AnalyticsNoScript />
         <NextIntlClientProvider>
           <CartProvider>
             <a href="#main-content" className="skip-nav">
@@ -198,6 +220,7 @@ export default async function LocaleLayout({
             <Footer />
           </CartProvider>
         </NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );

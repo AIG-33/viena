@@ -15,6 +15,12 @@ import { ProductDataTable } from "@/components/product/ProductDataTable";
 import { RelatedProducts } from "@/components/product/RelatedProducts";
 import { AddToCartActions } from "@/components/product/AddToCartActions";
 import { VacuumProductDetail } from "@/components/product/VacuumProductDetail";
+import { JsonLd } from "@/components/seo/JsonLd";
+import {
+  buildBreadcrumbJsonLd,
+  buildProductJsonLd,
+  localePath,
+} from "@/lib/seo";
 import type { Metadata } from "next";
 import type { Locale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
@@ -47,7 +53,12 @@ export async function generateMetadata({
   const { locale, category, product: productSlug } = await params;
   const product = getProductBySlug(category, productSlug, locale);
   if (!product) return {};
-  return { title: product.name, description: product.shortDescription };
+  const keywords = (product.searchKeywords ?? []).filter(Boolean);
+  return {
+    title: product.name,
+    description: product.shortDescription,
+    keywords: keywords.length > 0 ? keywords : undefined,
+  };
 }
 
 export default async function ProductPage({ params }: ProductPageProps) {
@@ -66,8 +77,28 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const tProd = await getTranslations("productPage");
   const tCommon = await getTranslations("common");
 
+  const productJsonLd = buildProductJsonLd({
+    product,
+    category: cat,
+    manufacturer,
+    locale,
+  });
+
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: tNav("home"), url: localePath(locale, "/") },
+    { name: tNav("catalog"), url: localePath(locale, "/catalog") },
+    ...(cat
+      ? [{ name: cat.name, url: localePath(locale, `/catalog/${cat.id}`) }]
+      : []),
+    {
+      name: product.name,
+      url: localePath(locale, `/catalog/${category}/${product.slug}`),
+    },
+  ]);
+
   return (
     <>
+      <JsonLd data={[productJsonLd, breadcrumbJsonLd]} />
       <section className="bg-paper-100 pt-6 md:pt-7 pb-6 md:pb-7 border-b border-paper-200">
         <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
           <nav className="flex items-center gap-2 text-[12px] text-ink-500 flex-wrap">

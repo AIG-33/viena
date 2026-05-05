@@ -45,7 +45,6 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
               fill
               sizes="(max-width:1024px) 100vw, 50vw"
               className="object-contain p-4"
-              unoptimized
               priority
             />
           </motion.div>
@@ -64,7 +63,7 @@ export function ProductGallery({ images, name }: ProductGalleryProps) {
                   : "border border-paper-200 hover:border-ink-700"
               }`}
             >
-              <Image src={img} alt="" width={88} height={72} className="w-full h-full object-contain p-1" unoptimized />
+              <Image src={img} alt="" width={88} height={72} className="w-full h-full object-contain p-1" sizes="88px" />
             </button>
           ))}
         </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
@@ -33,12 +34,14 @@ export function HeroSection({ categories }: Props) {
   return (
     <section className="relative overflow-hidden bg-paper-50">
       <div aria-hidden className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 bg-center bg-cover"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1600&q=80&auto=format&fit=crop')",
-          }}
+        <Image
+          src="/images/categories/equipment.jpg"
+          alt=""
+          fill
+          priority
+          fetchPriority="high"
+          sizes="100vw"
+          className="object-cover object-center"
         />
         <div
           className="absolute inset-0"

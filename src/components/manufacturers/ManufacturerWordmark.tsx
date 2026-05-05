@@ -62,7 +62,6 @@ export function ManufacturerWordmark({
             isCompact ? "p-1" : isHero ? "p-4 md:p-8" : "p-2"
           )}
           sizes="(max-width:768px) 50vw, 25vw"
-          unoptimized
         />
       </div>
     );

@@ -76,6 +76,17 @@ export interface Product {
   variants?: ProductVariant[];
   dataTable?: ProductDataTable;
   tags: string[];
+  /**
+   * SEO synonyms / aliases / variant phrasings (e.g. "гемоанализатор",
+   * "CBC analyzer", "血液分析仪"). Used for:
+   *  - `Product.alternateName` in JSON-LD,
+   *  - `<meta name="keywords">` on the product page,
+   *  - matching during in-site search (`filterProducts`).
+   *
+   * Per-locale overrides go into `i18n.<locale>.searchKeywords` (same
+   * shape) so EN/ZH searches resolve to the right alias set.
+   */
+  searchKeywords?: string[];
   featured: boolean;
   inStock: boolean;
   catalogNumber?: string;

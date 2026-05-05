@@ -63,7 +63,7 @@ export async function TrustBand() {
                   alt={m.name}
                   width={200}
                   height={100}
-                  unoptimized
+                  sizes="200px"
                   className="max-h-full max-w-full w-auto h-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity"
                 />
               ) : (

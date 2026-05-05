@@ -10,6 +10,12 @@ import {
 } from "@/lib/data";
 import { ProductGrid } from "@/components/catalog/ProductGrid";
 import { ManufacturerWordmark } from "@/components/manufacturers/ManufacturerWordmark";
+import { JsonLd } from "@/components/seo/JsonLd";
+import {
+  buildBreadcrumbJsonLd,
+  buildManufacturerJsonLd,
+  localePath,
+} from "@/lib/seo";
 import { routing, type Locale } from "@/i18n/routing";
 import { getManufacturerCatalogLink, isShopManufacturer } from "@/lib/utils";
 
@@ -58,8 +64,26 @@ export default async function ManufacturerDetailPage({
   const isShopOnly = isShopManufacturer(slug);
   const tShop = await getTranslations("manufacturersPage.detail.shop");
 
+  const manufacturerJsonLd = buildManufacturerJsonLd({
+    manufacturer,
+    products,
+    locale,
+  });
+  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
+    { name: t("breadcrumbsHome"), url: localePath(locale, "/") },
+    {
+      name: t("breadcrumbsList"),
+      url: localePath(locale, "/manufacturers"),
+    },
+    {
+      name: manufacturer.name,
+      url: localePath(locale, `/manufacturers/${manufacturer.slug}`),
+    },
+  ]);
+
   return (
     <>
+      <JsonLd data={[manufacturerJsonLd, breadcrumbJsonLd]} />
       <section className="bg-paper-100 pt-6 md:pt-10 pb-2">
         <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
           <nav className="flex items-center gap-2 text-[12px] text-ink-500 flex-wrap">

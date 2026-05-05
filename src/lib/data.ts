@@ -125,6 +125,17 @@ export function getProductBySlug(
   return found ? (applyLocale(found, locale) as Product) : undefined;
 }
 
+function productMatchesQuery(p: Product, q: string): boolean {
+  return (
+    p.name.toLowerCase().includes(q) ||
+    p.shortDescription.toLowerCase().includes(q) ||
+    p.tags.some((t) => t.toLowerCase().includes(q)) ||
+    (p.searchKeywords ?? []).some((k) => k.toLowerCase().includes(q)) ||
+    (p.manufacturer ? p.manufacturer.toLowerCase().includes(q) : false) ||
+    (p.catalogNumber ? p.catalogNumber.toLowerCase().includes(q) : false)
+  );
+}
+
 export function searchProducts(
   query: string,
   locale: Locale = "ru"
@@ -133,14 +144,7 @@ export function searchProducts(
   const q = query.toLowerCase();
   // Match against the localised view (so EN search works on EN pages).
   const localised = applyLocaleAll(allProductsRaw, locale) as Product[];
-  return localised.filter(
-    (p) =>
-      p.name.toLowerCase().includes(q) ||
-      p.shortDescription.toLowerCase().includes(q) ||
-      p.tags.some((t) => t.toLowerCase().includes(q)) ||
-      (p.manufacturer && p.manufacturer.toLowerCase().includes(q)) ||
-      (p.catalogNumber && p.catalogNumber.toLowerCase().includes(q))
-  );
+  return localised.filter((p) => productMatchesQuery(p, q));
 }
 
 export function filterProducts(
@@ -164,10 +168,7 @@ export function filterProducts(
     );
     localised = localised.filter(
       (p) =>
-        p.name.toLowerCase().includes(q) ||
-        p.shortDescription.toLowerCase().includes(q) ||
-        p.tags.some((t) => t.toLowerCase().includes(q)) ||
-        (p.manufacturer && p.manufacturer.toLowerCase().includes(q)) ||
+        productMatchesQuery(p, q) ||
         (manuByName && p.manufacturer === manuByName.slug)
     );
   }
