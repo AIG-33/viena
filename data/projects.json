@@ -1,5 +1,31 @@
 [
   {
+    "id": "proj-006",
+    "title": "Партнёр по преаналитике лаборатории Helix",
+    "client": "ООО «Международная лаборатория Хеликс»",
+    "year": 2024,
+    "description": "ВИЕНА МЕДИКАЛ — партнёр по преаналитике медицинской лаборатории Helix, лаборатории №1 Беларуси по итогам премий «Номер один» 2024 и 2025 и победителя «Народного выбора 2025». В сети Helix — более 60 диагностических центров в 21 городе Беларуси и более 1500 видов лабораторных исследований ежедневно. Поставляем сертифицированные вакуумные системы для забора крови, расходные материалы и компоненты преаналитического этапа: качество образца — фундамент достоверного результата. Для лаборатории такого масштаба ошибка преаналитики стоит дороже, чем сам тест, поэтому мы согласовали единую планку качества по ISO 6710 и ANSI/AAM/ISO 11137.",
+    "images": [
+      "/images/projects/helix-partnership.jpg"
+    ],
+    "categories": ["partnership"],
+    "tags": ["Преаналитика", "Helix", "Беларусь · 60+ центров"],
+    "i18n": {
+      "en": {
+        "title": "Preanalytics partner of Helix Laboratory",
+        "client": "Helix International Laboratory LLC",
+        "description": "VIENA MEDICAL is the preanalytics partner of Helix — the №1 medical laboratory in Belarus per the “Number One” awards of 2024 and 2025 and the winner of the “People’s Choice 2025”. The Helix network runs more than 60 diagnostic centres across 21 cities of Belarus and more than 1 500 types of laboratory tests every day. We supply certified blood-collection vacuum systems, consumables and preanalytical components: the quality of the sample is the foundation of a reliable result. For a laboratory at this scale, a preanalytical error costs more than the assay itself, so we have agreed a single quality bar built on ISO 6710 and ANSI/AAM/ISO 11137.",
+        "tags": ["Preanalytics", "Helix", "Belarus · 60+ centres"]
+      },
+      "zh": {
+        "title": "Helix 实验室分析前阶段合作伙伴",
+        "client": "Helix 国际实验室有限公司",
+        "description": "VIENA MEDICAL 是 Helix 医学实验室的分析前阶段合作伙伴。Helix 在 2024 与 2025 年的「Number One」奖项以及 2025 年「人民选择奖」中均获评白俄罗斯第一医学实验室。其网络覆盖白俄罗斯 21 个城市的 60 余家诊断中心,日常提供 1500 余项实验室检测。我们为其供应通过认证的真空采血系统、耗材以及分析前阶段所需组件:样本质量是可靠结果的根本。对于这种规模的实验室,分析前阶段的差错成本远高于检测本身,因此我们与 Helix 在 ISO 6710 与 ANSI/AAM/ISO 11137 的基础上共同确立了统一的质量标准。",
+        "tags": ["分析前阶段", "Helix", "白俄罗斯 · 60+ 中心"]
+      }
+    }
+  },
+  {
     "id": "proj-001",
     "title": "Партнёрство с Вьетнамом",
     "client": "Республика Вьетнам",
