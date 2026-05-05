@@ -1,31 +1,25 @@
 import { getTranslations } from "next-intl/server";
 
-const LAT = 53.902419;
-const LON = 27.639955;
+const LAT = 53.902032;
+const LON = 27.639085;
 const ZOOM = 17;
 
-const PIN_COLOR = "pm2rdm";
+const ORG_ID = "62911932711";
+const ORG_URI = `ymapsbm1://org?oid=${ORG_ID}`;
 
 const widgetUrl = (() => {
   const params = new URLSearchParams({
     ll: `${LON},${LAT}`,
-    pt: `${LON},${LAT},${PIN_COLOR}`,
+    mode: "poi",
+    "poi[point]": `${LON},${LAT}`,
+    "poi[uri]": ORG_URI,
     z: String(ZOOM),
     l: "map",
   });
   return `https://yandex.ru/map-widget/v1/?${params.toString()}`;
 })();
 
-const externalUrl = (() => {
-  const params = new URLSearchParams({
-    ll: `${LON},${LAT}`,
-    pt: `${LON},${LAT},${PIN_COLOR}`,
-    z: String(ZOOM),
-    l: "map",
-    text: "Минск, улица Радиальная, 54Б",
-  });
-  return `https://yandex.ru/maps/?${params.toString()}`;
-})();
+const externalUrl = `https://yandex.ru/maps/org/${ORG_ID}/?ll=${LON},${LAT}&z=${ZOOM}`;
 
 export async function YandexMap() {
   const t = await getTranslations("contacts.map");
