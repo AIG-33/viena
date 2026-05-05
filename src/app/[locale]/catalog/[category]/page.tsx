@@ -5,8 +5,10 @@ import {
   getAllCategories,
   getCategoryById,
   getProductsByCategoryId,
+  getVacuumFamilies,
 } from "@/lib/data";
 import { ProductGrid } from "@/components/catalog/ProductGrid";
+import { VacuumCatalog } from "@/components/catalog/VacuumCatalog";
 import type { Metadata } from "next";
 import type { Locale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
@@ -41,9 +43,20 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const cat = getCategoryById(category, locale);
   if (!cat) notFound();
 
-  const products = getProductsByCategoryId(category, locale);
   const tNav = await getTranslations("nav");
   const tCatalog = await getTranslations("catalog");
+
+  const isVacuum = category === "vacuum-systems";
+  const vacuumData = isVacuum ? getVacuumFamilies(locale) : null;
+  const products = isVacuum
+    ? (vacuumData?.families ?? [])
+    : getProductsByCategoryId(category, locale);
+  const skuCount = isVacuum
+    ? (vacuumData?.families ?? []).reduce(
+        (s, f) => s + (f.variants?.length ?? 0),
+        0
+      )
+    : products.length;
 
   return (
     <>
@@ -61,7 +74,9 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             <div>
               <span className="eyebrow">
                 <span className="dot" />
-                {tCatalog("productCount", { count: products.length })}
+                {isVacuum
+                  ? `${products.length} · ${skuCount} SKU`
+                  : tCatalog("productCount", { count: products.length })}
               </span>
               <h1 className="display-heading text-ink-900 text-4xl md:text-5xl lg:text-6xl mt-4">
                 {cat.name}
@@ -77,7 +92,15 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
       <section className="bg-white pt-8 md:pt-10 pb-20">
         <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
-          <ProductGrid products={products} />
+          {isVacuum && vacuumData ? (
+            <VacuumCatalog
+              families={vacuumData.families}
+              subcategories={vacuumData.subcategories}
+              capColors={vacuumData.capColors}
+            />
+          ) : (
+            <ProductGrid products={products} />
+          )}
         </div>
       </section>
     </>

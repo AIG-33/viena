@@ -14,6 +14,7 @@ import { ProductSpecs } from "@/components/product/ProductSpecs";
 import { ProductDataTable } from "@/components/product/ProductDataTable";
 import { RelatedProducts } from "@/components/product/RelatedProducts";
 import { AddToCartActions } from "@/components/product/AddToCartActions";
+import { VacuumProductDetail } from "@/components/product/VacuumProductDetail";
 import type { Metadata } from "next";
 import type { Locale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
@@ -89,45 +90,25 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
       <section className="bg-white pb-16">
         <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
-          <div className="grid lg:grid-cols-[1.1fr_1fr] gap-10 lg:gap-12 mb-14 mt-6">
-            <ProductGallery images={product.images} name={product.name} />
-
-            <div className="flex flex-col gap-5">
-              <div className="flex flex-wrap items-center gap-2">
-                <span
-                  className={`inline-flex items-center text-[11px] font-bold tracking-[0.08em] uppercase px-2.5 py-1 rounded-full ${
-                    product.inStock ? "bg-green-500 text-white" : "bg-ink-700 text-white"
-                  }`}
-                >
-                  {product.inStock ? tProd("inStock") : tProd("byOrder")}
-                </span>
-                <span className="font-mono text-[12px] text-ink-500">{tProd("sku")} {sku}</span>
-                {manufacturer && (
-                  <Link
-                    href={`/manufacturers/${manufacturer.slug}`}
-                    className="text-[12px] text-ink-500 hover:text-green-700 transition-colors"
-                  >
-                    · {manufacturer.name}
-                  </Link>
-                )}
-              </div>
-
-              <h1 className="display-heading text-ink-900 text-3xl md:text-4xl lg:text-[42px]">
-                {product.name}
-              </h1>
-
-              <p className="text-[15px] leading-relaxed text-ink-700">
-                {product.description || product.shortDescription}
-              </p>
-
-              {(cat || product.tags.length > 0) && (
-                <div className="flex flex-wrap gap-2">
+          {category === "vacuum-systems" ? (
+            <div className="mt-6 mb-14">
+              <VacuumProductDetail family={product} />
+              {(cat || product.tags.length > 0 || manufacturer) && (
+                <div className="flex flex-wrap gap-2 mt-6">
                   {cat && (
                     <Link
                       href={`/catalog/${cat.id}`}
                       className="pill pill-green hover:bg-green-200 transition-colors"
                     >
                       {cat.name}
+                    </Link>
+                  )}
+                  {manufacturer && (
+                    <Link
+                      href={`/manufacturers/${manufacturer.slug}`}
+                      className="pill hover:bg-paper-200 transition-colors"
+                    >
+                      {manufacturer.name}
                     </Link>
                   )}
                   {product.tags.map((tag) => (
@@ -137,25 +118,78 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   ))}
                 </div>
               )}
-
-              <AddToCartActions product={product} />
-
-              <a
-                href={`tel:${tCommon("phone").replace(/\s/g, "")}`}
-                className="btn btn-ghost"
-              >
-                <svg viewBox="0 0 24 24" className="icon w-4 h-4">
-                  <path d="M5 4h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" />
-                </svg>
-                {tCommon("phone")}
-              </a>
             </div>
-          </div>
+          ) : (
+            <>
+              <div className="grid lg:grid-cols-[1.1fr_1fr] gap-10 lg:gap-12 mb-14 mt-6">
+                <ProductGallery images={product.images} name={product.name} />
 
-          <div className="grid grid-cols-1 gap-6">
-            <ProductSpecs specs={product.specs} />
-            {product.dataTable && <ProductDataTable table={product.dataTable} />}
-          </div>
+                <div className="flex flex-col gap-5">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span
+                      className={`inline-flex items-center text-[11px] font-bold tracking-[0.08em] uppercase px-2.5 py-1 rounded-full ${
+                        product.inStock ? "bg-green-500 text-white" : "bg-ink-700 text-white"
+                      }`}
+                    >
+                      {product.inStock ? tProd("inStock") : tProd("byOrder")}
+                    </span>
+                    <span className="font-mono text-[12px] text-ink-500">{tProd("sku")} {sku}</span>
+                    {manufacturer && (
+                      <Link
+                        href={`/manufacturers/${manufacturer.slug}`}
+                        className="text-[12px] text-ink-500 hover:text-green-700 transition-colors"
+                      >
+                        · {manufacturer.name}
+                      </Link>
+                    )}
+                  </div>
+
+                  <h1 className="display-heading text-ink-900 text-3xl md:text-4xl lg:text-[42px]">
+                    {product.name}
+                  </h1>
+
+                  <p className="text-[15px] leading-relaxed text-ink-700">
+                    {product.description || product.shortDescription}
+                  </p>
+
+                  {(cat || product.tags.length > 0) && (
+                    <div className="flex flex-wrap gap-2">
+                      {cat && (
+                        <Link
+                          href={`/catalog/${cat.id}`}
+                          className="pill pill-green hover:bg-green-200 transition-colors"
+                        >
+                          {cat.name}
+                        </Link>
+                      )}
+                      {product.tags.map((tag) => (
+                        <span key={tag} className="pill">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  <AddToCartActions product={product} />
+
+                  <a
+                    href={`tel:${tCommon("phone").replace(/\s/g, "")}`}
+                    className="btn btn-ghost"
+                  >
+                    <svg viewBox="0 0 24 24" className="icon w-4 h-4">
+                      <path d="M5 4h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" />
+                    </svg>
+                    {tCommon("phone")}
+                  </a>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 gap-6">
+                <ProductSpecs specs={product.specs} />
+                {product.dataTable && <ProductDataTable table={product.dataTable} />}
+              </div>
+            </>
+          )}
 
           <RelatedProducts products={related} />
         </div>

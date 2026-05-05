@@ -42,10 +42,15 @@ const allProductsRaw: LocaledProduct[] = [
 ] as LocaledProduct[];
 
 function withProductCount(c: LocaledCategory): LocaledCategory {
-  return {
-    ...c,
-    productCount: allProductsRaw.filter((p) => p.categoryId === c.id).length,
-  };
+  // Count every SKU – when a product is a family of variants we count each
+  // variant, otherwise the product itself counts as one. This matches what
+  // users see when they actually drill into the category.
+  const items = allProductsRaw.filter((p) => p.categoryId === c.id);
+  const productCount = items.reduce(
+    (sum, p) => sum + (p.variants && p.variants.length > 0 ? p.variants.length : 1),
+    0
+  );
+  return { ...c, productCount };
 }
 
 export function getAllCategories(locale: Locale = "ru"): Category[] {
@@ -75,6 +80,38 @@ export function getProductsByCategoryId(
     allProductsRaw.filter((p) => p.categoryId === categoryId),
     locale
   ) as Product[];
+}
+
+/**
+ * Vacuum-systems specific accessor — returns the `Product[]` for that category
+ * alongside the unique subcategory order observed in the data file. Used by
+ * the bespoke configurator UI for `/catalog/vacuum-systems`.
+ */
+export function getVacuumFamilies(locale: Locale = "ru"): {
+  families: Product[];
+  subcategories: string[];
+  capColors: string[];
+} {
+  const families = applyLocaleAll(
+    allProductsRaw.filter((p) => p.categoryId === "vacuum-systems"),
+    locale
+  ) as Product[];
+  const subSeen = new Set<string>();
+  const subcategories: string[] = [];
+  const capSeen = new Set<string>();
+  const capColors: string[] = [];
+  for (const f of families) {
+    const sub = f.subcategory ?? "other";
+    if (!subSeen.has(sub)) {
+      subSeen.add(sub);
+      subcategories.push(sub);
+    }
+    if (f.capColor && !capSeen.has(f.capColor)) {
+      capSeen.add(f.capColor);
+      capColors.push(f.capColor);
+    }
+  }
+  return { families, subcategories, capColors };
 }
 
 export function getProductBySlug(
