@@ -11,6 +11,7 @@ import {
 import { ProductGrid } from "@/components/catalog/ProductGrid";
 import { ManufacturerWordmark } from "@/components/manufacturers/ManufacturerWordmark";
 import { routing, type Locale } from "@/i18n/routing";
+import { getManufacturerCatalogLink, isShopManufacturer } from "@/lib/utils";
 
 interface ManufacturerPageProps {
   params: Promise<{ locale: Locale; slug: string }>;
@@ -53,6 +54,9 @@ export default async function ManufacturerDetailPage({
   const presentCategories = allCategories.filter((c) =>
     products.some((p) => p.categoryId === c.id)
   );
+  const catalogLink = getManufacturerCatalogLink(slug);
+  const isShopOnly = isShopManufacturer(slug);
+  const tShop = await getTranslations("manufacturersPage.detail.shop");
 
   return (
     <>
@@ -94,7 +98,9 @@ export default async function ManufacturerDetailPage({
                   </span>
                 )}
                 <span className="ml-auto text-[12px] text-ink-500 tabular-nums">
-                  {t("detail.products", { count: products.length })}
+                  {isShopOnly
+                    ? tShop("badge")
+                    : t("detail.products", { count: products.length })}
                 </span>
               </div>
 
@@ -113,12 +119,32 @@ export default async function ManufacturerDetailPage({
               </p>
 
               <div className="flex flex-wrap items-center gap-3 pt-2">
-                <Link
-                  href={`/catalog?manufacturer=${manufacturer.slug}`}
-                  className="btn btn-green"
-                >
-                  {t("detail.openCatalog")}
-                </Link>
+                {catalogLink.isExternal ? (
+                  <a
+                    href={catalogLink.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-green inline-flex items-center gap-2"
+                  >
+                    {tShop("openShopCta")}
+                    <svg
+                      viewBox="0 0 24 24"
+                      className="w-3.5 h-3.5"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={2.2}
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      aria-hidden
+                    >
+                      <path d="M7 17 17 7M9 7h8v8" />
+                    </svg>
+                  </a>
+                ) : (
+                  <Link href={catalogLink.href} className="btn btn-green">
+                    {t("detail.openCatalog")}
+                  </Link>
+                )}
                 {manufacturer.website && (
                   <a
                     href={manufacturer.website}
@@ -130,6 +156,22 @@ export default async function ManufacturerDetailPage({
                   </a>
                 )}
               </div>
+
+              {isShopOnly && (
+                <div className="rounded-2xl border border-green-200 bg-green-50/50 px-4 py-3 mt-2 flex items-start gap-3">
+                  <span aria-hidden className="mt-0.5 inline-flex items-center justify-center w-6 h-6 rounded-md bg-green-500 text-white text-[12px] font-bold">
+                    ↗
+                  </span>
+                  <div>
+                    <div className="font-display text-[14px] font-bold text-ink-900">
+                      {tShop("title")}
+                    </div>
+                    <p className="text-[13px] text-ink-700 leading-relaxed mt-0.5">
+                      {tShop("description")}
+                    </p>
+                  </div>
+                </div>
+              )}
 
               {presentCategories.length > 0 && (
                 <div className="flex flex-wrap gap-2 pt-3 border-t border-paper-200">

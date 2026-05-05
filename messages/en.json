@@ -518,7 +518,13 @@
       "websiteCta": "Manufacturer website ↗",
       "categoriesLabel": "Categories:",
       "productsTitlePre": "Products from",
-      "viewAllCount": "All {count} products →"
+      "viewAllCount": "All {count} products →",
+      "shop": {
+        "badge": "Full catalog · shop.viena.by",
+        "openShopCta": "Open at shop.viena.by",
+        "title": "Full catalog — on shop.viena.by",
+        "description": "Thousands of items from this manufacturer live in our research-reagents shop. Direct supply, Minsk warehouse, CIS-wide delivery."
+      }
     },
     "hero": {
       "eyebrow": "Manufacturers · {count} brands",

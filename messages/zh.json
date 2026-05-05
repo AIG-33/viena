@@ -518,7 +518,13 @@
       "websiteCta": "厂商官网 ↗",
       "categoriesLabel": "类别:",
       "productsTitlePre": "来自",
-      "viewAllCount": "查看全部 {count} 件产品 →"
+      "viewAllCount": "查看全部 {count} 件产品 →",
+      "shop": {
+        "badge": "完整目录 · shop.viena.by",
+        "openShopCta": "前往 shop.viena.by",
+        "title": "完整产品目录在 shop.viena.by",
+        "description": "本厂商的数千款产品均上架于我们的科研试剂商城。厂商直供,明斯克仓储,覆盖独联体配送。"
+      }
     },
     "hero": {
       "eyebrow": "厂商品牌 · {count} 家",

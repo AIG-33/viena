@@ -518,7 +518,13 @@
       "websiteCta": "Сайт производителя ↗",
       "categoriesLabel": "Категории:",
       "productsTitlePre": "Позиции",
-      "viewAllCount": "Все {count} позиций →"
+      "viewAllCount": "Все {count} позиций →",
+      "shop": {
+        "badge": "Полный каталог · shop.viena.by",
+        "openShopCta": "Открыть в shop.viena.by",
+        "title": "Полный каталог — на shop.viena.by",
+        "description": "Тысячи позиций этого производителя — в нашем магазине научных реагентов. Прямая поставка, склад в Минске, доставка по СНГ."
+      }
     },
     "hero": {
       "eyebrow": "Производители · {count} брендов",
