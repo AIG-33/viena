@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { PageHero } from "@/components/layout/PageHero";
@@ -224,30 +225,23 @@ export default async function AboutPage({
         <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
           <div className="grid lg:grid-cols-[auto_1fr] gap-10 lg:gap-14 items-start">
             <div className="lg:sticky lg:top-28 max-w-[280px] mx-auto lg:mx-0">
-              <div
-                className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-paper-200"
-                style={{
-                  background:
-                    "linear-gradient(135deg, var(--color-green-100) 0%, var(--color-paper-100) 55%, var(--color-paper-50) 100%)",
-                }}
-              >
-                <div
-                  aria-hidden
-                  className="absolute -top-10 -right-10 h-40 w-40 rounded-full bg-green-300/40 blur-3xl"
+              <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-paper-200 bg-paper-100 shadow-[0_18px_42px_-22px_rgba(15,17,19,0.35)]">
+                <Image
+                  src="/images/about/founder-harbatsevich.jpg"
+                  alt={t("founder.name").replace(/\n/g, " ")}
+                  fill
+                  sizes="(max-width:1024px) 280px, 320px"
+                  className="object-cover"
+                  priority
                 />
                 <div
                   aria-hidden
-                  className="absolute -bottom-12 -left-8 h-44 w-44 rounded-full bg-green-200/50 blur-3xl"
+                  className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/40 via-black/10 to-transparent"
                 />
-                <div className="relative h-full grid place-items-center">
-                  <div className="text-center">
-                    <div className="font-display text-[112px] font-extrabold leading-none text-ink-900 tracking-[-0.06em]">
-                      {t("founder.monogram")}
-                    </div>
-                    <div className="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/70 backdrop-blur-sm border border-white/80 text-[10px] tracking-[0.16em] uppercase font-bold text-ink-700">
-                      <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
-                      EFLM · ISO TC 212
-                    </div>
+                <div className="absolute bottom-3 left-3 right-3 flex justify-center">
+                  <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/85 backdrop-blur-sm border border-white/80 text-[10px] tracking-[0.16em] uppercase font-bold text-ink-800">
+                    <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
+                    EFLM · ISO TC 212
                   </div>
                 </div>
               </div>
