@@ -60,6 +60,14 @@ export async function Footer() {
               </li>
               <li>
                 <Link
+                  href="/services"
+                  className="inline-flex items-center gap-1 text-[13px] font-semibold text-green-700 hover:text-green-600"
+                >
+                  {t("servicesLink")}
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/about"
                   className="inline-flex items-center gap-1 text-[13px] font-semibold text-green-700 hover:text-green-600"
                 >

@@ -12,7 +12,7 @@ const NAV_LINKS = [
   { href: "/about", key: "about" },
   { href: "/catalog", key: "catalog" },
   { href: "/manufacturers", key: "manufacturers" },
-  { href: "/services", key: "services" },
+  { href: "/blog", key: "blog" },
   { href: "/projects", key: "projects" },
   { href: "/projects/moh", key: "mohLong" },
   { href: "/contacts", key: "contacts" },
