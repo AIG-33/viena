@@ -97,6 +97,44 @@ export async function generateMetadata({
     !!verification.google ||
     !!verification.other;
 
+  // Top-level keywords — surface the head terms across the whole site.
+  // Page-specific metadata (category, product, manufacturer pages) appends
+  // its own narrower keywords on top of these.
+  const keywords =
+    locale === "ru"
+      ? [
+          "лабораторное оборудование",
+          "медицинское оборудование Беларусь",
+          "вакуумные пробирки для взятия крови",
+          "вакуумные системы VACUETTE",
+          "Greiner Bio-One Беларусь",
+          "реагенты для ПЦР",
+          "АмплиСенс",
+          "реагенты для гистологии",
+          "ланцеты безопасные",
+          "ветеринарные анализаторы",
+          "оснащение лаборатории под ключ",
+          "ВИЕНА МЕДИКАЛ",
+          "viena medical Минск",
+        ]
+      : locale === "en"
+        ? [
+            "medical laboratory equipment Belarus",
+            "vacuum blood collection tubes VACUETTE",
+            "Greiner Bio-One distributor",
+            "PCR reagents AmpliSens",
+            "histology reagents",
+            "veterinary analyzers",
+            "VIENA MEDICAL",
+          ]
+        : [
+            "实验室设备 白俄罗斯",
+            "真空采血管 VACUETTE",
+            "Greiner Bio-One 经销商",
+            "PCR 试剂 AmpliSens",
+            "VIENA MEDICAL",
+          ];
+
   return {
     metadataBase: new URL(SITE_URL),
     title: {
@@ -104,6 +142,7 @@ export async function generateMetadata({
       template: `%s | ${t("brand")}`,
     },
     description,
+    keywords,
     alternates: {
       canonical: `/${locale}`,
       languages,
@@ -151,22 +190,60 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: "meta" });
 
+  // `MedicalBusiness` is a subtype of `LocalBusiness` per schema.org —
+  // emitting `geo`, `openingHours`, and `areaServed` here also covers
+  // the Yandex / Google "local pack" requirements without a separate node.
   const organizationJsonLd = {
     "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
+    "@type": ["MedicalBusiness", "Organization"],
     "@id": `${SITE_URL}/#organization`,
     name: t("brand"),
-    alternateName: ["VIENA MEDICAL", "ВИЕНА МЕДИКАЛ"],
+    legalName: locale === "ru" ? "ООО «ВИЕНА МЕДИКАЛ»" : "VIENA MEDICAL LLC",
+    alternateName: ["VIENA MEDICAL", "ВИЕНА МЕДИКАЛ", "Виена Медикал", "Виена"],
     url: SITE_URL,
     logo: `${SITE_URL}/images/logo-dark.png`,
     image: `${SITE_URL}/images/logo-dark.png`,
     description: t("siteDescription"),
     foundingDate: "2016",
+    slogan:
+      locale === "ru"
+        ? "Преаналитика без компромиссов — вакуумные системы, реагенты, оборудование"
+        : "Preanalytics without compromise — vacuum systems, reagents, equipment",
     address: {
       "@type": "PostalAddress",
       addressLocality: t("city"),
       addressCountry: "BY",
+      addressRegion: "Минская область",
     },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 53.9006,
+      longitude: 27.5590,
+    },
+    areaServed: [
+      { "@type": "Country", name: "Беларусь" },
+      { "@type": "AdministrativeArea", name: "Минск" },
+      { "@type": "AdministrativeArea", name: "Минская область" },
+      { "@type": "AdministrativeArea", name: "Брест" },
+      { "@type": "AdministrativeArea", name: "Гродно" },
+      { "@type": "AdministrativeArea", name: "Гомель" },
+      { "@type": "AdministrativeArea", name: "Витебск" },
+      { "@type": "AdministrativeArea", name: "Могилёв" },
+    ],
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+        ],
+        opens: "09:00",
+        closes: "18:00",
+      },
+    ],
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -176,8 +253,26 @@ export default async function LocaleLayout({
         availableLanguage: ["ru", "en", "zh"],
         email: "med@viena.by",
       },
+      {
+        "@type": "ContactPoint",
+        contactType: "customer support",
+        availableLanguage: ["ru"],
+        url: "https://t.me/viena_medical_bot",
+      },
     ],
-    sameAs: [SITE_URL],
+    knowsAbout: [
+      "Преаналитика",
+      "Вакуумные системы взятия крови",
+      "Лабораторная диагностика",
+      "Гистология",
+      "ПЦР-диагностика",
+      "Ветеринарная диагностика",
+      "Лабораторное оборудование",
+    ],
+    sameAs: [
+      SITE_URL,
+      "https://t.me/viena_medical_bot",
+    ],
   };
 
   const websiteJsonLd = {

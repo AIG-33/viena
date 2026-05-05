@@ -13,6 +13,7 @@ import { JsonLd } from "@/components/seo/JsonLd";
 import {
   buildBreadcrumbJsonLd,
   buildCategoryJsonLd,
+  buildFaqJsonLd,
   localePath,
 } from "@/lib/seo";
 import type { Metadata } from "next";
@@ -40,7 +41,23 @@ export async function generateMetadata({
   const { locale, category } = await params;
   const cat = getCategoryById(category, locale);
   if (!cat) return {};
-  return { title: cat.name, description: cat.description };
+
+  // Prefer `seoTitle` / `seoDescription` if set in data — they're optimized
+  // for length (≈ 60 / 160 chars) and contain the head synonyms. Fall back
+  // to short `name` / `description` otherwise.
+  const title = cat.seoTitle || cat.name;
+  const description = cat.seoDescription || cat.description;
+  const keywords = cat.seoKeywords?.length ? cat.seoKeywords : undefined;
+
+  return {
+    title,
+    description,
+    keywords,
+    openGraph: {
+      title,
+      description,
+    },
+  };
 }
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
@@ -74,10 +91,16 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     { name: tNav("catalog"), url: localePath(locale, "/catalog") },
     { name: cat.name, url: localePath(locale, `/catalog/${cat.id}`) },
   ]);
+  const faqJsonLd = buildFaqJsonLd(cat.faqs ?? []);
+  const jsonLdNodes: Record<string, unknown>[] = [
+    categoryJsonLd,
+    breadcrumbJsonLd,
+  ];
+  if (faqJsonLd) jsonLdNodes.push(faqJsonLd);
 
   return (
     <>
-      <JsonLd data={[categoryJsonLd, breadcrumbJsonLd]} />
+      <JsonLd data={jsonLdNodes} />
       <section className="bg-paper-100 pt-8 md:pt-12 pb-10 md:pb-12 border-b border-paper-200">
         <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
           <nav className="flex items-center gap-2 text-[12px] text-ink-500 mb-6">
@@ -121,6 +144,63 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           )}
         </div>
       </section>
+
+      {(cat.intro || (cat.faqs && cat.faqs.length > 0)) && (
+        <section className="bg-paper-50 border-t border-paper-200 py-14 md:py-20">
+          <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
+              {cat.intro && (
+                <div className="lg:col-span-7">
+                  <span className="eyebrow">
+                    <span className="dot" />
+                    {tCatalog("about")}
+                  </span>
+                  <h2 className="display-heading text-ink-900 text-2xl md:text-3xl mt-3 mb-5">
+                    {cat.name}
+                  </h2>
+                  <p className="text-[15px] md:text-[16px] leading-relaxed text-ink-700 whitespace-pre-line">
+                    {cat.intro}
+                  </p>
+                </div>
+              )}
+              {cat.faqs && cat.faqs.length > 0 && (
+                <div className="lg:col-span-5">
+                  <span className="eyebrow">
+                    <span className="dot" />
+                    {tCatalog("faq")}
+                  </span>
+                  <h2 className="display-heading text-ink-900 text-2xl md:text-3xl mt-3 mb-5">
+                    FAQ
+                  </h2>
+                  <div className="space-y-4">
+                    {cat.faqs.map((faq, idx) => (
+                      <details
+                        key={idx}
+                        className="group bg-white border border-paper-200 rounded-lg p-4 md:p-5 [&_summary::-webkit-details-marker]:hidden"
+                      >
+                        <summary className="flex items-start justify-between gap-3 cursor-pointer list-none">
+                          <h3 className="font-display text-ink-900 text-[15px] md:text-[16px] leading-snug">
+                            {faq.q}
+                          </h3>
+                          <span
+                            aria-hidden="true"
+                            className="shrink-0 text-ink-500 transition-transform duration-200 group-open:rotate-45 mt-0.5"
+                          >
+                            +
+                          </span>
+                        </summary>
+                        <p className="mt-3 text-[14px] md:text-[15px] leading-relaxed text-ink-700">
+                          {faq.a}
+                        </p>
+                      </details>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 }

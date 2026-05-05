@@ -25,7 +25,7 @@ export async function YandexMap() {
   const t = await getTranslations("contacts.map");
 
   return (
-    <section className="bg-white pb-12 md:pb-20">
+    <section className="bg-white pt-12 md:pt-20 pb-12 md:pb-20">
       <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
         <div className="flex items-end justify-between gap-4 mb-5 md:mb-6">
           <div>

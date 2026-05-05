@@ -29,7 +29,24 @@ export async function generateMetadata({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "catalog.hero" });
-  return { title: t("titleLine1Accent"), description: t("description") };
+  const keywords =
+    locale === "ru"
+      ? [
+          "каталог медтехники",
+          "лабораторное оборудование",
+          "вакуумные пробирки для взятия крови",
+          "реагенты для ПЦР",
+          "реагенты для гистологии",
+          "ланцеты безопасные",
+          "ветеринарные анализаторы",
+          "купить лабораторное оборудование Беларусь",
+        ]
+      : undefined;
+  return {
+    title: t("titleLine1Accent"),
+    description: t("description"),
+    keywords,
+  };
 }
 
 export default async function CatalogPage({

@@ -12,9 +12,10 @@
  *  - Locale-prefixed paths (`/ru/catalog/...`) are intentional — that's what
  *    the rendered page actually serves and what we want indexed per-locale.
  */
-import type { Category } from "@/types/category";
+import type { Category, CategoryFaq } from "@/types/category";
 import type { Manufacturer } from "@/types/manufacturer";
 import type { Product } from "@/types/product";
+import type { BlogPost } from "@/types/blog";
 import type { Locale } from "@/i18n/routing";
 
 export const SITE_URL =
@@ -192,6 +193,115 @@ export function buildCategoryJsonLd(args: {
       "@type": "ItemList",
       itemListElement: items,
       numberOfItems: products.length,
+    },
+  };
+}
+
+/**
+ * `FAQPage` schema. Pass an array of `{ q, a }` pairs — they're rendered as
+ * `Question` / `acceptedAnswer` nodes. Google parses this into rich result
+ * accordions; AI assistants (ChatGPT/Perplexity) read it for direct answers.
+ */
+export function buildFaqJsonLd(
+  faqs: CategoryFaq[]
+): Record<string, unknown> | null {
+  if (!faqs?.length) return null;
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: f.a,
+      },
+    })),
+  };
+}
+
+/**
+ * `BlogPosting` schema for a single article. Includes `mentions` for any
+ * cited references (ISO standards, WHO/CLSI guidelines) — search engines
+ * use this as an authority signal and AI agents follow these for grounding.
+ */
+export function buildBlogPostingJsonLd(args: {
+  post: BlogPost;
+  locale: Locale;
+}): Record<string, unknown> {
+  const { post, locale } = args;
+  const url = abs(localePath(locale, `/blog/${post.slug}`));
+  const image = post.image ? abs(post.image) : abs("/images/logo-dark.png");
+  const wordCount = post.body
+    .map((b) => {
+      if ("text" in b && b.text) return b.text.split(/\s+/).length;
+      if ("items" in b) return b.items.join(" ").split(/\s+/).length;
+      return 0;
+    })
+    .reduce((a, b) => a + b, 0);
+
+  const mentions = (post.references ?? []).map((r) => ({
+    "@type": "CreativeWork",
+    name: r.title,
+    url: r.url,
+    publisher: r.publisher
+      ? { "@type": "Organization", name: r.publisher }
+      : undefined,
+  }));
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": `${url}#article`,
+    headline: post.title,
+    description: post.excerpt,
+    inLanguage: locale,
+    datePublished: post.publishedAt,
+    dateModified: post.updatedAt || post.publishedAt,
+    author: {
+      "@type": "Organization",
+      name: post.author,
+      url: SITE_URL,
+    },
+    publisher: { "@id": ORG_ID },
+    image,
+    url,
+    mainEntityOfPage: url,
+    keywords: post.keywords?.join(", ") || post.tags.join(", "),
+    articleSection: post.tags?.[0],
+    wordCount,
+    mentions: mentions.length > 0 ? mentions : undefined,
+    isPartOf: { "@id": WEBSITE_ID },
+  };
+}
+
+/**
+ * `Blog` schema for the blog index page.
+ */
+export function buildBlogJsonLd(args: {
+  posts: BlogPost[];
+  locale: Locale;
+}): Record<string, unknown> {
+  const { posts, locale } = args;
+  const url = abs(localePath(locale, "/blog"));
+  const items = posts.map((p, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    url: abs(localePath(locale, `/blog/${p.slug}`)),
+    name: p.title,
+  }));
+  return {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "@id": `${url}#blog`,
+    url,
+    inLanguage: locale,
+    publisher: { "@id": ORG_ID },
+    isPartOf: { "@id": WEBSITE_ID },
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: items,
+      numberOfItems: posts.length,
     },
   };
 }

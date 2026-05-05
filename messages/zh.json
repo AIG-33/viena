@@ -503,6 +503,9 @@
       "applied": "已应用"
     },
     "productCount": "{count, plural, other {# 件产品}}",
+    "about": "关于本分类",
+    "faq": "常见问题",
+    "relatedTitle": "相关产品",
     "empty": {
       "title": "未找到匹配项",
       "subtitle": "请尝试调整搜索条件或重置筛选。",

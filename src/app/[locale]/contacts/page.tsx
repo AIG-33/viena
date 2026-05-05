@@ -264,13 +264,13 @@ export default async function ContactsPage({
         </div>
       </section>
 
-      <YandexMap />
-
       <section className="bg-paper-50 py-12 md:py-16">
         <div id="cart" className="scroll-mt-28 max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
           <CartSection />
         </div>
       </section>
+
+      <YandexMap />
     </>
   );
 }

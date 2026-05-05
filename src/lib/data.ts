@@ -182,17 +182,58 @@ export function getFeaturedProducts(locale: Locale = "ru"): Product[] {
   ) as Product[];
 }
 
+/**
+ * Pick "related" products with smart relevance ranking. Boosts internal
+ * linking and improves SEO crawl depth — Google rewards pages that connect
+ * to other pages on the same topic via descriptive anchors.
+ *
+ * Scoring (higher = better):
+ *  - same subcategory (matched on `specs.Подкатегория`)  +10
+ *  - same manufacturer                                   +5
+ *  - same category                                        +1
+ *  - shared tag                                           +1 per tag
+ *
+ * The current product is excluded; ties break by `featured` then `inStock`.
+ */
 export function getRelatedProducts(
   product: Product,
   limit = 4,
   locale: Locale = "ru"
 ): Product[] {
-  return applyLocaleAll(
-    allProductsRaw
-      .filter((p) => p.categoryId === product.categoryId && p.id !== product.id)
-      .slice(0, limit),
-    locale
-  ) as Product[];
+  const subcat = (product.specs ?? []).find(
+    (s) => s.key === "Подкатегория"
+  )?.value;
+  const myTags = new Set(product.tags ?? []);
+
+  const candidates = allProductsRaw
+    .filter((p) => p.id !== product.id)
+    .map((p) => {
+      let score = 0;
+      if (p.categoryId === product.categoryId) score += 1;
+      if (subcat) {
+        const otherSub = (p.specs ?? []).find(
+          (s) => s.key === "Подкатегория"
+        )?.value;
+        if (otherSub === subcat) score += 10;
+      }
+      if (
+        product.manufacturer &&
+        p.manufacturer === product.manufacturer
+      )
+        score += 5;
+      if (myTags.size > 0 && Array.isArray(p.tags)) {
+        for (const t of p.tags) if (myTags.has(t)) score += 1;
+      }
+      if (p.featured) score += 0.5;
+      if (p.inStock) score += 0.25;
+      return { p, score };
+    })
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((x) => x.p);
+
+  return applyLocaleAll(candidates, locale) as Product[];
 }
 
 export function getAllServices(locale: Locale = "ru"): Service[] {

@@ -503,6 +503,9 @@
       "applied": "Applied"
     },
     "productCount": "{count, plural, one {# product} other {# products}}",
+    "about": "About this category",
+    "faq": "Frequently asked",
+    "relatedTitle": "Related products",
     "empty": {
       "title": "No matches",
       "subtitle": "Try refining the query or resetting the filters.",
