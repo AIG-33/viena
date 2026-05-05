@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import type { Product } from "@/types/product";
+import type { Product, ProductVariant } from "@/types/product";
 import type { Category } from "@/types/category";
 
 interface CatalogSearchProps {
@@ -12,38 +12,103 @@ interface CatalogSearchProps {
   categories: Category[];
 }
 
-interface Hit {
+/**
+ * Flat searchable item — either a stand-alone product or a single variant
+ * of a multi-variant family (e.g. one of 576 vacuum tubes).
+ */
+interface SearchEntry {
   product: Product;
-  /** Match relevance — lower is better (0 = exact name prefix). */
-  score: number;
-  /** Catalog number that matched, if any (for display). */
-  matchedSku?: string;
+  /** Specific variant when the entry corresponds to a single SKU. */
+  variant?: ProductVariant;
+  /** Stable id for keys / dedup. */
+  id: string;
+  /** Lower-cased haystacks pre-built for fast matching. */
+  haystack: {
+    name: string;
+    sku: string;
+    sourceName: string;
+    desc: string;
+    additive: string;
+    capColor: string;
+    manufacturer: string;
+  };
+  /** Catalog number to display in the result row. */
+  displaySku: string;
+  /** Display name (manufacturer name for variants, family name otherwise). */
+  displayName: string;
 }
 
-const MAX_RESULTS = 12;
+interface Hit extends SearchEntry {
+  /** Lower is better. */
+  score: number;
+}
 
-function scoreProduct(p: Product, q: string): Hit | null {
-  const name = p.name.toLowerCase();
-  const desc = p.shortDescription.toLowerCase();
-  const sku = (p.catalogNumber ?? "").toLowerCase();
+const MAX_RESULTS = 15;
 
-  if (name.startsWith(q)) return { product: p, score: 0 };
-  if (sku && sku.startsWith(q)) return { product: p, score: 1, matchedSku: p.catalogNumber };
-
-  // Match within variants (vacuum-systems and similar families).
-  if (p.variants?.length) {
-    for (const v of p.variants) {
-      const vsku = v.catalogNumber.toLowerCase();
-      if (vsku === q) return { product: p, score: 0, matchedSku: v.catalogNumber };
-      if (vsku.startsWith(q)) return { product: p, score: 1, matchedSku: v.catalogNumber };
-      if (vsku.includes(q)) return { product: p, score: 2, matchedSku: v.catalogNumber };
+function buildEntries(products: Product[]): SearchEntry[] {
+  const out: SearchEntry[] = [];
+  for (const p of products) {
+    const variants = p.variants ?? [];
+    if (variants.length === 0) {
+      out.push({
+        product: p,
+        id: p.id,
+        haystack: {
+          name: p.name.toLowerCase(),
+          sku: (p.catalogNumber ?? "").toLowerCase(),
+          sourceName: "",
+          desc: p.shortDescription.toLowerCase(),
+          additive: (p.additive ?? "").toLowerCase(),
+          capColor: (p.capColor ?? "").toLowerCase(),
+          manufacturer: (p.manufacturer ?? "").toLowerCase(),
+        },
+        displaySku: p.catalogNumber ?? "",
+        displayName: p.name,
+      });
+      continue;
+    }
+    // Family with variants → one entry per variant (each is a real SKU).
+    for (const v of variants) {
+      const sourceName =
+        typeof v.sourceName === "string" ? v.sourceName : "";
+      out.push({
+        product: p,
+        variant: v,
+        id: `${p.id}::${v.catalogNumber || sourceName}`,
+        haystack: {
+          name: p.name.toLowerCase(),
+          sku: (v.catalogNumber ?? "").toLowerCase(),
+          sourceName: sourceName.toLowerCase(),
+          desc: p.shortDescription.toLowerCase(),
+          additive: (p.additive ?? "").toLowerCase(),
+          capColor: (p.capColor ?? "").toLowerCase(),
+          manufacturer: (p.manufacturer ?? "").toLowerCase(),
+        },
+        displaySku: v.catalogNumber || p.catalogNumber || "",
+        displayName: sourceName || p.name,
+      });
     }
   }
+  return out;
+}
 
-  if (name.includes(q)) return { product: p, score: 3 };
-  if (sku.includes(q)) return { product: p, score: 4, matchedSku: p.catalogNumber };
-  if (desc.includes(q)) return { product: p, score: 5 };
-
+function score(entry: SearchEntry, q: string): number | null {
+  const h = entry.haystack;
+  // Exact / prefix matches on SKU win.
+  if (h.sku === q) return 0;
+  if (h.sku.startsWith(q)) return 1;
+  // Exact / prefix on names.
+  if (h.name.startsWith(q)) return 2;
+  if (h.sourceName.startsWith(q)) return 2;
+  // Substring matches.
+  if (h.sku.includes(q)) return 3;
+  if (h.name.includes(q)) return 4;
+  if (h.sourceName.includes(q)) return 4;
+  // Soft matches.
+  if (h.additive.includes(q)) return 5;
+  if (h.capColor.includes(q)) return 5;
+  if (h.manufacturer.includes(q)) return 5;
+  if (h.desc.includes(q)) return 6;
   return null;
 }
 
@@ -60,17 +125,25 @@ export function CatalogSearch({ products, categories }: CatalogSearchProps) {
     return map;
   }, [categories]);
 
+  // Build the flat searchable index once per `products` change.
+  const entries = useMemo(() => buildEntries(products), [products]);
+
   const hits = useMemo<Hit[]>(() => {
     const q = query.trim().toLowerCase();
     if (q.length < 2) return [];
     const found: Hit[] = [];
-    for (const p of products) {
-      const hit = scoreProduct(p, q);
-      if (hit) found.push(hit);
+    for (const entry of entries) {
+      const s = score(entry, q);
+      if (s !== null) found.push({ ...entry, score: s });
     }
-    found.sort((a, b) => a.score - b.score || a.product.name.localeCompare(b.product.name));
+    found.sort(
+      (a, b) =>
+        a.score - b.score ||
+        a.displayName.localeCompare(b.displayName) ||
+        a.displaySku.localeCompare(b.displaySku)
+    );
     return found.slice(0, MAX_RESULTS);
-  }, [products, query]);
+  }, [entries, query]);
 
   // Close on outside click / Escape.
   useEffect(() => {
@@ -100,7 +173,7 @@ export function CatalogSearch({ products, categories }: CatalogSearchProps) {
         </h2>
         <span className="text-[12px] text-ink-500">
           <span className="font-mono tabular-nums font-bold text-ink-900">
-            {products.length}
+            {entries.length}
           </span>{" "}
           {t("totalProducts")}
         </span>
@@ -108,8 +181,17 @@ export function CatalogSearch({ products, categories }: CatalogSearchProps) {
 
       <div ref={wrapRef} className="relative">
         <span className="absolute left-5 top-1/2 -translate-y-1/2 text-ink-400 pointer-events-none">
-          <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth={2}>
-            <path d="M11 19a8 8 0 1 1 0-16 8 8 0 0 1 0 16zM21 21l-4.3-4.3" strokeLinecap="round" />
+          <svg
+            viewBox="0 0 24 24"
+            className="w-5 h-5"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth={2}
+          >
+            <path
+              d="M11 19a8 8 0 1 1 0-16 8 8 0 0 1 0 16zM21 21l-4.3-4.3"
+              strokeLinecap="round"
+            />
           </svg>
         </span>
 
@@ -175,7 +257,7 @@ export function CatalogSearch({ products, categories }: CatalogSearchProps) {
                     const cat = categoryById.get(hit.product.categoryId);
                     const active = i === activeIdx;
                     return (
-                      <li key={hit.product.id}>
+                      <li key={hit.id}>
                         <Link
                           href={`/catalog/${hit.product.categoryId}/${hit.product.slug}`}
                           onClick={() => setOpen(false)}
@@ -201,7 +283,7 @@ export function CatalogSearch({ products, categories }: CatalogSearchProps) {
                           </div>
                           <div className="flex-1 min-w-0">
                             <div className="text-[14px] font-semibold text-ink-900 truncate">
-                              {hit.product.name}
+                              {hit.displayName}
                             </div>
                             <div className="flex items-center gap-2 text-[11px] text-ink-500 mt-0.5">
                               {cat && (
@@ -209,25 +291,20 @@ export function CatalogSearch({ products, categories }: CatalogSearchProps) {
                                   {cat.name}
                                 </span>
                               )}
-                              {hit.matchedSku && (
+                              {hit.displaySku && (
                                 <>
                                   <span className="opacity-50">·</span>
                                   <span className="font-mono tabular-nums text-ink-900">
-                                    {hit.matchedSku}
-                                  </span>
-                                </>
-                              )}
-                              {!hit.matchedSku && hit.product.catalogNumber && (
-                                <>
-                                  <span className="opacity-50">·</span>
-                                  <span className="font-mono tabular-nums">
-                                    {hit.product.catalogNumber}
+                                    {hit.displaySku}
                                   </span>
                                 </>
                               )}
                             </div>
                           </div>
-                          <span className="text-ink-400 group-hover:text-ink-900 shrink-0" aria-hidden>
+                          <span
+                            className="text-ink-400 group-hover:text-ink-900 shrink-0"
+                            aria-hidden
+                          >
                             →
                           </span>
                         </Link>
