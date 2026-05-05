@@ -2,6 +2,7 @@ import { setRequestLocale } from "next-intl/server";
 import { getAllCategories, getAllProjects } from "@/lib/data";
 import { HeroSection } from "@/components/home/HeroSection";
 import { ShopHighlight } from "@/components/home/ShopHighlight";
+import { PreanalyticsSection } from "@/components/home/PreanalyticsSection";
 import { TrustBand } from "@/components/home/TrustBand";
 import { AboutSection } from "@/components/home/AboutSection";
 import { ContactFormSection } from "@/components/home/ContactFormSection";
@@ -21,6 +22,7 @@ export default async function HomePage({
   return (
     <>
       <HeroSection categories={categories} />
+      <PreanalyticsSection />
       <ShopHighlight />
       <TrustBand />
       <AboutSection />

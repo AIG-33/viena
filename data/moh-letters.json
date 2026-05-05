@@ -421,5 +421,99 @@
         ]
       }
     }
+  },
+  {
+    "slug": "china-vacuum-2017",
+    "date": "15.02.2017",
+    "year": 2017,
+    "outgoing": "Исх. №3",
+    "title": "Качество китайских вакуумных пробирок и аудит регистрационных досье",
+    "addressee": "Министр здравоохранения · Малашко В.А. · МЗ РБ · Богдан Е.Л. · ЦЭИЗ",
+    "summary": "В РФ топ-4 производителей (Greiner, BD, Sarstedt, BD-Plymouth) занимают около 80% рынка систем для забора крови; в РБ — лишь ~10%, при этом 90% УЗ используют китайскую продукцию без регистрации в РФ и продаж в Западной Европе и США. Системные дефекты: испарение цитрата натрия до окончания срока годности, недобор вакуума по ГОСТ ISO 6710, аэрозольный эффект, маркировка R Sterile без перерегистрации. 70% лабораторных ошибок связаны с преаналитикой; стоимость пробирки — ~1,5% от стоимости рутинного исследования. Просьба о выборочной проверке ЦЭИЗ и аудите регистрационных досье Hunan Liuyang, Weihai Hongyu, Ningbo Greetmed.",
+    "tags": ["Преаналитика", "Качество", "ЦЭИЗ", "ISO 11137", "Китай"],
+    "topics": [
+      "Структура рынка: РФ — 80% Greiner/BD/Sarstedt; РБ — ~10%; 90% УЗ Беларуси используют пробирки китайских производителей без регистрации в РФ и продаж в странах Западной Европы и США.",
+      "Документированные дефекты: 100% случаев испарения цитрата натрия до срока годности, недобор вакуума по ГОСТ ISO 6710 (±10%), несовместимость иглы и держателя, разбрызгивание потенциально инфицированного материала, аэрозольный эффект при открывании.",
+      "70% лабораторных ошибок относятся к преаналитике; стоимость самой дорогой пробирки — около 1,5% от стоимости рутинного исследования. Закупать дорогостоящие реагенты при использовании шприцев или нестерильных пробирок — неосознанное действие.",
+      "Просьба к ЦЭИЗ: выборочная проверка продукции Hunan Liuyang Medical, Weihai Hongyu, Ningbo Greetmed на местах + аудит регистрационных досье на наличие апостилированных сертификатов гамма-стерилизации (ANSI/AAM/ISO 11137) и соответствия Директиве 98/79/EC.",
+      "Просьба к МЗ РБ: создание независимой экспертной группы (с возможным участием экспертов из частных лабораторий и работников МЗ РФ) для согласования единых требований к вакуумным системам и выступление представителя «Виена Медикал» на Республиканском собрании врачей лабораторной диагностики."
+    ],
+    "i18n": {
+      "en": {
+        "outgoing": "Outgoing No. 3",
+        "title": "Quality of Chinese vacuum tubes and an audit of the registration dossiers",
+        "addressee": "Minister of Health · V. Malashko · MoH · E. Bogdan · CEIZ",
+        "summary": "In Russia, the top four manufacturers (Greiner, BD, Sarstedt) hold about 80 % of the blood-collection market; in Belarus only ~10 %, while 90 % of healthcare facilities use Chinese tubes that are not registered in Russia and not sold in Western Europe or the US. Systemic defects: sodium-citrate evaporation before expiry, vacuum underfill below ISO 6710, aerosol risk and R-Sterile labelling without re-registration. About 70 % of lab errors come from preanalytics; a tube costs ~1.5 % of a routine assay. We request a CEIZ field inspection and an audit of the registration dossiers of Hunan Liuyang, Weihai Hongyu and Ningbo Greetmed.",
+        "tags": ["Preanalytics", "Quality", "CEIZ", "ISO 11137", "China"],
+        "topics": [
+          "Market structure: Russia — 80 % Greiner/BD/Sarstedt; Belarus — ~10 %; 90 % of Belarusian healthcare facilities use Chinese tubes that are not registered in Russia and not sold in Western Europe or the US.",
+          "Documented defects: 100 % of cases show sodium-citrate evaporation before expiry; vacuum underfill below the GOST ISO 6710 ±10 % limit; incompatible needles and holders; risk of splashing potentially infected material; aerosol effect on cap opening.",
+          "About 70 % of laboratory errors are linked to preanalytics; the cost of even the most expensive tube is roughly 1.5 % of a routine assay. Buying expensive reagents while drawing blood with syringes or unsterile tubes is an unconscious act.",
+          "Request to CEIZ: a field inspection of Hunan Liuyang Medical, Weihai Hongyu and Ningbo Greetmed products plus an audit of their registration dossiers for apostilled gamma-sterilisation certificates (ANSI/AAM/ISO 11137) and compliance with Directive 98/79/EC.",
+          "Request to the MoH: form an independent expert group (with possible participation of private-laboratory experts and Russian MoH staff) to agree unified requirements for vacuum systems and let a Viena Medical representative address the Republican Lab-Medicine Conference."
+        ]
+      },
+      "zh": {
+        "outgoing": "第 3 号函",
+        "title": "中国真空采血管的质量与注册档案审计",
+        "addressee": "卫生部部长 · V. Malashko · 卫生部 · E. Bogdan · CEIZ",
+        "summary": "在俄罗斯,Greiner、BD、Sarstedt 等四大厂商占据采血管市场约 80 %;在白俄罗斯仅约 10 %,90 % 的医疗机构使用未在俄罗斯注册、未在西欧及美国销售的中国采血管。系统性缺陷包括:柠檬酸钠在失效前蒸发、真空容量未达 ISO 6710 标准、气溶胶风险以及未重新注册即更新 R-Sterile 标签。约 70 % 的实验室差错源自分析前阶段,而一支采血管的成本仅占常规检测的约 1.5 %。请 CEIZ 进行现场抽检并对 Hunan Liuyang、Weihai Hongyu、Ningbo Greetmed 的注册档案进行审计。",
+        "tags": ["分析前阶段", "质量", "CEIZ", "ISO 11137", "中国"],
+        "topics": [
+          "市场结构:俄罗斯 — Greiner/BD/Sarstedt 占 80 %;白俄罗斯 ~10 %;白俄罗斯 90 % 的医疗机构使用未在俄罗斯注册、也未在西欧和美国销售的中国采血管。",
+          "已记录缺陷:100 % 出现柠檬酸钠在失效前蒸发;真空容量不达 GOST ISO 6710 ±10 % 标准;针头与持针器不兼容;潜在感染样本飞溅;开盖时的气溶胶效应。",
+          "实验室差错中约 70 % 源自分析前阶段;即便最昂贵的采血管,其成本也仅占常规检测的约 1.5 %。在使用注射器或非无菌采血管的同时采购昂贵试剂,是无意识的行为。",
+          "致 CEIZ 的请求:对 Hunan Liuyang Medical、Weihai Hongyu、Ningbo Greetmed 进行现场抽检,并审计其注册档案,核查伽马灭菌(ANSI/AAM/ISO 11137)的加签证书及对 98/79/EC 指令的合规性。",
+          "致卫生部的请求:成立独立专家组(可邀请私立实验室专家与俄罗斯卫生部人员参与),协商统一的真空采血系统要求,并安排 Viena Medical 代表在共和国实验室医学医师大会上作专题报告。"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "preanalytics-tz-2016",
+    "date": "27.05.2016",
+    "year": 2016,
+    "outgoing": "Исх. №04/16",
+    "title": "Преаналитика: разбор типового ТЗ на вакуумные системы",
+    "addressee": "Администрация Президента · Косинец А.Н. · МЗ РБ · Богдан Е.Л.",
+    "summary": "Постатейный разбор типового ТЗ Белмедтехники на вакуумные пробирки: 16 пунктов в большинстве своём неконкретны и недоказуемы, что позволяет китайской продукции без сертификатов FDA, регистрации в РФ и финишной гамма-стерилизации выигрывать тендеры с разницей менее 0,2% от Greiner Bio-One. Доля стоимости пробирки в общем тесте — около 3%, экономия на ней — мнимая. Предложен типовой набор обязательных и дополнительных требований к преаналитике на основании ISO 6710, Директивы 98/79/EC и стандартов CLSI H01-A6.",
+    "tags": ["Преаналитика", "Типовое ТЗ", "ISO 6710", "Госзакупки"],
+    "topics": [
+      "Все 16 пунктов типового ТЗ Белмедтехники либо применимы к продукции любого производителя, либо недоказуемы — техническое задание не отражает реальных характеристик закупаемой продукции.",
+      "Тендеры 2016 года (Гомельская медтехника, МКДЦ, городская гинекологическая больница): Hunan Liuyang выигрывает у Greiner Bio-One с разницей менее 0,2% при отсутствии сертификатов FDA, ISO 11137, регистрации в РФ и безопасных механизмов.",
+      "Стоимость самой дорогой системы для забора крови — около 3% от стоимости рутинного исследования; некачественный образец ведёт к повторному забору, поломкам пробозаборников и неверному диагнозу.",
+      "Предложен базовый набор обязательных требований: дозированный вакуум ±10% (ISO 6710), сертификаты ISO 9001/13485, цветовая кодировка по ISO 6710, кровеотталкивающая мембрана, резьбовая крышка для транспортировки в централизованные базы.",
+      "Параллельно ведётся работа с Greiner Bio-One по линии белорусско-немецкой программы подготовки управленческих кадров — переговоры о специальных ценах для УЗ Республики."
+    ],
+    "i18n": {
+      "en": {
+        "outgoing": "Outgoing No. 04/16",
+        "title": "Preanalytics: a review of the standard TOR for vacuum systems",
+        "addressee": "Presidential Administration · A. Kosinets · MoH · E. Bogdan",
+        "summary": "A point-by-point review of Belmedtekhnika’s standard TOR for vacuum tubes: 16 requirements are either generic or unfalsifiable, which lets Chinese products without FDA, RU registration or finishing gamma sterilisation win tenders with margins below 0.2 % over Greiner Bio-One. The tube cost is about 3 % of a test, so saving on it is illusory. A baseline package of mandatory and optional preanalytical requirements is proposed, based on ISO 6710, Directive 98/79/EC and CLSI H01-A6.",
+        "tags": ["Preanalytics", "Standard TOR", "ISO 6710", "Public procurement"],
+        "topics": [
+          "All 16 items of Belmedtekhnika’s standard TOR are either applicable to any vendor or unfalsifiable — the document does not capture the real characteristics of the products being procured.",
+          "2016 tenders (Gomel Medtekhnika, Minsk Diagnostic Centre, City Gynecological Hospital): Hunan Liuyang wins over Greiner Bio-One by less than 0.2 % while lacking FDA clearance, ISO 11137 sterilisation, RU registration and safety mechanisms.",
+          "Even the most expensive blood-collection system costs about 3 % of a routine assay; a poor specimen leads to repeat sampling, damaged probes on analysers and incorrect diagnoses.",
+          "A baseline of mandatory requirements is proposed: dosed vacuum ±10 % (ISO 6710), ISO 9001/13485 certificates, ISO 6710 colour coding, blood-repellent caps and screw caps for transport to centralised facilities.",
+          "Parallel work with Greiner Bio-One under the Belarus–Germany executive training programme — negotiations on special pricing for the Belarusian healthcare system."
+        ]
+      },
+      "zh": {
+        "outgoing": "第 04/16 号函",
+        "title": "分析前阶段:对真空采血系统标准技术要求的审视",
+        "addressee": "总统办公厅 · A. Kosinets · 卫生部 · E. Bogdan",
+        "summary": "对 Belmedtekhnika 真空采血管标准技术要求的逐条审视:16 项要求要么通用、要么无法验证,致使没有 FDA、未在俄罗斯注册、未做最终伽马灭菌的中国产品仅以低于 0.2 % 的差价战胜 Greiner Bio-One。采血管成本约占检测总成本 3 %,在其上节省毫无意义。文件基于 ISO 6710、98/79/EC 指令以及 CLSI H01-A6,提出一套基础的强制性与可选性分析前要求。",
+        "tags": ["分析前阶段", "标准技术要求", "ISO 6710", "公共采购"],
+        "topics": [
+          "Belmedtekhnika 标准技术要求的 16 项内容,要么对任何厂商均适用,要么无法被验证 —— 文件无法反映所采购产品的真实特性。",
+          "2016 年招标(戈梅利 Medtekhnika、明斯克诊断中心、城市妇产科医院):Hunan Liuyang 以低于 0.2 % 的微小差价击败 Greiner Bio-One,而其缺乏 FDA、ISO 11137 灭菌、俄罗斯注册及安全机制。",
+          "即便是最昂贵的采血系统,其成本也仅占常规检测的约 3 %;劣质样本会导致重新采血、分析仪取样针损坏以及诊断错误。",
+          "建议的强制性基础要求:符合 ISO 6710 的定量真空(±10 %)、ISO 9001/13485 证书、ISO 6710 颜色编码、抗血液飞溅膜片以及用于集中实验室运输的螺纹盖。",
+          "同时通过白俄罗斯-德国管理人员培训项目与 Greiner Bio-One 沟通,就医疗机构专项价格展开谈判。"
+        ]
+      }
+    }
   }
 ]

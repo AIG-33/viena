@@ -128,14 +128,14 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Since 2017 · Laboratory diagnostics",
+      "eyebrow": "Since 2017 · Preanalytics & laboratory diagnostics",
       "titleLine1": "We do things",
       "titleLine2": "the way",
       "titleLine2Accent": "they should be done",
       "titleLine2End": ",",
       "titleLine3": "not the way you’re",
       "titleLine3Accent": "asked to.",
-      "subtitle": "Since 2017 we have been picking certified manufacturers and never silently swapping them for «analogs». The lab gets exactly what was specified — and we share responsibility for the result.",
+      "subtitle": "Our core specialisation is the preanalytical phase of laboratory diagnostics — vacuum collection systems, the right reagent-to-blood ratio, safe caps and finishing gamma sterilisation. Since 2017 we have been picking certified manufacturers and never silently swapping them for «analogs».",
       "ctaPrimary": "Request a quote",
       "ctaSecondary": "Open the catalog",
       "categoryCard": {
@@ -175,6 +175,42 @@
       "viewAll": "Open the full catalog →",
       "externalBadge": "shop ↗"
     },
+    "preanalytics": {
+      "eyebrowPill": "Preanalytics",
+      "eyebrowText": "Our core specialisation",
+      "title": "Result quality starts",
+      "titleAccent": "with the tube.",
+      "description": "About 70 % of laboratory errors arise in the preanalytical phase — between the moment blood is drawn and the moment the sample is loaded onto the analyser. Since 2016 Viena Medical has been working systematically on the quality of preanalytics in Belarus: from reviewing standard tenders to picking properly sterilised components.",
+      "stat1Value": "70 %",
+      "stat1Label": "lab errors",
+      "stat1Note": "originate in preanalytics",
+      "stat2Value": "1–3 %",
+      "stat2Label": "tube cost",
+      "stat2Note": "of the total assay price",
+      "stat3Value": "ISO 6710",
+      "stat3Label": "vacuum systems",
+      "stat3Note": "±10 % of the declared volume",
+      "stat4Value": "ISO 11137",
+      "stat4Label": "finishing sterilisation",
+      "stat4Note": "gamma rays after final packaging",
+      "pillarsTitle": "What preanalytical quality is built on",
+      "pillarsHint": "ISO · CLSI · WHO · MoH Order No. 1123",
+      "pillar_vacuum_title": "Certified vacuum",
+      "pillar_vacuum_text": "Filling the tube within ±10 % of the declared volume per ISO 6710 is the only way to guarantee the correct reagent-to-blood ratio.",
+      "pillar_vacuum_ref": "GOST ISO 6710",
+      "pillar_sterile_title": "Finishing gamma sterilisation",
+      "pillar_sterile_text": "Sterilising after final packaging (ANSI/AAM/ISO 11137) is the only way to guarantee 100 % sterility — unlike sterilising before packaging.",
+      "pillar_sterile_ref": "ANSI/AAM/ISO 11137",
+      "pillar_cap_title": "Safe caps",
+      "pillar_cap_text": "A screw cap with a blood-repellent membrane removes the aerosol risk during centrifugation and transport to centralised facilities.",
+      "pillar_cap_ref": "98/79/EC · WHO",
+      "pillar_components_title": "Compatible components",
+      "pillar_components_text": "Needle, holder and tube from a single manufacturer — required by Article 23 of MoH Order No. 1123 and the WHO phlebotomy guidelines.",
+      "pillar_components_ref": "MoH Order 1123 · CLSI H01-A6",
+      "ctaPrimary": "Letter timeline →",
+      "ctaSecondary": "Vacuum systems catalog",
+      "ctaHint": "Since 2016 · An open stance"
+    },
     "shopHighlight": {
       "eyebrow": "shop.viena.by",
       "badge": "Dedicated marketplace",
@@ -198,8 +234,8 @@
     "aboutSection": {
       "eyebrow": "About",
       "titlePre": "An expert in",
-      "titleAccent": "laboratory diagnostics.",
-      "p1": "VIENA MEDICAL is one of the leading B2B distributors of laboratory and medical equipment, reagents and consumables in the Republic of Belarus. We supply clinics, laboratories and research institutions directly — and have been doing so since 2009.",
+      "titleAccent": "preanalytics & laboratory diagnostics.",
+      "p1": "VIENA MEDICAL specialises in the preanalytical phase of laboratory diagnostics — the most fragile, and yet most decisive, part of the workflow for the quality of the result. Direct contracts with manufacturers of vacuum systems, reagents and consumables; supplies to clinics, laboratories and research institutions in Belarus.",
       "ctaServices": "Services",
       "ctaProjects": "Completed projects",
       "stats": [
@@ -274,13 +310,13 @@
   },
   "about": {
     "hero": {
-      "eyebrow": "About · Since 2017",
+      "eyebrow": "About · Since 2017 · Preanalytics",
       "titleLine1Pre": "Doing things",
       "titleLine1Accent": "right",
       "titleLine1Post": " — ",
       "titleLine2Pre": "even when it’s",
       "titleLine2Accent": "not easy.",
-      "description": "Viena Medical is a private company that has been supplying certified equipment, reagents and consumables to laboratories in Belarus since 2017. We work with manufacturers directly and never silently swap them for «analogs» — the lab gets exactly what was specified, and we share responsibility for the result.",
+      "description": "Viena Medical is a private company specialising, since 2017, in the preanalytical phase of laboratory diagnostics: blood-collection vacuum systems, reagents and safe consumables. We work with manufacturers directly, never silently swap them for «analogs», and systematically push for ISO 6710, ISO 11137 and Directive 98/79/EC to be applied in Belarus on substance, not on paper.",
       "stats": {
         "year": "on the market",
         "yearNote": "since founding",
@@ -296,8 +332,8 @@
       "eyebrow": "What drives us",
       "title": "We don’t exist in order to",
       "titleAccent": "agree",
-      "p1": "Laboratories rarely know what alternatives exist to their usual supplier. The supplier rarely has an interest in telling them. An entire industry has lived in that gap for decades — «closed» systems, single-bidder tenders and double-priced procurement.",
-      "p2": "We started in 2017 to do things differently. Not to win a single tender — but to slowly make the market more transparent and the budget more efficient. It is slow, sometimes uncomfortable work: we argue with customers, we argue with the regulator, we lose deals. That is the fair price for being useful.",
+      "p1": "Laboratories rarely know what alternatives exist to their usual supplier, and the supplier rarely has an interest in telling them. An entire industry has lived in that gap for decades — «closed» systems, standard tenders written for a single brand and preanalytical purchases at double the price.",
+      "p2": "We started in 2017 to do things differently. Not to win a single tender — but to slowly make preanalytics and laboratory diagnostics in Belarus more transparent, and the budget more efficient. It is slow, sometimes uncomfortable work: we argue with customers, we argue with the regulator, we lose deals. That is the fair price for being useful.",
       "p3": "We openly write to the Ministry of Health, the antimonopoly authority, the State Control Committee and even to the State Security Committee — and we just as openly publish that work. Not because we enjoy conflict, but because no systemic change happens without an honest public conversation.",
       "quote": "“The lab gets exactly what was specified — and we share responsibility for the result.”"
     },
@@ -319,6 +355,50 @@
         "text": "With laboratory specialists, regulators and international associations — as equals, on substance."
       }
     },
+    "preanalytics": {
+      "eyebrow": "Preanalytics",
+      "eyebrowSub": "Our core specialisation",
+      "title": "Preanalytics — our focus",
+      "titleAccent": "from day one.",
+      "p1": "The preanalytical phase is the path of a sample from the patient’s vein to the analyser’s probe. It is the most fragile part of the laboratory workflow: international evidence consistently puts about 70 % of all laboratory errors right here. We built the company around this topic.",
+      "p2": "Our first public letter on preanalytics was a point-by-point review of Belmedtekhnika’s standard tender for vacuum systems (Outgoing No. 04/16, 27 May 2016). One year later — a letter to the Minister of Health on the concrete defects of the Chinese tubes that ended up in 90 % of Belarusian healthcare facilities (Outgoing No. 3, 15 February 2017). Those two letters set the approach the company has lived by ever since.",
+      "quote": "“Even the most expensive blood-collection system costs about 1–3 % of the total assay. Saving on it is a way to put the entire result at risk.”",
+      "p3": "That is why our reference set is the international standards: ISO 6710 for vacuum systems, ANSI/AAM/ISO 11137 for finishing gamma sterilisation, EU Directive 98/79/EC, the CLSI H01-A6 / H03-A6 / H04-A6 guidelines and the WHO phlebotomy guidance. Inside Belarus — Order No. 1123 of the Ministry of Health, which we treat as the minimum bar for the entire preanalytical phase.",
+      "ctaPrimary": "Preanalytics letter timeline →",
+      "ctaSecondary": "Vacuum systems catalog",
+      "standards": {
+        "iso6710": {
+          "eyebrow": "ISO 6710",
+          "title": "Dosed vacuum",
+          "note": "Filling the tube within ±10 % of the declared volume — the only way to keep the reagent-to-blood ratio correct."
+        },
+        "iso11137": {
+          "eyebrow": "ANSI/AAM/ISO 11137",
+          "title": "Finishing sterilisation",
+          "note": "Gamma rays after final packaging — the only guarantee of 100 % sterility for all components."
+        },
+        "directive": {
+          "eyebrow": "98/79/EC",
+          "title": "EU IVD Directive",
+          "note": "The baseline quality standard for all medical devices for in-vitro diagnostics."
+        },
+        "clsi": {
+          "eyebrow": "CLSI",
+          "title": "H01-A6 · H03-A6 · H04-A6",
+          "note": "Compatible components from different manufacturers built to a common production standard."
+        },
+        "who": {
+          "eyebrow": "WHO",
+          "title": "Safe phlebotomy",
+          "note": "Phlebotomy guidelines — screw caps, no aerosol effect, single-use needles."
+        },
+        "moh1123": {
+          "eyebrow": "MoH order",
+          "title": "No. 1123 · 10.11.2015",
+          "note": "Belarus’s national requirements for the preanalytical phase — the baseline bar for healthcare facilities."
+        }
+      }
+    },
     "moh": {
       "eyebrow": "Open stance",
       "eyebrowSub": "Working with the regulator",
@@ -330,6 +410,10 @@
       "ctaSecondary": "All projects"
     },
     "timeline": {
+      "topic2016": "Standard tender review",
+      "hint2016": "Preanalytics — the starting point.",
+      "topic2017": "Quality of Chinese tubes",
+      "hint2017": "Request for a CEIZ inspection.",
       "topic2018": "“Action plan 1.0”",
       "hint2018": "Systemic letter to the State Security Committee.",
       "topic2021": "Analogs for «closed» systems",

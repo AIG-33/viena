@@ -36,9 +36,12 @@ export default async function AboutPage({
     "rome",
     "vietnam",
   ] as const;
+  const preanalyticsStandards = ["iso6710", "iso11137", "directive", "clsi", "who", "moh1123"] as const;
 
   // Mini-timeline blocks shown next to the MoH CTA (year + topic + hint live in messages later if needed)
   const timelineRows = [
+    { year: "2016", topicKey: "topic2016", hintKey: "hint2016" },
+    { year: "2017", topicKey: "topic2017", hintKey: "hint2017" },
     { year: "2018", topicKey: "topic2018", hintKey: "hint2018" },
     { year: "2021", topicKey: "topic2021", hintKey: "hint2021" },
     { year: "2023", topicKey: "topic2023", hintKey: "hint2023" },
@@ -67,7 +70,7 @@ export default async function AboutPage({
             <StatCard value="2017" label={t("hero.stats.year")} note={t("hero.stats.yearNote")} />
             <StatCard value="30+" label={t("hero.stats.manufacturers")} note={t("hero.stats.manufacturersNote")} />
             <StatCard value="500+" label={t("hero.stats.deliveries")} note={t("hero.stats.deliveriesNote")} />
-            <StatCard value="9" label={t("hero.stats.letters")} note={t("hero.stats.lettersNote")} />
+            <StatCard value="11" label={t("hero.stats.letters")} note={t("hero.stats.lettersNote")} />
           </div>
         }
       />
@@ -101,6 +104,61 @@ export default async function AboutPage({
                   title={t(`principles.${k}.title`)}
                   text={t(`principles.${k}.text`)}
                 />
+              ))}
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      {/* Preanalytics — core specialisation */}
+      <section className="bg-white py-14 md:py-20 border-t border-paper-200">
+        <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
+          <div className="grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-16 items-start">
+            <div>
+              <span className="eyebrow">
+                <span className="pill pill-green">{t("preanalytics.eyebrow")}</span>
+                {t("preanalytics.eyebrowSub")}
+              </span>
+              <h2 className="display-heading text-[28px] md:text-[44px] text-ink-900 mt-4 leading-[1.05]">
+                {t("preanalytics.title")}{" "}
+                <span className="serif-accent text-green-700">
+                  {t("preanalytics.titleAccent")}
+                </span>
+              </h2>
+              <div className="mt-6 space-y-5 text-[15px] md:text-[16px] leading-relaxed text-ink-700 max-w-2xl">
+                <p>{t("preanalytics.p1")}</p>
+                <p>{t("preanalytics.p2")}</p>
+                <blockquote className="pl-5 border-l-2 border-green-500 italic text-ink-900 text-[15px] md:text-[17px] leading-relaxed">
+                  {t("preanalytics.quote")}
+                </blockquote>
+                <p>{t("preanalytics.p3")}</p>
+              </div>
+              <div className="mt-7 flex flex-wrap gap-3">
+                <Link href="/projects/moh" className="btn btn-green">
+                  {t("preanalytics.ctaPrimary")}
+                </Link>
+                <Link href="/catalog/vacuum-systems" className="btn btn-ghost">
+                  {t("preanalytics.ctaSecondary")}
+                </Link>
+              </div>
+            </div>
+
+            <aside className="grid grid-cols-2 gap-3">
+              {preanalyticsStandards.map((k) => (
+                <div
+                  key={k}
+                  className="rounded-2xl border border-paper-200 bg-paper-50 p-4 hover:border-green-300 hover:bg-white transition-colors"
+                >
+                  <div className="font-mono text-[10px] tracking-[0.14em] uppercase font-bold text-green-700">
+                    {t(`preanalytics.standards.${k}.eyebrow`)}
+                  </div>
+                  <div className="font-display text-[14px] font-bold text-ink-900 mt-1.5 leading-snug">
+                    {t(`preanalytics.standards.${k}.title`)}
+                  </div>
+                  <p className="text-[12px] text-ink-600 leading-relaxed mt-1.5">
+                    {t(`preanalytics.standards.${k}.note`)}
+                  </p>
+                </div>
               ))}
             </aside>
           </div>
