@@ -27,7 +27,7 @@
     "email": "med@viena.by",
     "address": "白俄罗斯明斯克市 Radialnaya 街 54B 号 67 室,邮编 220070",
     "addressShort": "明斯克 · Radialnaya 街 54B",
-    "schedule": "周一至周五 · 09:00 — 18:00",
+    "schedule": "周一至周四 · 09:00 — 17:00 · 周五 · 09:00 — 16:00",
     "more": "了解更多",
     "moreArrow": "了解更多 →",
     "all": "全部",
@@ -65,6 +65,8 @@
   "header": {
     "cart": "询价单",
     "getQuote": "获取报价",
+    "shop": "科研试剂商城",
+    "shopShort": "shop.viena.by",
     "phoneTooltip": "致电我们"
   },
   "footer": {
@@ -168,9 +170,22 @@
     },
     "categoriesTeaser": {
       "eyebrow": "产品目录",
-      "title": "设备分类",
+      "title": "产品分类",
       "subtitle": "从真空采血系统到科研级试剂与床旁检测 (POCT) 设备。",
-      "viewAll": "查看完整目录 →"
+      "viewAll": "查看完整目录 →",
+      "externalBadge": "shop ↗"
+    },
+    "shopHighlight": {
+      "eyebrow": "shop.viena.by",
+      "badge": "独立商城",
+      "title": "大型",
+      "titleAccent": "科研试剂商城",
+      "description": "数千款科研级试剂与实验室耗材,支持在线下单、明斯克仓库直发并覆盖独联体配送。",
+      "feature1": "与厂商直接合作",
+      "feature2": "在线目录与快速搜索",
+      "feature3": "覆盖白俄罗斯及独联体的物流",
+      "cta": "前往商城",
+      "ctaHint": "将在新标签页中打开"
     },
     "projectsTeaser": {
       "eyebrow": "项目案例",
@@ -587,11 +602,21 @@
       "email": "邮箱",
       "addressHeading": "办公室与仓库地址",
       "addressValue": "白俄罗斯明斯克市 Radialnaya 街 54B 号 67 室,邮编 220070",
-      "schedule": "周一至周五:09:00—18:00 · 周六、周日:休息",
+      "schedule": "周一至周四:09:00—17:00 · 周五:09:00—16:00 · 周六、周日:休息",
       "requisites": "公司信息",
       "company": "Viena Medical 私人企业",
       "unp": "纳税号 192599105",
       "shopLink": "shop.viena.by →"
+    },
+    "map": {
+      "eyebrow": "我们的位置",
+      "title": "办公室与仓库",
+      "titleAccent": "地图位置。",
+      "badge": "地址",
+      "addressLine1": "Radialnaya 街 54B 号",
+      "addressLine2": "明斯克 · 1 楼 67 室",
+      "openInYandex": "在 Yandex 地图打开",
+      "iframeTitle": "地图:VIENA MEDICAL,明斯克 Radialnaya 54B"
     },
     "form": {
       "eyebrowPill": "询价",

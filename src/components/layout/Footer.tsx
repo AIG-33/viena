@@ -2,13 +2,15 @@ import Image from "next/image";
 import { getLocale, getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { getAllCategories } from "@/lib/data";
+import { getCategoryLink } from "@/lib/utils";
 import type { Locale } from "@/i18n/routing";
+import { SocialIcons, type SocialLink } from "./SocialIcons";
 
-const SOCIAL = [
-  { name: "Telegram", url: "https://t.me/viena_medical_bot", letter: "T" },
-  { name: "Instagram", url: "https://www.instagram.com/vienamedical/", letter: "I" },
-  { name: "Facebook", url: "https://www.facebook.com/vienamedical", letter: "F" },
-  { name: "LinkedIn", url: "#", letter: "L" },
+const SOCIAL: SocialLink[] = [
+  { network: "telegram", url: "https://t.me/viena_medical_bot" },
+  { network: "instagram", url: "https://www.instagram.com/vienamedical/" },
+  { network: "facebook", url: "https://www.facebook.com/vienamedical" },
+  { network: "linkedin", url: "https://www.linkedin.com/company/viena-medical" },
 ];
 
 export async function Footer() {
@@ -36,18 +38,7 @@ export async function Footer() {
             <p className="text-[13px] leading-relaxed mt-4 max-w-xs text-ink-600">
               {t("tagline")}
             </p>
-            <div className="flex gap-2.5 mt-5">
-              {SOCIAL.map((s) => (
-                <a
-                  key={s.name}
-                  href={s.url}
-                  aria-label={s.name}
-                  className="w-9 h-9 rounded-xl bg-white border border-paper-200 grid place-items-center text-[12px] font-bold text-ink-700 hover:border-green-500 hover:text-green-700 transition-colors"
-                >
-                  {s.letter}
-                </a>
-              ))}
-            </div>
+            <SocialIcons links={SOCIAL} className="mt-5" />
           </div>
 
           {/* Catalog */}
@@ -56,16 +47,31 @@ export async function Footer() {
               {t("catalogHeading")}
             </div>
             <ul className="space-y-2">
-              {categories.slice(0, 5).map((cat) => (
-                <li key={cat.id}>
-                  <Link
-                    href={`/catalog/${cat.id}`}
-                    className="text-[13px] text-ink-700 hover:text-green-700 transition-colors"
-                  >
-                    {cat.name}
-                  </Link>
-                </li>
-              ))}
+              {categories.slice(0, 5).map((cat) => {
+                const link = getCategoryLink(cat.id);
+                return (
+                  <li key={cat.id}>
+                    {link.isExternal ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="inline-flex items-center gap-1 text-[13px] text-ink-700 hover:text-green-700 transition-colors"
+                      >
+                        {cat.name}
+                        <span aria-hidden className="text-green-600">↗</span>
+                      </a>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className="text-[13px] text-ink-700 hover:text-green-700 transition-colors"
+                      >
+                        {cat.name}
+                      </Link>
+                    )}
+                  </li>
+                );
+              })}
               <li className="pt-1">
                 <Link
                   href="/catalog"

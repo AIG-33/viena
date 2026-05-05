@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslations, useLocale } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Category } from "@/types/category";
+import { getCategoryLink } from "@/lib/utils";
 
 const ICONS: Record<string, string> = {
   package: "M8 2h8v15a4 4 0 0 1-8 0V2zM8 9h8",
@@ -102,36 +103,76 @@ export function HeroSection({ categories }: Props) {
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-2">
-            {categories.map((cat, i) => (
-              <motion.div
-                key={cat.id}
-                initial={{ opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.15 + i * 0.04 }}
-              >
-                <Link
-                  href={`/catalog/${cat.id}`}
-                  className="flex items-center gap-2.5 px-3 py-3 bg-white rounded-xl border border-paper-200 hover:border-green-500 hover:shadow-[var(--shadow-1)] transition-all group"
-                >
-                  <span className="w-8 h-8 rounded-lg bg-green-50 text-green-700 grid place-items-center shrink-0">
+            {categories.map((cat, i) => {
+              const link = getCategoryLink(cat.id);
+              const tileClass =
+                "flex items-center gap-2.5 px-3 py-3 bg-white rounded-xl border transition-all group " +
+                (link.isExternal
+                  ? "border-green-200 ring-1 ring-green-100 hover:border-green-500 hover:shadow-[var(--shadow-1)]"
+                  : "border-paper-200 hover:border-green-500 hover:shadow-[var(--shadow-1)]");
+              const tileBody = (
+                <>
+                  <span
+                    className={
+                      "w-8 h-8 rounded-lg grid place-items-center shrink-0 " +
+                      (link.isExternal
+                        ? "bg-green-500 text-white"
+                        : "bg-green-50 text-green-700")
+                    }
+                  >
                     <svg viewBox="0 0 24 24" className="icon w-4 h-4">
                       <path d={ICONS[cat.icon] || ICONS.flask} />
                     </svg>
                   </span>
                   <span className="flex-1 min-w-0">
-                    <span className="block text-[13px] font-semibold text-ink-900 truncate">
-                      {cat.name}
+                    <span className="flex items-center gap-1.5">
+                      <span className="block text-[13px] font-semibold text-ink-900 truncate">
+                        {cat.name}
+                      </span>
+                      {link.isExternal && (
+                        <span className="inline-flex items-center px-1.5 py-[1px] rounded-full bg-green-100 text-green-700 text-[9px] font-bold tracking-wide uppercase leading-none">
+                          {tCat("externalBadge")}
+                        </span>
+                      )}
                     </span>
                     <span className="block text-[10px] text-ink-500 mt-0.5">
-                      {tHeroCat("itemCount", { count: cat.productCount ?? 0 })}
+                      {link.isExternal
+                        ? "shop.viena.by"
+                        : tHeroCat("itemCount", { count: cat.productCount ?? 0 })}
                     </span>
                   </span>
-                  <span className="text-green-600 text-[15px] group-hover:translate-x-0.5 transition-transform" aria-hidden>
-                    →
+                  <span
+                    className="text-green-600 text-[15px] group-hover:translate-x-0.5 transition-transform"
+                    aria-hidden
+                  >
+                    {link.isExternal ? "↗" : "→"}
                   </span>
-                </Link>
-              </motion.div>
-            ))}
+                </>
+              );
+              return (
+                <motion.div
+                  key={cat.id}
+                  initial={{ opacity: 0, y: 8 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.15 + i * 0.04 }}
+                >
+                  {link.isExternal ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className={tileClass}
+                    >
+                      {tileBody}
+                    </a>
+                  ) : (
+                    <Link href={link.href} className={tileClass}>
+                      {tileBody}
+                    </Link>
+                  )}
+                </motion.div>
+              );
+            })}
           </div>
           <Link href="/catalog" className="btn btn-green w-full mt-4">
             {tCat("viewAll")}

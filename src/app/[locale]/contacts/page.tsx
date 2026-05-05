@@ -1,5 +1,6 @@
 import { ContactForm } from "@/components/contacts/ContactForm";
 import { CartSection } from "@/components/contacts/CartSection";
+import { YandexMap } from "@/components/contacts/YandexMap";
 import { PageHero } from "@/components/layout/PageHero";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -136,6 +137,8 @@ export default async function ContactsPage({
           <ContactForm />
         </div>
       </section>
+
+      <YandexMap />
 
       <section className="bg-paper-50 py-12 md:py-16">
         <div id="cart" className="scroll-mt-28 max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import type { Category } from "@/types/category";
+import { getCategoryLink } from "@/lib/utils";
 
 interface CategoryCardProps {
   category: Category;
@@ -95,9 +96,19 @@ export function CategoryCard({ category, index, large = false }: CategoryCardPro
   const paletteKey = CATEGORY_PALETTE[category.id] ?? "white";
   const p = PALETTES[paletteKey];
   const extraBorder = BORDER_EMPHASIS[category.id] ?? "";
+  const link = getCategoryLink(category.id);
+
+  const Wrapper = ({ children }: { children: React.ReactNode }) =>
+    link.isExternal ? (
+      <a href={link.href} target="_blank" rel="noreferrer noopener">
+        {children}
+      </a>
+    ) : (
+      <Link href={link.href}>{children}</Link>
+    );
 
   return (
-    <Link href={`/catalog/${category.id}`}>
+    <Wrapper>
       <motion.article
         whileHover={{ y: -3, x: -3 }}
         transition={{ type: "spring", stiffness: 320, damping: 22 }}
@@ -156,6 +167,6 @@ export function CategoryCard({ category, index, large = false }: CategoryCardPro
           </span>
         </div>
       </motion.article>
-    </Link>
+    </Wrapper>
   );
 }

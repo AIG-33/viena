@@ -27,7 +27,7 @@
     "email": "med@viena.by",
     "address": "220070, Minsk, Radialnaya str., 54B, office 67",
     "addressShort": "Minsk, Radialnaya str., 54B",
-    "schedule": "Mon–Fri · 09:00 — 18:00",
+    "schedule": "Mon–Thu · 09:00 — 17:00 · Fri · 09:00 — 16:00",
     "more": "More",
     "moreArrow": "Learn more →",
     "all": "All",
@@ -65,6 +65,8 @@
   "header": {
     "cart": "RFQ cart",
     "getQuote": "Request a quote",
+    "shop": "Research reagents shop",
+    "shopShort": "shop.viena.by",
     "phoneTooltip": "Call us"
   },
   "footer": {
@@ -168,9 +170,22 @@
     },
     "categoriesTeaser": {
       "eyebrow": "Catalog",
-      "title": "Equipment categories",
+      "title": "Product categories",
       "subtitle": "From vacuum blood collection systems to research-grade reagents and POCT devices.",
-      "viewAll": "Open the full catalog →"
+      "viewAll": "Open the full catalog →",
+      "externalBadge": "shop ↗"
+    },
+    "shopHighlight": {
+      "eyebrow": "shop.viena.by",
+      "badge": "Dedicated marketplace",
+      "title": "A dedicated shop for",
+      "titleAccent": "research reagents",
+      "description": "Thousands of research-grade reagents and lab consumables with direct online ordering, a Minsk warehouse and CIS-wide delivery.",
+      "feature1": "Direct contracts with manufacturers",
+      "feature2": "Online catalog with fast search",
+      "feature3": "Shipping across Belarus and the CIS",
+      "cta": "Open the shop",
+      "ctaHint": "Opens in a new tab"
     },
     "projectsTeaser": {
       "eyebrow": "Projects",
@@ -587,11 +602,21 @@
       "email": "Email",
       "addressHeading": "Office and warehouse",
       "addressValue": "220070, Minsk, Radialnaya str., 54B, office 67",
-      "schedule": "Mon—Fri: 09:00—18:00 · Sat—Sun: closed",
+      "schedule": "Mon—Thu: 09:00—17:00 · Fri: 09:00—16:00 · Sat—Sun: closed",
       "requisites": "Legal details",
       "company": "Viena Medical Private Enterprise",
       "unp": "Tax ID 192599105",
       "shopLink": "shop.viena.by →"
+    },
+    "map": {
+      "eyebrow": "Where to find us",
+      "title": "Office and warehouse",
+      "titleAccent": "on the map.",
+      "badge": "Address",
+      "addressLine1": "Radialnaya str., 54B",
+      "addressLine2": "Minsk · office 67, floor 1",
+      "openInYandex": "Open in Yandex Maps",
+      "iframeTitle": "Map: VIENA MEDICAL, Radialnaya 54B, Minsk"
     },
     "form": {
       "eyebrowPill": "RFQ",
