@@ -42,6 +42,11 @@ type Product = { slug: string; createdAt?: string };
 type Category = { id: string };
 type Manufacturer = { slug: string };
 type Project = { id: string };
+type BlogPost = {
+  slug: string;
+  publishedAt: string;
+  updatedAt?: string;
+};
 
 function readJson<T>(path: string): T {
   return JSON.parse(readFileSync(path, "utf-8")) as T;
@@ -98,6 +103,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const manufacturersMTime = fileMtime(join(dataDir, "manufacturers.json"));
   const projectsMTime = fileMtime(join(dataDir, "projects.json"));
 
+  const blogPosts = readJson<BlogPost[]>(join(dataDir, "blog.json"));
+  const blogMTime = fileMtime(join(dataDir, "blog.json"));
+  const faqMTime = fileMtime(join(dataDir, "faq.json"));
+
   const staticPages: MetadataRoute.Sitemap = [
     entry("/", "weekly", 1, categoriesMTime),
     entry("/catalog", "weekly", 0.95, categoriesMTime),
@@ -106,8 +115,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/projects", "monthly", 0.75, projectsMTime),
     entry("/projects/moh", "monthly", 0.8, fileMtime(join(dataDir, "moh-letters.json"))),
     entry("/about", "monthly", 0.7, projectsMTime),
+    entry("/blog", "weekly", 0.85, blogMTime),
+    entry("/faq", "monthly", 0.75, faqMTime),
     entry("/contacts", "yearly", 0.6, new Date("2024-01-01")),
   ];
+
+  const blogPages: MetadataRoute.Sitemap = blogPosts.map((p) => {
+    const updatedAt = p.updatedAt || p.publishedAt;
+    const lastMod = new Date(updatedAt);
+    return entry(
+      `/blog/${p.slug}`,
+      "monthly",
+      0.7,
+      isNaN(lastMod.valueOf()) ? blogMTime : lastMod
+    );
+  });
 
   const categoryPages: MetadataRoute.Sitemap = categories.map((c) => {
     const file = join(productsDir, `${c.id}.json`);
@@ -151,5 +173,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...categoryPages,
     ...manufacturerPages,
     ...productPages,
+    ...blogPages,
   ];
 }

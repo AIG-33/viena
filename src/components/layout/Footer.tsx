@@ -74,6 +74,22 @@ export async function Footer() {
                   {t("mohLink")}
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="inline-flex items-center gap-1 text-[13px] font-semibold text-green-700 hover:text-green-600"
+                >
+                  {t("blogLink")}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/faq"
+                  className="inline-flex items-center gap-1 text-[13px] font-semibold text-green-700 hover:text-green-600"
+                >
+                  {t("faqLink")}
+                </Link>
+              </li>
             </ul>
           </div>
 

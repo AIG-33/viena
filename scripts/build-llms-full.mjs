@@ -28,6 +28,12 @@ const categories = JSON.parse(
 const manufacturers = JSON.parse(
   readFileSync(join(ROOT, "data/manufacturers.json"), "utf8")
 );
+const blogPosts = JSON.parse(
+  readFileSync(join(ROOT, "data/blog.json"), "utf8")
+);
+const faqGroups = JSON.parse(
+  readFileSync(join(ROOT, "data/faq.json"), "utf8")
+);
 const catById = new Map(categories.map((c) => [c.id, c]));
 const mfrBySlug = new Map(manufacturers.map((m) => [m.slug, m]));
 
@@ -99,11 +105,54 @@ ${desc}
 `;
 });
 
-const out = header + "\n" + sections.join("\n");
+// FAQ section — pure text, easy for AI agents to extract direct answers.
+const faqMd = `\n---\n\n# FAQ — частые вопросы (${SITE_URL}/ru/faq)\n\n${faqGroups
+  .map((group) => {
+    const items = group.items
+      .map((it) => `### ${it.q}\n\n${it.a}`)
+      .join("\n\n");
+    return `## ${group.title}\n\n${items}`;
+  })
+  .join("\n\n")}\n`;
+
+// Blog section — emit each post as Markdown so AI agents can cite the
+// underlying ISO/CLSI/WHO references directly.
+const blogMd = `\n---\n\n# Блог (${SITE_URL}/ru/blog)\n\nЭкспертные статьи со ссылками на международные стандарты (ISO 6710, ISO 11137, CLSI, WHO) и рецензируемые публикации.\n\n${blogPosts
+  .map((post) => {
+    const url = `${SITE_URL}/ru/blog/${post.slug}`;
+    const tags = post.tags?.length ? ` · ${post.tags.join(" · ")}` : "";
+    const renderBlock = (b) => {
+      if (b.type === "p") return b.text;
+      if (b.type === "h2") return `\n## ${b.text}\n`;
+      if (b.type === "h3") return `\n### ${b.text}\n`;
+      if (b.type === "ul")
+        return b.items.map((i) => `- ${i}`).join("\n");
+      if (b.type === "ol")
+        return b.items.map((i, idx) => `${idx + 1}. ${i}`).join("\n");
+      if (b.type === "blockquote")
+        return `> ${b.text}${b.cite ? `\n> — ${b.cite}` : ""}`;
+      if (b.type === "callout")
+        return `**${b.title || "Заметка"}:** ${b.text}`;
+      return "";
+    };
+    const body = post.body.map(renderBlock).join("\n\n");
+    const refs = (post.references ?? [])
+      .map(
+        (r, idx) =>
+          `${idx + 1}. [${r.title}](${r.url})${r.publisher ? ` — ${r.publisher}` : ""}`
+      )
+      .join("\n");
+    return `## ${post.title}\n\n_${post.publishedAt}${tags}_\n\n**URL:** ${url}\n\n${post.excerpt}\n\n${body}\n\n**Источники:**\n\n${refs}`;
+  })
+  .join("\n\n---\n\n")}\n`;
+
+const out = header + "\n" + sections.join("\n") + faqMd + blogMd;
 const outPath = join(ROOT, "public/llms-full.txt");
 writeFileSync(outPath, out, "utf8");
 
 const sizeKb = (Buffer.byteLength(out, "utf8") / 1024).toFixed(1);
 console.log(`Wrote ${outPath}`);
 console.log(`Products       : ${products.length}`);
+console.log(`Blog posts     : ${blogPosts.length}`);
+console.log(`FAQ groups     : ${faqGroups.length}`);
 console.log(`Size           : ${sizeKb} KiB`);

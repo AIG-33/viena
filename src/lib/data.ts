@@ -3,6 +3,7 @@ import type { Product } from "@/types/product";
 import type { Service } from "@/types/service";
 import type { Project } from "@/types/project";
 import type { Manufacturer } from "@/types/manufacturer";
+import type { BlogPost } from "@/types/blog";
 import type { Locale } from "@/i18n/routing";
 import { applyLocale, applyLocaleAll, type Translatable } from "@/lib/i18n-data";
 
@@ -18,6 +19,7 @@ import scientificReagents from "../../data/products/scientific-reagents.json";
 import lancets from "../../data/products/lancets.json";
 import servicesData from "../../data/services.json";
 import projectsData from "../../data/projects.json";
+import blogData from "../../data/blog.json";
 
 type LocaledCategory = Category & Translatable;
 type LocaledManufacturer = Manufacturer & Translatable;
@@ -29,6 +31,7 @@ const categoriesRaw = categoriesData as LocaledCategory[];
 const manufacturersRaw = manufacturersData as LocaledManufacturer[];
 const servicesRaw = servicesData as LocaledService[];
 const projectsRaw = projectsData as LocaledProject[];
+const blogRaw = blogData as BlogPost[];
 
 const allProductsRaw: LocaledProduct[] = [
   ...consumables,
@@ -250,6 +253,45 @@ export function getProjectById(
 ): Project | undefined {
   const found = projectsRaw.find((p) => p.id === id);
   return found ? (applyLocale(found, locale) as Project) : undefined;
+}
+
+/**
+ * Blog posts are stored RU-only (no `i18n` block today). The `locale`
+ * parameter is reserved for future translations but currently has no
+ * effect — keeping it on the signature for API consistency.
+ */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export function getAllBlogPosts(_locale: Locale = "ru"): BlogPost[] {
+  return [...blogRaw].sort((a, b) =>
+    b.publishedAt.localeCompare(a.publishedAt)
+  );
+}
+
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export function getBlogPostBySlug(
+  slug: string,
+  _locale: Locale = "ru"
+): BlogPost | undefined {
+  return blogRaw.find((p) => p.slug === slug);
+}
+
+export function getRelatedBlogPosts(
+  post: BlogPost,
+  limit = 3
+): BlogPost[] {
+  return blogRaw
+    .filter((p) => p.id !== post.id)
+    .map((p) => {
+      let score = 0;
+      if (p.categoryId && p.categoryId === post.categoryId) score += 5;
+      const sharedTags =
+        p.tags?.filter((t) => post.tags?.includes(t)).length ?? 0;
+      score += sharedTags;
+      return { p, score };
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, limit)
+    .map((x) => x.p);
 }
 
 function withManufacturerCount(m: LocaledManufacturer): LocaledManufacturer {

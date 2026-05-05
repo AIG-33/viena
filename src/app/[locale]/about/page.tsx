@@ -13,9 +13,26 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "about.hero" });
   const tNav = await getTranslations({ locale, namespace: "nav" });
+  const isRu = locale === "ru";
   return {
-    title: tNav("about"),
-    description: t("description"),
+    title: isRu
+      ? "О компании ВИЕНА МЕДИКАЛ — преаналитика и стандарты ISO"
+      : tNav("about"),
+    description: isRu
+      ? "ВИЕНА МЕДИКАЛ с 2016 года: B2B-дистрибьютор лабораторного и медицинского оборудования в Беларуси. Специализация — преаналитика и стандарты ISO 6710, ISO 11137, Директива 98/79/EC. Прямые контракты с Greiner Bio-One, АмплиСенс, Microlit, Tianlong и др."
+      : t("description"),
+    keywords: isRu
+      ? [
+          "ВИЕНА МЕДИКАЛ",
+          "о компании",
+          "преаналитика Беларусь",
+          "ISO 6710 Беларусь",
+          "дистрибьютор Greiner Bio-One",
+          "официальный поставщик VACUETTE",
+          "лабораторная диагностика Минск",
+          "B2B медоборудование",
+        ]
+      : undefined,
   };
 }
 
@@ -319,6 +336,213 @@ export default async function AboutPage({
           </div>
         </div>
       </section>
+
+      {locale === "ru" && (
+        <section className="bg-white border-t border-paper-200 py-14 md:py-20">
+          <div className="max-w-[1100px] mx-auto px-4 md:px-10 lg:px-14">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
+              <div className="lg:col-span-7 space-y-5 text-[15px] md:text-[16px] leading-relaxed text-ink-700">
+                <span className="eyebrow">
+                  <span className="dot" />
+                  Что мы делаем
+                </span>
+                <h2 className="display-heading text-ink-900 text-2xl md:text-3xl mt-3">
+                  Преаналитика как специализация
+                </h2>
+                <p>
+                  ВИЕНА МЕДИКАЛ — белорусский B2B-дистрибьютор лабораторного и
+                  медицинского оборудования с 2016 года. Наша основная
+                  специализация — преаналитический этап лабораторной
+                  диагностики. По данным CLSI и WHO, до 70 % всех ошибок
+                  лабораторных исследований возникают именно на этом этапе:
+                  при выборе пробирки, технике флеботомии, маркировке,
+                  транспортировке.
+                </p>
+                <p>
+                  Мы работаем напрямую с мировыми производителями:{" "}
+                  <Link
+                    href="/manufacturers/greiner-bio-one"
+                    className="text-green-700 underline decoration-green-300 underline-offset-2 hover:decoration-green-700"
+                  >
+                    Greiner Bio-One
+                  </Link>{" "}
+                  (вакуумные системы VACUETTE® и MiniCollect®, визуализаторы
+                  вен VeinViewer®),{" "}
+                  <Link
+                    href="/manufacturers/amplisens"
+                    className="text-green-700 underline decoration-green-300 underline-offset-2 hover:decoration-green-700"
+                  >
+                    АмплиСенс
+                  </Link>{" "}
+                  (тест-системы ПЦР для клинической диагностики),{" "}
+                  <Link
+                    href="/manufacturers/microlit"
+                    className="text-green-700 underline decoration-green-300 underline-offset-2 hover:decoration-green-700"
+                  >
+                    Microlit
+                  </Link>{" "}
+                  (механические и электронные дозаторы),{" "}
+                  <Link
+                    href="/manufacturers/tianlong"
+                    className="text-green-700 underline decoration-green-300 underline-offset-2 hover:decoration-green-700"
+                  >
+                    Tianlong
+                  </Link>{" "}
+                  (ПЦР-амплификаторы Gentier),{" "}
+                  <Link
+                    href="/manufacturers/biovitrum"
+                    className="text-green-700 underline decoration-green-300 underline-offset-2 hover:decoration-green-700"
+                  >
+                    BioVitrum
+                  </Link>{" "}
+                  (реагенты для гистологии и патоморфологии). Это исключает
+                  параллельный импорт, контрафакт и подмену сертифицированной
+                  продукции «аналогами».
+                </p>
+                <p>
+                  Принципиальная позиция компании — работать только по
+                  международным стандартам качества:{" "}
+                  <a
+                    href="https://www.iso.org/standard/69466.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-700 underline decoration-green-300 underline-offset-2 hover:decoration-green-700"
+                  >
+                    ISO 6710
+                  </a>{" "}
+                  (вакуумные системы взятия крови),{" "}
+                  <a
+                    href="https://www.iso.org/standard/33952.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-700 underline decoration-green-300 underline-offset-2 hover:decoration-green-700"
+                  >
+                    ISO 11137
+                  </a>{" "}
+                  (финишная гамма-стерилизация),{" "}
+                  <a
+                    href="https://www.iso.org/standard/59752.html"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-700 underline decoration-green-300 underline-offset-2 hover:decoration-green-700"
+                  >
+                    ISO 13485
+                  </a>{" "}
+                  (системы менеджмента качества для производителей мед.
+                  изделий),{" "}
+                  <a
+                    href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31998L0079"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-700 underline decoration-green-300 underline-offset-2 hover:decoration-green-700"
+                  >
+                    Директива 98/79/EC
+                  </a>{" "}
+                  ЕС (диагностика in vitro), руководства{" "}
+                  <a
+                    href="https://clsi.org/standards/products/general-laboratory/documents/gp41/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-700 underline decoration-green-300 underline-offset-2 hover:decoration-green-700"
+                  >
+                    CLSI GP41 / H03
+                  </a>
+                  ,{" "}
+                  <a
+                    href="https://www.who.int/publications/i/item/9789241599221"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-green-700 underline decoration-green-300 underline-offset-2 hover:decoration-green-700"
+                  >
+                    WHO Best Practices in Phlebotomy
+                  </a>
+                  . Внутри РБ — Приказ Минздрава №1123 как минимальная планка.
+                </p>
+                <p>
+                  Мы системно работаем с Минздравом РБ над тем, чтобы эти
+                  стандарты применялись в Беларуси по существу, а не
+                  формально — наша{" "}
+                  <Link
+                    href="/projects/moh"
+                    className="text-green-700 underline decoration-green-300 underline-offset-2 hover:decoration-green-700"
+                  >
+                    хронология обращений в МЗ РБ с 2016 года
+                  </Link>{" "}
+                  показывает, как менялись закупочные требования и какие
+                  системные дефекты китайских вакуумных пробирок были
+                  зафиксированы документально.
+                </p>
+              </div>
+
+              <div className="lg:col-span-5 space-y-5">
+                <span className="eyebrow">
+                  <span className="dot" />
+                  Что почитать
+                </span>
+                <h2 className="display-heading text-ink-900 text-2xl md:text-3xl mt-3">
+                  Экспертные материалы
+                </h2>
+                <p className="text-[14px] text-ink-600 leading-relaxed">
+                  Если вы только знакомитесь с темой преаналитики или хотите
+                  привести свою КДЛ к международным стандартам — начните с
+                  этих статей в нашем блоге:
+                </p>
+                <ul className="space-y-3">
+                  <li>
+                    <Link
+                      href="/blog/kak-vybrat-vakuumnye-probirki-iso-6710"
+                      className="block group bg-paper-50 border border-paper-200 rounded-lg p-4 hover:border-green-400 transition-colors"
+                    >
+                      <span className="font-display text-ink-900 group-hover:text-green-700 transition-colors">
+                        Гид по ISO 6710 →
+                      </span>
+                      <p className="text-[13px] text-ink-600 mt-1">
+                        Как читать стандарт и составлять корректное тендерное
+                        ТЗ.
+                      </p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/blog/preanalitika-7-oshibok-iskazhayushih-rezultaty"
+                      className="block group bg-paper-50 border border-paper-200 rounded-lg p-4 hover:border-green-400 transition-colors"
+                    >
+                      <span className="font-display text-ink-900 group-hover:text-green-700 transition-colors">
+                        7 ошибок преаналитики →
+                      </span>
+                      <p className="text-[13px] text-ink-600 mt-1">
+                        Чек-лист со ссылками на CLSI GP41 и WHO Phlebotomy.
+                      </p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/blog/vacuette-vs-kitayskie-analogi-vhodnoy-control"
+                      className="block group bg-paper-50 border border-paper-200 rounded-lg p-4 hover:border-green-400 transition-colors"
+                    >
+                      <span className="font-display text-ink-900 group-hover:text-green-700 transition-colors">
+                        Входной контроль партии →
+                      </span>
+                      <p className="text-[13px] text-ink-600 mt-1">
+                        VACUETTE® vs китайские аналоги: что проверять при
+                        приёмке.
+                      </p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/blog"
+                      className="inline-flex items-center gap-2 text-green-700 font-semibold hover:text-green-600 mt-2"
+                    >
+                      Все статьи блога →
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 }
