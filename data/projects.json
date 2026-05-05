@@ -84,6 +84,35 @@
     }
   },
   {
+    "id": "proj-005",
+    "title": "IV Международный саммит медицинских сестёр",
+    "client": "ИНВИТРО · МЗ РБ · Виена Медикал",
+    "year": 2018,
+    "description": "17 мая 2018 года в минском отеле «Пекин» состоялся IV Международный саммит медицинских сестёр — одно из крупнейших отраслевых мероприятий для среднего медицинского персонала. Организаторы — ИНВИТРО, ВИЕНА МЕДИКАЛ и Высшая медицинская школа (Москва) при поддержке Министерства здравоохранения Республики Беларусь. Телемост соединил три страны и десять городов (Минск, Москва, Санкт-Петербург, Казань, Пермь, Ростов-на-Дону, Челябинск, Новосибирск, Алматы, Нижневартовск); более 3000 участников. Ключевая профильная секция — «Преаналитический этап лабораторной диагностики в работе медицинской сестры»: влияние подготовки на точность результатов и алгоритм забора крови вакуумными системами.",
+    "images": [
+      "/images/projects/nurse-summit.jpg",
+      "/images/projects/nurse-summit-1.jpg",
+      "/images/projects/nurse-summit-2.jpg",
+      "/images/projects/nurse-summit-3.jpg"
+    ],
+    "categories": ["education", "partnership"],
+    "tags": ["Преаналитика", "Минск · 2018", "ИНВИТРО"],
+    "i18n": {
+      "en": {
+        "title": "4th International Nurses Summit",
+        "client": "INVITRO · MoH RB · Viena Medical",
+        "description": "On 17 May 2018, the Pekin Hotel in Minsk hosted the 4th International Nurses Summit — one of the largest sectoral events for nursing staff. Co-organised by INVITRO, VIENA MEDICAL and the Higher Medical School (Moscow), with the support of the Ministry of Health of the Republic of Belarus. A live broadcast connected three countries and ten cities (Minsk, Moscow, St. Petersburg, Kazan, Perm, Rostov-on-Don, Chelyabinsk, Novosibirsk, Almaty, Nizhnevartovsk) — more than 3 000 participants. The flagship session — “The preanalytical phase of laboratory diagnostics in nursing practice” — focused on how patient preparation drives the accuracy of laboratory results and on the protocol for blood collection with vacuum systems.",
+        "tags": ["Preanalytics", "Minsk · 2018", "INVITRO"]
+      },
+      "zh": {
+        "title": "第四届国际护士峰会",
+        "client": "INVITRO · 白俄罗斯卫生部 · Viena Medical",
+        "description": "2018 年 5 月 17 日,第四届国际护士峰会在明斯克「北京」饭店举行 —— 这是面向护理人员的最大型行业活动之一。由 INVITRO、VIENA MEDICAL 与莫斯科高等医学院共同主办,白俄罗斯共和国卫生部提供支持。直播连接三国十城(明斯克、莫斯科、圣彼得堡、喀山、彼尔姆、顿河畔罗斯托夫、车里雅宾斯克、新西伯利亚、阿拉木图、下瓦尔托夫斯克),参与者超过 3000 名医护人员。核心专题分会场 ——《护士工作中的实验室诊断分析前阶段》—— 聚焦于患者准备如何决定检测结果的准确性,以及使用真空采血系统的标准操作流程。",
+        "tags": ["分析前阶段", "明斯克 · 2018", "INVITRO"]
+      }
+    }
+  },
+  {
     "id": "proj-004",
     "title": "Работа с Минздравом Беларуси",
     "client": "МЗ Республики Беларусь",
