@@ -1,12 +1,15 @@
 /**
- * Loads third-party analytics (Yandex Metrika and Google Tag Manager) only
- * when the corresponding environment variables are set, so dev / preview
- * builds stay clean.
+ * Loads third-party analytics (Yandex Metrika, Google Tag Manager, Google
+ * Analytics 4 via gtag.js) only when the corresponding environment variables
+ * are set, so dev / preview builds stay clean.
  *
  * - `NEXT_PUBLIC_YM_ID` — Yandex Metrika counter ID, e.g. `99999999`.
  * - `NEXT_PUBLIC_GTM_ID` — Google Tag Manager container ID, e.g. `GTM-XXXXXX`.
+ * - `NEXT_PUBLIC_GA_ID`  — GA4 measurement ID, e.g. `G-XXXXXXXXXX`. Use this
+ *   only if GA4 isn't already wired via the GTM container, otherwise hits
+ *   will be double-counted.
  *
- * Both scripts are loaded with `strategy="afterInteractive"` to keep them
+ * All scripts are loaded with `strategy="afterInteractive"` to keep them
  * out of the LCP critical path. GTM noscript fallback is rendered only
  * when GTM is enabled.
  */
@@ -14,6 +17,7 @@ import Script from "next/script";
 
 const YM_ID = process.env.NEXT_PUBLIC_YM_ID;
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export function Analytics() {
   return (
@@ -28,14 +32,17 @@ export function Analytics() {
               m[i].l=1*new Date();
               for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
               k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-              (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+              (window, document, "script", "https://mc.yandex.ru/metrika/tag.js?id=${YM_ID}", "ym");
 
               ym(${YM_ID}, "init", {
-                clickmap:true,
-                trackLinks:true,
-                accurateTrackBounce:true,
+                ssr:true,
                 webvisor:true,
-                ecommerce:"dataLayer"
+                clickmap:true,
+                ecommerce:"dataLayer",
+                referrer: document.referrer,
+                url: location.href,
+                accurateTrackBounce:true,
+                trackLinks:true
               });
             `,
           }}
@@ -56,6 +63,28 @@ export function Analytics() {
             `,
           }}
         />
+      ) : null}
+
+      {GA_ID ? (
+        <>
+          <Script
+            id="ga4-loader"
+            src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+            strategy="afterInteractive"
+          />
+          <Script
+            id="ga4-init"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${GA_ID}');
+              `,
+            }}
+          />
+        </>
       ) : null}
     </>
   );

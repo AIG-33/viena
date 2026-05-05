@@ -68,7 +68,7 @@ export default async function AboutPage({
         description={t("hero.description")}
         aside={
           <div className="grid grid-cols-2 gap-3">
-            <StatCard value="2017" label={t("hero.stats.year")} note={t("hero.stats.yearNote")} />
+            <StatCard value="2016" label={t("hero.stats.year")} note={t("hero.stats.yearNote")} />
             <StatCard value="30+" label={t("hero.stats.manufacturers")} note={t("hero.stats.manufacturersNote")} />
             <StatCard value="500+" label={t("hero.stats.deliveries")} note={t("hero.stats.deliveriesNote")} />
             <StatCard value="11" label={t("hero.stats.letters")} note={t("hero.stats.lettersNote")} />

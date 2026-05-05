@@ -19,7 +19,7 @@ export async function generateMetadata({
   };
 }
 
-type InfoCardType = "land" | "mobile" | "email";
+type InfoCardType = "land" | "mobile" | "email" | "telegram";
 
 function ContactIcon({
   type,
@@ -51,6 +51,17 @@ function ContactIcon({
           <path d="m22 6-10 7L2 6" />
         </svg>
       );
+    case "telegram":
+      return (
+        <svg
+          viewBox="0 0 24 24"
+          className={className}
+          fill="currentColor"
+          aria-hidden
+        >
+          <path d="M21.6 4.2 2.9 11.4c-1.3.5-1.3 1.2-.2 1.5l4.7 1.5 1.8 5.6c.2.6.4.8.8.8.4 0 .6-.2.8-.5l2.5-2.5 5.2 3.8c.9.5 1.6.3 1.9-.9l3.4-15.9c.4-1.5-.5-2.2-1.5-1.7zM8.6 14.6 18 8.7c.4-.3.8-.1.5.2L11.7 16l-.3 3.4-2.8-4.8z" />
+        </svg>
+      );
     case "address":
       return (
         <svg viewBox="0 0 24 24" className={`icon ${className}`} aria-hidden>
@@ -75,6 +86,7 @@ export default async function ContactsPage({
     value: string;
     href: string;
     type: InfoCardType;
+    external?: boolean;
   }> = [
     {
       label: t("info.phoneLand"),
@@ -83,10 +95,11 @@ export default async function ContactsPage({
       type: "land",
     },
     {
-      label: t("info.phoneLand"),
-      value: "+375 17 336-55-02",
-      href: "tel:+375173365502",
-      type: "land",
+      label: t("info.telegram"),
+      value: "@viena_medical_bot",
+      href: "https://t.me/viena_medical_bot",
+      type: "telegram",
+      external: true,
     },
     {
       label: t("info.phoneMobile"),
@@ -126,6 +139,9 @@ export default async function ContactsPage({
                 <a
                   key={`${c.label}-${i}`}
                   href={c.href}
+                  {...(c.external
+                    ? { target: "_blank", rel: "noreferrer noopener" }
+                    : {})}
                   className="group relative block overflow-hidden rounded-2xl bg-white border border-paper-200 p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-green-400 hover:shadow-[0_18px_42px_-22px_rgba(15,17,19,0.25)]"
                 >
                   <div

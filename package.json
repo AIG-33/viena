@@ -5,7 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "seo:keywords": "node scripts/build-search-keywords.mjs",
+    "seo:llms": "node scripts/build-llms-full.mjs",
+    "seo:all": "node scripts/build-search-keywords.mjs && node scripts/build-llms-full.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

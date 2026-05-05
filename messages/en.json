@@ -128,14 +128,14 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Since 2017 · Preanalytics & laboratory diagnostics",
+      "eyebrow": "Since 2016 · Preanalytics & laboratory diagnostics",
       "titleLine1": "We do things",
       "titleLine2": "the way",
       "titleLine2Accent": "they should be done",
       "titleLine2End": ",",
       "titleLine3": "not the way you’re",
       "titleLine3Accent": "asked to.",
-      "subtitle": "Our core specialisation is the preanalytical phase of laboratory diagnostics — vacuum collection systems, the right reagent-to-blood ratio, safe caps and finishing gamma sterilisation. Since 2017 we have been picking certified manufacturers and never silently swapping them for «analogs».",
+      "subtitle": "Our core specialisation is the preanalytical phase of laboratory diagnostics — vacuum collection systems, the right reagent-to-blood ratio, safe caps and finishing gamma sterilisation. Since 2016 we have been picking certified manufacturers and never silently swapping them for «analogs».",
       "ctaPrimary": "Request a quote",
       "ctaSecondary": "Open the catalog",
       "categoryCard": {
@@ -310,13 +310,13 @@
   },
   "about": {
     "hero": {
-      "eyebrow": "About · Since 2017 · Preanalytics",
+      "eyebrow": "About · Since 2016 · Preanalytics",
       "titleLine1Pre": "Doing things",
       "titleLine1Accent": "right",
       "titleLine1Post": " — ",
       "titleLine2Pre": "even when it’s",
       "titleLine2Accent": "not easy.",
-      "description": "Viena Medical is a private company specialising, since 2017, in the preanalytical phase of laboratory diagnostics: blood-collection vacuum systems, reagents and safe consumables. We work with manufacturers directly, never silently swap them for «analogs», and systematically push for ISO 6710, ISO 11137 and Directive 98/79/EC to be applied in Belarus on substance, not on paper.",
+      "description": "Viena Medical is a private company specialising, since 2016, in the preanalytical phase of laboratory diagnostics: blood-collection vacuum systems, reagents and safe consumables. We work with manufacturers directly, never silently swap them for «analogs», and systematically push for ISO 6710, ISO 11137 and Directive 98/79/EC to be applied in Belarus on substance, not on paper.",
       "stats": {
         "year": "on the market",
         "yearNote": "since founding",
@@ -333,7 +333,7 @@
       "title": "We don’t exist in order to",
       "titleAccent": "agree",
       "p1": "Laboratories rarely know what alternatives exist to their usual supplier, and the supplier rarely has an interest in telling them. An entire industry has lived in that gap for decades — «closed» systems, standard tenders written for a single brand and preanalytical purchases at double the price.",
-      "p2": "We started in 2017 to do things differently. Not to win a single tender — but to slowly make preanalytics and laboratory diagnostics in Belarus more transparent, and the budget more efficient. It is slow, sometimes uncomfortable work: we argue with customers, we argue with the regulator, we lose deals. That is the fair price for being useful.",
+      "p2": "We started in 2016 to do things differently. Not to win a single tender — but to slowly make preanalytics and laboratory diagnostics in Belarus more transparent, and the budget more efficient. It is slow, sometimes uncomfortable work: we argue with customers, we argue with the regulator, we lose deals. That is the fair price for being useful.",
       "p3": "We openly write to the Ministry of Health, the antimonopoly authority, the State Control Committee and even to the State Security Committee — and we just as openly publish that work. Not because we enjoy conflict, but because no systemic change happens without an honest public conversation.",
       "quote": "“The lab gets exactly what was specified — and we share responsibility for the result.”"
     },
@@ -435,7 +435,7 @@
       "title1": "Just a person who",
       "titleAccent": "actually cares",
       "title2": "how a laboratory works.",
-      "p1": "Maksim founded Viena Medical in 2017. Before that — more than ten years in the field: service engineering, product lines, talking to customers from district laboratories to national reference centres. The principles the company lives by today grew out of that practice.",
+      "p1": "Maksim founded Viena Medical in 2016. Before that — more than ten years in the field: service engineering, product lines, talking to customers from district laboratories to national reference centres. The principles the company lives by today grew out of that practice.",
       "p2": "By the nature of the work he spends a lot of time inside the international laboratory community — that is the natural environment for anyone who wants to understand how laboratory diagnostics works beyond a single country.",
       "p3": "These things are not the goal — they are a side effect of what Maksim is genuinely interested in: the preanalytical phase, new diagnostic formats, sane regulation. If the trade-off were fewer certificates and more time talking with heads of clinical labs, he would probably pick the second one.",
       "credentials": {
@@ -586,7 +586,7 @@
       "titleLine2Accent": "global leaders.",
       "description": "VIENA MEDICAL works with manufacturers directly — no middlemen. The full portfolio of {sku} SKUs covers preanalytics, molecular diagnostics, pathology, veterinary and research reagents.",
       "stats": [
-        { "k": "Since 2017", "v": "Direct supply" },
+        { "k": "Since 2016", "v": "Direct supply" },
         { "k": "Certificates", "v": "ISO 13485 · CE" },
         { "k": "Warehouse", "v": "Minsk · Belarus" }
       ]
@@ -741,6 +741,7 @@
     "info": {
       "phoneLand": "Office line",
       "phoneMobile": "Mobile",
+      "telegram": "Telegram bot",
       "email": "Email",
       "addressHeading": "Office and warehouse",
       "addressValue": "220070, Minsk, Radialnaya str., 54B, office 67",

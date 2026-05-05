@@ -7,7 +7,7 @@
     "country": "Австрия",
     "tagline": "Vacuette® · MiniCollect® · VeinViewer®",
     "shortDescription": "Мировой эталон преаналитики: вакуумные системы взятия крови, MiniCollect, визуализаторы вен и расходные материалы для лабораторий.",
-    "longDescription": "Greiner Bio-One — австрийский производитель преаналитических систем с глобальной географией поставок. ВИЕНА МЕДИКАЛ работает с Greiner с 2009 года: вакуумные пробирки Vacuette®, капиллярные пробирки MiniCollect®, иглы и держатели, визуализаторы вен VeinViewer®. Все продуктовые линейки сертифицированы по ISO 13485 и поставляются напрямую с европейских производственных площадок.",
+    "longDescription": "Greiner Bio-One — австрийский производитель преаналитических систем с глобальной географией поставок. ВИЕНА МЕДИКАЛ работает с Greiner с 2016 года: вакуумные пробирки Vacuette®, капиллярные пробирки MiniCollect®, иглы и держатели, визуализаторы вен VeinViewer®. Все продуктовые линейки сертифицированы по ISO 13485 и поставляются напрямую с европейских производственных площадок.",
     "website": "https://www.gbo.com",
     "categories": ["vacuum-systems", "equipment", "consumables"],
     "matches": ["Greiner Bio-One GmbH", "Greiner Bio-One", "Greiner"],
@@ -17,12 +17,12 @@
       "en": {
         "country": "Austria",
         "shortDescription": "A global benchmark in preanalytics: vacuum blood collection systems, MiniCollect, vein visualisers and laboratory consumables.",
-        "longDescription": "Greiner Bio-One is an Austrian manufacturer of preanalytical systems with global reach. VIENA MEDICAL has worked with Greiner since 2009: Vacuette® vacuum tubes, MiniCollect® capillary tubes, needles and holders, VeinViewer® vein visualisers. All product lines are ISO 13485 certified and shipped directly from the European production sites."
+        "longDescription": "Greiner Bio-One is an Austrian manufacturer of preanalytical systems with global reach. VIENA MEDICAL has worked with Greiner since 2016: Vacuette® vacuum tubes, MiniCollect® capillary tubes, needles and holders, VeinViewer® vein visualisers. All product lines are ISO 13485 certified and shipped directly from the European production sites."
       },
       "zh": {
         "country": "奥地利",
         "shortDescription": "分析前阶段的全球标杆品牌:真空采血系统、MiniCollect、静脉显像仪及实验室耗材。",
-        "longDescription": "Greiner Bio-One 是奥地利分析前阶段产品的制造商,业务遍及全球。VIENA MEDICAL 自 2009 年起与 Greiner 合作,产品包括 Vacuette® 真空采血管、MiniCollect® 毛细采血管、采血针与持针器、VeinViewer® 静脉显像仪。所有产品线均符合 ISO 13485 标准,直接由欧洲产线供货。"
+        "longDescription": "Greiner Bio-One 是奥地利分析前阶段产品的制造商,业务遍及全球。VIENA MEDICAL 自 2016 年起与 Greiner 合作,产品包括 Vacuette® 真空采血管、MiniCollect® 毛细采血管、采血针与持针器、VeinViewer® 静脉显像仪。所有产品线均符合 ISO 13485 标准,直接由欧洲产线供货。"
       }
     }
   },

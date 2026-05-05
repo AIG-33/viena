@@ -161,7 +161,7 @@ export default async function LocaleLayout({
     logo: `${SITE_URL}/images/logo-dark.png`,
     image: `${SITE_URL}/images/logo-dark.png`,
     description: t("siteDescription"),
-    foundingDate: "2017",
+    foundingDate: "2016",
     address: {
       "@type": "PostalAddress",
       addressLocality: t("city"),
