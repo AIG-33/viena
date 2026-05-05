@@ -463,29 +463,29 @@
   },
   {
     "id": "mfr-016",
-    "slug": "lepy-medical-technology",
-    "name": "Lepy Medical Technology",
-    "fullName": "Lepy Medical Technology Co., Ltd.",
+    "slug": "lepu-medical-technology",
+    "name": "Lepu Medical Technology",
+    "fullName": "Lepu Medical Technology Co., Ltd.",
     "country": "Китай",
     "tagline": "Nexor 96 · автоматическая экстракция НК",
     "shortDescription": "Автоматические станции выделения нуклеиновых кислот на магнитных частицах. Nexor 96: до 96 образцов за 30–45 минут.",
-    "longDescription": "Lepy Medical Technology — китайский производитель автоматизированных систем для пробоподготовки в молекулярной диагностике. Флагман Nexor 96 — открытая система магнитной экстракции НК на 32/96 образцов с УФ-стерилизацией, контролем температуры 4–100 °C и совместимостью с реагентами разных производителей. Воспроизводимая чистота выделения с эффективностью адсорбции > 95%.",
-    "website": "https://www.lepymed.com",
+    "longDescription": "Lepu Medical Technology — китайский производитель автоматизированных систем для пробоподготовки в молекулярной диагностике. Флагман Nexor 96 — открытая система магнитной экстракции НК на 32/96 образцов с УФ-стерилизацией, контролем температуры 4–100 °C и совместимостью с реагентами разных производителей. Воспроизводимая чистота выделения с эффективностью адсорбции > 95%.",
+    "website": "https://www.lepumedical.com",
     "categories": ["equipment"],
-    "matches": ["Lepy Medical Technology", "Lepy"],
+    "matches": ["Lepu Medical Technology", "Lepu", "Lepy Medical Technology", "Lepy"],
     "featured": true,
     "i18n": {
       "en": {
         "country": "China",
         "tagline": "Nexor 96 · automated NA extraction",
         "shortDescription": "Automated nucleic-acid extraction workstations using magnetic beads. Nexor 96 — up to 96 samples in 30–45 minutes.",
-        "longDescription": "Lepy Medical Technology is a Chinese manufacturer of automated sample-prep systems for molecular diagnostics. The Nexor 96 flagship is an open magnetic NA-extraction platform for 32/96 samples with UV sterilisation, temperature control of 4–100 °C and compatibility with reagents from different manufacturers. Reproducible isolation purity with > 95 % adsorption efficiency."
+        "longDescription": "Lepu Medical Technology is a Chinese manufacturer of automated sample-prep systems for molecular diagnostics. The Nexor 96 flagship is an open magnetic NA-extraction platform for 32/96 samples with UV sterilisation, temperature control of 4–100 °C and compatibility with reagents from different manufacturers. Reproducible isolation purity with > 95 % adsorption efficiency."
       },
       "zh": {
         "country": "中国",
         "tagline": "Nexor 96 · 自动化核酸提取",
         "shortDescription": "基于磁珠法的自动化核酸提取工作站。Nexor 96 可在 30–45 分钟内处理多达 96 个样本。",
-        "longDescription": "Lepy Medical Technology 是一家中国分子诊断自动化样本前处理系统制造商。旗舰产品 Nexor 96 是一款开放式磁珠核酸提取平台,可同时处理 32/96 个样本,具备紫外线灭菌、4–100 °C 温度控制,并兼容多家厂商试剂。提取重现性优,吸附效率超过 95 %。"
+        "longDescription": "Lepu Medical Technology 是一家中国分子诊断自动化样本前处理系统制造商。旗舰产品 Nexor 96 是一款开放式磁珠核酸提取平台,可同时处理 32/96 个样本,具备紫外线灭菌、4–100 °C 温度控制,并兼容多家厂商试剂。提取重现性优,吸附效率超过 95 %。"
       }
     }
   }
