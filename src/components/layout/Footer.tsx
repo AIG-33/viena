@@ -1,9 +1,6 @@
 import Image from "next/image";
-import { getLocale, getTranslations } from "next-intl/server";
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getAllCategories } from "@/lib/data";
-import { getCategoryLink } from "@/lib/utils";
-import type { Locale } from "@/i18n/routing";
 import { SocialIcons, type SocialLink } from "./SocialIcons";
 
 const SOCIAL: SocialLink[] = [
@@ -14,11 +11,9 @@ const SOCIAL: SocialLink[] = [
 ];
 
 export async function Footer() {
-  const locale = (await getLocale()) as Locale;
   const t = await getTranslations("footer");
   const tMeta = await getTranslations("meta");
   const tCommon = await getTranslations("common");
-  const categories = getAllCategories(locale);
 
   return (
     <footer className="relative bg-paper-100 text-ink-700 border-t border-paper-200">
@@ -41,38 +36,13 @@ export async function Footer() {
             <SocialIcons links={SOCIAL} className="mt-5" />
           </div>
 
-          {/* Catalog */}
+          {/* Sections */}
           <div>
             <div className="text-[11px] tracking-[0.16em] uppercase font-bold text-ink-500 mb-4">
               {t("catalogHeading")}
             </div>
             <ul className="space-y-2">
-              {categories.slice(0, 5).map((cat) => {
-                const link = getCategoryLink(cat.id);
-                return (
-                  <li key={cat.id}>
-                    {link.isExternal ? (
-                      <a
-                        href={link.href}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        className="inline-flex items-center gap-1 text-[13px] text-ink-700 hover:text-green-700 transition-colors"
-                      >
-                        {cat.name}
-                        <span aria-hidden className="text-green-600">↗</span>
-                      </a>
-                    ) : (
-                      <Link
-                        href={link.href}
-                        className="text-[13px] text-ink-700 hover:text-green-700 transition-colors"
-                      >
-                        {cat.name}
-                      </Link>
-                    )}
-                  </li>
-                );
-              })}
-              <li className="pt-1">
+              <li>
                 <Link
                   href="/catalog"
                   className="inline-flex items-center gap-1 text-[13px] font-semibold text-green-700 hover:text-green-600"
