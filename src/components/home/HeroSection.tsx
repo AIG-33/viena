@@ -33,19 +33,34 @@ export function HeroSection({ categories }: Props) {
 
   return (
     <section className="relative overflow-hidden bg-paper-50">
-      {/* Decorative ambient gradient — keeps the hero bright and on-brand without dimming any photography. */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 z-0"
-        style={{
-          background:
-            "radial-gradient(1100px 520px at 92% -10%, rgba(34,197,142,0.18), rgba(34,197,142,0) 60%), radial-gradient(900px 480px at 8% 110%, rgba(34,197,142,0.10), rgba(34,197,142,0) 65%), linear-gradient(180deg, #ffffff 0%, #f7f8f5 100%)",
-        }}
-      />
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-paper-200/70 z-0"
-      />
+      <div aria-hidden className="absolute inset-0 z-0">
+        <Image
+          src="/images/hero/hero-lab-tube-racks.jpg"
+          alt=""
+          fill
+          priority
+          fetchPriority="high"
+          sizes="100vw"
+          className="object-cover object-[55%_center] md:object-[50%_center]"
+          style={{ filter: "saturate(1.05) contrast(1.03)" }}
+        />
+        {/* Mobile/tablet veil — keeps the headline legible above the photo. */}
+        <div
+          className="absolute inset-0 md:hidden"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(255,255,255,0.94) 0%, rgba(255,255,255,0.72) 36%, rgba(255,255,255,0.18) 78%, rgba(255,255,255,0.04) 100%)",
+          }}
+        />
+        {/* Desktop veil — opaque under the headline on the left, clears toward the tube racks, with a soft mint kicker on the far right. */}
+        <div
+          className="absolute inset-0 hidden md:block"
+          style={{
+            background:
+              "linear-gradient(105deg, rgba(255,255,255,0.94) 0%, rgba(255,255,255,0.78) 28%, rgba(255,255,255,0.22) 55%, rgba(255,255,255,0.06) 80%, rgba(34,197,142,0.10) 100%)",
+          }}
+        />
+      </div>
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-4 md:px-10 lg:px-14 pt-10 md:pt-14 pb-14 md:pb-20 grid lg:grid-cols-[1.05fr_1fr] gap-10 lg:gap-12 items-center">
         <motion.div
