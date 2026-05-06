@@ -15,7 +15,7 @@
  */
 import type { MetadataRoute } from "next";
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://viena.by";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.viena.by";
 
 const DEFAULT_ALLOW = "/";
 const DEFAULT_DISALLOW = ["/api/"];
