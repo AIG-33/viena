@@ -142,8 +142,6 @@
       "subtitle": "Our core specialisation is the preanalytical phase of laboratory diagnostics — vacuum collection systems, the right reagent-to-blood ratio, safe caps and finishing gamma sterilisation. Since 2016 we have been picking certified manufacturers and never silently swapping them for «analogs».",
       "ctaPrimary": "Request a quote",
       "ctaSecondary": "Open the catalog",
-      "vacuetteBadge": "VACUETTE® · authorised Greiner Bio-One distributor",
-      "vacuetteCta": "Vacuum systems catalog",
       "categoryCard": {
         "itemCount": "{count, plural, one {# item} other {# items}}"
       }

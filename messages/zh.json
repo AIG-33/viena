@@ -142,8 +142,6 @@
       "subtitle": "我们的核心专长是实验室诊断的分析前阶段(preanalytics):真空采血系统、试剂与血液的正确比例、安全的螺纹盖以及最终伽马灭菌。自 2016 年起,我们只与有认证的厂商合作,绝不以所谓「同类品」悄悄替代。",
       "ctaPrimary": "获取报价",
       "ctaSecondary": "浏览产品目录",
-      "vacuetteBadge": "VACUETTE® · Greiner Bio-One 授权经销商",
-      "vacuetteCta": "真空采血系统目录",
       "categoryCard": {
         "itemCount": "{count, plural, other {# 件}}"
       }
