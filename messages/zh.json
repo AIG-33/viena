@@ -86,7 +86,26 @@
     "unp": "纳税号 192599105",
     "shopLink": "shop.viena.by →",
     "rights": "© {year} Viena Medical. 版权所有.",
-    "privacy": "隐私政策 · Cookies"
+    "privacyPolicyLink": "个人信息处理政策",
+    "cookiePolicyLink": "Cookies"
+  },
+  "legal": {
+    "privacyBreadcrumb": "个人信息处理政策",
+    "cookiesBreadcrumb": "Cookie 政策"
+  },
+  "cookieConsent": {
+    "title": "Cookie 与分析工具",
+    "description": "本站使用运行所必需的 Cookie。分析类工具（如已启用 Yandex、Google Tag Manager / GA）仅在您同意后加载。详情请参阅下方政策页面。",
+    "privacyLink": "个人信息处理政策",
+    "cookiesLink": "Cookie 政策",
+    "accept": "接受",
+    "necessaryOnly": "仅必要"
+  },
+  "cookieRevoke": {
+    "title": "撤回对分析类 Cookie 的同意",
+    "description": "若您曾同意使用分析工具，可在此撤回；页面将重新加载，在您再次通过横幅选择前不会启用第三方统计。",
+    "button": "撤回分析同意",
+    "inactive": "当前未启用分析类 Cookie（可能仅使用必要 Cookie）。"
   },
   "productCard": {
     "inStock": "现货",

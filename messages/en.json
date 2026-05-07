@@ -86,7 +86,26 @@
     "unp": "Tax ID 192599105",
     "shopLink": "shop.viena.by →",
     "rights": "© {year} Viena Medical. All rights reserved.",
-    "privacy": "Privacy policy · Cookies"
+    "privacyPolicyLink": "Personal data policy",
+    "cookiePolicyLink": "Cookies"
+  },
+  "legal": {
+    "privacyBreadcrumb": "Personal data policy",
+    "cookiesBreadcrumb": "Cookie policy"
+  },
+  "cookieConsent": {
+    "title": "Cookies and analytics",
+    "description": "We use strictly necessary cookies to run the site. Analytics (Yandex Metrica, Google Tag Manager / GA when enabled) loads only with your consent. See the policies below for details.",
+    "privacyLink": "Personal data policy",
+    "cookiesLink": "Cookie policy",
+    "accept": "Accept",
+    "necessaryOnly": "Necessary only"
+  },
+  "cookieRevoke": {
+    "title": "Withdraw analytics consent",
+    "description": "If you previously allowed analytics, you can withdraw consent here. The page will reload and third-party counters will stay off until you choose again in the banner.",
+    "button": "Withdraw analytics consent",
+    "inactive": "Analytics cookies are not enabled (only necessary cookies may be used)."
   },
   "productCard": {
     "inStock": "in stock",

@@ -1,25 +1,23 @@
-/**
- * Loads third-party analytics (Yandex Metrika, Google Tag Manager, Google
- * Analytics 4 via gtag.js) only when the corresponding environment variables
- * are set, so dev / preview builds stay clean.
- *
- * - `NEXT_PUBLIC_YM_ID` — Yandex Metrika counter ID, e.g. `99999999`.
- * - `NEXT_PUBLIC_GTM_ID` — Google Tag Manager container ID, e.g. `GTM-XXXXXX`.
- * - `NEXT_PUBLIC_GA_ID`  — GA4 measurement ID, e.g. `G-XXXXXXXXXX`. Use this
- *   only if GA4 isn't already wired via the GTM container, otherwise hits
- *   will be double-counted.
- *
- * All scripts are loaded with `strategy="afterInteractive"` to keep them
- * out of the LCP critical path. GTM noscript fallback is rendered only
- * when GTM is enabled.
- */
+"use client";
+
 import Script from "next/script";
+import { useCookieConsent } from "@/context/CookieConsentContext";
 
 const YM_ID = process.env.NEXT_PUBLIC_YM_ID;
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
-export function Analytics() {
+/**
+ * Third-party analytics tags — loaded only after explicit consent to
+ * non-essential cookies / analytics (see cookie banner).
+ */
+export function ConsentAwareAnalytics() {
+  const { ready, analyticsAllowed } = useCookieConsent();
+
+  if (!ready || !analyticsAllowed) {
+    return null;
+  }
+
   return (
     <>
       {YM_ID ? (
@@ -90,8 +88,15 @@ export function Analytics() {
   );
 }
 
-export function AnalyticsNoScript() {
+export function ConsentAwareAnalyticsNoScript() {
+  const { ready, analyticsAllowed } = useCookieConsent();
+
+  if (!ready || !analyticsAllowed) {
+    return null;
+  }
+
   if (!GTM_ID && !YM_ID) return null;
+
   return (
     <>
       {GTM_ID ? (

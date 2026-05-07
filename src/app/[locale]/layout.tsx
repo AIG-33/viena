@@ -8,8 +8,13 @@ import {
 } from "next-intl/server";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { Analytics, AnalyticsNoScript } from "@/components/analytics/Analytics";
+import {
+  ConsentAwareAnalytics,
+  ConsentAwareAnalyticsNoScript,
+} from "@/components/analytics/ConsentAwareAnalytics";
+import { CookieConsentBanner } from "@/components/legal/CookieConsentBanner";
 import { CartProvider } from "@/context/CartContext";
+import { CookieConsentProvider } from "@/context/CookieConsentContext";
 import { routing, type Locale } from "@/i18n/routing";
 
 const inter = Inter({
@@ -302,20 +307,23 @@ export default async function LocaleLayout({
         />
       </head>
       <body className="min-h-screen flex flex-col antialiased" suppressHydrationWarning>
-        <AnalyticsNoScript />
         <NextIntlClientProvider>
-          <CartProvider>
-            <a href="#main-content" className="skip-nav">
-              {t("skipToContent")}
-            </a>
-            <Header />
-            <main id="main-content" className="flex-1">
-              {children}
-            </main>
-            <Footer />
-          </CartProvider>
+          <CookieConsentProvider>
+            <ConsentAwareAnalyticsNoScript />
+            <CartProvider>
+              <a href="#main-content" className="skip-nav">
+                {t("skipToContent")}
+              </a>
+              <Header />
+              <main id="main-content" className="flex-1">
+                {children}
+              </main>
+              <Footer />
+            </CartProvider>
+            <CookieConsentBanner />
+            <ConsentAwareAnalytics />
+          </CookieConsentProvider>
         </NextIntlClientProvider>
-        <Analytics />
       </body>
     </html>
   );

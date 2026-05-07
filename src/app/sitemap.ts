@@ -31,6 +31,8 @@
  *  - /blog/[slug]
  *  - /faq
  *  - /contacts
+ *  - /privacy
+ *  - /cookies
  */
 import type { MetadataRoute } from "next";
 import { readdirSync, readFileSync, statSync } from "node:fs";
@@ -172,6 +174,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]),
     entry("/faq", "monthly", 0.75, faqMTime),
     entry("/contacts", "yearly", 0.6, fileMtime(join(process.cwd(), "src/app/[locale]/contacts/page.tsx"))),
+    entry("/privacy", "yearly", 0.35, fileMtime(join(process.cwd(), "src/app/[locale]/privacy/page.tsx"))),
+    entry("/cookies", "yearly", 0.35, fileMtime(join(process.cwd(), "src/app/[locale]/cookies/page.tsx"))),
   ];
 
   const blogPages: MetadataRoute.Sitemap = blogPosts.map((p) => {

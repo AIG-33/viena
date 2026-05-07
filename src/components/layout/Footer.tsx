@@ -152,7 +152,23 @@ export async function Footer() {
 
         <div className="mt-10 pt-5 border-t border-paper-200 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 text-[12px] text-ink-500">
           <span>{t("rights", { year: new Date().getFullYear() })}</span>
-          <span>{t("privacy")}</span>
+          <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+            <Link
+              href="/privacy"
+              className="text-ink-600 hover:text-green-700 font-medium transition-colors"
+            >
+              {t("privacyPolicyLink")}
+            </Link>
+            <span className="text-ink-400" aria-hidden>
+              ·
+            </span>
+            <Link
+              href="/cookies"
+              className="text-ink-600 hover:text-green-700 font-medium transition-colors"
+            >
+              {t("cookiePolicyLink")}
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
