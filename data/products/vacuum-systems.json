@@ -41,7 +41,7 @@
     ],
     "variants": [
       {
-        "catalogNumber": "",
+        "catalogNumber": "454073",
         "sourceName": "VACUETTE® TUBE 2 ml 4NC ESR sodium citrate 3,2% 13x75 black cap-black ring, PET, PREMIUM",
         "closure": "PREMIUM",
         "volume": "2",
@@ -60,7 +60,7 @@
         "size": "13×75",
         "capColor": "black",
         "ringColor": "black",
-        "material": null,
+        "material": "PET",
         "label": "G-barcode",
         "flags": [
           "g-barcode"
@@ -329,7 +329,7 @@
         ]
       },
       {
-        "catalogNumber": "",
+        "catalogNumber": "454325",
         "sourceName": "VACUETTE® TUBE 3 ml 9NC Coagulation sodium citrate 3.2% 13x75 blue cap-black ring, sandwich tube, PREMIUM",
         "closure": "PREMIUM",
         "volume": "3",
@@ -457,7 +457,7 @@
         ]
       },
       {
-        "catalogNumber": "",
+        "catalogNumber": "455322",
         "sourceName": "VACUETTE® TUBE 9 ml 9NC Coagulation sodium citrate 3,2% 16x100 blue cap-black ring, non-ridged",
         "closure": "non-ridged",
         "volume": "9",
@@ -575,7 +575,7 @@
         ]
       },
       {
-        "catalogNumber": "",
+        "catalogNumber": "486505",
         "sourceName": "VACUETTE® TUBE 5 ml 9NC Coagulation sodium citrate 3.2% 13x100 blue cap-black ring, G-barcode labe, PREMIUM",
         "closure": "PREMIUM",
         "volume": "5",
@@ -594,6 +594,18 @@
         "size": "13×75",
         "capColor": "blue",
         "ringColor": "white",
+        "material": null,
+        "label": "standard",
+        "flags": []
+      },
+      {
+        "catalogNumber": "454327",
+        "sourceName": "VACUETTE® TUBE 3.5 ml 9NC Coagulation sodium citrate 3.2% 13x75 blue cap-black ring, sandwich tube,",
+        "closure": "PREMIUM",
+        "volume": "3.5",
+        "size": "13×75",
+        "capColor": "blue",
+        "ringColor": "black",
         "material": null,
         "label": "standard",
         "flags": []
@@ -1331,7 +1343,7 @@
         ]
       },
       {
-        "catalogNumber": "",
+        "catalogNumber": "455092",
         "sourceName": "VACUETTE® TUBE 9 ml CAT Serum Clot Activator 16x100 red cap-black ring, non-ridged",
         "closure": "non-ridged",
         "volume": "9",
@@ -2829,6 +2841,46 @@
         "material": null,
         "label": "standard",
         "flags": []
+      },
+      {
+        "catalogNumber": "454071",
+        "sourceName": "VACUETTE® TUBE 3.5 ml CAT Serum Separator Clot Activator 13x75 red cap-yellow ring, PREMIUM",
+        "closure": "PREMIUM",
+        "volume": "3.5",
+        "size": "13×75",
+        "capColor": "red",
+        "ringColor": "yellow",
+        "material": null,
+        "label": "standard",
+        "flags": []
+      },
+      {
+        "catalogNumber": "474071",
+        "sourceName": "VACUETTE® TUBE 3.5 ml CAT Serum Separator Clot Activator 13x75 red cap-yellow ring, transparent labe",
+        "closure": "PREMIUM",
+        "volume": "3.5",
+        "size": "13×75",
+        "capColor": "red",
+        "ringColor": "yellow",
+        "material": null,
+        "label": "transparent",
+        "flags": [
+          "transparent-label"
+        ]
+      },
+      {
+        "catalogNumber": "476071",
+        "sourceName": "VACUETTE® TUBE 5 ml CAT Serum Separator Clot Activator 13x100 red cap-yellow ring, transparent label",
+        "closure": "PREMIUM",
+        "volume": "5",
+        "size": "13×100",
+        "capColor": "red",
+        "ringColor": "yellow",
+        "material": null,
+        "label": "transparent",
+        "flags": [
+          "transparent-label"
+        ]
       }
     ],
     "specs": [],
@@ -2953,7 +3005,7 @@
         "flags": []
       },
       {
-        "catalogNumber": "",
+        "catalogNumber": "456313",
         "sourceName": "VACUETTE® TUBE 5 ml CAT Serum Fast Separator 13x100 orange cap-yellow ring, non-ridged",
         "closure": "non-ridged",
         "volume": "5",
@@ -3385,7 +3437,7 @@
         "flags": []
       },
       {
-        "catalogNumber": "",
+        "catalogNumber": "454084",
         "sourceName": "VACUETTE® TUBE 4 ml LH Lithium Heparin 13x75 green cap-black ring, PREMIUM",
         "closure": "PREMIUM",
         "volume": "4",
@@ -3601,6 +3653,18 @@
         "flags": [
           "g-barcode"
         ]
+      },
+      {
+        "catalogNumber": "456084",
+        "sourceName": "VACUETTE® TUBE 6 ml LH Lithium Heparin 13x100 green cap-black ring, PREMIUM",
+        "closure": "PREMIUM",
+        "volume": "6",
+        "size": "13×100",
+        "capColor": "green",
+        "ringColor": "black",
+        "material": null,
+        "label": "standard",
+        "flags": []
       }
     ],
     "specs": [],
@@ -5009,7 +5073,7 @@
         "sourceName": "VACUETTE® TUBE 3 ml K2E K2EDTA 13x75yellow cap-black ring, non-ridged",
         "closure": "non-ridged",
         "volume": "3",
-        "size": null,
+        "size": "13×75",
         "capColor": "lavender",
         "ringColor": "black",
         "material": null,
@@ -5021,7 +5085,7 @@
         "sourceName": "VACUETTE® TUBE 2 ml K2E K2EDTA 13x75yellow cap-white ring, non-ridged",
         "closure": "non-ridged",
         "volume": "2",
-        "size": null,
+        "size": "13×75",
         "capColor": "lavender",
         "ringColor": "white",
         "material": null,
@@ -5065,7 +5129,7 @@
         "flags": []
       },
       {
-        "catalogNumber": "",
+        "catalogNumber": "456023",
         "sourceName": "VACUETTE® TUBE 6 ml K2E K2EDTA 13x100 lavender cap-black ring, PREMIUM",
         "closure": "PREMIUM",
         "volume": "6",
@@ -6419,7 +6483,7 @@
         "flags": []
       },
       {
-        "catalogNumber": "",
+        "catalogNumber": "456011",
         "sourceName": "VACUETTE® TUBE 5 ml K2E K2EDTA Separator 13x100 lavender cap-yellow ring, PREMIUM",
         "closure": "PREMIUM",
         "volume": "5",
@@ -6628,7 +6692,7 @@
     "variantAttributes": [],
     "variants": [
       {
-        "catalogNumber": "",
+        "catalogNumber": "454261",
         "sourceName": "VACUETTE® TUBE 4 ml EDTA Aprotinin 13x75 pink cap-black ring, PREMIUM",
         "closure": "PREMIUM",
         "volume": "4",
@@ -6644,7 +6708,7 @@
     "tags": [],
     "featured": false,
     "inStock": true,
-    "catalogNumber": "",
+    "catalogNumber": "454261",
     "manufacturer": "greiner-bio-one",
     "createdAt": "2024-01-01",
     "sort": 16,
@@ -8175,7 +8239,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® TUBE 5 ml Z No Additive 13x100 white cap-black ring",
-        "closure": null,
+        "closure": "non-ridged",
         "volume": "5",
         "size": "13×100",
         "capColor": "white",
@@ -8888,7 +8952,7 @@
     ],
     "variants": [
       {
-        "catalogNumber": "",
+        "catalogNumber": "455056",
         "sourceName": "VACUETTE® TUBE 9 ml CPDA 16x100 yellow cap-black ring, non-ridged",
         "closure": "non-ridged",
         "volume": "9",
@@ -8928,7 +8992,7 @@
     "tags": [],
     "featured": false,
     "inStock": true,
-    "catalogNumber": "",
+    "catalogNumber": "455056",
     "manufacturer": "greiner-bio-one",
     "createdAt": "2024-01-01",
     "sort": 28,
@@ -9300,7 +9364,7 @@
         ]
       },
       {
-        "catalogNumber": "",
+        "catalogNumber": "455049",
         "sourceName": "VACUETTE® TUBE 9 ml Z Urine No Additive 16x100 yellow cap-red ring, KOH barcode label, Conical Base, non-ridged",
         "closure": "non-ridged",
         "volume": "9",
@@ -9962,7 +10026,7 @@
     "variantAttributes": [],
     "variants": [
       {
-        "catalogNumber": "",
+        "catalogNumber": "450533",
         "sourceName": "MiniCollect® TUBE 0.5/0.8 ml CAT Serum Sep Clot Activator gold cap",
         "closure": null,
         "volume": "0.5/0.8",
@@ -9978,7 +10042,7 @@
     "tags": [],
     "featured": false,
     "inStock": true,
-    "catalogNumber": "",
+    "catalogNumber": "450533",
     "manufacturer": "greiner-bio-one",
     "createdAt": "2024-01-01",
     "sort": 32,
@@ -11761,23 +11825,30 @@
     ],
     "variants": [
       {
-        "catalogNumber": "",
+        "catalogNumber": "836075",
         "sourceName": "ESR Rack with graduation for 729070 / 729090",
-        "config": "SR Rack with graduation for 729070 / 729090",
+        "config": "ESR Rack with graduation for 729070 / 729090",
         "flags": []
       },
       {
         "catalogNumber": "",
         "sourceName": "ESR Rack with graduation for 729073 / 729093",
-        "config": "SR Rack with graduation for 729073 / 729093",
+        "config": "ESR Rack with graduation for 729073 / 729093",
         "flags": []
+      },
+      {
+        "catalogNumber": "836077",
+        "sourceName": "ESR Rack with graduation for 729073 / 729093",
+        "label": "standard",
+        "flags": [],
+        "config": "ESR Rack with graduation for 729073 / 729093"
       }
     ],
     "specs": [],
     "tags": [],
     "featured": false,
     "inStock": true,
-    "catalogNumber": "",
+    "catalogNumber": "836075",
     "manufacturer": "greiner-bio-one",
     "createdAt": "2024-01-01",
     "sort": 45,
@@ -11876,15 +11947,15 @@
     ],
     "variants": [
       {
-        "catalogNumber": "",
+        "catalogNumber": "450209",
         "sourceName": "Standard Tube Holder 10 pcs. per bag",
-        "config": "tandard Tube Holder 10 pcs. per bag",
+        "config": "Standard Tube Holder 10 pcs. per bag",
         "flags": []
       },
       {
         "catalogNumber": "",
         "sourceName": "Standard Tube Holder 100 pcs. per bag",
-        "config": "tandard Tube Holder 100 pcs. per bag",
+        "config": "Standard Tube Holder 100 pcs. per bag",
         "flags": []
       }
     ],
@@ -11892,7 +11963,7 @@
     "tags": [],
     "featured": false,
     "inStock": true,
-    "catalogNumber": "",
+    "catalogNumber": "450209",
     "manufacturer": "greiner-bio-one",
     "createdAt": "2024-01-01",
     "sort": 46,
@@ -11984,7 +12055,7 @@
       {
         "catalogNumber": "",
         "sourceName": "Speedy Quick Release Holder",
-        "config": "peedy Quick Release Holder",
+        "config": "Speedy Quick Release Holder",
         "flags": []
       }
     ],
@@ -12082,9 +12153,9 @@
     "variantAttributes": [],
     "variants": [
       {
-        "catalogNumber": "",
+        "catalogNumber": "450230",
         "sourceName": "VACUETTE® QUICKSHIELD Safety Tube Holder",
-        "config": "ACUETTE® QUICKSHIELD Safety Tube Holder",
+        "config": "VACUETTE® QUICKSHIELD Safety Tube Holder",
         "flags": []
       }
     ],
@@ -12092,7 +12163,7 @@
     "tags": [],
     "featured": false,
     "inStock": true,
-    "catalogNumber": "",
+    "catalogNumber": "450230",
     "manufacturer": "greiner-bio-one",
     "createdAt": "2024-01-01",
     "sort": 48,
@@ -12190,9 +12261,9 @@
     ],
     "variants": [
       {
-        "catalogNumber": "",
+        "catalogNumber": "450228V1",
         "sourceName": "VACUETTE® QUICKSHIELD Complete 22G x 1 1/2\" single-packed, sterile 0.7 x 38 mm (300 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete 22G x 1 1/2\" single-packed, sterile 0.7 x 38 mm (300 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete 22G x 1 1/2\" single-packed, sterile 0.7 x 38 mm (300 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
@@ -12201,7 +12272,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® QUICKSHIELD Complete 22G x 1 1/2\" single-packed, sterile 0.70 x 38 mm (360 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete 22G x 1 1/2\" single-packed, sterile 0.70 x 38 mm (360 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete 22G x 1 1/2\" single-packed, sterile 0.70 x 38 mm (360 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
@@ -12210,7 +12281,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® QUICKSHIELD Complete PLUS 22G x 1\" single-packed, sterile 0.70 x 25 mm (300 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete PLUS 22G x 1\" single-packed, sterile 0.70 x 25 mm (300 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete PLUS 22G x 1\" single-packed, sterile 0.70 x 25 mm (300 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
@@ -12219,7 +12290,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® QUICKSHIELD Complete PLUS 22G x 1\" single-packed, sterile 0.70 x 25 mm (360 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete PLUS 22G x 1\" single-packed, sterile 0.70 x 25 mm (360 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete PLUS 22G x 1\" single-packed, sterile 0.70 x 25 mm (360 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
@@ -12228,7 +12299,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® QUICKSHIELD Complete PLUS 22G x 1 1/2\" single-packed, sterile 0.7 x 38 mm (300 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete PLUS 22G x 1 1/2\" single-packed, sterile 0.7 x 38 mm (300 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete PLUS 22G x 1 1/2\" single-packed, sterile 0.7 x 38 mm (300 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
@@ -12237,7 +12308,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® QUICKSHIELD Complete PLUS 22G x 1 1/2\" single-packed, sterile 0.70 x 38 mm (360 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete PLUS 22G x 1 1/2\" single-packed, sterile 0.70 x 38 mm (360 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete PLUS 22G x 1 1/2\" single-packed, sterile 0.70 x 38 mm (360 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
@@ -12246,7 +12317,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® QUICKSHIELD Complete 22G x 1\" single-packed, sterile 0.7 x 25 mm (300 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete 22G x 1\" single-packed, sterile 0.7 x 25 mm (300 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete 22G x 1\" single-packed, sterile 0.7 x 25 mm (300 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
@@ -12255,7 +12326,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® QUICKSHIELD Complete 22G x 1\" single-packed, sterile 0.70 x 25 mm (360 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete 22G x 1\" single-packed, sterile 0.70 x 25 mm (360 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete 22G x 1\" single-packed, sterile 0.70 x 25 mm (360 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
@@ -12264,7 +12335,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® QUICKSHIELD Complete PLUS 21G x 1\" single-packed, sterile 0.8 x 25 mm (300 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete PLUS 21G x 1\" single-packed, sterile 0.8 x 25 mm (300 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete PLUS 21G x 1\" single-packed, sterile 0.8 x 25 mm (300 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
@@ -12273,7 +12344,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® QUICKSHIELD Complete PLUS 21G x 1\" single-packed, sterile 0.80 x 25 mm (360 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete PLUS 21G x 1\" single-packed, sterile 0.80 x 25 mm (360 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete PLUS 21G x 1\" single-packed, sterile 0.80 x 25 mm (360 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
@@ -12282,7 +12353,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® QUICKSHIELD Complete 21G x 1 1/2\" single-packed, sterile 0.8 x 38 mm (300 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete 21G x 1 1/2\" single-packed, sterile 0.8 x 38 mm (300 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete 21G x 1 1/2\" single-packed, sterile 0.8 x 38 mm (300 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
@@ -12291,7 +12362,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® QUICKSHIELD Complete 21G x 1 1/2\" single-packed, sterile 0.8 x 38 mm (360 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete 21G x 1 1/2\" single-packed, sterile 0.8 x 38 mm (360 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete 21G x 1 1/2\" single-packed, sterile 0.8 x 38 mm (360 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
@@ -12300,7 +12371,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® QUICKSHIELD Complete 21G x 1\" single-packed, sterile 0.8 x 25 mm (300 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete 21G x 1\" single-packed, sterile 0.8 x 25 mm (300 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete 21G x 1\" single-packed, sterile 0.8 x 25 mm (300 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
@@ -12309,7 +12380,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® QUICKSHIELD Complete 21G x 1\" single-packed, sterile 0.80 x 25 mm (360 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete 21G x 1\" single-packed, sterile 0.80 x 25 mm (360 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete 21G x 1\" single-packed, sterile 0.80 x 25 mm (360 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
@@ -12318,7 +12389,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® QUICKSHIELD Complete PLUS 21G x 1 1/2\" single-packed, sterile 0.80 x 38 mm (300 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete PLUS 21G x 1 1/2\" single-packed, sterile 0.80 x 38 mm (300 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete PLUS 21G x 1 1/2\" single-packed, sterile 0.80 x 38 mm (300 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
@@ -12327,18 +12398,40 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® QUICKSHIELD Complete PLUS 21G x 1 1/2\" single-packed, sterile 0.80 x 38 mm (360 pcs.)",
-        "config": "ACUETTE® QUICKSHIELD Complete PLUS 21G x 1 1/2\" single-packed, sterile 0.80 x 38 mm (360 pcs.)",
+        "config": "VACUETTE® QUICKSHIELD Complete PLUS 21G x 1 1/2\" single-packed, sterile 0.80 x 38 mm (360 pcs.)",
         "flags": [
           "sterile",
           "single-packed"
         ]
+      },
+      {
+        "catalogNumber": "450237V1",
+        "sourceName": "VACUETTE® QUICKSHIELD Complete 21G x 1 1/2\" (0.8 x 38 mm), single packed, sterile",
+        "size": "8×38",
+        "label": "standard",
+        "flags": [
+          "single-packed",
+          "sterile"
+        ],
+        "config": "VACUETTE® QUICKSHIELD Complete 21G x 1 1/2\" (0.8 x 38 mm), single packed, sterile"
+      },
+      {
+        "catalogNumber": "450239V1",
+        "sourceName": "VACUETTE® QUICKSHIELD Complete PLUS 21G x 1 1/2\" single packed, sterile 0.80 x 38 mm (360 pcs.)",
+        "size": "80×38",
+        "label": "standard",
+        "flags": [
+          "single-packed",
+          "sterile"
+        ],
+        "config": "VACUETTE® QUICKSHIELD Complete PLUS 21G x 1 1/2\" single packed, sterile 0.80 x 38 mm (360 pcs.)"
       }
     ],
     "specs": [],
     "tags": [],
     "featured": false,
     "inStock": true,
-    "catalogNumber": "",
+    "catalogNumber": "450228V1",
     "manufacturer": "greiner-bio-one",
     "createdAt": "2024-01-01",
     "sort": 49,
@@ -12429,9 +12522,9 @@
     "variantAttributes": [],
     "variants": [
       {
-        "catalogNumber": "",
+        "catalogNumber": "450210",
         "sourceName": "VACUETTE® SAFELINK Holder with male luer lock single-packed, not made with natural rubber latex",
-        "config": "ACUETTE® SAFELINK Holder with male luer lock single-packed, not made with natural rubber latex",
+        "config": "VACUETTE® SAFELINK Holder with male luer lock single-packed, not made with natural rubber latex",
         "flags": [
           "single-packed"
         ]
@@ -12441,7 +12534,7 @@
     "tags": [],
     "featured": false,
     "inStock": true,
-    "catalogNumber": "",
+    "catalogNumber": "450210",
     "manufacturer": "greiner-bio-one",
     "createdAt": "2024-01-01",
     "sort": 50,
@@ -12534,7 +12627,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® Blood Culture Holder non-sterile",
-        "config": "ACUETTE® Blood Culture Holder non-sterile",
+        "config": "VACUETTE® Blood Culture Holder non-sterile",
         "flags": [
           "sterile"
         ]
@@ -12644,7 +12737,7 @@
       {
         "catalogNumber": "",
         "sourceName": "HOLDEX® single-packed, sterile",
-        "config": "OLDEX® single-packed, sterile",
+        "config": "HOLDEX® single-packed, sterile",
         "flags": [
           "sterile",
           "single-packed"
@@ -12653,7 +12746,7 @@
       {
         "catalogNumber": "",
         "sourceName": "HOLDEX® Haemonetics single-packed, sterile",
-        "config": "OLDEX® Haemonetics single-packed, sterile",
+        "config": "HOLDEX® Haemonetics single-packed, sterile",
         "flags": [
           "sterile",
           "single-packed"
@@ -12662,7 +12755,7 @@
       {
         "catalogNumber": "",
         "sourceName": "HOLDEX® Single-Use Holder PP single-packed, sterile, not made with natural rubber latex",
-        "config": "OLDEX® Single-Use Holder PP single-packed, sterile, not made with natural rubber latex",
+        "config": "HOLDEX® Single-Use Holder PP single-packed, sterile, not made with natural rubber latex",
         "flags": [
           "sterile",
           "single-packed"
@@ -12671,7 +12764,7 @@
       {
         "catalogNumber": "",
         "sourceName": "HOLDEX® Single-Use Holder PP single-packed, sterile",
-        "config": "OLDEX® Single-Use Holder PP single-packed, sterile",
+        "config": "HOLDEX® Single-Use Holder PP single-packed, sterile",
         "flags": [
           "sterile",
           "single-packed"
@@ -12781,13 +12874,13 @@
       {
         "catalogNumber": "",
         "sourceName": "Plastic Cannula",
-        "config": "lastic Cannula",
+        "config": "Plastic Cannula",
         "flags": []
       },
       {
         "catalogNumber": "",
         "sourceName": "Plastic Cannula",
-        "config": "lastic Cannula",
+        "config": "Plastic Cannula",
         "flags": []
       }
     ],
@@ -12887,7 +12980,7 @@
       {
         "catalogNumber": "",
         "sourceName": "VACUETTE® Blood Transfer Unit PP single-packed, sterile",
-        "config": "ACUETTE® Blood Transfer Unit PP single-packed, sterile",
+        "config": "VACUETTE® Blood Transfer Unit PP single-packed, sterile",
         "flags": [
           "sterile",
           "single-packed"
@@ -12991,7 +13084,7 @@
       {
         "catalogNumber": "",
         "sourceName": "Sample Collection Adapter single-packed, sterile",
-        "config": "ample Collection Adapter single-packed, sterile",
+        "config": "Sample Collection Adapter single-packed, sterile",
         "flags": [
           "sterile",
           "single-packed"
@@ -13101,9 +13194,9 @@
     ],
     "variants": [
       {
-        "catalogNumber": "",
+        "catalogNumber": "724320",
         "sourceName": "Urine Beaker with Safety Stopper 100 ml, white lid single-packed, sterile",
-        "config": "rine Beaker with Safety Stopper 100 ml, white lid single-packed, sterile",
+        "config": "Urine Beaker with Safety Stopper 100 ml, white lid single-packed, sterile",
         "flags": [
           "sterile",
           "single-packed"
@@ -13112,7 +13205,7 @@
       {
         "catalogNumber": "",
         "sourceName": "Urine Beaker with integrated Transfer Device 100 ml, yellow lid single-packed, sterile",
-        "config": "rine Beaker with integrated Transfer Device 100 ml, yellow lid single-packed, sterile",
+        "config": "Urine Beaker with integrated Transfer Device 100 ml, yellow lid single-packed, sterile",
         "flags": [
           "sterile",
           "single-packed"
@@ -13121,7 +13214,7 @@
       {
         "catalogNumber": "",
         "sourceName": "Urine Beaker with integrated Transfer Device 100 ml, yellow lid 5 pcs./bag, sterile",
-        "config": "rine Beaker with integrated Transfer Device 100 ml, yellow lid 5 pcs./bag, sterile",
+        "config": "Urine Beaker with integrated Transfer Device 100 ml, yellow lid 5 pcs./bag, sterile",
         "flags": [
           "sterile"
         ]
@@ -13129,7 +13222,7 @@
       {
         "catalogNumber": "",
         "sourceName": "Urine Beaker with integrated Transfer Device 100 ml, yellow lid bulk-packed, non-sterile",
-        "config": "rine Beaker with integrated Transfer Device 100 ml, yellow lid bulk-packed, non-sterile",
+        "config": "Urine Beaker with integrated Transfer Device 100 ml, yellow lid bulk-packed, non-sterile",
         "flags": [
           "sterile"
         ]
@@ -13137,7 +13230,7 @@
       {
         "catalogNumber": "",
         "sourceName": "Urine Beaker with integrated Transfer Device 100 ml, yellow lid 40 pcs./bag, non-sterile",
-        "config": "rine Beaker with integrated Transfer Device 100 ml, yellow lid 40 pcs./bag, non-sterile",
+        "config": "Urine Beaker with integrated Transfer Device 100 ml, yellow lid 40 pcs./bag, non-sterile",
         "flags": [
           "sterile"
         ]
@@ -13145,17 +13238,27 @@
       {
         "catalogNumber": "",
         "sourceName": "Urine Beaker 100 ml, yellow lid, with ring screw closure bulk-packed, sterile",
-        "config": "rine Beaker 100 ml, yellow lid, with ring screw closure bulk-packed, sterile",
+        "config": "Urine Beaker 100 ml, yellow lid, with ring screw closure bulk-packed, sterile",
         "flags": [
           "sterile"
         ]
+      },
+      {
+        "catalogNumber": "724322",
+        "sourceName": "Urine Beaker 100 ml, bulk-packed, non-sterile",
+        "volume": "100",
+        "label": "standard",
+        "flags": [
+          "sterile"
+        ],
+        "config": "Urine Beaker 100 ml, bulk-packed, non-sterile"
       }
     ],
     "specs": [],
     "tags": [],
     "featured": false,
     "inStock": true,
-    "catalogNumber": "",
+    "catalogNumber": "724320",
     "manufacturer": "greiner-bio-one",
     "createdAt": "2024-01-01",
     "sort": 56,
@@ -13254,21 +13357,21 @@
     ],
     "variants": [
       {
-        "catalogNumber": "",
+        "catalogNumber": "450253V1",
         "sourceName": "Urine Transfer Device, short 50 pcs. per bag",
-        "config": "rine Transfer Device, short 50 pcs. per bag",
+        "config": "Urine Transfer Device, short 50 pcs. per bag",
         "flags": []
       },
       {
         "catalogNumber": "",
         "sourceName": "Urine Transfer Device, long",
-        "config": "rine Transfer Device, long",
+        "config": "Urine Transfer Device, long",
         "flags": []
       },
       {
         "catalogNumber": "",
         "sourceName": "Urine Transfer Device, short single-packed, sterile 400 pcs. in total",
-        "config": "rine Transfer Device, short single-packed, sterile 400 pcs. in total",
+        "config": "Urine Transfer Device, short single-packed, sterile 400 pcs. in total",
         "flags": [
           "sterile",
           "single-packed"
@@ -13277,7 +13380,7 @@
       {
         "catalogNumber": "",
         "sourceName": "Urine Transfer Device, short single-packed, non-sterile 400 pcs. in total",
-        "config": "rine Transfer Device, short single-packed, non-sterile 400 pcs. in total",
+        "config": "Urine Transfer Device, short single-packed, non-sterile 400 pcs. in total",
         "flags": [
           "sterile",
           "single-packed"
@@ -13286,7 +13389,7 @@
       {
         "catalogNumber": "",
         "sourceName": "Urine Transfer Device, short 600 pcs. in total",
-        "config": "rine Transfer Device, short 600 pcs. in total",
+        "config": "Urine Transfer Device, short 600 pcs. in total",
         "flags": []
       }
     ],
@@ -13294,7 +13397,7 @@
     "tags": [],
     "featured": false,
     "inStock": true,
-    "catalogNumber": "",
+    "catalogNumber": "450253V1",
     "manufacturer": "greiner-bio-one",
     "createdAt": "2024-01-01",
     "sort": 57,
@@ -13972,6 +14075,944 @@
       "MiniCollect",
       "VeinViewer",
       "Австрия"
+    ]
+  },
+  {
+    "id": "vac-acc-070",
+    "slug": "vacuette-visio-plus-needles",
+    "name": "VACUETTE® VISIO PLUS — иглы с прозрачной камерой",
+    "shortDescription": "Иглы с прозрачной визуальной камерой для контроля попадания в вену. Без латекса, стерильно.",
+    "description": "Иглы VACUETTE® VISIO PLUS оснащены прозрачной камерой за канюлей, которая позволяет визуально подтвердить попадание в вену до подключения пробирки. Производятся без натурального латекса, стерильны. Доступны калибры 21G и 22G, длиной 1\" и 1 1/2\".",
+    "categoryId": "vacuum-systems",
+    "subcategory": "holder",
+    "additive": null,
+    "capColor": null,
+    "ringColor": null,
+    "images": [],
+    "variantAttributes": [
+      {
+        "key": "gauge",
+        "label_ru": "Калибр иглы",
+        "label_en": "Gauge",
+        "label_zh": "针规"
+      },
+      {
+        "key": "length",
+        "label_ru": "Длина",
+        "label_en": "Length",
+        "label_zh": "长度"
+      }
+    ],
+    "variants": [
+      {
+        "catalogNumber": "450040",
+        "sourceName": "игла с прозрачной камерой VACUETTE® VISIO PLUS Needles 21 G x 1 1/2\" green, sterile, not made with n",
+        "gauge": "21G",
+        "length": "1 1/2\"",
+        "flags": [
+          "sterile"
+        ]
+      },
+      {
+        "catalogNumber": "450041",
+        "sourceName": "игла с прозрачной камерой VACUETTE® VISIO PLUS Needles 22 G x 1 1/2\" black sterile, not made with na",
+        "gauge": "22G",
+        "length": "1 1/2\"",
+        "flags": [
+          "sterile"
+        ]
+      },
+      {
+        "catalogNumber": "450042",
+        "sourceName": "игла с прозрачной камерой VACUETTE® VISIO PLUS Needles 21 G x 1\" green, sterile, not made with natur",
+        "gauge": "21G",
+        "length": "1\"",
+        "flags": [
+          "sterile"
+        ]
+      }
+    ],
+    "specs": [],
+    "tags": [
+      "needle",
+      "visio-plus"
+    ],
+    "featured": false,
+    "inStock": true,
+    "catalogNumber": "450040",
+    "manufacturer": "greiner-bio-one",
+    "createdAt": "2024-01-01",
+    "sort": 201,
+    "i18n": {
+      "en": {
+        "name": "VACUETTE® VISIO PLUS Needles",
+        "shortDescription": "Multi-sample needles with a clear flashback chamber. Latex-free, sterile.",
+        "description": "VACUETTE® VISIO PLUS Needles feature a transparent chamber behind the cannula that lets the phlebotomist visually confirm successful venipuncture before connecting a tube. Latex-free, sterile. Available in 21G and 22G gauges, 1\" and 1 1/2\" lengths."
+      },
+      "zh": {
+        "name": "VACUETTE® VISIO PLUS 多用静脉穿刺针",
+        "shortDescription": "带透明回血腔的多用采血针,无乳胶,灭菌。",
+        "description": "VACUETTE® VISIO PLUS 静脉穿刺针的针柄处带有透明回血腔,可在连接采血管前确认穿刺成功。无乳胶、灭菌。提供 21G 与 22G 两种规格,1\" 和 1 1/2\" 两种长度。"
+      }
+    },
+    "searchKeywords": [
+      "вакуумные пробирки для взятия крови",
+      "вакуумные пробирки для забора крови",
+      "вакуумные пробирки для крови",
+      "пробирки вакуумные для крови",
+      "пробирки для взятия венозной крови",
+      "пробирки для забора венозной крови",
+      "вакуумная система взятия крови",
+      "вакуумная система забора крови",
+      "система взятия венозной крови",
+      "система забора венозной крови",
+      "вакуумные пробирки",
+      "пробирки для забора крови",
+      "пробирка для венозной крови",
+      "венозная кровь пробирка",
+      "система забора крови",
+      "система взятия крови",
+      "преаналитика",
+      "преаналитический этап",
+      "флеботомия",
+      "вакутейнер",
+      "вакуэтт",
+      "VACUETTE",
+      "vacutainer",
+      "пробирка с EDTA",
+      "пробирка с цитратом",
+      "пробирка с гепарином",
+      "пробирка для биохимии",
+      "пробирка для коагулологии",
+      "пробирка для гематологии",
+      "пробирка для СОЭ",
+      "пробирка с активатором свёртывания",
+      "пробирка с гелем",
+      "пробирка с разделительным гелем",
+      "пробирка для общего анализа крови",
+      "пробирка для ОАК",
+      "пробирка для исследования глюкозы",
+      "пробирка с фторидом натрия",
+      "пробирка для микробиологии",
+      "иглы для забора крови",
+      "иглы-бабочки",
+      "держатели для пробирок",
+      "люэр-адаптер",
+      "купить пробирки для крови",
+      "купить вакуумные пробирки в Минске",
+      "вакуумные пробирки купить Беларусь",
+      "Greiner пробирки",
+      "Greiner Bio-One Беларусь",
+      "blood collection tubes",
+      "venous blood collection",
+      "evacuated tube",
+      "вакуумная пробирка",
+      "Greiner Bio-One",
+      "Greiner",
+      "Грайнер",
+      "MiniCollect",
+      "VeinViewer",
+      "Австрия",
+      "needle",
+      "visio-plus"
+    ]
+  },
+  {
+    "id": "vac-acc-071",
+    "slug": "vacuette-luer-adapter",
+    "name": "VACUETTE® Luer Adapter",
+    "shortDescription": "Люэр-адаптер для совместимости системы VACUETTE® с иглами-бабочками и шприцами.",
+    "description": "VACUETTE® Luer Adapter — переходник для подключения вакуумных пробирок VACUETTE® к иглам-бабочкам, шприцам или внутривенным катетерам с люэровским коннектором. Стерилен, без натурального латекса.",
+    "categoryId": "vacuum-systems",
+    "subcategory": "holder",
+    "additive": null,
+    "capColor": null,
+    "ringColor": null,
+    "images": [],
+    "variantAttributes": [],
+    "variants": [
+      {
+        "catalogNumber": "450070",
+        "sourceName": "VACUETTE® Luer Adapter 20G",
+        "gauge": "20G",
+        "flags": [
+          "sterile"
+        ]
+      }
+    ],
+    "specs": [],
+    "tags": [
+      "luer-adapter"
+    ],
+    "featured": false,
+    "inStock": true,
+    "catalogNumber": "450070",
+    "manufacturer": "greiner-bio-one",
+    "createdAt": "2024-01-01",
+    "sort": 202,
+    "i18n": {
+      "en": {
+        "name": "VACUETTE® Luer Adapter",
+        "shortDescription": "Luer adapter that connects VACUETTE® tubes to butterfly sets and luer syringes.",
+        "description": "The VACUETTE® Luer Adapter connects VACUETTE® evacuated tubes to winged blood-collection sets, luer-lock syringes and IV cannulas. Sterile, latex-free."
+      },
+      "zh": {
+        "name": "VACUETTE® 鲁尔接头",
+        "shortDescription": "用于将 VACUETTE® 试管连接至蝶翼针组或鲁尔注射器的接头。",
+        "description": "VACUETTE® 鲁尔接头可将 VACUETTE® 真空采血管与翼状采血针组、鲁尔注射器及静脉留置导管相连接。无菌、无乳胶。"
+      }
+    },
+    "searchKeywords": [
+      "вакуумные пробирки для взятия крови",
+      "вакуумные пробирки для забора крови",
+      "вакуумные пробирки для крови",
+      "пробирки вакуумные для крови",
+      "пробирки для взятия венозной крови",
+      "пробирки для забора венозной крови",
+      "вакуумная система взятия крови",
+      "вакуумная система забора крови",
+      "система взятия венозной крови",
+      "система забора венозной крови",
+      "вакуумные пробирки",
+      "пробирки для забора крови",
+      "пробирка для венозной крови",
+      "венозная кровь пробирка",
+      "система забора крови",
+      "система взятия крови",
+      "преаналитика",
+      "преаналитический этап",
+      "флеботомия",
+      "вакутейнер",
+      "вакуэтт",
+      "VACUETTE",
+      "vacutainer",
+      "пробирка с EDTA",
+      "пробирка с цитратом",
+      "пробирка с гепарином",
+      "пробирка для биохимии",
+      "пробирка для коагулологии",
+      "пробирка для гематологии",
+      "пробирка для СОЭ",
+      "пробирка с активатором свёртывания",
+      "пробирка с гелем",
+      "пробирка с разделительным гелем",
+      "пробирка для общего анализа крови",
+      "пробирка для ОАК",
+      "пробирка для исследования глюкозы",
+      "пробирка с фторидом натрия",
+      "пробирка для микробиологии",
+      "иглы для забора крови",
+      "иглы-бабочки",
+      "держатели для пробирок",
+      "люэр-адаптер",
+      "купить пробирки для крови",
+      "купить вакуумные пробирки в Минске",
+      "вакуумные пробирки купить Беларусь",
+      "Greiner пробирки",
+      "Greiner Bio-One Беларусь",
+      "blood collection tubes",
+      "venous blood collection",
+      "evacuated tube",
+      "вакуумная пробирка",
+      "Greiner Bio-One",
+      "Greiner",
+      "Грайнер",
+      "MiniCollect",
+      "VeinViewer",
+      "Австрия",
+      "luer-adapter"
+    ]
+  },
+  {
+    "id": "vac-acc-072",
+    "slug": "vacuette-multiple-use-drawing-needles",
+    "name": "VACUETTE® Multiple Use Drawing Needles",
+    "shortDescription": "Многоразовые двусторонние иглы для забора крови.",
+    "description": "VACUETTE® Multiple Use Drawing Needles — двусторонние иглы для последовательного забора нескольких пробирок при одной венепункции. Без латекса, стерильны. Доступны 21G и 22G длиной 1 1/2\".",
+    "categoryId": "vacuum-systems",
+    "subcategory": "holder",
+    "additive": null,
+    "capColor": null,
+    "ringColor": null,
+    "images": [],
+    "variantAttributes": [
+      {
+        "key": "gauge",
+        "label_ru": "Калибр иглы",
+        "label_en": "Gauge",
+        "label_zh": "针规"
+      }
+    ],
+    "variants": [
+      {
+        "catalogNumber": "450075",
+        "sourceName": "Устройства для забора крови из вены: иглы: игла VACUETTE® Multiple Use Drawing Needles 22 G x 1 1/2\"",
+        "gauge": "22G",
+        "length": "1 1/2\"",
+        "flags": [
+          "sterile"
+        ]
+      },
+      {
+        "catalogNumber": "450076",
+        "sourceName": "игла VACUETTE® Multiple Use Drawing Needles 21 G x 1 1/2\", green, sterile",
+        "gauge": "21G",
+        "length": "1 1/2\"",
+        "flags": [
+          "sterile"
+        ]
+      }
+    ],
+    "specs": [],
+    "tags": [
+      "needle"
+    ],
+    "featured": false,
+    "inStock": true,
+    "catalogNumber": "450075",
+    "manufacturer": "greiner-bio-one",
+    "createdAt": "2024-01-01",
+    "sort": 203,
+    "i18n": {
+      "en": {
+        "name": "VACUETTE® Multiple Use Drawing Needles",
+        "shortDescription": "Double-ended needles for collecting multiple tubes in one venipuncture.",
+        "description": "VACUETTE® Multiple Use Drawing Needles are double-ended needles that allow several tubes to be drawn from a single venipuncture. Latex-free and sterile. 21G and 22G in 1 1/2\" length."
+      },
+      "zh": {
+        "name": "VACUETTE® 多用采血针",
+        "shortDescription": "双头采血针,一次穿刺可采集多管样本。",
+        "description": "VACUETTE® 多用采血针为双头设计,可在一次穿刺中采集多管样本。无乳胶、灭菌。提供 21G 与 22G 两种规格,长度 1 1/2\"。"
+      }
+    },
+    "searchKeywords": [
+      "вакуумные пробирки для взятия крови",
+      "вакуумные пробирки для забора крови",
+      "вакуумные пробирки для крови",
+      "пробирки вакуумные для крови",
+      "пробирки для взятия венозной крови",
+      "пробирки для забора венозной крови",
+      "вакуумная система взятия крови",
+      "вакуумная система забора крови",
+      "система взятия венозной крови",
+      "система забора венозной крови",
+      "вакуумные пробирки",
+      "пробирки для забора крови",
+      "пробирка для венозной крови",
+      "венозная кровь пробирка",
+      "система забора крови",
+      "система взятия крови",
+      "преаналитика",
+      "преаналитический этап",
+      "флеботомия",
+      "вакутейнер",
+      "вакуэтт",
+      "VACUETTE",
+      "vacutainer",
+      "пробирка с EDTA",
+      "пробирка с цитратом",
+      "пробирка с гепарином",
+      "пробирка для биохимии",
+      "пробирка для коагулологии",
+      "пробирка для гематологии",
+      "пробирка для СОЭ",
+      "пробирка с активатором свёртывания",
+      "пробирка с гелем",
+      "пробирка с разделительным гелем",
+      "пробирка для общего анализа крови",
+      "пробирка для ОАК",
+      "пробирка для исследования глюкозы",
+      "пробирка с фторидом натрия",
+      "пробирка для микробиологии",
+      "иглы для забора крови",
+      "иглы-бабочки",
+      "держатели для пробирок",
+      "люэр-адаптер",
+      "купить пробирки для крови",
+      "купить вакуумные пробирки в Минске",
+      "вакуумные пробирки купить Беларусь",
+      "Greiner пробирки",
+      "Greiner Bio-One Беларусь",
+      "blood collection tubes",
+      "venous blood collection",
+      "evacuated tube",
+      "вакуумная пробирка",
+      "Greiner Bio-One",
+      "Greiner",
+      "Грайнер",
+      "MiniCollect",
+      "VeinViewer",
+      "Австрия",
+      "needle"
+    ]
+  },
+  {
+    "id": "vac-acc-073",
+    "slug": "vacuette-safety-blood-collection-set-luer",
+    "name": "VACUETTE® SAFETY Blood Collection Set + Luer Adapter",
+    "shortDescription": "Безопасный набор для взятия крови с люэр-адаптером и иглой-бабочкой.",
+    "description": "VACUETTE® SAFETY Blood Collection Set с люэр-адаптером объединяет иглу-бабочку с защитой от случайного укола и переходник luer-lock для подключения к вакуумной системе. Стерилен, одноштучная упаковка, без натурального латекса.",
+    "categoryId": "vacuum-systems",
+    "subcategory": "holder",
+    "additive": null,
+    "capColor": null,
+    "ringColor": null,
+    "images": [],
+    "variantAttributes": [
+      {
+        "key": "gauge",
+        "label_ru": "Калибр иглы",
+        "label_en": "Gauge",
+        "label_zh": "针规"
+      },
+      {
+        "key": "tubeLength",
+        "label_ru": "Длина трубки",
+        "label_en": "Tubing length",
+        "label_zh": "管长"
+      },
+      {
+        "key": "packRevision",
+        "label_ru": "Ревизия упаковки",
+        "label_en": "Pack revision",
+        "label_zh": "包装版本"
+      }
+    ],
+    "variants": [
+      {
+        "catalogNumber": "450081",
+        "sourceName": "SAFETY Blood Collection Set + Luer Adapter 21G x 3/4\"\", Tube length: 7.5\"\"(19cm) SP, sterile, Latex",
+        "gauge": "21G",
+        "tubeLength": "7 1/2\" (19 cm)",
+        "packRevision": "original",
+        "flags": [
+          "sterile",
+          "single-packed"
+        ]
+      },
+      {
+        "catalogNumber": "450081V1",
+        "sourceName": "SAFETY Blood Collection Set + Luer Adapter 21G x 3/4\"\", Tube length: 7.5\"\"(19cm) SP, sterile, Latex",
+        "gauge": "21G",
+        "tubeLength": "7 1/2\" (19 cm)",
+        "packRevision": "V1",
+        "flags": [
+          "sterile",
+          "single-packed"
+        ]
+      },
+      {
+        "catalogNumber": "450084",
+        "sourceName": "SAFETY Blood Collection Set + Luer Adapter 23G x 3/4\"\", Tube length: 4\"\" (10cm) SP, sterile, Latex f",
+        "gauge": "23G",
+        "tubeLength": "4\" (10 cm)",
+        "packRevision": "original",
+        "flags": [
+          "sterile",
+          "single-packed"
+        ]
+      },
+      {
+        "catalogNumber": "450084V1",
+        "sourceName": "SAFETY Blood Collection Set + Luer Adapter 23G x 3/4\"\", Tube length: 4\"\" (10cm) SP, sterile, Latex f",
+        "gauge": "23G",
+        "tubeLength": "4\" (10 cm)",
+        "packRevision": "V1",
+        "flags": [
+          "sterile",
+          "single-packed"
+        ]
+      },
+      {
+        "catalogNumber": "450099",
+        "sourceName": "SAFETY Blood Collection Set + Luer Adapter 25G x 3/4\"\", Tube length: 12\"\" (30cm) SP, sterile, Latex",
+        "gauge": "25G",
+        "tubeLength": "12\" (30 cm)",
+        "packRevision": "original",
+        "flags": [
+          "sterile",
+          "single-packed"
+        ]
+      },
+      {
+        "catalogNumber": "450099V1",
+        "sourceName": "SAFETY Blood Collection Set + Luer Adapter 25G x 3/4\"\", Tube length: 12\"\" (30cm) SP, sterile, Latex",
+        "gauge": "25G",
+        "tubeLength": "12\" (30 cm)",
+        "packRevision": "V1",
+        "flags": [
+          "sterile",
+          "single-packed"
+        ]
+      }
+    ],
+    "specs": [],
+    "tags": [
+      "safety",
+      "blood-collection-set",
+      "luer"
+    ],
+    "featured": false,
+    "inStock": true,
+    "catalogNumber": "450081",
+    "manufacturer": "greiner-bio-one",
+    "createdAt": "2024-01-01",
+    "sort": 204,
+    "i18n": {
+      "en": {
+        "name": "VACUETTE® SAFETY Blood Collection Set + Luer Adapter",
+        "shortDescription": "Safety winged blood collection set with luer adapter.",
+        "description": "VACUETTE® SAFETY Blood Collection Set with luer adapter pairs a needlestick-protected butterfly needle with a luer-lock adapter for vacuum tube collection. Sterile, single-packed, latex-free."
+      },
+      "zh": {
+        "name": "VACUETTE® 安全采血针组 + 鲁尔接头",
+        "shortDescription": "带防针刺保护与鲁尔接头的蝶翼采血针组。",
+        "description": "VACUETTE® 安全采血针组(含鲁尔接头)将带防针刺保护的蝶翼针与鲁尔锁接头组合,用于真空采血。无菌、单只包装、无乳胶。"
+      }
+    },
+    "searchKeywords": [
+      "вакуумные пробирки для взятия крови",
+      "вакуумные пробирки для забора крови",
+      "вакуумные пробирки для крови",
+      "пробирки вакуумные для крови",
+      "пробирки для взятия венозной крови",
+      "пробирки для забора венозной крови",
+      "вакуумная система взятия крови",
+      "вакуумная система забора крови",
+      "система взятия венозной крови",
+      "система забора венозной крови",
+      "вакуумные пробирки",
+      "пробирки для забора крови",
+      "пробирка для венозной крови",
+      "венозная кровь пробирка",
+      "система забора крови",
+      "система взятия крови",
+      "преаналитика",
+      "преаналитический этап",
+      "флеботомия",
+      "вакутейнер",
+      "вакуэтт",
+      "VACUETTE",
+      "vacutainer",
+      "пробирка с EDTA",
+      "пробирка с цитратом",
+      "пробирка с гепарином",
+      "пробирка для биохимии",
+      "пробирка для коагулологии",
+      "пробирка для гематологии",
+      "пробирка для СОЭ",
+      "пробирка с активатором свёртывания",
+      "пробирка с гелем",
+      "пробирка с разделительным гелем",
+      "пробирка для общего анализа крови",
+      "пробирка для ОАК",
+      "пробирка для исследования глюкозы",
+      "пробирка с фторидом натрия",
+      "пробирка для микробиологии",
+      "иглы для забора крови",
+      "иглы-бабочки",
+      "держатели для пробирок",
+      "люэр-адаптер",
+      "купить пробирки для крови",
+      "купить вакуумные пробирки в Минске",
+      "вакуумные пробирки купить Беларусь",
+      "Greiner пробирки",
+      "Greiner Bio-One Беларусь",
+      "blood collection tubes",
+      "venous blood collection",
+      "evacuated tube",
+      "вакуумная пробирка",
+      "Greiner Bio-One",
+      "Greiner",
+      "Грайнер",
+      "MiniCollect",
+      "VeinViewer",
+      "Австрия",
+      "safety",
+      "blood-collection-set",
+      "luer"
+    ]
+  },
+  {
+    "id": "vac-acc-074",
+    "slug": "vacuette-safety-blood-collection-set-holder",
+    "name": "VACUETTE® SAFETY Blood Collection Set + Holder",
+    "shortDescription": "Безопасный набор для взятия крови с держателем и иглой-бабочкой.",
+    "description": "VACUETTE® SAFETY Blood Collection Set с держателем — готовая система: игла-бабочка с защитой от укола, гибкая трубка и преднасаженный держатель. Стерильно, одноштучная упаковка, без латекса.",
+    "categoryId": "vacuum-systems",
+    "subcategory": "holder",
+    "additive": null,
+    "capColor": null,
+    "ringColor": null,
+    "images": [],
+    "variantAttributes": [
+      {
+        "key": "gauge",
+        "label_ru": "Калибр иглы",
+        "label_en": "Gauge",
+        "label_zh": "针规"
+      },
+      {
+        "key": "tubeLength",
+        "label_ru": "Длина трубки",
+        "label_en": "Tubing length",
+        "label_zh": "管长"
+      },
+      {
+        "key": "packRevision",
+        "label_ru": "Ревизия упаковки",
+        "label_en": "Pack revision",
+        "label_zh": "包装版本"
+      }
+    ],
+    "variants": [
+      {
+        "catalogNumber": "450086",
+        "sourceName": "SAFETY Blood Collection Set + Holder 23G x 3/4\" tubing length 7 1/2\" (19 cm), single-packed, sterile",
+        "gauge": "23G",
+        "tubeLength": "7 1/2\" (19 cm)",
+        "packRevision": "original",
+        "flags": [
+          "sterile",
+          "single-packed"
+        ]
+      },
+      {
+        "catalogNumber": "450086V1",
+        "sourceName": "SAFETY Blood Collection Set + Holder 23G x 3/4\" tubing length 7 1/2\" (19 cm), single-packed, sterile",
+        "gauge": "23G",
+        "tubeLength": "7 1/2\" (19 cm)",
+        "packRevision": "V1",
+        "flags": [
+          "sterile",
+          "single-packed"
+        ]
+      },
+      {
+        "catalogNumber": "450087V1",
+        "sourceName": "набор SAFETY Blood Collection Set + Holder 21G x 3/4\" tubing length 4 (10 cm)",
+        "gauge": "21G",
+        "tubeLength": "4\" (10 cm)",
+        "packRevision": "V1",
+        "flags": [
+          "sterile",
+          "single-packed"
+        ]
+      },
+      {
+        "catalogNumber": "450088V1",
+        "sourceName": "SAFETY Blood Collection Set + Holder 23G x 3/4\" tubing length 4\" (10 cm), single-packed",
+        "gauge": "23G",
+        "tubeLength": "4\" (10 cm)",
+        "packRevision": "V1",
+        "flags": [
+          "sterile",
+          "single-packed"
+        ]
+      }
+    ],
+    "specs": [],
+    "tags": [
+      "safety",
+      "blood-collection-set",
+      "holder"
+    ],
+    "featured": false,
+    "inStock": true,
+    "catalogNumber": "450086",
+    "manufacturer": "greiner-bio-one",
+    "createdAt": "2024-01-01",
+    "sort": 205,
+    "i18n": {
+      "en": {
+        "name": "VACUETTE® SAFETY Blood Collection Set + Holder",
+        "shortDescription": "Safety winged blood collection set with pre-attached holder.",
+        "description": "VACUETTE® SAFETY Blood Collection Set with holder is a ready-to-use system: safety butterfly needle, flexible tubing and a pre-attached tube holder. Sterile, single-packed, latex-free."
+      },
+      "zh": {
+        "name": "VACUETTE® 安全采血针组 + 支架",
+        "shortDescription": "带防针刺保护和预装支架的蝶翼采血针组。",
+        "description": "VACUETTE® 安全采血针组(含支架)即开即用:防针刺蝶翼针、软管与预装管座。无菌、单只包装、无乳胶。"
+      }
+    },
+    "searchKeywords": [
+      "вакуумные пробирки для взятия крови",
+      "вакуумные пробирки для забора крови",
+      "вакуумные пробирки для крови",
+      "пробирки вакуумные для крови",
+      "пробирки для взятия венозной крови",
+      "пробирки для забора венозной крови",
+      "вакуумная система взятия крови",
+      "вакуумная система забора крови",
+      "система взятия венозной крови",
+      "система забора венозной крови",
+      "вакуумные пробирки",
+      "пробирки для забора крови",
+      "пробирка для венозной крови",
+      "венозная кровь пробирка",
+      "система забора крови",
+      "система взятия крови",
+      "преаналитика",
+      "преаналитический этап",
+      "флеботомия",
+      "вакутейнер",
+      "вакуэтт",
+      "VACUETTE",
+      "vacutainer",
+      "пробирка с EDTA",
+      "пробирка с цитратом",
+      "пробирка с гепарином",
+      "пробирка для биохимии",
+      "пробирка для коагулологии",
+      "пробирка для гематологии",
+      "пробирка для СОЭ",
+      "пробирка с активатором свёртывания",
+      "пробирка с гелем",
+      "пробирка с разделительным гелем",
+      "пробирка для общего анализа крови",
+      "пробирка для ОАК",
+      "пробирка для исследования глюкозы",
+      "пробирка с фторидом натрия",
+      "пробирка для микробиологии",
+      "иглы для забора крови",
+      "иглы-бабочки",
+      "держатели для пробирок",
+      "люэр-адаптер",
+      "купить пробирки для крови",
+      "купить вакуумные пробирки в Минске",
+      "вакуумные пробирки купить Беларусь",
+      "Greiner пробирки",
+      "Greiner Bio-One Беларусь",
+      "blood collection tubes",
+      "venous blood collection",
+      "evacuated tube",
+      "вакуумная пробирка",
+      "Greiner Bio-One",
+      "Greiner",
+      "Грайнер",
+      "MiniCollect",
+      "VeinViewer",
+      "Австрия",
+      "safety",
+      "blood-collection-set",
+      "holder"
+    ]
+  },
+  {
+    "id": "vac-acc-075",
+    "slug": "vacuette-blood-collection-set-holder",
+    "name": "VACUETTE® Blood Collection Set + Holder",
+    "shortDescription": "Стандартный набор для взятия крови с держателем и иглой-бабочкой.",
+    "description": "VACUETTE® Blood Collection Set с держателем — игла-бабочка без защитного механизма, гибкая трубка и преднасаженный держатель. Стерильно, одноштучная упаковка, без натурального латекса.",
+    "categoryId": "vacuum-systems",
+    "subcategory": "holder",
+    "additive": null,
+    "capColor": null,
+    "ringColor": null,
+    "images": [],
+    "variantAttributes": [],
+    "variants": [
+      {
+        "catalogNumber": "450373",
+        "sourceName": "Blood Collection Set + Holder 23G x 3/4\" tubing length 7 1/2\" (19 cm), single-packed, sterile, not m",
+        "gauge": "23G",
+        "tubeLength": "7 1/2\" (19 cm)",
+        "packRevision": "original",
+        "flags": [
+          "sterile",
+          "single-packed"
+        ]
+      }
+    ],
+    "specs": [],
+    "tags": [
+      "blood-collection-set",
+      "holder"
+    ],
+    "featured": false,
+    "inStock": true,
+    "catalogNumber": "450373",
+    "manufacturer": "greiner-bio-one",
+    "createdAt": "2024-01-01",
+    "sort": 206,
+    "i18n": {
+      "en": {
+        "name": "VACUETTE® Blood Collection Set + Holder",
+        "shortDescription": "Standard winged blood collection set with pre-attached holder.",
+        "description": "VACUETTE® Blood Collection Set with holder: butterfly needle, flexible tubing and a pre-attached holder. Sterile, single-packed, latex-free."
+      },
+      "zh": {
+        "name": "VACUETTE® 采血针组 + 支架",
+        "shortDescription": "标准蝶翼采血针组,含预装支架。",
+        "description": "VACUETTE® 采血针组(含支架):蝶翼针、软管与预装管座。无菌、单只包装、无乳胶。"
+      }
+    },
+    "searchKeywords": [
+      "вакуумные пробирки для взятия крови",
+      "вакуумные пробирки для забора крови",
+      "вакуумные пробирки для крови",
+      "пробирки вакуумные для крови",
+      "пробирки для взятия венозной крови",
+      "пробирки для забора венозной крови",
+      "вакуумная система взятия крови",
+      "вакуумная система забора крови",
+      "система взятия венозной крови",
+      "система забора венозной крови",
+      "вакуумные пробирки",
+      "пробирки для забора крови",
+      "пробирка для венозной крови",
+      "венозная кровь пробирка",
+      "система забора крови",
+      "система взятия крови",
+      "преаналитика",
+      "преаналитический этап",
+      "флеботомия",
+      "вакутейнер",
+      "вакуэтт",
+      "VACUETTE",
+      "vacutainer",
+      "пробирка с EDTA",
+      "пробирка с цитратом",
+      "пробирка с гепарином",
+      "пробирка для биохимии",
+      "пробирка для коагулологии",
+      "пробирка для гематологии",
+      "пробирка для СОЭ",
+      "пробирка с активатором свёртывания",
+      "пробирка с гелем",
+      "пробирка с разделительным гелем",
+      "пробирка для общего анализа крови",
+      "пробирка для ОАК",
+      "пробирка для исследования глюкозы",
+      "пробирка с фторидом натрия",
+      "пробирка для микробиологии",
+      "иглы для забора крови",
+      "иглы-бабочки",
+      "держатели для пробирок",
+      "люэр-адаптер",
+      "купить пробирки для крови",
+      "купить вакуумные пробирки в Минске",
+      "вакуумные пробирки купить Беларусь",
+      "Greiner пробирки",
+      "Greiner Bio-One Беларусь",
+      "blood collection tubes",
+      "venous blood collection",
+      "evacuated tube",
+      "вакуумная пробирка",
+      "Greiner Bio-One",
+      "Greiner",
+      "Грайнер",
+      "MiniCollect",
+      "VeinViewer",
+      "Австрия",
+      "blood-collection-set",
+      "holder"
+    ]
+  },
+  {
+    "id": "vac-acc-076",
+    "slug": "veinviewer-vision-2",
+    "name": "Визуализатор вен VeinViewer® Vision 2",
+    "shortDescription": "Транс­ил­лю­ми­на­тор вен ин­фра­крас­но­го диа­па­зо­на для пре­ци­зи­он­ной венепункции.",
+    "description": "VeinViewer® Vision 2 — инфракрасный визуализатор вен, проецирующий карту подкожных вен прямо на кожу пациента. Существенно повышает успех венепункции у детей, пожилых и пациентов с трудным венозным доступом. Не требует расходных материалов.",
+    "categoryId": "vacuum-systems",
+    "subcategory": "other",
+    "additive": null,
+    "capColor": null,
+    "ringColor": null,
+    "images": [],
+    "variantAttributes": [],
+    "variants": [
+      {
+        "catalogNumber": "890004",
+        "sourceName": "Визуализатор вен VeinViewer®  Vision 2",
+        "model": "Vision 2"
+      }
+    ],
+    "specs": [],
+    "tags": [
+      "veinviewer",
+      "vein-illuminator"
+    ],
+    "featured": false,
+    "inStock": true,
+    "catalogNumber": "890004",
+    "manufacturer": "greiner-bio-one",
+    "createdAt": "2024-01-01",
+    "sort": 207,
+    "i18n": {
+      "en": {
+        "name": "VeinViewer® Vision 2 Vein Illuminator",
+        "shortDescription": "Near-infrared vein illuminator for precision venipuncture.",
+        "description": "VeinViewer® Vision 2 is a near-infrared vein-imaging device that projects a real-time map of subcutaneous veins onto the patient's skin. Significantly improves venipuncture success in paediatric, geriatric and difficult-access patients. Disposable-free."
+      },
+      "zh": {
+        "name": "VeinViewer® Vision 2 静脉显像仪",
+        "shortDescription": "近红外静脉成像仪,辅助精准穿刺。",
+        "description": "VeinViewer® Vision 2 为近红外静脉成像设备,可将皮下静脉的实时图像投射到患者皮肤表面。显著提高儿童、老年及静脉条件差患者的穿刺成功率,无需耗材。"
+      }
+    },
+    "searchKeywords": [
+      "вакуумные пробирки для взятия крови",
+      "вакуумные пробирки для забора крови",
+      "вакуумные пробирки для крови",
+      "пробирки вакуумные для крови",
+      "пробирки для взятия венозной крови",
+      "пробирки для забора венозной крови",
+      "вакуумная система взятия крови",
+      "вакуумная система забора крови",
+      "система взятия венозной крови",
+      "система забора венозной крови",
+      "вакуумные пробирки",
+      "пробирки для забора крови",
+      "пробирка для венозной крови",
+      "венозная кровь пробирка",
+      "система забора крови",
+      "система взятия крови",
+      "преаналитика",
+      "преаналитический этап",
+      "флеботомия",
+      "вакутейнер",
+      "вакуэтт",
+      "VACUETTE",
+      "vacutainer",
+      "пробирка с EDTA",
+      "пробирка с цитратом",
+      "пробирка с гепарином",
+      "пробирка для биохимии",
+      "пробирка для коагулологии",
+      "пробирка для гематологии",
+      "пробирка для СОЭ",
+      "пробирка с активатором свёртывания",
+      "пробирка с гелем",
+      "пробирка с разделительным гелем",
+      "пробирка для общего анализа крови",
+      "пробирка для ОАК",
+      "пробирка для исследования глюкозы",
+      "пробирка с фторидом натрия",
+      "пробирка для микробиологии",
+      "иглы для забора крови",
+      "иглы-бабочки",
+      "держатели для пробирок",
+      "люэр-адаптер",
+      "купить пробирки для крови",
+      "купить вакуумные пробирки в Минске",
+      "вакуумные пробирки купить Беларусь",
+      "Greiner пробирки",
+      "Greiner Bio-One Беларусь",
+      "blood collection tubes",
+      "venous blood collection",
+      "evacuated tube",
+      "VeinViewer",
+      "визуализатор вен",
+      "веновизор",
+      "vein finder",
+      "Greiner Bio-One",
+      "Greiner",
+      "Грайнер",
+      "MiniCollect",
+      "Австрия",
+      "vein-illuminator"
     ]
   }
 ]

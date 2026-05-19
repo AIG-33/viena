@@ -57,3 +57,7 @@ yarn-error.log*
 /inspo/
 /products_img/
 *.bak
+
+# Python
+__pycache__/
+*.pyc
