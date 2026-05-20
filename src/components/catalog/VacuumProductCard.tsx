@@ -13,6 +13,11 @@ import {
   labelLabel,
   materialLabel,
 } from "@/lib/vacuum-tokens";
+import {
+  findVariant,
+  reconcileSelection,
+  uniqueValues,
+} from "@/lib/variant-select";
 import type { Product, ProductVariant, VariantAttribute } from "@/types/product";
 import type { Locale } from "@/i18n/routing";
 
@@ -47,31 +52,6 @@ function attrValueDisplay(
   return value;
 }
 
-function uniqueValues(
-  variants: ProductVariant[],
-  key: string
-): string[] {
-  const seen = new Set<string>();
-  const out: string[] = [];
-  for (const v of variants) {
-    const val = v[key];
-    if (typeof val === "string" && !seen.has(val)) {
-      seen.add(val);
-      out.push(val);
-    }
-  }
-  return out;
-}
-
-function findVariant(
-  variants: ProductVariant[],
-  selection: Record<string, string>
-): ProductVariant | undefined {
-  return variants.find((v) =>
-    Object.entries(selection).every(([k, val]) => v[k] === val)
-  );
-}
-
 export function VacuumProductCard({ family, index = 0 }: VacuumProductCardProps) {
   const locale = useLocale() as Locale;
   const tCard = useTranslations("productCard");
@@ -96,6 +76,11 @@ export function VacuumProductCard({ family, index = 0 }: VacuumProductCardProps)
   const [selection, setSelection] = useState<Record<string, string>>(initialSelection);
   const variant = findVariant(variants, selection) ?? variants[0];
   const sku = variant?.catalogNumber ?? family.catalogNumber ?? "";
+
+  const attributeKeys = useMemo(
+    () => attributes.map((a) => a.key),
+    [attributes]
+  );
 
   const cartOptions: SelectedOptions | undefined = useMemo(() => {
     if (!variant) return undefined;
@@ -126,7 +111,9 @@ export function VacuumProductCard({ family, index = 0 }: VacuumProductCardProps)
   };
 
   const setAttr = (key: string, value: string) => {
-    setSelection((prev) => ({ ...prev, [key]: value }));
+    setSelection((prev) =>
+      reconcileSelection(variants, attributeKeys, prev, key, value)
+    );
   };
 
   const href = `/catalog/${family.categoryId}/${family.slug}`;
@@ -361,4 +348,5 @@ export function VacuumProductCard({ family, index = 0 }: VacuumProductCardProps)
 }
 
 // Helper exports for tests / shared use.
-export { findVariant, uniqueValues, variantLabel };
+export { variantLabel };
+export { findVariant, uniqueValues } from "@/lib/variant-select";

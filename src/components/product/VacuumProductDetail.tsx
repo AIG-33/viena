@@ -13,6 +13,11 @@ import {
   labelLabel,
   materialLabel,
 } from "@/lib/vacuum-tokens";
+import {
+  findVariant,
+  reconcileSelection,
+  uniqueValues,
+} from "@/lib/variant-select";
 import type { Locale } from "@/i18n/routing";
 import type { Product, ProductVariant } from "@/types/product";
 
@@ -30,75 +35,6 @@ function attrValueDisplay(
 
 interface VacuumProductDetailProps {
   family: Product;
-}
-
-function uniqueValues(variants: ProductVariant[], key: string): string[] {
-  const seen = new Set<string>();
-  const out: string[] = [];
-  for (const v of variants) {
-    const val = v[key];
-    if (typeof val === "string" && !seen.has(val)) {
-      seen.add(val);
-      out.push(val);
-    }
-  }
-  return out;
-}
-
-function findVariant(
-  variants: ProductVariant[],
-  selection: Record<string, string>
-): ProductVariant | undefined {
-  return variants.find((v) =>
-    Object.entries(selection).every(([k, val]) => v[k] === val)
-  );
-}
-
-/**
- * Returns a new selection that:
- *  - locks `key` to `val`,
- *  - keeps as many of the previous attribute values as possible,
- *  - drops the conflicting ones and back-fills them from the FIRST matching
- *    variant so the result always corresponds to a real SKU.
- */
-function reconcileSelection(
-  variants: ProductVariant[],
-  attributeKeys: string[],
-  prev: Record<string, string>,
-  key: string,
-  val: string
-): Record<string, string> {
-  // 1. Fast path: the trivial extension is already a real variant.
-  const trial = { ...prev, [key]: val };
-  if (findVariant(variants, trial)) return trial;
-
-  // 2. Otherwise, find variants where the clicked value matches.
-  const candidates = variants.filter((v) => v[key] === val);
-  if (candidates.length === 0) return prev;
-
-  // 3. Pick the candidate that overlaps the most with the previous selection.
-  let best = candidates[0];
-  let bestScore = -1;
-  for (const c of candidates) {
-    let score = 0;
-    for (const [k, v] of Object.entries(prev)) {
-      if (k === key) continue;
-      if (c[k] === v) score += 1;
-    }
-    if (score > bestScore) {
-      bestScore = score;
-      best = c;
-    }
-  }
-
-  // 4. Materialise the full selection from the chosen variant.
-  const next: Record<string, string> = {};
-  for (const k of attributeKeys) {
-    const v = best[k];
-    if (typeof v === "string") next[k] = v;
-  }
-  next[key] = val;
-  return next;
 }
 
 function CartIcon({ className }: { className?: string }) {
