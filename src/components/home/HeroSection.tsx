@@ -117,7 +117,7 @@ export function HeroSection({ categories }: Props) {
           </div>
           <div className="grid grid-cols-2 gap-2">
             {categories.map((cat, i) => {
-              const link = getCategoryLink(cat.id);
+              const link = getCategoryLink(cat);
               const tileClass =
                 "flex items-center gap-2.5 px-3 py-3 bg-white rounded-xl border transition-all group " +
                 (link.isExternal

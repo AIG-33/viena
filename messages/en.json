@@ -752,6 +752,215 @@
       "button": "Request the materials →"
     }
   },
+  "mednais": {
+    "meta": {
+      "title": "MedNAIS™ — digital SOP execution and preanalytics KPI analytics",
+      "description": "MedNAIS™ by Samplify FZCO: Hub for SOP management, Assistant for step-by-step guidance on Apple Watch and Wear OS, Monitor for time-per-step KPI analytics, Logger for biospecimen transport monitoring. Deployed and supported by VIENA MEDICAL in Belarus."
+    },
+    "hero": {
+      "eyebrowSection": "Partner solution · Digital preanalytics",
+      "titleLine1Accent": "MedNAIS™",
+      "titleLine1": "— digital SOPs",
+      "titleLine2Pre": "on the wrist and",
+      "titleLine2Accent": "KPI analytics for preanalytics.",
+      "description": "We turn paper SOPs into step-by-step guidance on smart watches and phones, capture time per step automatically and build an evidence trail for audits. VIENA MEDICAL deploys the MedNAIS™ platform by Samplify FZCO in clinical labs, blood-collection sites and specimen-transport services in Belarus.",
+      "primaryCta": "Book a demo",
+      "secondaryCta": "Download brief (PDF)",
+      "stats": {
+        "onboarding": { "v": "−85%", "k": "onboarding time", "n": "pilots and internal benchmarks" },
+        "errors": { "v": "−35%", "k": "repeat errors", "n": "per quarter in a typical unit" },
+        "throughput": { "v": "×2", "k": "procedures per day", "n": "with the same headcount" },
+        "audit": { "v": "100%", "k": "audit-ready", "n": "time-stamps and per-step trail" }
+      },
+      "disclaimer": "Illustrative targets from pilots and internal benchmarks — actual results depend on scope, baseline and adoption."
+    },
+    "overview": {
+      "eyebrow": "What it is",
+      "title": "A platform for the people who run preanalytics and bedside procedures every day",
+      "lead": "MedNAIS™ closes the gap between paper SOP documentation and real bedside execution: a procedure is uploaded to the cloud and within minutes appears on the nurse’s Apple Watch, on a courier’s phone or on the treatment-room terminal.",
+      "body": "Unlike a classic LIS or QMS, MedNAIS™ does not teach the manual — it walks staff through the procedure in real time, times every stage, captures deviations and builds an auditor-grade trail with time-stamps. Managers get objective KPIs, not self-reports; a new hire delivers the same protocol from day one; the patient receives the same standard of care regardless of shift or site.",
+      "bullets": [
+        "Digital SOPs — PDF, Word or a built-in step editor with timing; versioning and roles included.",
+        "Hands-free guidance on Apple Watch and Wear OS — voice, gesture, vibration; sterile mode without touching the screen.",
+        "Time-per-step analytics — bottleneck detection, objective comparison between operators, coaching without surveillance.",
+        "Transport monitoring — temperature, humidity, vibration, light, GPS and real-time alerts over LTE-M."
+      ]
+    },
+    "modules": {
+      "eyebrow": "Ecosystem",
+      "title": "Four modules — one workspace",
+      "subtitle": "Start with Hub and Assistant (mobile-only pilot), then add Monitor for analytics and Logger for transport when you need them.",
+      "items": [
+        {
+          "tag": "Central platform",
+          "name": "MedNAIS™ Hub",
+          "summary": "Cloud SOP management and team access. PDF / Word / built-in step editor, versions, roles, audit log.",
+          "features": [
+            "Upload SOPs from PDF, Word or the built-in editor with step timing",
+            "Manage teams, roles and access zones",
+            "Instant sync across every team device",
+            "HIPAA-aligned security: encryption and role-based access"
+          ]
+        },
+        {
+          "tag": "Smart assistant",
+          "name": "MedNAIS™ Assistant",
+          "summary": "Apple Watch and Wear OS app with step-by-step guidance: “Step 3 of 8 · Disinfect the collection site.” Voice, gesture and vibration for sterile workflows.",
+          "features": [
+            "Apple Watch (Series 4+, watchOS 7+) and Wear OS",
+            "iOS 14+ and Android 8.0+ — start without a watch",
+            "Hands-free mode: voice and gestures in sterile zones",
+            "Automatic timing of every step"
+          ]
+        },
+        {
+          "tag": "Efficiency analytics",
+          "name": "MedNAIS™ Monitor",
+          "summary": "Objective KPIs based on time per step: compare operators, locate bottlenecks, ship automatic reports to leadership and auditors.",
+          "features": [
+            "Time for every step of every procedure",
+            "Compare staff members and shifts",
+            "Find bottlenecks and root causes of variance",
+            "Export KPIs and ship automatic reports"
+          ]
+        },
+        {
+          "tag": "Transport monitoring",
+          "name": "MedNAIS™ Logger",
+          "summary": "Hardware logger for biospecimen transport: temperature, humidity, vibration, light, case-opening, GPS, LTE-M — live alerts and audit archive.",
+          "features": [
+            "Precision sensors for temperature, humidity, vibration and light",
+            "GPS tracking and case-opening detection",
+            "LTE-M and MQTT — data to server in real time",
+            "Automatic alerts when parameters drift out of range"
+          ]
+        }
+      ]
+    },
+    "applications": {
+      "eyebrow": "Where it fits",
+      "title": "Application areas for the Belarus and CIS market",
+      "subtitle": "MedNAIS™ is purpose-built for medical and laboratory practice. Six typical scenarios where the platform pays back the fastest.",
+      "items": [
+        {
+          "tag": "Clinical labs and lab networks",
+          "title": "Standardising preanalytics across dozens of sites",
+          "body": "Single versioned SOPs for venous, arterial and capillary collection, a single quality scale and transparent per-site KPIs. Fewer rework cycles, fewer preanalytical errors in the final result."
+        },
+        {
+          "tag": "Blood-collection points",
+          "title": "Nurse onboarding in 2 days instead of 2 weeks",
+          "body": "A new hire ships from their first shift: the watch guides them step by step, the supervisor sees timing and deviations in Monitor. Closes the staffing gap without sacrificing standardisation."
+        },
+        {
+          "tag": "Mobile teams",
+          "title": "At-home specimen collection on the same SOP and trail",
+          "body": "A mobile nurse visiting a patient with disabilities, an oncology patient or a non-ambulatory elderly client gets the same step-by-step instruction on their phone as the in-clinic team. Timing and geolocation are captured — for insurer contracts and audits."
+        },
+        {
+          "tag": "Training centres",
+          "title": "CPAT and workshops on preanalytics (CLSI, ISO 15189, WHO)",
+          "body": "Digital SOPs power the training modules: the student walks through the procedure step by step, the instructor sees timing and quality in Monitor. Samplify’s CPAT tool assesses current practice and produces actionable recommendations."
+        },
+        {
+          "tag": "Specimen transport",
+          "title": "Cold-chain control and continuity of the transport corridor",
+          "body": "A Logger in every thermal container or vehicle: temperature, humidity, vibration, light, GPS and case-opening — live. The alert reaches the team before the samples lose viability."
+        },
+        {
+          "tag": "GxP and clinical trials",
+          "title": "Audit-ready execution trail for clinical protocols",
+          "body": "Every action and every step carries a time-stamp, an operator and a device. The full history can be reconstructed — for regulators, ISO 15189 accreditation, internal deviation reviews and validations."
+        }
+      ]
+    },
+    "rollout": {
+      "eyebrow": "Deployment",
+      "title": "How a rollout typically works",
+      "subtitle": "Start with one unit and a small SOP set, then expand to watches, analytics and integrations. Mobile-first is the fastest path to ROI.",
+      "phases": [
+        {
+          "label": "Weeks 1–2",
+          "title": "Pilot and scope design",
+          "body": "Pick workflows, roles and devices (BYOD vs issued), formalise success metrics. Prepare the minimum SOP set and a pilot group."
+        },
+        {
+          "label": "Weeks 3–6",
+          "title": "SOP digitisation and training",
+          "body": "Upload steps, validate the content with an expert, train super-users and frontline staff. Switch Assistant on for phones and, optionally, watches."
+        },
+        {
+          "label": "Ongoing",
+          "title": "Measure, expand, integrate",
+          "body": "Review Monitor analytics with leadership. Add Apple Watch / Wear OS, Logger for logistics and extend SOP coverage to adjacent processes."
+        }
+      ],
+      "modes": [
+        { "name": "Mobile-first", "body": "The fastest path to value — phones only." },
+        { "name": "Mixed", "body": "Phones + watches by role and zone." },
+        { "name": "Wearable-heavy", "body": "For sterile and high-touch operations." }
+      ]
+    },
+    "kpis": {
+      "eyebrow": "Before vs after",
+      "title": "What changes in the numbers",
+      "subtitle": "A benchmark from real deployments. Exact figures for your lab — sized during the pilot.",
+      "headers": { "metric": "Metric", "before": "Before", "after": "After" },
+      "rows": [
+        { "k": "Onboarding of a new hire", "before": "14 days", "after": "2 days" },
+        { "k": "Procedure execution variance", "before": "±28%", "after": "±8%" },
+        { "k": "Documentation time", "before": "40 min / week", "after": "8 min / week" }
+      ]
+    },
+    "ethics": {
+      "eyebrow": "Data ethics",
+      "title": "Analytics for coaching — not surveillance",
+      "body": "Time-per-step and variance data are intended for process improvement, training and compliance evidence. Roles, access policies and a focus on workflow quality help teams adopt analytics without cultural pushback."
+    },
+    "faq": {
+      "eyebrow": "FAQ",
+      "title": "Common questions",
+      "items": [
+        {
+          "q": "Which devices do we start with — do we have to buy watches?",
+          "a": "No. Mobile-first is the most common pattern: step-by-step guidance works on iPhone (iOS 14+) and Android (8.0+). Apple Watch and Wear OS are added when the team needs hands-free or sterile workflows."
+        },
+        {
+          "q": "Which SOP formats are supported?",
+          "a": "PDF, Word and a built-in step editor with timing. Versioning, roles and access are managed in Hub. Ready-made SOPs can be bought or sold on the SOP Marketplace."
+        },
+        {
+          "q": "How is patient-data security handled?",
+          "a": "The platform supports HIPAA-aligned practices: end-to-end encryption, role-based access control (RBAC), action logs. Storage and deployment options (including on-prem for regulatory needs) are scoped per customer."
+        },
+        {
+          "q": "How does Monitor connect SOPs and watches?",
+          "a": "Every step a staff member executes in Assistant syncs to Hub and surfaces in Monitor: time, deviations, operator, device. That delivers KPIs for coaching and an audit trail for regulators."
+        },
+        {
+          "q": "What does Logger monitor during transport?",
+          "a": "Temperature, humidity, vibration, illuminance, case-opening events and GPS — in real time over LTE-M via MQTT. Automatic alerts trigger as soon as a parameter falls outside the set range."
+        },
+        {
+          "q": "How do we get started in Belarus?",
+          "a": "VIENA MEDICAL is the local partner of Samplify FZCO for MedNAIS™. We run a process assessment (CPAT), prepare a pilot, digitise the SOPs, train the team and provide ongoing support. Get in touch — we’ll schedule a demo."
+        }
+      ]
+    },
+    "cta": {
+      "eyebrow": "Ready to try",
+      "eyebrowSub": "30-minute demo",
+      "title": "Let us show the platform on your own processes",
+      "subtitle": "We connect one treatment room or one mobile team to MedNAIS™ Hub in 1–2 weeks and measure the impact on your data. No payment before the contract is signed.",
+      "primary": "Book a demo",
+      "secondary": "Talk to an expert"
+    },
+    "breadcrumbs": {
+      "catalog": "Catalog",
+      "solutions": "Solutions",
+      "product": "MedNAIS™"
+    }
+  },
   "contacts": {
     "meta": {
       "title": "Contact",

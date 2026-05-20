@@ -17,8 +17,13 @@ export function CategoryTile({
   productsLabel,
   shopLabel,
 }: CategoryTileProps) {
-  const link = getCategoryLink(category.id);
+  const link = getCategoryLink(category);
   const count = category.productCount ?? 0;
+  // Categories that route off the catalog (partner solutions, shop
+  // redirects) don't carry a SKU count — show the badge text instead.
+  const showCount = !category.link && !(link.isExternal && !shopLabel);
+  const badgeLabel =
+    category.badge ?? (link.isExternal && shopLabel ? shopLabel : null);
 
   const Inner = (
     <motion.article
@@ -55,9 +60,9 @@ export function CategoryTile({
 
         <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent" />
 
-        {link.isExternal && shopLabel && (
+        {badgeLabel && (
           <span className="absolute top-2.5 right-2.5 text-[9px] uppercase tracking-[0.1em] font-bold text-white bg-green-600 px-1.5 py-0.5 rounded-full">
-            {shopLabel}
+            {badgeLabel}
           </span>
         )}
 
@@ -65,9 +70,11 @@ export function CategoryTile({
           <h3 className="font-display text-[16px] md:text-[17px] leading-[1.15] tracking-[-0.005em] drop-shadow line-clamp-2">
             {category.name}
           </h3>
-          <span className="font-mono text-[11px] tabular-nums text-white/85 shrink-0">
-            {count} {productsLabel}
-          </span>
+          {showCount && (
+            <span className="font-mono text-[11px] tabular-nums text-white/85 shrink-0">
+              {count} {productsLabel}
+            </span>
+          )}
         </div>
       </div>
     </motion.article>

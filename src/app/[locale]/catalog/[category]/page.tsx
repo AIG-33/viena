@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import {
@@ -29,6 +29,10 @@ export function generateStaticParams() {
   const out: { locale: Locale; category: string }[] = [];
   for (const locale of routing.locales) {
     for (const cat of categories) {
+      // Skip categories that explicitly redirect off the catalog (e.g.
+      // partner solutions, shop redirects) — they have no SKU listing
+      // and their tiles already link to the proper destination.
+      if (cat.link) continue;
       out.push({ locale: locale as Locale, category: cat.id });
     }
   }
@@ -65,6 +69,14 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   setRequestLocale(locale);
   const cat = getCategoryById(category, locale);
   if (!cat) notFound();
+  // Categories with an explicit `link` (partner solutions, shop redirects)
+  // have no catalog listing — bounce direct hits to the real landing.
+  if (cat.link) {
+    const target = cat.link.startsWith("http")
+      ? cat.link
+      : `/${locale}${cat.link.startsWith("/") ? "" : "/"}${cat.link}`;
+    redirect(target);
+  }
 
   const tNav = await getTranslations("nav");
   const tCatalog = await getTranslations("catalog");

@@ -165,6 +165,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     entry("/services", "monthly", 0.75, fileMtime(join(dataDir, "services.json"))),
     entry("/projects", "monthly", 0.75, projectsMTime),
     entry("/projects/moh", "monthly", 0.8, fileMtime(join(dataDir, "moh-letters.json"))),
+    entry(
+      "/solutions/mednais",
+      "monthly",
+      0.85,
+      fileMtime(join(process.cwd(), "src/app/[locale]/solutions/mednais/page.tsx")),
+      ["/images/categories/mednais.jpg"]
+    ),
     entry("/about", "monthly", 0.7, aboutMTime),
     entry("/blog", "weekly", 0.85, blogMTime, [
       ...blogPosts

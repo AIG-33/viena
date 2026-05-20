@@ -1,5 +1,6 @@
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
+import type { Category } from "@/types/category";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -16,12 +17,33 @@ export type CategoryLink = {
   isExternal: boolean;
 };
 
-export function getCategoryLink(categoryId: string): CategoryLink {
-  const external = EXTERNAL_CATEGORY_HREFS[categoryId];
+/**
+ * Resolve the tile / CTA target for a catalog category. Priority:
+ *  1. Explicit `link` field on the category (internal route or absolute URL).
+ *  2. Hard-coded external redirect (e.g. scientific-reagents → shop).
+ *  3. Default `/catalog/<id>` landing page.
+ *
+ * Accepts either a full `Category` or just an id — keeps backwards
+ * compatibility with call sites that don't have the full object handy.
+ */
+export function getCategoryLink(
+  categoryOrId: string | Pick<Category, "id" | "link">
+): CategoryLink {
+  const id =
+    typeof categoryOrId === "string" ? categoryOrId : categoryOrId.id;
+  const explicit =
+    typeof categoryOrId === "object" ? categoryOrId.link : undefined;
+  if (explicit) {
+    return {
+      href: explicit,
+      isExternal: /^https?:\/\//i.test(explicit),
+    };
+  }
+  const external = EXTERNAL_CATEGORY_HREFS[id];
   if (external) {
     return { href: external, isExternal: true };
   }
-  return { href: `/catalog/${categoryId}`, isExternal: false };
+  return { href: `/catalog/${id}`, isExternal: false };
 }
 
 const SHOP_MANUFACTURER_SLUGS = new Set<string>([

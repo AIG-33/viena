@@ -80,13 +80,13 @@ const CATEGORY_PALETTE: Record<string, keyof typeof PALETTES> = {
   pathomorphology: "white",
   veterinary: "rose",
   "scientific-reagents": "rose",
-  lancets: "white",
+  mednais: "rose-soft",
 };
 
 // Per-category border emphasis — slightly thicker edge on specific sides
 // to visually frame the grid where the card sits at an outer edge.
 const BORDER_EMPHASIS: Record<string, string> = {
-  lancets: "border-r-[3px]",
+  mednais: "border-r-[3px]",
   pathomorphology: "border-b-[3px]",
   veterinary: "border-b-[3px]",
 };
@@ -96,7 +96,7 @@ export function CategoryCard({ category, index, large = false }: CategoryCardPro
   const paletteKey = CATEGORY_PALETTE[category.id] ?? "white";
   const p = PALETTES[paletteKey];
   const extraBorder = BORDER_EMPHASIS[category.id] ?? "";
-  const link = getCategoryLink(category.id);
+  const link = getCategoryLink(category);
 
   const Wrapper = ({ children }: { children: React.ReactNode }) =>
     link.isExternal ? (
