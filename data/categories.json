@@ -384,33 +384,34 @@
   {
     "id": "mednais",
     "name": "MedNAIS™ Платформа",
-    "description": "SOP-навигатор на смарт-часах, аналитика времени по шагам и мониторинг транспортировки биоматериала.",
+    "description": "Цифровые СОПы и пошаговая навигация на смарт-часах для медсестёр, фельдшеров и врачей — с объективной аналитикой времени по каждому шагу.",
     "icon": "watch",
     "color": "#16a34a",
     "image": "/images/categories/mednais.jpg",
     "link": "/solutions/mednais",
     "badge": "Новинка",
-    "seoTitle": "MedNAIS™ — цифровое исполнение СОПов на смарт-часах и аналитика преаналитики",
-    "seoDescription": "Платформа MedNAIS™: Hub для управления СОПами, Assistant для пошаговой навигации на Apple Watch / Wear OS, Monitor для KPI-аналитики, Logger для мониторинга транспортировки биоматериала.",
+    "seoTitle": "MedNAIS™ — цифровая автоматизация СОПов медработников и аналитика эффективности",
+    "seoDescription": "Платформа MedNAIS™: Hub для управления СОПами, Assistant для пошаговой навигации на Apple Watch / Wear OS, Monitor для KPI-аналитики времени по шагам, Logger для мониторинга транспортировки. Для медсестёр, фельдшеров, врачей всех специальностей.",
     "seoKeywords": [
       "MedNAIS",
       "цифровые СОП",
       "SOP-платформа",
+      "автоматизация работы медсестры",
       "Apple Watch медицинская",
       "пошаговая навигация процедур",
-      "KPI лабораторных процессов",
-      "мониторинг транспортировки биоматериала",
-      "преаналитика автоматизация",
-      "обучение медперсонала"
+      "KPI медперсонала",
+      "аналитика эффективности медсестры",
+      "обучение медперсонала",
+      "стандартизация медицинских процедур"
     ],
     "i18n": {
       "en": {
         "name": "MedNAIS™ Platform",
-        "description": "On-watch SOP guidance, time-per-step KPI analytics and live monitoring of biospecimen transport."
+        "description": "Digital SOPs and on-watch step-by-step guidance for nurses, paramedics and physicians — with objective per-step timing analytics."
       },
       "zh": {
         "name": "MedNAIS™ 平台",
-        "description": "智能手表上的 SOP 引导、按步骤计时的 KPI 分析,以及生物样本运输的实时监控。"
+        "description": "面向护士、急救员与各科室医生的数字 SOP 与智能手表逐步引导,配合按步骤计时的客观分析能力。"
       }
     }
   }
