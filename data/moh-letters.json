@@ -47,73 +47,115 @@
     }
   },
   {
-    "slug": "mylab-licensing-2026",
+    "slug": "mylab-absurd-practices-2026",
     "date": "2026",
     "year": 2026,
-    "outgoing": "Встречи с МЗ · 2026",
-    "title": "Системные вопросы лицензирования медицинской деятельности",
+    "outgoing": "Аналитический меморандум · 2026",
+    "title": "Абсурдные практики правоприменения отделом лицензирования МЗРБ",
     "addressee": "Министерство здравоохранения · Абельская И.С.",
-    "summary": "Аналитический документ по абсурдным практикам отдела лицензирования МЗ и проекту поправок в Закон № 213-З «О лицензировании». Кейс MyLab (ООО «МЕДЭКС-ЛАБ»): приостановка лицензии без диалога при последующем подтверждении соответствия комиссией МЗ.",
-    "tags": ["Лицензирование", "MyLab", "Закон 213-З", "Аутсорсинг", "Реформа"],
+    "summary": "Меморандум о пяти задокументированных кейсах избыточного регулирования, превышения полномочий и системных противоречий отдела лицензирования МЗ в лабораторной диагностике — с прямыми ссылками на реестр лицензий и действующие постановления МЗ. Часть 1 пакета по делу MyLab (ООО «МЕДЭКС-ЛАБ»).",
+    "tags": ["Лицензирование", "MyLab", "Превышение полномочий", "Лабдиагностика"],
     "sourceUrl": "https://docs.google.com/document/d/1ncWb7EbSUU2sMnQCe1UfQzhw1Dw0CeVS-zo9AfZeSmQ/edit",
     "sourceLabel": "Полный текст: абсурдные практики и проект изменений в закон о лицензировании",
     "topics": [
-      "Абсурд 1 — лицензии с формулировкой «неинвазивный забор крови»: венозный и капиллярный забор по определению инвазивен; при проверке центр рискует штрафом (пример: license.gov.by/onelicense/188148).",
-      "Абсурд 2 — в бланк лицензии вписывают запрет забирать материал у лиц, не являющихся «пациентами врачей» центра — превышение полномочий, барьер для самостоятельной сдачи анализов (license.gov.by/onelicense/162014).",
-      "Абсурд 3 — отказ признавать аутсорсинг: для забора крови с передачей в централизованную лабораторию требуют полную лицензию на лабораторную диагностику, хотя достаточно лицензии на медицинские манипуляции (сестринское дело).",
-      "Абсурд 4 — приостановка лицензии до выезда комиссии и игнорирование её актов: кейс Медэкс-Лаб (октябрь–ноябрь 2025), формальные замечания без угрозы пациентам, паралич работы вместо предписания.",
-      "Абсурд 5 — отдел лицензирования отрицает, что забор — отдельная услуга, хотя Постановление МЗ № 123 (2016) прямо называет взятие крови самостоятельной медицинской услугой; разъяснения для налоговой противоречат тексту МЗ.",
-      "Проект изменений · блок 1 — закрепить разделение преаналитики (забор, маркировка, транспорт) и аналитики; лицензия на медманипуляции достаточна для забора любых лабораторных исследований и передачи материала партнёру.",
-      "Проект изменений · блок 2 — забор по обращению гражданина без обязательного приёма у врача того же медцентра (кроме случаев, когда закон прямо требует осмотра).",
-      "Проект изменений · блок 3 — не приостанавливать лицензию за устранимые «бумажные» нарушения без угрозы жизни и здоровью; применять предписание со сроком.",
-      "Проект изменений · блок 4–5 — запрет расширительного толкования лицензии; обязательные консультации с бизнесом и публикуемые официальные разъяснения, за действия по которым нельзя наказывать.",
-      "Проект изменений · блок 6–7 — терминологическая точность в лицензии (без «инвазивного = неинвазивного»); запрет индивидуальных ограничительных приписок в тексте лицензии.",
-      "Проект изменений · блок 8–9 — легализовать забор на дому (выездные бригады); при контроле приоритет клинических протоколов и приказов МЗ (в т.ч. № 1123 о преаналитике) над субъективными трактовками отдела лицензирования.",
-      "Кейс MyLab: пострадавшие категории — инвалиды, онкобольные, дети, пожилые, удалённые районы; нужен профессиональный диалог с инновационными сервисами до необратимых процедур."
+      "Кейс 1 · Антинаучная формулировка в лицензии. Пунктам взятия крови сетевых лабораторий выдаётся разрешительный документ с записью «общеклинические (неинвазивные) методы исследования (забор биологического материала)». Венозный и капиллярный забор по определению являются инвазивными процедурами (нарушение целостности кожных покровов). При сторонней проверке центр могут оштрафовать за выполнение инвазивных процедур под прикрытием «неинвазивной» лицензии. Пример: license.gov.by/onelicense/188148.",
+      "Кейс 2 · Незаконные индивидуальные ограничения в бланке. В лицензиях напрямую прописывается: «Запрещен забор биологического материала у лиц, которые не являются пациентами врачей-специалистов общества». Ни один закон не запрещает гражданину самостоятельно сдать анализ — приписка является прямым превышением полномочий и принуждает пациента к дополнительному (как правило, платному) приёму. Пример: license.gov.by/onelicense/162014.",
+      "Кейс 3 · Отождествление забора материала с самим исследованием. Контролирующие органы отказываются признавать разделение лабдиагностики на преаналитический и аналитический этапы: от медцентра с процедурным кабинетом требуют полноценную профильную лицензию на лабораторную диагностику только за то, что он берёт кровь и передаёт в крупную централизованную лабораторию по договору. По этой логике врач-гинеколог формально не сможет взять материал на гистологию без отдельной лицензии на гистологию — это абсурд и удар по общемировой модели аутсорсинга.",
+      "Кейс 4 · Несоразмерность наказания и приостановка «авансом». ООО «МЕДЭКС-ЛАБ»: лицензия приостановлена за 26 дней ДО того, как комиссия МЗ реально вышла на объект. Комиссия зафиксировала отсутствие угрозы пациентам и соответствие лицензионным требованиям — однако чиновники проигнорировали акт, не возобновили лицензию и инициировали запросы в налоговую в поисках новых поводов закрыть проект. Полная парализация бизнеса вместо предписания со сроком на устранение «бумажной» ошибки — колоссальные убытки, срывы лечения, коррупциогенная ёмкость.",
+      "Кейс 5 · Противоречие самим себе на уровне Минздрава. По запросам сторонних органов (налоговая, суды) выпускаются письма-разъяснения: «забор биоматериала — неотъемлемая часть исследования, не самостоятельная услуга». Одновременно в действующем Постановлении МЗ РБ № 123 (2016 г.) прямо указано: «взятие крови является самостоятельной медицинской услугой с автономным завершенным значением». В чеке любой госполиклиники «взятие венозной крови» выделено отдельной строкой с отдельной ценой — то есть отдел лицензирования отрицает универсальную учётно-тарифную практику всей системы здравоохранения страны."
     ],
     "i18n": {
       "en": {
-        "outgoing": "Meetings with MoH · 2026",
-        "title": "Systemic issues in medical-activity licensing",
+        "outgoing": "Analytical memo · 2026",
+        "title": "Absurd enforcement practices by the MoH licensing office",
         "addressee": "Ministry of Health · I. Abelskaya",
-        "summary": "An analytical paper on absurd licensing-office practices and a draft package of amendments to Law No. 213-Z on licensing. The MyLab case (Medex-Lab LLC): the licence was suspended without dialogue even though an MoH commission later confirmed compliance.",
-        "tags": ["Licensing", "MyLab", "Law 213-Z", "Outsourcing", "Reform"],
+        "summary": "A memo documenting five concrete cases of over-regulation, abuse of power and systemic contradictions inside the MoH licensing office in lab diagnostics — with direct links to the public licence registry and to existing MoH decrees. Part 1 of the MyLab (Medex-Lab LLC) package.",
+        "tags": ["Licensing", "MyLab", "Ultra vires", "Lab diagnostics"],
         "sourceLabel": "Full text: absurd practices and the draft amendments to the licensing law",
         "topics": [
-          "Absurd 1 — licences stating “non-invasive blood collection”: venous and capillary draws are invasive by definition; inspectors can later fine the centre (example: license.gov.by/onelicense/188148).",
-          "Absurd 2 — the licence text forbids collecting specimens from anyone who is not a “patient of the centre’s physicians” — an ultra vires barrier to walk-in testing (license.gov.by/onelicense/162014).",
-          "Absurd 3 — refusal to recognise outsourcing: a facility with a nursing licence that only collects blood for a central lab is told it needs a full laboratory-diagnostics licence.",
-          "Absurd 4 — suspension before the inspection and disregard of the commission’s findings: the Medex-Lab case (Oct–Nov 2025), formal paperwork issues with no patient risk, operations paralysed instead of a prescription to cure defects.",
-          "Absurd 5 — the licensing office denies that collection is a separate service while MoH Decree No. 123 (2016) explicitly treats blood collection as a stand-alone medical service; tax clarifications contradict the MoH’s own decree.",
-          "Draft amendments · block 1 — codify the split between preanalytics (collection, labelling, transport) and analytics; a nursing/manipulations licence suffices to collect any lab specimens and send them to a partner.",
-          "Draft amendments · block 2 — allow collection on a citizen’s own request without a mandatory visit to that centre’s doctor (except where the law expressly requires an examination).",
-          "Draft amendments · block 3 — do not suspend a licence for paperwork that can be fixed without stopping care when there is no direct threat to life or health; use a time-bound prescription instead.",
-          "Draft amendments · blocks 4–5 — ban expansive interpretation of licensing rules; require consultations with business and publish official clarifications that cannot later be penalised.",
-          "Draft amendments · blocks 6–7 — require scientifically accurate wording in licences; prohibit individual restrictive footnotes in the licence text.",
-          "Draft amendments · blocks 8–9 — legalise home/mobile collection (mobile teams); in enforcement, MoH clinical protocols and orders (including No. 1123 on preanalytics) prevail over the licensing office’s subjective readings.",
-          "MyLab case: people with disabilities, oncology patients, children, the elderly and remote communities — professional dialogue with innovative services is needed before irreversible procedures are launched."
+          "Case 1 · Anti-scientific wording in the licence. Sample-collection points of laboratory networks receive licences that read “general-clinical (non-invasive) methods of investigation (biological material collection)”. Venous and capillary draws are invasive by definition (the skin barrier is broken). Inspectors can later fine the centre for performing invasive procedures under a “non-invasive” licence. Example: license.gov.by/onelicense/188148.",
+          "Case 2 · Illegal individual restrictions written into the licence. Some licences explicitly say: “Collection of biological material is prohibited for persons who are not patients of the company’s physicians.” No statute forbids a citizen from giving samples on their own initiative — this rider is a direct abuse of power and forces patients into a paid visit to that centre’s doctor. Example: license.gov.by/onelicense/162014.",
+          "Case 3 · Conflating collection with the test itself. Inspectors refuse to recognise the split between preanalytics (collection) and analytics (running the test). A clinic with a treatment-room is required to obtain a full laboratory-diagnostics licence merely because it draws blood and ships it under contract to a centralised lab. Pushed to its limit: a gynaecologist would formally need a histology licence to take a biopsy — clearly absurd, and a blow to the global outsourcing model.",
+          "Case 4 · Disproportionate punishment, suspension up front. Medex-Lab LLC: the licence was suspended 26 days BEFORE the MoH commission actually visited the site. The commission then confirmed no threat to patients and full compliance — yet officials ignored the report, refused to reinstate the licence and instead launched tax-authority requests looking for new grounds to shut the project down. Total paralysis of the business in lieu of a time-bound prescription to fix a paperwork issue — huge losses, disrupted patient care and an enormous corruption surface.",
+          "Case 5 · The MoH contradicting itself. In response to tax and court requests the licensing office issues clarifications that say “sample collection is part of the test, not a separate service”. At the same time MoH Decree No. 123 (2016), still in force, explicitly states: “blood collection is a stand-alone medical service with autonomous, complete meaning.” Every state polyclinic’s receipt lists “venous blood collection” as a separate line at a separate price — meaning the licensing office is denying the universal accounting and tariff practice of the country’s entire health system."
         ]
       },
       "zh": {
-        "outgoing": "与卫生部会议 · 2026",
-        "title": "医疗活动许可中的系统性问题",
+        "outgoing": "分析备忘录 · 2026",
+        "title": "卫生部许可部门的荒谬执法做法",
         "addressee": "卫生部 · I. Abelskaya",
-        "summary": "关于卫生部许可部门荒谬做法的分析文件,以及对《许可法》第 213-Z 号的修订建议。MyLab(Medex-Lab)案例:许可在无沟通情况下被中止,而卫生部委员会随后确认其符合要求。",
-        "tags": ["许可", "MyLab", "第213-Z号法", "外包", "改革"],
+        "summary": "备忘录记录了卫生部许可部门在实验室诊断领域的五个具体过度监管、越权与系统性矛盾案例,并附许可登记册和现行卫生部决议的直接链接。MyLab(Medex-Lab)套案的第一部分。",
+        "tags": ["许可", "MyLab", "越权", "实验室诊断"],
         "sourceLabel": "全文:许可领域的荒谬做法与法律修订草案",
         "topics": [
-          "荒谬做法 1 —— 许可证写明「非侵入性采血」:静脉与毛细血管采血本质上属于侵入性操作;检查时机构可能被处罚(例:license.gov.by/onelicense/188148)。",
-          "荒谬做法 2 —— 许可证附加条件禁止为「非本中心医生患者」采血 —— 越权限制,阻碍公民自行送检(例:license.gov.by/onelicense/162014)。",
-          "荒谬做法 3 —— 否认外包模式:仅有采血并送交中心实验室的机构被要求取得完整实验室诊断许可,而护理/医疗操作许可本应足够。",
-          "荒谬做法 4 —— 检查前即暂停许可并忽视委员会结论:Medex-Lab 案例(2025 年 10–11 月),仅为形式问题、对患者无风险,却以停业代替限期整改。",
-          "荒谬做法 5 —— 许可部门否认采血为独立服务,而 2016 年第 123 号卫生部决议明确将采血列为独立医疗服务;对税务机关的解释与卫生部自身文件相矛盾。",
-          "修订草案 · 第 1 块 —— 将分析前阶段(采集、标识、运输)与分析阶段分离;医疗操作许可足以进行各类标本采集并转交合作实验室。",
-          "修订草案 · 第 2 块 —— 公民可自行申请采血,无需强制先在该中心看本中心医生(法律明确要求检查的情形除外)。",
-          "修订草案 · 第 3 块 —— 对可整改且不构成生命健康威胁的形式问题不得暂停许可,应下达限期整改命令。",
-          "修订草案 · 第 4–5 块 —— 禁止对许可法规作扩大解释;与业界强制磋商并公布官方解释,依解释行事不得再被处罚。",
-          "修订草案 · 第 6–7 块 —— 许可证措辞须符合医学术语;禁止在许可证中加入个别限制性附注。",
-          "修订草案 · 第 8–9 块 —— 合法化上门/流动采血;执法时卫生部临床规范与命令(含第 1123 号分析前命令)优先于许可部门的主观理解。",
-          "MyLab 案例:残障人士、肿瘤患者、儿童、老年人及偏远地区居民 —— 在启动不可逆程序前,需与创新医疗服务建立专业对话。"
+          "案例 1 · 许可证措辞违背医学常识。连锁实验室的采血点拿到的许可证写明「全科临床(非侵入性)检测方法(生物材料采集)」。静脉与毛细血管采血按定义即属侵入性操作(破坏皮肤完整性)。一旦遭遇外部检查,机构可能因「以非侵入性许可掩盖侵入性操作」而被处罚。例:license.gov.by/onelicense/188148。",
+          "案例 2 · 在许可证中加入非法的个别限制。部分许可证直接写有「禁止为非本公司医生患者的人采集生物材料」。任何法律均未禁止公民自行送检 —— 此类附加条款属于明显越权,迫使患者必须再花钱到该中心的医生处问诊。例:license.gov.by/onelicense/162014。",
+          "案例 3 · 将采集等同于检测。监管部门拒绝承认分析前阶段(采集)与分析阶段(检测)的分离:仅设有处置室的机构因采血并按合同送至中心实验室,就被要求取得完整的实验室诊断许可。推演到极致:妇科医生若要取活检送病理,也得先有病理许可 —— 显然荒谬,并直接打击全球通行的实验室外包模式。",
+          "案例 4 · 处罚畸重,「先停业再核查」。Medex-Lab 案例:在卫生部委员会实际到场前 26 天,许可即被暂停。委员会随后确认机构对患者无风险且符合许可要求,官员却无视报告、拒不恢复许可,并转而向税务机关发起调查以寻找新的关停理由。本应下达限期整改命令,却让企业全面停摆 —— 造成巨额损失、患者治疗中断与极大的腐败风险面。",
+          "案例 5 · 卫生部自相矛盾。许可部门面向税务与司法机关出具解释,称「采集是检测的一部分,而非独立服务」;而现行 2016 年第 123 号卫生部决议明确规定:「采血是具有完整自主含义的独立医疗服务」。任何国营门诊的发票均将「静脉采血」单列且单独定价 —— 这意味着许可部门否定的是整个国家卫生体系普遍的会计与定价实践。"
+        ]
+      }
+    }
+  },
+  {
+    "slug": "mylab-licensing-reform-2026",
+    "date": "2026",
+    "year": 2026,
+    "outgoing": "Проект НПА · 2026",
+    "title": "Проект изменений в Закон № 213-З «О лицензировании»: 9 блоков поправок",
+    "addressee": "Министерство здравоохранения · Минэкономики · Парламентский диалог",
+    "summary": "Пакет конкретных текстовых поправок в Закон Республики Беларусь от 14 октября 2022 г. № 213-З «О лицензировании» с указанием раздела, главы и статьи, в которые вносятся изменения. Девять блоков: легализация модели аутсорсинга в лабдиагностике, доступность диагностики без принудительного приёма, смягчение приостановки лицензии, запрет расширительного толкования, обязательные публичные разъяснения, терминологическая точность, запрет индивидуальных ограничений в бланке, выездной забор биоматериала, приоритет клинических протоколов МЗ. Часть 2 пакета по делу MyLab.",
+    "tags": ["Закон 213-З", "Реформа", "Аутсорсинг", "Лабдиагностика", "Преаналитика"],
+    "sourceUrl": "https://docs.google.com/document/d/1ncWb7EbSUU2sMnQCe1UfQzhw1Dw0CeVS-zo9AfZeSmQ/edit",
+    "sourceLabel": "Полный текст: абсурдные практики и проект изменений в закон о лицензировании",
+    "topics": [
+      "Блок 1 · Легализация аутсорсинга в лабдиагностике (Раздел II, медицинская деятельность). Закрепить разделение лабораторных исследований на преаналитический этап (взятие, маркировка, хранение, транспортировка биоматериала) и аналитический этап (само исследование). Лицензия на медицинские манипуляции (сестринское дело) — достаточное основание для забора любого биоматериала. При передаче материала партнёрской лаборатории по гражданско-правовому договору отдельная профильная лицензия на лабдиагностику забирающей стороне не требуется.",
+      "Блок 2 · Доступность диагностики без принудительной консультации (Раздел II, медицинская деятельность). Закрепить: забор биоматериала — по самостоятельному обращению гражданина, без обязательного предшествующего направления, осмотра или консультации врача того же медцентра. Исключение — случаи, когда обязательность осмотра прямо установлена законодательным актом для конкретного вида исследования. Снимает искусственные «платные» барьеры для самостоятельной сдачи анализов.",
+      "Блок 3 · Смягчение процедуры приостановки лицензии (Раздел I, глава 7, статья 38). Приостановка лицензии не применяется, если выявленные нарушения устранимы без прекращения деятельности и не создают непосредственной угрозы жизни и здоровью граждан. В таких случаях лицензирующий орган ограничивается предписанием об устранении нарушений с разумным сроком. Жёсткая мера — только при прямой угрозе пациентам.",
+      "Блок 4 · Запрет расширительного толкования (Раздел I, статья 6 «Принципы лицензирования»). Дополнить принципом: недопустимость расширительного толкования лицензирующими и иными контролирующими органами НПА и лицензионных требований в сторону ужесточения условий деятельности или ущемления прав соискателей и лицензиатов. Закрывает лазейку для «местных интерпретаций» закона не в пользу бизнеса.",
+      "Блок 5 · Обязательный диалог и защита от санкций по разъяснениям (Раздел I, статья 12). Лицензирующие органы обязаны: (а) проводить предварительные консультации с профсообществом перед изменением подходов к оценке требований; (б) публиковать в открытом доступе официальные обобщённые разъяснения. Лицензиат не может быть наказан (штраф, приостановка) за действия, совершённые в строгом соответствии с такими публичными разъяснениями.",
+      "Блок 6 · Терминологическая точность в лицензии (Раздел I, статьи 12 и 32). Наименования работ/услуг в лицензии и Едином реестре лицензий должны строго соответствовать утверждённой медноменклатуре и сохранять объективный научный и технологический смысл. Не допускается использование взаимоисключающих понятий и формулировок, искажающих суть медицинской манипуляции (например, отнесение инвазивного забора крови к «неинвазивным методам»).",
+      "Блок 7 · Прямой запрет индивидуальных ограничений в бланке лицензии (Раздел I, статья 32). При выдаче и изменении лицензии лицензирующему органу запрещается устанавливать индивидуальные ограничительные условия в виде примечаний, сносок и особых отметок. Не допускается внесение записей, ограничивающих круг лиц, имеющих право на получение услуг, или вводящих не предусмотренные законом дополнительные барьеры.",
+      "Блок 8 · Легализация выездной формы оказания услуг (Раздел II / Раздел I статья 32). Разрешить осуществление лицензируемых медуслуг вне адреса лицензии: забор и транспортировка биоматериала по месту жительства/пребывания пациента, в т.ч. выездными бригадами. Условия: у лицензиата есть оснащённое помещение по заявленному адресу, соблюдены требования МЗ к транспортировке и портативному оборудованию. Решает проблему доступа для инвалидов, онкобольных, маломобильных пожилых, детей и удалённых районов.",
+      "Блок 9 · Приоритет клинических протоколов МЗ при контроле (Раздел I, статья 12). При оценке соблюдения лицензионных требований контролирующие структуры обязаны руководствоваться утверждёнными МЗ клиническими протоколами, инструкциями и приказами (включая Приказ № 1123, легализующий внелабораторный преаналитический этап). К лицензиату не могут применяться санкции, если его действия выполнены в строгом соответствии с этими профильными НПА Минздрава."
+    ],
+    "i18n": {
+      "en": {
+        "outgoing": "Draft legal act · 2026",
+        "title": "Draft amendments to Law No. 213-Z on licensing: a package of 9 blocks",
+        "addressee": "Ministry of Health · Ministry of Economy · Parliamentary dialogue",
+        "summary": "A package of concrete textual amendments to the Law of the Republic of Belarus of 14 October 2022 No. 213-Z “On licensing”, each block precisely citing the section, chapter and article to be modified. Nine blocks: legalising the outsourcing model in lab diagnostics, walk-in access to testing, softening licence suspensions, banning expansive interpretation, mandatory public clarifications, scientifically accurate licence wording, prohibition of individual restrictions in the licence text, legalising at-home / mobile collection, and the primacy of MoH clinical protocols. Part 2 of the MyLab package.",
+        "tags": ["Law 213-Z", "Reform", "Outsourcing", "Lab diagnostics", "Preanalytics"],
+        "sourceLabel": "Full text: absurd practices and the draft amendments to the licensing law",
+        "topics": [
+          "Block 1 · Legalising the outsourcing model in lab diagnostics (Section II, medical activity). Codify the split of laboratory diagnostics into a preanalytical stage (collection, labelling, storage, transport of biological material) and an analytical stage (the test itself). A nursing/medical-manipulations licence is sufficient grounds to collect any biological material. When the material is handed over to a partner laboratory under a civil-law contract, the collecting party does not need a separate profile licence for laboratory diagnostics.",
+          "Block 2 · Walk-in access to testing without a mandatory consultation (Section II, medical activity). Codify: biomaterial collection follows from the citizen’s own request, with no mandatory referral or consultation with a physician of the same medical centre. Exception — cases where a statute expressly requires an examination for a specific type of investigation. Removes the artificial paid barrier to self-initiated testing.",
+          "Block 3 · Softer suspension procedure (Section I, Chapter 7, Article 38). Suspension of a licence shall not be applied if the violations can be cured without halting the activity and do not pose an immediate threat to life or health. In such cases the licensing authority confines itself to a prescription to cure the violations within a reasonable deadline. The hard measure is reserved for direct patient risk.",
+          "Block 4 · Ban on expansive interpretation (Section I, Article 6 “Principles of licensing”). Add the principle: licensing authorities and other inspectors must not apply expansive interpretation of legal acts or licensing requirements that tightens conditions or impairs the rights of applicants and licensees. Closes the loophole for “local interpretations” against business.",
+          "Block 5 · Mandatory dialogue and safe-harbour for clarifications (Section I, Article 12). Licensing authorities must: (a) consult professional associations before changing the approach to assessing requirements; (b) publish official consolidated clarifications. A licensee cannot be punished (fine, suspension) for actions taken in strict accordance with such published clarifications.",
+          "Block 6 · Scientifically accurate wording in licences (Section I, Articles 12 and 32). Names of works/services in the licence and in the Unified Licence Register must strictly follow the approved medical nomenclature and retain their objective scientific and technological meaning. The use of mutually exclusive concepts or wording that distorts the nature of a medical procedure is forbidden (e.g. classifying invasive blood collection as a “non-invasive method”).",
+          "Block 7 · Direct ban on individual restrictions in the licence text (Section I, Article 32). When granting or amending a licence the licensing authority is prohibited from imposing individual restrictive conditions in the form of notes, footnotes or special marks. Entries that limit the set of persons entitled to receive services, or introduce barriers not provided for by law, are not allowed.",
+          "Block 8 · Legalising mobile / at-home delivery of services (Section II / Section I, Article 32). Authorise the provision of licensed medical services outside the address stated in the licence: collection and transport of biological material at the patient’s place of residence, including by mobile teams. Conditions: the licensee has equipped premises at the declared address and complies with MoH requirements on transport and portable equipment. Solves access for people with disabilities, oncology patients, the elderly, children and remote communities.",
+          "Block 9 · Primacy of MoH clinical protocols in enforcement (Section I, Article 12). When assessing compliance with licensing requirements, inspectors must rely on the clinical protocols, instructions and orders approved by the Ministry of Health (including Order No. 1123, which legalises the off-lab preanalytical stage). No sanctions may be applied to a licensee whose actions strictly follow these MoH profile acts."
+        ]
+      },
+      "zh": {
+        "outgoing": "法律草案 · 2026",
+        "title": "对《许可法》第 213-Z 号的修订草案:九大模块",
+        "addressee": "卫生部 · 经济部 · 议会对话",
+        "summary": "针对 2022 年 10 月 14 日《白俄罗斯共和国许可法》第 213-Z 号的具体文本修订建议,每一模块均明确指出所修订的章节与条文。共九大模块:实验室诊断外包模式的合法化、无需强制问诊的检测可及性、放宽许可暂停、禁止扩大解释、强制性公开解释、许可证措辞的科学准确性、禁止在许可证中加入个别限制、上门/流动采集合法化、卫生部临床规范在执法中的优先地位。MyLab 套案的第二部分。",
+        "tags": ["第213-Z号法", "改革", "外包", "实验室诊断", "分析前"],
+        "sourceLabel": "全文:许可领域的荒谬做法与法律修订草案",
+        "topics": [
+          "模块 1 · 实验室诊断外包模式合法化(第二编,医疗活动)。明确将实验室诊断分为分析前阶段(采集、标识、储存、运输生物材料)与分析阶段(检测本身)。持有护理/医疗操作许可即足以采集任何生物材料;依据民事合同将材料转交合作实验室时,采集方无需再取得相应的专项实验室诊断许可。",
+          "模块 2 · 无需强制问诊的检测可及性(第二编,医疗活动)。明确:生物材料采集依公民自主申请开展,不强制要求事先在该中心由其医生进行转诊或问诊;法律对特定检测明确要求体检的情形除外。这将消除人为设置的、迫使患者付费问诊的障碍。",
+          "模块 3 · 放宽许可暂停程序(第一编第 7 章第 38 条)。如违规可在不停止业务的情况下整改,且不构成对生命健康的直接威胁,则不适用许可暂停;此时许可机关仅出具限期整改命令。许可暂停作为最严厉手段,仅在对患者构成直接风险时使用。",
+          "模块 4 · 禁止扩大解释(第一编第 6 条「许可原则」)。新增原则:许可机关及其他监管机构不得对法规和许可要求作出趋严或损害申请人/许可人权益的扩大解释。封堵「地方按己意解读法律」的漏洞。",
+          "模块 5 · 强制对话与依官方解释行事的安全港(第一编第 12 条)。许可机关须:(a) 在变更评估方式前与行业组织开展强制磋商;(b) 公开发布官方汇总解释。许可人按已公开的官方解释行事,不得据此被处以罚款或暂停。",
+          "模块 6 · 许可证措辞的科学准确性(第一编第 12 与第 32 条)。许可证及统一登记册中作业/服务名称须严格符合已批准的医学命名,保持客观的科学与技术内涵;禁止使用互相矛盾或扭曲医疗操作本质的措辞(例如将侵入性采血归入「非侵入性方法」)。",
+          "模块 7 · 禁止在许可证中加入个别限制(第一编第 32 条)。在颁发与变更许可证时,许可机关不得以备注、脚注或特别标记的形式设置个别限制条件;不得记录任何缩小服务对象范围或在法律之外增设障碍的内容。",
+          "模块 8 · 上门/流动服务模式合法化(第二编 / 第一编第 32 条)。允许在许可登记地址之外开展许可医疗服务:可在患者居住或暂住地由流动医疗组采集和运输生物材料。条件:许可人在登记地址有按要求配置的房屋;符合卫生部对运输与便携设备的要求。这将解决残障人士、肿瘤患者、行动不便的老年人、儿童及偏远地区居民的就医可及性问题。",
+          "模块 9 · 执法中卫生部临床规范的优先地位(第一编第 12 条)。监管机构在评估许可要求合规性时,必须以卫生部批准的临床规范、指导文件与命令(包括将实验室外分析前阶段合法化的第 1123 号命令)为依据。许可人如严格按上述卫生部专项规范行事,不得被处以任何制裁。"
         ]
       }
     }
