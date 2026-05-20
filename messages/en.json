@@ -740,6 +740,7 @@
       "titleLine2": "Newest first.",
       "letters": "{count, plural, one {# letter} other {# letters}}",
       "topicsLabel": "Key points",
+      "sourceDocFallback": "Analytical document (Google Docs)",
       "addresseePrefix": "↳",
       "origin": "Where the systemic work began"
     },

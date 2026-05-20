@@ -17,6 +17,8 @@ interface Letter {
   summary: string;
   tags: string[];
   topics: string[];
+  sourceUrl?: string;
+  sourceLabel?: string;
 }
 
 type LocaledLetter = Letter & Translatable;
@@ -353,6 +355,20 @@ function LetterCard({
         <p className="text-[14px] md:text-[15px] text-ink-700 leading-relaxed mt-4">
           {letter.summary}
         </p>
+
+        {letter.sourceUrl && (
+          <p className="mt-3">
+            <a
+              href={letter.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 text-[13px] font-semibold text-green-700 underline decoration-green-300 underline-offset-2 hover:text-green-800"
+            >
+              {letter.sourceLabel ?? letter.sourceUrl}
+              <span aria-hidden>↗</span>
+            </a>
+          </p>
+        )}
 
         {letter.tags.length > 0 && (
           <div className="flex flex-wrap gap-1.5 mt-4">

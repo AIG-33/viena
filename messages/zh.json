@@ -740,6 +740,7 @@
       "titleLine2": "由新到旧。",
       "letters": "{count, plural, other {# 封}}",
       "topicsLabel": "核心要点",
+      "sourceDocFallback": "分析文件(Google Docs)",
       "addresseePrefix": "↳",
       "origin": "系统性工作的起点"
     },

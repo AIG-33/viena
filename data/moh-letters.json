@@ -53,42 +53,67 @@
     "outgoing": "Встречи с МЗ · 2026",
     "title": "Системные вопросы лицензирования медицинской деятельности",
     "addressee": "Министерство здравоохранения · Абельская И.С.",
-    "summary": "Кейс проекта MyLab (ООО «МЕДЭКС-ЛАБ»): приостановка лицензии 9 октября 2025 без предварительного диалога, при том что комиссия МЗ затем подтвердила соответствие лицензионным требованиям.",
-    "tags": ["Лицензирование", "MyLab", "Диалог с регулятором"],
+    "summary": "Аналитический документ по абсурдным практикам отдела лицензирования МЗ и проекту поправок в Закон № 213-З «О лицензировании». Кейс MyLab (ООО «МЕДЭКС-ЛАБ»): приостановка лицензии без диалога при последующем подтверждении соответствия комиссией МЗ.",
+    "tags": ["Лицензирование", "MyLab", "Закон 213-З", "Аутсорсинг", "Реформа"],
+    "sourceUrl": "https://docs.google.com/document/d/1ncWb7EbSUU2sMnQCe1UfQzhw1Dw0CeVS-zo9AfZeSmQ/edit",
+    "sourceLabel": "Полный текст: абсурдные практики и проект изменений в закон о лицензировании",
     "topics": [
-      "9 октября 2025 — приостановка лицензии до проведения проверки; немедленная остановка операционной деятельности.",
-      "20–26 ноября 2025 — комиссия МЗ подтверждает соответствие; замечания формальные (документация, поверка приборов), угрозы пациентам нет.",
-      "2 декабря 2025 — разъяснение МЗ налоговой инспекции противоречит Постановлению МЗ №123 от 2016 года, согласно которому взятие крови — самостоятельная медицинская услуга.",
-      "Пострадавшие категории граждан: инвалиды, онкобольные, дети, пожилые, жители удалённых районов — те, для кого MyLab делал генетические исследования доступными на дому.",
-      "Системный вопрос: отсутствие предварительного профессионального диалога между МЗ и инновационными медицинскими сервисами до запуска необратимых административных процедур."
+      "Абсурд 1 — лицензии с формулировкой «неинвазивный забор крови»: венозный и капиллярный забор по определению инвазивен; при проверке центр рискует штрафом (пример: license.gov.by/onelicense/188148).",
+      "Абсурд 2 — в бланк лицензии вписывают запрет забирать материал у лиц, не являющихся «пациентами врачей» центра — превышение полномочий, барьер для самостоятельной сдачи анализов (license.gov.by/onelicense/162014).",
+      "Абсурд 3 — отказ признавать аутсорсинг: для забора крови с передачей в централизованную лабораторию требуют полную лицензию на лабораторную диагностику, хотя достаточно лицензии на медицинские манипуляции (сестринское дело).",
+      "Абсурд 4 — приостановка лицензии до выезда комиссии и игнорирование её актов: кейс Медэкс-Лаб (октябрь–ноябрь 2025), формальные замечания без угрозы пациентам, паралич работы вместо предписания.",
+      "Абсурд 5 — отдел лицензирования отрицает, что забор — отдельная услуга, хотя Постановление МЗ № 123 (2016) прямо называет взятие крови самостоятельной медицинской услугой; разъяснения для налоговой противоречат тексту МЗ.",
+      "Проект изменений · блок 1 — закрепить разделение преаналитики (забор, маркировка, транспорт) и аналитики; лицензия на медманипуляции достаточна для забора любых лабораторных исследований и передачи материала партнёру.",
+      "Проект изменений · блок 2 — забор по обращению гражданина без обязательного приёма у врача того же медцентра (кроме случаев, когда закон прямо требует осмотра).",
+      "Проект изменений · блок 3 — не приостанавливать лицензию за устранимые «бумажные» нарушения без угрозы жизни и здоровью; применять предписание со сроком.",
+      "Проект изменений · блок 4–5 — запрет расширительного толкования лицензии; обязательные консультации с бизнесом и публикуемые официальные разъяснения, за действия по которым нельзя наказывать.",
+      "Проект изменений · блок 6–7 — терминологическая точность в лицензии (без «инвазивного = неинвазивного»); запрет индивидуальных ограничительных приписок в тексте лицензии.",
+      "Проект изменений · блок 8–9 — легализовать забор на дому (выездные бригады); при контроле приоритет клинических протоколов и приказов МЗ (в т.ч. № 1123 о преаналитике) над субъективными трактовками отдела лицензирования.",
+      "Кейс MyLab: пострадавшие категории — инвалиды, онкобольные, дети, пожилые, удалённые районы; нужен профессиональный диалог с инновационными сервисами до необратимых процедур."
     ],
     "i18n": {
       "en": {
         "outgoing": "Meetings with MoH · 2026",
         "title": "Systemic issues in medical-activity licensing",
         "addressee": "Ministry of Health · I. Abelskaya",
-        "summary": "The MyLab case (Medex-Lab LLC): the licence was suspended on 9 October 2025 without prior dialogue, even though a Ministry of Health commission later confirmed compliance with the licensing requirements.",
-        "tags": ["Licensing", "MyLab", "Dialogue with the regulator"],
+        "summary": "An analytical paper on absurd licensing-office practices and a draft package of amendments to Law No. 213-Z on licensing. The MyLab case (Medex-Lab LLC): the licence was suspended without dialogue even though an MoH commission later confirmed compliance.",
+        "tags": ["Licensing", "MyLab", "Law 213-Z", "Outsourcing", "Reform"],
+        "sourceLabel": "Full text: absurd practices and the draft amendments to the licensing law",
         "topics": [
-          "9 October 2025 — licence suspended pending an inspection; operations stopped immediately.",
-          "20–26 November 2025 — the MoH commission confirms compliance; the remarks are formal (documentation, instrument verification) and pose no risk to patients.",
-          "2 December 2025 — the MoH clarification to the tax authority contradicts MoH Decree No. 123 of 2016, according to which blood collection is a stand-alone medical service.",
-          "Affected groups of citizens: people with disabilities, oncology patients, children, the elderly and residents of remote areas — those for whom MyLab made genetic testing available at home.",
-          "The systemic issue: there is no professional dialogue between the MoH and innovative medical services before irreversible administrative procedures are launched."
+          "Absurd 1 — licences stating “non-invasive blood collection”: venous and capillary draws are invasive by definition; inspectors can later fine the centre (example: license.gov.by/onelicense/188148).",
+          "Absurd 2 — the licence text forbids collecting specimens from anyone who is not a “patient of the centre’s physicians” — an ultra vires barrier to walk-in testing (license.gov.by/onelicense/162014).",
+          "Absurd 3 — refusal to recognise outsourcing: a facility with a nursing licence that only collects blood for a central lab is told it needs a full laboratory-diagnostics licence.",
+          "Absurd 4 — suspension before the inspection and disregard of the commission’s findings: the Medex-Lab case (Oct–Nov 2025), formal paperwork issues with no patient risk, operations paralysed instead of a prescription to cure defects.",
+          "Absurd 5 — the licensing office denies that collection is a separate service while MoH Decree No. 123 (2016) explicitly treats blood collection as a stand-alone medical service; tax clarifications contradict the MoH’s own decree.",
+          "Draft amendments · block 1 — codify the split between preanalytics (collection, labelling, transport) and analytics; a nursing/manipulations licence suffices to collect any lab specimens and send them to a partner.",
+          "Draft amendments · block 2 — allow collection on a citizen’s own request without a mandatory visit to that centre’s doctor (except where the law expressly requires an examination).",
+          "Draft amendments · block 3 — do not suspend a licence for paperwork that can be fixed without stopping care when there is no direct threat to life or health; use a time-bound prescription instead.",
+          "Draft amendments · blocks 4–5 — ban expansive interpretation of licensing rules; require consultations with business and publish official clarifications that cannot later be penalised.",
+          "Draft amendments · blocks 6–7 — require scientifically accurate wording in licences; prohibit individual restrictive footnotes in the licence text.",
+          "Draft amendments · blocks 8–9 — legalise home/mobile collection (mobile teams); in enforcement, MoH clinical protocols and orders (including No. 1123 on preanalytics) prevail over the licensing office’s subjective readings.",
+          "MyLab case: people with disabilities, oncology patients, children, the elderly and remote communities — professional dialogue with innovative services is needed before irreversible procedures are launched."
         ]
       },
       "zh": {
         "outgoing": "与卫生部会议 · 2026",
         "title": "医疗活动许可中的系统性问题",
         "addressee": "卫生部 · I. Abelskaya",
-        "summary": "MyLab(Medex-Lab 有限公司)案例:2025 年 10 月 9 日,许可在没有任何前置沟通的情况下被中止;此后卫生部委员会的检查反而确认其符合许可要求。",
-        "tags": ["许可", "MyLab", "与监管的对话"],
+        "summary": "关于卫生部许可部门荒谬做法的分析文件,以及对《许可法》第 213-Z 号的修订建议。MyLab(Medex-Lab)案例:许可在无沟通情况下被中止,而卫生部委员会随后确认其符合要求。",
+        "tags": ["许可", "MyLab", "第213-Z号法", "外包", "改革"],
+        "sourceLabel": "全文:许可领域的荒谬做法与法律修订草案",
         "topics": [
-          "2025 年 10 月 9 日 —— 许可被暂停,等待检查,经营立即中断。",
-          "2025 年 11 月 20–26 日 —— 卫生部检查组确认企业符合要求,意见仅为形式性问题(文件、仪器检定),对患者无风险。",
-          "2025 年 12 月 2 日 —— 卫生部对税务机关的解释与 2016 年第 123 号决议相矛盾,该决议明确指出采血属于独立的医疗服务。",
-          "受影响的人群:残障人士、肿瘤患者、儿童、老年人以及偏远地区居民 —— 正是 MyLab 让他们能够在家完成基因检测的那部分群体。",
-          "系统性问题:在启动不可逆的行政程序之前,卫生部与创新医疗服务之间缺乏专业沟通机制。"
+          "荒谬做法 1 —— 许可证写明「非侵入性采血」:静脉与毛细血管采血本质上属于侵入性操作;检查时机构可能被处罚(例:license.gov.by/onelicense/188148)。",
+          "荒谬做法 2 —— 许可证附加条件禁止为「非本中心医生患者」采血 —— 越权限制,阻碍公民自行送检(例:license.gov.by/onelicense/162014)。",
+          "荒谬做法 3 —— 否认外包模式:仅有采血并送交中心实验室的机构被要求取得完整实验室诊断许可,而护理/医疗操作许可本应足够。",
+          "荒谬做法 4 —— 检查前即暂停许可并忽视委员会结论:Medex-Lab 案例(2025 年 10–11 月),仅为形式问题、对患者无风险,却以停业代替限期整改。",
+          "荒谬做法 5 —— 许可部门否认采血为独立服务,而 2016 年第 123 号卫生部决议明确将采血列为独立医疗服务;对税务机关的解释与卫生部自身文件相矛盾。",
+          "修订草案 · 第 1 块 —— 将分析前阶段(采集、标识、运输)与分析阶段分离;医疗操作许可足以进行各类标本采集并转交合作实验室。",
+          "修订草案 · 第 2 块 —— 公民可自行申请采血,无需强制先在该中心看本中心医生(法律明确要求检查的情形除外)。",
+          "修订草案 · 第 3 块 —— 对可整改且不构成生命健康威胁的形式问题不得暂停许可,应下达限期整改命令。",
+          "修订草案 · 第 4–5 块 —— 禁止对许可法规作扩大解释;与业界强制磋商并公布官方解释,依解释行事不得再被处罚。",
+          "修订草案 · 第 6–7 块 —— 许可证措辞须符合医学术语;禁止在许可证中加入个别限制性附注。",
+          "修订草案 · 第 8–9 块 —— 合法化上门/流动采血;执法时卫生部临床规范与命令(含第 1123 号分析前命令)优先于许可部门的主观理解。",
+          "MyLab 案例:残障人士、肿瘤患者、儿童、老年人及偏远地区居民 —— 在启动不可逆程序前,需与创新医疗服务建立专业对话。"
         ]
       }
     }
