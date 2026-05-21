@@ -28,7 +28,7 @@ export async function generateMetadata({
   params: Promise<{ locale: Locale }>;
 }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "catalog.hero" });
+  const t = await getTranslations({ locale, namespace: "catalog.meta" });
   const keywords =
     locale === "ru"
       ? [
@@ -43,7 +43,7 @@ export async function generateMetadata({
         ]
       : undefined;
   return {
-    title: t("titleLine1Accent"),
+    title: t("title"),
     description: t("description"),
     keywords,
   };

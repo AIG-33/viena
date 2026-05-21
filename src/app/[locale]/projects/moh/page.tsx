@@ -31,9 +31,9 @@ export async function generateMetadata({
   params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "moh.hero" });
+  const t = await getTranslations({ locale, namespace: "moh.meta" });
   return {
-    title: `${t("titleLine1Accent")} ${t("titleLine1")} · ${t("eyebrowSection")}`,
+    title: t("title"),
     description: t("description"),
   };
 }

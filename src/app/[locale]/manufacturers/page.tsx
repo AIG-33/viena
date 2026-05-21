@@ -12,10 +12,12 @@ export async function generateMetadata({
   params: Promise<{ locale: Locale }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "manufacturersPage.hero" });
+  const t = await getTranslations({ locale, namespace: "manufacturersPage.meta" });
+  const count = getAllManufacturers(locale).length;
+  const sku = getAllProducts(locale).length;
   return {
-    title: t("titleLine1Accent"),
-    description: t("description", { sku: getAllProducts().length }),
+    title: t("title"),
+    description: t("description", { sku, count }),
   };
 }
 

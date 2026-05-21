@@ -2,7 +2,7 @@
   "meta": {
     "brand": "VIENA MEDICAL",
     "siteTitle": "VIENA MEDICAL — laboratory equipment, reagents and consumables",
-    "siteDescription": "Direct supplier of laboratory and medical equipment, reagents and consumables from leading global manufacturers. No silent substitution with «analogs», in-house service team and a public stance on opening up the market.",
+    "siteDescription": "VIENA MEDICAL (Minsk, est. 2016) — B2B supplier of laboratory and medical equipment, reagents and consumables: VACUETTE blood collection systems (Greiner Bio-One), AmpliSens PCR reagents, histology, veterinary, safety lancets. Direct contracts, in-house service, Minsk warehouse and Belarus-wide delivery.",
     "city": "Minsk",
     "skipToContent": "Skip to content"
   },
@@ -503,6 +503,10 @@
     }
   },
   "catalog": {
+    "meta": {
+      "title": "Catalog of medical equipment and consumables — VIENA MEDICAL",
+      "description": "Full catalog of laboratory and medical equipment, reagents and consumables: VACUETTE blood collection systems (Greiner Bio-One), AmpliSens PCR reagents, histology, safety lancets, veterinary analyzers. 8 categories, direct supply to Belarus."
+    },
     "hero": {
       "eyebrow": "Catalog · 8 categories",
       "titleLine1": "Catalog of",
@@ -588,6 +592,10 @@
     "label": "Label"
   },
   "manufacturersPage": {
+    "meta": {
+      "title": "Manufacturers — direct contracts with global leaders",
+      "description": "Direct contracts with {count}+ global manufacturers: Greiner Bio-One (VACUETTE), AmpliSens, Microlit, Tianlong and more. {sku}+ SKUs across preanalytics, PCR, histology, veterinary and research reagents. No middlemen, Minsk warehouse."
+    },
     "breadcrumbsHome": "Home",
     "breadcrumbsList": "Manufacturers",
     "detail": {
@@ -641,6 +649,10 @@
     }
   },
   "services": {
+    "meta": {
+      "title": "Services — end-to-end laboratory service lifecycle",
+      "description": "Equipment selection and supply, installation, validation, staff training and ongoing service. Six steps: request → selection → quote → delivery → go-live → service. Warranty, on-site engineer visits, reply within one business day across Belarus."
+    },
     "hero": {
       "eyebrow": "Services · end-to-end",
       "titleLine1": "End-to-end",
@@ -681,6 +693,10 @@
     }
   },
   "projects": {
+    "meta": {
+      "title": "Projects and partnerships — Vietnam, KOTRA, BMWi, MoH",
+      "description": "Public projects of VIENA MEDICAL: preanalytics partner of the Helix laboratory, agreement with Vietnam, KOTRA forum in Seoul (650+ Korean suppliers), BMWi programme in Germany, IV International Nurses Summit, multi-year dialogue with the Ministry of Health of Belarus."
+    },
     "hero": {
       "eyebrow": "Partnerships · 4 directions",
       "titleLine1": "International",
@@ -701,6 +717,10 @@
     }
   },
   "moh": {
+    "meta": {
+      "title": "Working with the Ministry of Health of Belarus — 8 years of dialogue",
+      "description": "Since 2018 — 9+ systemic letters to the MoH, the antimonopoly authority, the State Control Committee, the State Security Committee and the President of Belarus across 6 directions: demonopolising the medical-device market, switching from procuring equipment to procuring investigations, device registration, licensing, POCT and the MyLab case. Full letters and annexes — on request."
+    },
     "hero": {
       "eyebrowProjects": "Projects",
       "eyebrowSection": "MoH BY · Since 2018",
@@ -963,8 +983,8 @@
   },
   "contacts": {
     "meta": {
-      "title": "Contact",
-      "description": "Get in touch with VIENA MEDICAL — phone, address, contact form."
+      "title": "Contact VIENA MEDICAL — Minsk · phone · e-mail · Telegram",
+      "description": "Get in touch with VIENA MEDICAL: phones +375 17 392-02-55 and +375 29 392-02-73, e-mail med@viena.by, Telegram bot, office and warehouse in Minsk (Radialnaya 54B, office 67). Office hours Mon–Thu 09:00–17:00, Fri 09:00–16:00. Contact form and order cart inside."
     },
     "hero": {
       "eyebrow": "Get in touch · Minsk, Belarus",

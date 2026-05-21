@@ -2,7 +2,7 @@
   "meta": {
     "brand": "VIENA MEDICAL",
     "siteTitle": "VIENA MEDICAL — 实验室设备、试剂和耗材",
-    "siteDescription": "实验室与医疗设备、试剂、耗材的直接供应商,合作品牌均为全球知名厂商。我们绝不以「同类品」悄悄替代,拥有自有服务团队,并公开推动市场开放。",
+    "siteDescription": "VIENA MEDICAL(明斯克,2016 年成立)— 实验室与医疗设备、试剂和耗材的 B2B 直接供应商:VACUETTE 真空采血系统(Greiner Bio-One)、AmpliSens PCR 试剂、组织学、兽医、安全采血针。直接合同、自有服务团队、明斯克仓库,覆盖白俄罗斯全境配送。",
     "city": "明斯克",
     "skipToContent": "跳转到主要内容"
   },
@@ -503,6 +503,10 @@
     }
   },
   "catalog": {
+    "meta": {
+      "title": "医疗设备与实验耗材完整目录 — VIENA MEDICAL",
+      "description": "实验室与医疗设备、试剂、耗材完整目录:VACUETTE 真空采血系统(Greiner Bio-One)、AmpliSens PCR 试剂、组织学、安全采血针、兽医分析仪。8 大类,直供白俄罗斯。"
+    },
     "hero": {
       "eyebrow": "产品目录 · 8 大类",
       "titleLine1": "医疗设备与",
@@ -588,6 +592,10 @@
     "label": "标签"
   },
   "manufacturersPage": {
+    "meta": {
+      "title": "厂商品牌 — 与全球领导者的直接合作",
+      "description": "与 {count}+ 全球厂商签订直接合同:Greiner Bio-One(VACUETTE)、AmpliSens、Microlit、Tianlong 等。{sku}+ 件产品,涵盖前分析、PCR、组织学、兽医及科研试剂。无中间商,明斯克仓库直发。"
+    },
     "breadcrumbsHome": "首页",
     "breadcrumbsList": "厂商品牌",
     "detail": {
@@ -641,6 +649,10 @@
     }
   },
   "services": {
+    "meta": {
+      "title": "服务 — 实验室全周期服务支持",
+      "description": "设备选型与供应、安装、验证、人员培训及长期售后服务。六个阶段:需求 → 选型 → 报价 → 交付 → 投运 → 售后。提供质保、工程师上门、1 个工作日内回复,覆盖白俄罗斯全境。"
+    },
     "hero": {
       "eyebrow": "服务 · 全周期",
       "titleLine1": "实验室",
@@ -681,6 +693,10 @@
     }
   },
   "projects": {
+    "meta": {
+      "title": "项目与合作 — 越南、KOTRA、BMWi、白俄罗斯卫生部",
+      "description": "VIENA MEDICAL 的公开项目:Helix 实验室前分析合作伙伴、与越南的政府间协议、KOTRA 首尔论坛(650+ 韩国供应商)、德国 BMWi 项目、第四届国际护士峰会,以及与白俄罗斯卫生部多年的政策对话。"
+    },
     "hero": {
       "eyebrow": "合作 · 4 个方向",
       "titleLine1": "国际",
@@ -701,6 +717,10 @@
     }
   },
   "moh": {
+    "meta": {
+      "title": "与白俄罗斯卫生部的工作 — 8 年改革对话",
+      "description": "自 2018 年起,向卫生部、反垄断部、国家监督委员会、国家安全委员会和白俄罗斯总统提交 9+ 封系统性信函,覆盖 6 个方向:医疗器械市场去垄断化、由采购设备转向采购检测、器械注册、医疗活动许可、POCT 与 MyLab 案。完整信件与附件可应请求提供。"
+    },
     "hero": {
       "eyebrowProjects": "项目",
       "eyebrowSection": "白卫生部 · 自 2018 年",
@@ -963,8 +983,8 @@
   },
   "contacts": {
     "meta": {
-      "title": "联系我们",
-      "description": "联系 VIENA MEDICAL —— 电话、地址、留言表单。"
+      "title": "联系 VIENA MEDICAL — 明斯克 · 电话 · 邮箱 · Telegram",
+      "description": "联系 VIENA MEDICAL:电话 +375 17 392-02-55 与 +375 29 392-02-73,邮箱 med@viena.by,Telegram 机器人,办公室与仓库位于明斯克(Radialnaya 街 54B 号 67 室)。营业时间:周一至周四 09:00–17:00,周五 09:00–16:00。内含留言表单与询价购物车。"
     },
     "hero": {
       "eyebrow": "联系我们 · 白俄罗斯明斯克",
