@@ -1,4 +1,12 @@
+import Image from "next/image";
 import type { ReactNode } from "react";
+
+interface BrandLogo {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
 
 interface PageHeroProps {
   /** Eyebrow content (icon + text). Wrapped in a glass chip. */
@@ -9,6 +17,11 @@ interface PageHeroProps {
   description?: ReactNode;
   /** Optional right-hand widget (e.g. stats list). */
   aside?: ReactNode;
+  /**
+   * Optional brand wordmark / logo rendered above the eyebrow chip.
+   * Pass intrinsic dimensions; rendered height is ~44px on desktop.
+   */
+  brandLogo?: BrandLogo;
 }
 
 export function PageHero({
@@ -16,6 +29,7 @@ export function PageHero({
   title,
   description,
   aside,
+  brandLogo,
 }: PageHeroProps) {
   return (
     <section className="relative overflow-hidden border-b border-paper-200 hero-bg">
@@ -39,6 +53,7 @@ export function PageHero({
               eyebrow={eyebrow}
               title={title}
               description={description}
+              brandLogo={brandLogo}
             />
             <div>{aside}</div>
           </div>
@@ -47,6 +62,7 @@ export function PageHero({
             eyebrow={eyebrow}
             title={title}
             description={description}
+            brandLogo={brandLogo}
           />
         )}
       </div>
@@ -58,9 +74,20 @@ function HeroText({
   eyebrow,
   title,
   description,
-}: Pick<PageHeroProps, "eyebrow" | "title" | "description">) {
+  brandLogo,
+}: Pick<PageHeroProps, "eyebrow" | "title" | "description" | "brandLogo">) {
   return (
     <div>
+      {brandLogo && (
+        <Image
+          src={brandLogo.src}
+          alt={brandLogo.alt}
+          width={brandLogo.width}
+          height={brandLogo.height}
+          priority
+          className="h-10 md:h-12 w-auto mb-4 object-contain object-left"
+        />
+      )}
       <span className="glass-chip">
         <span className="hero-pulse-dot" />
         {eyebrow}

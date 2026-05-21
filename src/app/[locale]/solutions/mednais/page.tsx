@@ -19,6 +19,7 @@
  * Copy lives under the `mednais` namespace in `messages/{ru,en,zh}.json`.
  */
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { PageHero } from "@/components/layout/PageHero";
@@ -155,6 +156,12 @@ export default async function MednaisLandingPage({
       <JsonLd data={jsonLdNodes} />
 
       <PageHero
+        brandLogo={{
+          src: "/images/solutions/mednais-logo.png",
+          alt: "MedNAIS™",
+          width: 588,
+          height: 614,
+        }}
         eyebrow={
           <>
             <Link href="/catalog" className="hover:text-green-700">
@@ -205,8 +212,23 @@ export default async function MednaisLandingPage({
           >
             {t("hero.secondaryCta")}
           </a>
-          <span className="ml-auto font-mono text-[11px] tracking-[0.1em] uppercase text-ink-500">
-            by Samplify FZCO · deployed by VIENA MEDICAL
+          <span className="ml-auto font-mono text-[11px] tracking-[0.1em] uppercase text-ink-500 inline-flex items-center gap-2">
+            by
+            <Link
+              href="/manufacturers/samplify"
+              aria-label="Samplify FZCO"
+              className="inline-flex items-center"
+            >
+              <Image
+                src="/images/manufacturers/samplify.png"
+                alt="Samplify FZCO"
+                width={1024}
+                height={470}
+                className="h-4 w-auto object-contain"
+              />
+            </Link>
+            <span className="opacity-50">·</span>
+            deployed by VIENA MEDICAL
           </span>
         </div>
       </section>
