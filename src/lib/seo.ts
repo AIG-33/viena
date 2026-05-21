@@ -24,6 +24,49 @@ export const SITE_URL =
 const ORG_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
 
+// hreflang labels Google understands — keep aligned with the layout's
+// `HTML_LANG` map and with sitemap.ts (`HREFLANG`).
+const HREFLANG: Record<Locale, string> = {
+  ru: "ru-BY",
+  en: "en",
+  zh: "zh-CN",
+};
+
+// Hard-coded mirror of routing.locales / routing.defaultLocale so this file
+// stays free of next-intl runtime imports (called from `generateMetadata` in
+// every route, including ones prerendered at build time).
+const SEO_LOCALES: readonly Locale[] = ["ru", "en", "zh"] as const;
+const SEO_DEFAULT_LOCALE: Locale = "ru";
+
+/**
+ * Build a `Metadata['alternates']` object with the page's own canonical and
+ * a per-locale hreflang map (including `x-default`).
+ *
+ * `path` is the locale-less path of the *logical* page, e.g. `/`, `/about`,
+ * `/catalog`, `/catalog/vacuum-systems`, `/blog/<slug>`. The helper produces:
+ *
+ *   - canonical: `/${locale}${path}`     (current locale's URL)
+ *   - languages: each locale → `/${l}${path}`, plus `x-default` → RU.
+ *
+ * IMPORTANT: this MUST be called from every page's `generateMetadata`. The
+ * locale layout no longer sets `alternates`, so any page without it would
+ * fall back to *no* canonical at all (which lets Google pick the URL it
+ * crawled — usually fine, but we want explicit canonicals to avoid the
+ * "Variant of canonical" Search Console warning).
+ */
+export function buildAlternates(locale: Locale, path: string) {
+  const norm = !path || path === "/" ? "" : path.startsWith("/") ? path : `/${path}`;
+  const languages: Record<string, string> = {};
+  for (const l of SEO_LOCALES) {
+    languages[HREFLANG[l]] = `/${l}${norm}`;
+  }
+  languages["x-default"] = `/${SEO_DEFAULT_LOCALE}${norm}`;
+  return {
+    canonical: `/${locale}${norm}`,
+    languages,
+  };
+}
+
 export interface BreadcrumbItem {
   name: string;
   url: string;

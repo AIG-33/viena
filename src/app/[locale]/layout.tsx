@@ -77,12 +77,6 @@ export async function generateMetadata({
   const title = t("siteTitle");
   const description = t("siteDescription");
 
-  // Build hreflang map for SEO.
-  const languages: Record<string, string> = {};
-  for (const l of routing.locales) {
-    languages[HTML_LANG[l]] = `${SITE_URL}/${l}`;
-  }
-
   const verification: Metadata["verification"] = {};
   if (process.env.NEXT_PUBLIC_YANDEX_VERIFICATION) {
     verification.yandex = process.env.NEXT_PUBLIC_YANDEX_VERIFICATION;
@@ -140,6 +134,14 @@ export async function generateMetadata({
             "VIENA MEDICAL",
           ];
 
+  // NB: no `alternates` here on purpose. Next.js metadata is shallowly
+  // merged from layout → page; if the layout sets `alternates.canonical`
+  // every nested page that doesn't override it inherits that URL as its
+  // canonical. That's exactly the "Variant of canonical" warning Google
+  // Search Console raised for /ru/catalog/<...>, /ru/about, etc. — the
+  // homepage was being declared as the canonical of every page on the
+  // site. Each page now produces its own canonical + hreflang map via
+  // `buildAlternates(locale, path)` from `@/lib/seo`.
   return {
     metadataBase: new URL(SITE_URL),
     title: {
@@ -148,10 +150,6 @@ export async function generateMetadata({
     },
     description,
     keywords,
-    alternates: {
-      canonical: `/${locale}`,
-      languages,
-    },
     openGraph: {
       type: "website",
       locale: OG_LOCALE[locale as Locale],
