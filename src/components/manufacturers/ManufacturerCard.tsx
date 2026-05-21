@@ -3,12 +3,14 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import type { Manufacturer } from "@/types/manufacturer";
+import { getManufacturerCatalogLink } from "@/lib/utils";
 import { ManufacturerWordmark } from "./ManufacturerWordmark";
 
 export function ManufacturerCard({ manufacturer }: { manufacturer: Manufacturer }) {
   const t = useTranslations("manufacturersPage.card");
   const href = `/manufacturers/${manufacturer.slug}`;
   const count = manufacturer.productCount ?? 0;
+  const catalogLink = getManufacturerCatalogLink(manufacturer.slug);
 
   return (
     <article className="card card-hover h-full flex flex-col group overflow-hidden">
@@ -40,12 +42,23 @@ export function ManufacturerCard({ manufacturer }: { manufacturer: Manufacturer 
 
         <div className="mt-auto pt-3 border-t border-paper-200 flex items-center justify-between text-[12px]">
           <span className="text-ink-500 tabular-nums">{t("products", { count })}</span>
-          <Link
-            href={`/catalog?manufacturer=${manufacturer.slug}`}
-            className="font-semibold text-green-700 hover:text-green-600 transition-colors"
-          >
-            {t("viewProducts")}
-          </Link>
+          {catalogLink.isExternal ? (
+            <a
+              href={catalogLink.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-green-700 hover:text-green-600 transition-colors"
+            >
+              {t("viewProducts")}
+            </a>
+          ) : (
+            <Link
+              href={catalogLink.href}
+              className="font-semibold text-green-700 hover:text-green-600 transition-colors"
+            >
+              {t("viewProducts")}
+            </Link>
+          )}
         </div>
       </div>
     </article>

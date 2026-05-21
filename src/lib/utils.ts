@@ -56,6 +56,16 @@ const SHOP_MANUFACTURER_SLUGS = new Set<string>([
   "nimagen",
 ]);
 
+/**
+ * Manufacturers that don't have SKU rows in the catalog because their
+ * deliverable is a deployed solution / service rather than a product
+ * line. The detail page routes the primary CTA to the solution page
+ * instead of an empty `/catalog?manufacturer=...` filter view.
+ */
+const SOLUTION_MANUFACTURER_HREFS: Record<string, string> = {
+  samplify: "/solutions/mednais",
+};
+
 export type ManufacturerCatalogLink = {
   href: string;
   isExternal: boolean;
@@ -65,11 +75,19 @@ export function getManufacturerCatalogLink(slug: string): ManufacturerCatalogLin
   if (SHOP_MANUFACTURER_SLUGS.has(slug)) {
     return { href: SHOP_URL, isExternal: true };
   }
+  const solution = SOLUTION_MANUFACTURER_HREFS[slug];
+  if (solution) {
+    return { href: solution, isExternal: false };
+  }
   return { href: `/catalog?manufacturer=${slug}`, isExternal: false };
 }
 
 export function isShopManufacturer(slug: string): boolean {
   return SHOP_MANUFACTURER_SLUGS.has(slug);
+}
+
+export function isSolutionManufacturer(slug: string): boolean {
+  return slug in SOLUTION_MANUFACTURER_HREFS;
 }
 
 export function slugify(text: string): string {

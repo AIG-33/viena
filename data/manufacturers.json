@@ -491,5 +491,33 @@
         "longDescription": "乐普医疗(北京)股份有限公司(Lepu Medical)是全球心血管与介入医疗领域的领先企业。在 Lepu 品牌下,集团生产冠脉支架、球囊(PTCA、NC、IVL —— Vesscrack)、导管与导丝、封堵器(包括全球首款可降解 PFO 封堵器 MemoSorb)、血液透析系统、ECG 动态心电、监护仪与血氧仪、外科器械、骨科植入物与原料药等。专门的 IVD 产品线涵盖免疫分析(ELISA、CLIA、FIA)、分子诊断(ADC CH196 与 Nexor 96 核酸提取仪、实时荧光 PCR、配套试剂)、血液学(血栓弹力图、血型鉴定、血小板聚集)与 POCT。销售网络覆盖 160 多个国家和地区,在 60+ 国家完成本地注册,拥有 3 000+ 项有效专利,以及 214 项 CE 认证和 34 项 FDA 批准产品。VIENA MEDICAL 在分子诊断与实验室设备领域与 Lepu 开展合作。"
       }
     }
+  },
+  {
+    "id": "mfr-018",
+    "slug": "samplify",
+    "name": "Samplify",
+    "fullName": "Samplify FZCO",
+    "country": "ОАЭ",
+    "tagline": "MedNAIS™ · цифровые СОПы · Apple Watch · Logger холодовой цепи",
+    "shortDescription": "Разработчик платформы MedNAIS™: цифровые СОПы, пошаговая навигация на смарт-часах, объективная аналитика времени по шагам и Logger для контроля транспортировки биоматериала.",
+    "longDescription": "Samplify FZCO — резидент Dubai Silicon Oasis (ОАЭ), разработчик платформы MedNAIS™ для цифровизации стандартных операционных процедур в клиниках, лабораториях и стационарах. Экосистема включает Hub (облачное управление СОПами с версиями, ролями и аудиторским журналом), Assistant (приложение для Apple Watch, Wear OS, iOS и Android с пошаговой hands-free навигацией), Monitor (объективная аналитика времени по каждому шагу процедуры) и Logger (LTE-M регистратор температуры, влажности, вибрации и GPS для перевозки биоматериала). ВИЕНА МЕДИКАЛ — официальный локальный партнёр Samplify по внедрению MedNAIS™ в Беларуси: оценка процессов, оцифровка ключевых СОПов, обучение команды и сопровождение эксплуатации. Решение применимо для процедурных и палатных медсестёр, операционных, протоколов СЛР, инфекционного контроля и преаналитики.",
+    "website": "https://mednais.com",
+    "categories": ["mednais"],
+    "matches": ["Samplify", "Samplify FZCO", "MedNAIS", "MedNAIS™"],
+    "featured": true,
+    "i18n": {
+      "en": {
+        "country": "UAE",
+        "tagline": "MedNAIS™ · digital SOPs · Apple Watch · cold-chain Logger",
+        "shortDescription": "Developer of the MedNAIS™ platform: digital SOPs, on-watch step-by-step guidance, per-step timing analytics and a Logger for biomaterial transport monitoring.",
+        "longDescription": "Samplify FZCO is a Dubai Silicon Oasis resident (UAE) developing the MedNAIS™ platform for digitising standard operating procedures in clinics, laboratories and inpatient wards. The ecosystem covers Hub (cloud SOP management with versioning, roles and audit trail), Assistant (Apple Watch, Wear OS, iOS and Android app with hands-free step navigation), Monitor (objective per-step timing analytics) and Logger (LTE-M hardware recorder for temperature, humidity, shock and GPS during biomaterial transport). VIENA MEDICAL is the official local partner of Samplify for MedNAIS™ rollouts in Belarus: process assessment, digitisation of key SOPs, team training and ongoing support. The solution covers procedure and ward nursing, operating rooms, CPR, infection control and preanalytics."
+      },
+      "zh": {
+        "country": "阿联酋",
+        "tagline": "MedNAIS™ · 数字 SOP · Apple Watch · 冷链 Logger",
+        "shortDescription": "MedNAIS™ 平台的研发方:数字化 SOP、智能手表逐步引导、按步骤客观计时,以及生物样本运输冷链 Logger。",
+        "longDescription": "Samplify FZCO 是阿联酋迪拜硅谷(Dubai Silicon Oasis)注册企业,开发面向临床、检验科与住院病区的 MedNAIS™ 数字 SOP 平台。生态产品包括 Hub(云端 SOP 管理、版本、角色与审计日志)、Assistant(Apple Watch、Wear OS、iOS 与 Android 应用,提供免接触逐步引导)、Monitor(按步骤客观计时分析)与 Logger(用于生物样本运输的 LTE-M 硬件记录仪,监测温度、湿度、冲击与 GPS)。VIENA MEDICAL 是 Samplify 在白俄罗斯的官方本地合作伙伴,负责 MedNAIS™ 的流程评估、关键 SOP 数字化、团队培训与运行支持。方案适用于操作护士、病区护理、手术室、心肺复苏、感染控制与分析前阶段。"
+      }
+    }
   }
 ]
