@@ -548,7 +548,7 @@
     },
     "search": {
       "title": "全目录搜索",
-      "placeholder": "名称、货号、添加剂、制造商…",
+      "placeholder": "按名称、货号等搜索产品…",
       "totalProducts": "件产品",
       "resultsLabel": "结果",
       "empty": "未找到匹配项 — 请尝试其他关键词",

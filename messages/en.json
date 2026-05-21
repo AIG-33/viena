@@ -548,7 +548,7 @@
     },
     "search": {
       "title": "Search across the whole catalog",
-      "placeholder": "Name, SKU, additive, manufacturer…",
+      "placeholder": "Search products by name, SKU, etc.",
       "totalProducts": "items in the catalog",
       "resultsLabel": "Results",
       "empty": "No matches — try a different query",

@@ -83,6 +83,15 @@ export default async function CatalogPage({
         description={t("hero.description")}
       />
 
+      <section className="bg-white border-b border-paper-200 py-5 md:py-6">
+        <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
+          <CatalogSearch
+            products={getAllProducts(locale)}
+            categories={categories}
+          />
+        </div>
+      </section>
+
       <section className="bg-white pt-8 md:pt-10 pb-20">
         <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
           {hasFilters ? (
@@ -114,11 +123,6 @@ export default async function CatalogPage({
                   />
                 ))}
               </div>
-
-              <CatalogSearch
-                products={getAllProducts(locale)}
-                categories={categories}
-              />
             </>
           )}
         </div>

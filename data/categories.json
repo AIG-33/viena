@@ -338,6 +338,7 @@
     "icon": "beaker",
     "color": "#38bdf8",
     "image": "/images/categories/scientific-reagents.jpg",
+    "productCountLabel": ">50 000 позиций",
     "seoTitle": "Реагенты для науки — research grade ферменты, наборы для NGS и молекулярной биологии",
     "seoDescription": "Исследовательские реагенты для научных лабораторий: ферменты для молекулярной биологии, наборы для выделения ДНК/РНК, реагенты для секвенирования NGS, Taq-полимераза, буферы. Прямые поставки от Thermo Fisher, Qiagen, Promega, NEB, Illumina.",
     "seoKeywords": [
@@ -373,11 +374,13 @@
     "i18n": {
       "en": {
         "name": "Research reagents",
-        "description": "Research-grade reagents for scientific applications"
+        "description": "Research-grade reagents for scientific applications",
+        "productCountLabel": ">50,000 items"
       },
       "zh": {
         "name": "科研试剂",
-        "description": "面向科研用途的研究级试剂"
+        "description": "面向科研用途的研究级试剂",
+        "productCountLabel": ">50,000 件"
       }
     }
   },

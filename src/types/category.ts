@@ -38,4 +38,12 @@ export interface Category {
    * "Новинка", "NEW", "Beta".
    */
   badge?: string;
+  /**
+   * Optional override for the product-count badge shown at the bottom of
+   * the catalog tile. When set, it replaces the auto-computed
+   * `{count} {productsLabel}` text. Use it for categories whose actual
+   * SKU set lives outside the on-site catalog (e.g. partner shops with
+   * tens of thousands of items) where the dynamic count would mislead.
+   */
+  productCountLabel?: string;
 }

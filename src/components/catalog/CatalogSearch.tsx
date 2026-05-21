@@ -166,20 +166,7 @@ export function CatalogSearch({ products, categories }: CatalogSearchProps) {
   const showDropdown = open && query.trim().length >= 2;
 
   return (
-    <section className="mt-10 md:mt-14">
-      <div className="flex items-end justify-between gap-4 flex-wrap mb-4">
-        <h2 className="font-display text-ink-900 text-2xl md:text-[28px] tracking-[-0.01em]">
-          {t("title")}
-        </h2>
-        <span className="text-[12px] text-ink-500">
-          <span className="font-mono tabular-nums font-bold text-ink-900">
-            {entries.length}
-          </span>{" "}
-          {t("totalProducts")}
-        </span>
-      </div>
-
-      <div ref={wrapRef} className="relative">
+    <div ref={wrapRef} className="relative">
         <span className="absolute left-5 top-1/2 -translate-y-1/2 text-ink-400 pointer-events-none">
           <svg
             viewBox="0 0 24 24"
@@ -316,7 +303,6 @@ export function CatalogSearch({ products, categories }: CatalogSearchProps) {
             )}
           </div>
         )}
-      </div>
-    </section>
+    </div>
   );
 }

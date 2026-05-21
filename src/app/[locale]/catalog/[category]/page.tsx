@@ -3,12 +3,14 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import {
   getAllCategories,
+  getAllProducts,
   getCategoryById,
   getProductsByCategoryId,
   getVacuumFamilies,
 } from "@/lib/data";
 import { ProductGrid } from "@/components/catalog/ProductGrid";
 import { VacuumCatalog } from "@/components/catalog/VacuumCatalog";
+import { CatalogSearch } from "@/components/catalog/CatalogSearch";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
   buildAlternates,
@@ -142,6 +144,15 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               ← {tCatalog("filters.categories")}
             </Link>
           </div>
+        </div>
+      </section>
+
+      <section className="bg-white border-b border-paper-200 py-5 md:py-6">
+        <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
+          <CatalogSearch
+            products={getAllProducts(locale)}
+            categories={getAllCategories(locale)}
+          />
         </div>
       </section>
 

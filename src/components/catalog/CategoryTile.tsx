@@ -22,6 +22,9 @@ export function CategoryTile({
   // Categories that route off the catalog (partner solutions, shop
   // redirects) don't carry a SKU count — show the badge text instead.
   const showCount = !category.link && !(link.isExternal && !shopLabel);
+  const countText =
+    category.productCountLabel ??
+    (showCount ? `${count} ${productsLabel}` : null);
   const badgeLabel =
     category.badge ?? (link.isExternal && shopLabel ? shopLabel : null);
 
@@ -70,9 +73,9 @@ export function CategoryTile({
           <h3 className="font-display text-[16px] md:text-[17px] leading-[1.15] tracking-[-0.005em] drop-shadow line-clamp-2">
             {category.name}
           </h3>
-          {showCount && (
+          {countText && (
             <span className="font-mono text-[11px] tabular-nums text-white/85 shrink-0">
-              {count} {productsLabel}
+              {countText}
             </span>
           )}
         </div>
