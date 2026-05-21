@@ -754,6 +754,37 @@ body {
     );
 }
 
+/*
+ * Per-category hero tint. Renders the same layered pastel background as
+ * `.hero-bg` but uses CSS variables so the section can inherit a unique
+ * accent per page (sky for consumables, rose for vacuum, etc.). The
+ * fallback values keep things looking sensible if vars aren't set.
+ *
+ * Inline style on the section sets:
+ *   --cat-tint-1: "r, g, b"  (pale, used as the base tint)
+ *   --cat-tint-2: "r, g, b"  (deeper, used for the radial glows)
+ */
+.cat-hero-bg {
+  background:
+    radial-gradient(
+      120% 80% at 100% 0%,
+      rgba(var(--cat-tint-2, 78, 217, 168), 0.22) 0%,
+      rgba(var(--cat-tint-1, 215, 246, 233), 0.14) 35%,
+      transparent 65%
+    ),
+    radial-gradient(
+      90% 70% at 0% 100%,
+      rgba(var(--cat-tint-2, 78, 217, 168), 0.16) 0%,
+      transparent 60%
+    ),
+    linear-gradient(
+      135deg,
+      var(--color-paper-100) 0%,
+      var(--color-paper-50) 55%,
+      rgba(var(--cat-tint-1, 215, 246, 233), 0.6) 100%
+    );
+}
+
 .hero-pulse-dot {
   display: inline-block;
   width: 8px;

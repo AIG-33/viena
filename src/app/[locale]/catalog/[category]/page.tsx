@@ -20,12 +20,79 @@ import {
   localePath,
 } from "@/lib/seo";
 import type { Metadata } from "next";
+import type { CSSProperties } from "react";
 import type { Locale } from "@/i18n/routing";
 import { routing } from "@/i18n/routing";
 
 interface CategoryPageProps {
   params: Promise<{ locale: Locale; category: string }>;
 }
+
+/**
+ * Per-category pastel tint for the hero gradient + blobs. Keeps the same
+ * visual language as the catalog hero (subtle radial glows + animated
+ * blur blobs) but gives each section its own gentle accent so users
+ * navigating between categories see clear visual differentiation.
+ *
+ * `tint1` / `tint2` are RGB triples (no alpha) consumed by the CSS
+ * `.cat-hero-bg` class via `--cat-tint-1` / `--cat-tint-2` custom
+ * properties. `blob1` / `blob2` are full rgba() values applied to the
+ * floating blur disks.
+ */
+const CATEGORY_TINT: Record<
+  string,
+  { tint1: string; tint2: string; blob1: string; blob2: string }
+> = {
+  consumables: {
+    tint1: "186, 230, 253",
+    tint2: "125, 211, 252",
+    blob1: "rgba(125, 211, 252, 0.40)",
+    blob2: "rgba(186, 230, 253, 0.55)",
+  },
+  "vacuum-systems": {
+    tint1: "254, 205, 211",
+    tint2: "253, 164, 175",
+    blob1: "rgba(253, 164, 175, 0.40)",
+    blob2: "rgba(254, 205, 211, 0.55)",
+  },
+  equipment: {
+    tint1: "199, 210, 254",
+    tint2: "165, 180, 252",
+    blob1: "rgba(165, 180, 252, 0.38)",
+    blob2: "rgba(199, 210, 254, 0.55)",
+  },
+  reagents: {
+    tint1: "221, 214, 254",
+    tint2: "196, 181, 253",
+    blob1: "rgba(196, 181, 253, 0.38)",
+    blob2: "rgba(221, 214, 254, 0.55)",
+  },
+  pathomorphology: {
+    tint1: "251, 207, 232",
+    tint2: "244, 114, 182",
+    blob1: "rgba(244, 114, 182, 0.30)",
+    blob2: "rgba(251, 207, 232, 0.55)",
+  },
+  veterinary: {
+    tint1: "254, 215, 170",
+    tint2: "253, 186, 116",
+    blob1: "rgba(253, 186, 116, 0.38)",
+    blob2: "rgba(254, 215, 170, 0.55)",
+  },
+  "scientific-reagents": {
+    tint1: "253, 230, 138",
+    tint2: "252, 211, 77",
+    blob1: "rgba(252, 211, 77, 0.36)",
+    blob2: "rgba(253, 230, 138, 0.55)",
+  },
+};
+
+const DEFAULT_TINT = {
+  tint1: "215, 246, 233",
+  tint2: "78, 217, 168",
+  blob1: "rgba(135, 227, 188, 0.35)",
+  blob2: "rgba(185, 239, 214, 0.55)",
+};
 
 export function generateStaticParams() {
   const categories = getAllCategories();
@@ -114,11 +181,35 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   ];
   if (faqJsonLd) jsonLdNodes.push(faqJsonLd);
 
+  const tint = CATEGORY_TINT[category] ?? DEFAULT_TINT;
+  const heroStyle = {
+    "--cat-tint-1": tint.tint1,
+    "--cat-tint-2": tint.tint2,
+  } as CSSProperties;
+
   return (
     <>
       <JsonLd data={jsonLdNodes} />
-      <section className="bg-paper-100 pt-8 md:pt-12 pb-10 md:pb-12 border-b border-paper-200">
-        <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
+      <section
+        className="relative overflow-hidden cat-hero-bg pt-8 md:pt-12 pb-10 md:pb-12 border-b border-paper-200"
+        style={heroStyle}
+      >
+        <div
+          aria-hidden
+          className="hero-blob hero-blob-a -top-32 -left-24 h-[340px] w-[340px]"
+          style={{ background: tint.blob1 }}
+        />
+        <div
+          aria-hidden
+          className="hero-blob hero-blob-b -bottom-28 -right-16 h-[300px] w-[300px]"
+          style={{ background: tint.blob2 }}
+        />
+        <div
+          aria-hidden
+          className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-green-500/50 to-transparent z-10"
+        />
+
+        <div className="relative z-10 max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
           <nav className="flex items-center gap-2 text-[12px] text-ink-500 mb-6">
             <Link href="/" className="hover:text-green-700 transition-colors">{tNav("home")}</Link>
             <span>/</span>
