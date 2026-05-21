@@ -5,6 +5,7 @@ import { Link } from "@/i18n/navigation";
 import { getAllBlogPosts } from "@/lib/data";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
+  buildAlternates,
   buildBlogJsonLd,
   buildBreadcrumbJsonLd,
   localePath,
@@ -42,7 +43,7 @@ export async function generateMetadata({
           "real-time PCR обзор",
         ]
       : undefined,
-    alternates: { canonical: localePath(locale, "/blog") },
+    alternates: buildAlternates(locale, "/blog"),
   };
 }
 

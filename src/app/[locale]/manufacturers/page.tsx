@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { getAllManufacturers, getAllProducts } from "@/lib/data";
 import { ManufacturerCard } from "@/components/manufacturers/ManufacturerCard";
 import { PageHero } from "@/components/layout/PageHero";
+import { buildAlternates } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
 
 export async function generateMetadata({
@@ -18,6 +19,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description", { sku, count }),
+    alternates: buildAlternates(locale, "/manufacturers"),
   };
 }
 

@@ -17,6 +17,7 @@ import { AddToCartActions } from "@/components/product/AddToCartActions";
 import { VacuumProductDetail } from "@/components/product/VacuumProductDetail";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
+  buildAlternates,
   buildBreadcrumbJsonLd,
   buildProductJsonLd,
   localePath,
@@ -70,6 +71,7 @@ export async function generateMetadata({
     title: product.name,
     description: desc,
     keywords: keywords.length > 0 ? keywords : undefined,
+    alternates: buildAlternates(locale, `/catalog/${category}/${product.slug}`),
     openGraph: {
       title: product.name,
       description: desc,

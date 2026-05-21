@@ -2,6 +2,7 @@ import { ContactForm } from "@/components/contacts/ContactForm";
 import { CartSection } from "@/components/contacts/CartSection";
 import { YandexMap } from "@/components/contacts/YandexMap";
 import { PageHero } from "@/components/layout/PageHero";
+import { buildAlternates } from "@/lib/seo";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
@@ -16,6 +17,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
+    alternates: buildAlternates(locale, "/contacts"),
   };
 }
 

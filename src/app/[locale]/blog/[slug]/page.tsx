@@ -12,6 +12,7 @@ import {
 import { JsonLd } from "@/components/seo/JsonLd";
 import { BlogBody } from "@/components/blog/BlogBody";
 import {
+  buildAlternates,
   buildBlogPostingJsonLd,
   buildBreadcrumbJsonLd,
   localePath,
@@ -45,7 +46,7 @@ export async function generateMetadata({
     title: post.title,
     description: post.excerpt,
     keywords: post.keywords?.length ? post.keywords : post.tags,
-    alternates: { canonical: localePath(locale, `/blog/${post.slug}`) },
+    alternates: buildAlternates(locale, `/blog/${post.slug}`),
     openGraph: {
       title: post.title,
       description: post.excerpt,

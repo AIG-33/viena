@@ -12,6 +12,7 @@ import { ProductGrid } from "@/components/catalog/ProductGrid";
 import { ManufacturerWordmark } from "@/components/manufacturers/ManufacturerWordmark";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
+  buildAlternates,
   buildBreadcrumbJsonLd,
   buildManufacturerJsonLd,
   localePath,
@@ -42,6 +43,7 @@ export async function generateMetadata({
   return {
     title: m.name,
     description: m.shortDescription,
+    alternates: buildAlternates(locale, `/manufacturers/${m.slug}`),
   };
 }
 

@@ -3,6 +3,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
+  buildAlternates,
   buildBreadcrumbJsonLd,
   buildFaqJsonLd,
   localePath,
@@ -42,7 +43,7 @@ export async function generateMetadata({
           "регистрационное удостоверение Минздрав РБ",
         ]
       : undefined,
-    alternates: { canonical: localePath(locale, "/faq") },
+    alternates: buildAlternates(locale, "/faq"),
   };
 }
 

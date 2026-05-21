@@ -4,6 +4,7 @@ import { getAllServices } from "@/lib/data";
 import { ServiceCard } from "@/components/services/ServiceCard";
 import { ProcessTimeline } from "@/components/services/ProcessTimeline";
 import { PageHero } from "@/components/layout/PageHero";
+import { buildAlternates } from "@/lib/seo";
 import type { Metadata } from "next";
 import type { Locale } from "@/i18n/routing";
 
@@ -14,7 +15,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "services.meta" });
-  return { title: t("title"), description: t("description") };
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: buildAlternates(locale, "/services"),
+  };
 }
 
 export default async function ServicesPage({

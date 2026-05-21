@@ -23,7 +23,12 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { PageHero } from "@/components/layout/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
-import { buildBreadcrumbJsonLd, buildFaqJsonLd, localePath } from "@/lib/seo";
+import {
+  buildAlternates,
+  buildBreadcrumbJsonLd,
+  buildFaqJsonLd,
+  localePath,
+} from "@/lib/seo";
 import { routing, type Locale } from "@/i18n/routing";
 
 export function generateStaticParams() {
@@ -37,16 +42,10 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "mednais.meta" });
-  const canonical = localePath(locale, "/solutions/mednais");
   return {
     title: t("title"),
     description: t("description"),
-    alternates: {
-      canonical,
-      languages: Object.fromEntries(
-        routing.locales.map((l) => [l, localePath(l, "/solutions/mednais")])
-      ),
-    },
+    alternates: buildAlternates(locale, "/solutions/mednais"),
     openGraph: { title: t("title"), description: t("description") },
   };
 }

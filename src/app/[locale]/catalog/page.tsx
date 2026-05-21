@@ -11,6 +11,7 @@ import { ProductGrid } from "@/components/catalog/ProductGrid";
 import { CategoryTile } from "@/components/catalog/CategoryTile";
 import { CatalogSearch } from "@/components/catalog/CatalogSearch";
 import { PageHero } from "@/components/layout/PageHero";
+import { buildAlternates } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
 
 interface CatalogPageProps {
@@ -46,6 +47,7 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     keywords,
+    alternates: buildAlternates(locale, "/catalog"),
   };
 }
 

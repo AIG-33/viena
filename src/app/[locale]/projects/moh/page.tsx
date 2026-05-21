@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getLocale, getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { PageHero } from "@/components/layout/PageHero";
+import { buildAlternates } from "@/lib/seo";
 import { applyLocaleAll, type Translatable } from "@/lib/i18n-data";
 import type { Locale } from "@/i18n/routing";
 import lettersDataRaw from "@/../data/moh-letters.json";
@@ -35,6 +36,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
+    alternates: buildAlternates(locale, "/projects/moh"),
   };
 }
 

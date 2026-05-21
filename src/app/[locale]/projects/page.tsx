@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { getAllProjects } from "@/lib/data";
 import { ProjectCard } from "@/components/projects/ProjectCard";
 import { PageHero } from "@/components/layout/PageHero";
+import { buildAlternates } from "@/lib/seo";
 import type { Metadata } from "next";
 import type { Locale } from "@/i18n/routing";
 
@@ -13,7 +14,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "projects.meta" });
-  return { title: t("title"), description: t("description") };
+  return {
+    title: t("title"),
+    description: t("description"),
+    alternates: buildAlternates(locale, "/projects"),
+  };
 }
 
 export default async function ProjectsPage({

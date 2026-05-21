@@ -11,6 +11,7 @@ import { ProductGrid } from "@/components/catalog/ProductGrid";
 import { VacuumCatalog } from "@/components/catalog/VacuumCatalog";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
+  buildAlternates,
   buildBreadcrumbJsonLd,
   buildCategoryJsonLd,
   buildFaqJsonLd,
@@ -57,6 +58,7 @@ export async function generateMetadata({
     title,
     description,
     keywords,
+    alternates: buildAlternates(locale, `/catalog/${cat.id}`),
     openGraph: {
       title,
       description,

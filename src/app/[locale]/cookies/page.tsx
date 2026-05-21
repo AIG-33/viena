@@ -4,7 +4,7 @@ import { LegalDocPage } from "@/components/legal/LegalDocPage";
 import { CookieRevokePanel } from "@/components/legal/CookieRevokePanel";
 import { JsonLd } from "@/components/seo/JsonLd";
 import { getCookiesPolicy } from "@/content/legal/cookies";
-import { buildBreadcrumbJsonLd, localePath } from "@/lib/seo";
+import { buildAlternates, buildBreadcrumbJsonLd, localePath } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
 
 export async function generateMetadata({
@@ -17,7 +17,7 @@ export async function generateMetadata({
   return {
     title: doc.metaTitle,
     description: doc.metaDescription,
-    alternates: { canonical: localePath(locale, "/cookies") },
+    alternates: buildAlternates(locale, "/cookies"),
     robots: { index: true, follow: true },
   };
 }

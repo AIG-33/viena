@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { PageHero } from "@/components/layout/PageHero";
+import { buildAlternates } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
 
 export async function generateMetadata({
@@ -33,6 +34,7 @@ export async function generateMetadata({
           "B2B медоборудование",
         ]
       : undefined,
+    alternates: buildAlternates(locale, "/about"),
   };
 }
 
