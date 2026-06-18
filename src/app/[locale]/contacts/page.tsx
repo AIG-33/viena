@@ -1,5 +1,7 @@
 import { ContactForm } from "@/components/contacts/ContactForm";
 import { CartSection } from "@/components/contacts/CartSection";
+import { ContactInfoCard } from "@/components/contacts/ContactInfoCard";
+import { CopyChip } from "@/components/contacts/CopyChip";
 import { YandexMap } from "@/components/contacts/YandexMap";
 import { PageHero } from "@/components/layout/PageHero";
 import { buildAlternates } from "@/lib/seo";
@@ -86,6 +88,8 @@ export default async function ContactsPage({
   const infoCards: Array<{
     label: string;
     value: string;
+    /** Canonical clipboard form (no spaces in phone numbers, etc.). */
+    copyValue: string;
     href: string;
     type: InfoCardType;
     external?: boolean;
@@ -93,12 +97,14 @@ export default async function ContactsPage({
     {
       label: t("info.phoneLand"),
       value: "+375 17 392-02-55",
+      copyValue: "+375173920255",
       href: "tel:+375173920255",
       type: "land",
     },
     {
       label: t("info.telegram"),
       value: "@viena_medical_bot",
+      copyValue: "@viena_medical_bot",
       href: "https://t.me/viena_medical_bot",
       type: "telegram",
       external: true,
@@ -106,12 +112,14 @@ export default async function ContactsPage({
     {
       label: t("info.phoneMobile"),
       value: "+375 29 392-02-73",
+      copyValue: "+375293920273",
       href: "tel:+375293920273",
       type: "mobile",
     },
     {
       label: t("info.email"),
       value: "med@viena.by",
+      copyValue: "med@viena.by",
       href: "mailto:med@viena.by",
       type: "email",
     },
@@ -138,61 +146,15 @@ export default async function ContactsPage({
           <div className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {infoCards.map((c, i) => (
-                <a
+                <ContactInfoCard
                   key={`${c.label}-${i}`}
+                  label={c.label}
+                  value={c.value}
+                  copyValue={c.copyValue}
                   href={c.href}
-                  {...(c.external
-                    ? { target: "_blank", rel: "noreferrer noopener" }
-                    : {})}
-                  className="group relative block overflow-hidden rounded-2xl bg-white border border-paper-200 p-5 transition-all duration-200 hover:-translate-y-0.5 hover:border-green-400 hover:shadow-[0_18px_42px_-22px_rgba(15,17,19,0.25)]"
-                >
-                  <div
-                    aria-hidden
-                    className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    style={{
-                      background:
-                        "radial-gradient(120% 80% at 100% 0%, rgba(34,197,142,0.10) 0%, rgba(255,255,255,0) 60%)",
-                    }}
-                  />
-
-                  <span
-                    aria-hidden
-                    className="absolute top-4 right-4 inline-flex h-7 w-7 items-center justify-center rounded-full bg-paper-100 text-ink-400 transition-all duration-200 group-hover:bg-green-500 group-hover:text-white group-hover:shadow-[0_8px_20px_-8px_rgba(34,197,142,0.6)]"
-                  >
-                    <svg viewBox="0 0 24 24" className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth={2.4} strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M7 17 17 7M9 7h8v8" />
-                    </svg>
-                  </span>
-
-                  <div
-                    className="relative inline-grid h-12 w-12 place-items-center rounded-xl text-green-700 transition-transform duration-300 group-hover:scale-[1.08] group-hover:-rotate-6"
-                    style={{
-                      background:
-                        "linear-gradient(135deg, var(--color-green-50) 0%, var(--color-green-100) 100%)",
-                    }}
-                  >
-                    <span
-                      aria-hidden
-                      className="absolute inset-0 rounded-xl ring-1 ring-inset ring-green-200/80"
-                    />
-                    <span
-                      aria-hidden
-                      className="absolute -inset-1 rounded-2xl opacity-0 group-hover:opacity-100 blur-md transition-opacity duration-300"
-                      style={{
-                        background:
-                          "radial-gradient(circle, rgba(34,197,142,0.45) 0%, rgba(34,197,142,0) 70%)",
-                      }}
-                    />
-                    <ContactIcon type={c.type} className="relative h-6 w-6" />
-                  </div>
-
-                  <div className="relative mt-4 text-[11px] uppercase tracking-[0.14em] font-bold text-ink-500">
-                    {c.label}
-                  </div>
-                  <div className="relative mt-1.5 font-display text-[18px] md:text-[19px] font-bold tracking-tight tabular-nums text-ink-900 group-hover:text-green-800 transition-colors">
-                    {c.value}
-                  </div>
-                </a>
+                  external={c.external}
+                  icon={<ContactIcon type={c.type} className="relative h-6 w-6" />}
+                />
               ))}
             </div>
 
@@ -233,8 +195,13 @@ export default async function ContactsPage({
                   <div className="text-[11px] uppercase tracking-[0.14em] font-bold text-ink-500">
                     {t("info.addressHeading")}
                   </div>
-                  <div className="font-display text-[17px] md:text-[19px] font-bold leading-snug tracking-tight text-ink-900 mt-1.5">
-                    {t("info.addressValue")}
+                  <div className="font-display text-[17px] md:text-[19px] font-bold leading-snug tracking-tight text-ink-900 mt-1.5 flex items-start gap-2">
+                    <span className="flex-1">{t("info.addressValue")}</span>
+                    <CopyChip
+                      value={t("info.addressValue")}
+                      label={t("info.addressHeading")}
+                      size="md"
+                    />
                   </div>
                   <div className="text-[13px] text-ink-600 mt-2 leading-relaxed">
                     {t("info.schedule")}
@@ -248,8 +215,17 @@ export default async function ContactsPage({
                 {t("info.requisites")}
               </div>
               <div className="text-[14px] text-ink-900 mt-2 leading-relaxed">
-                <div className="font-bold">{t("info.company")}</div>
-                <div className="text-ink-600">{t("info.unp")}</div>
+                <div className="font-bold flex items-start gap-2">
+                  <span className="flex-1">{t("info.company")}</span>
+                  <CopyChip
+                    value={t("info.company")}
+                    label={t("info.company")}
+                  />
+                </div>
+                <div className="text-ink-600 flex items-center gap-2 mt-1">
+                  <span className="flex-1">{t("info.unp")}</span>
+                  <CopyChip value={t("info.unp")} label={t("info.unp")} />
+                </div>
                 <a
                   href="https://shop.viena.by"
                   target="_blank"

@@ -1005,7 +1005,11 @@
       "requisites": "Legal details",
       "company": "Viena Medical Private Enterprise",
       "unp": "Tax ID 192599105",
-      "shopLink": "shop.viena.by →"
+      "shopLink": "shop.viena.by →",
+      "copy": "Copy",
+      "copyHint": "Click to copy",
+      "copied": "Copied",
+      "open": "Open"
     },
     "map": {
       "eyebrow": "Where to find us",

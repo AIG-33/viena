@@ -1005,7 +1005,11 @@
       "requisites": "公司信息",
       "company": "Viena Medical 私人企业",
       "unp": "纳税号 192599105",
-      "shopLink": "shop.viena.by →"
+      "shopLink": "shop.viena.by →",
+      "copy": "复制",
+      "copyHint": "点击复制",
+      "copied": "已复制",
+      "open": "打开"
     },
     "map": {
       "eyebrow": "我们的位置",
