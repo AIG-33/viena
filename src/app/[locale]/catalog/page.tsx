@@ -11,6 +11,7 @@ import { ProductGrid } from "@/components/catalog/ProductGrid";
 import { CategoryTile } from "@/components/catalog/CategoryTile";
 import { CatalogSearch } from "@/components/catalog/CatalogSearch";
 import { PageHero } from "@/components/layout/PageHero";
+import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { buildAlternates } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
 
@@ -58,6 +59,7 @@ export default async function CatalogPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("catalog");
+  const tNav = await getTranslations("nav");
   const sp = await searchParams;
   const categories = getAllCategories(locale);
   const manufacturers = getAllManufacturers(locale);
@@ -69,6 +71,12 @@ export default async function CatalogPage({
 
   return (
     <>
+      <Breadcrumbs
+        items={[
+          { name: tNav("home"), href: "/" },
+          { name: tNav("catalog"), href: "/catalog" },
+        ]}
+      />
       <PageHero
         eyebrow={t("hero.eyebrow")}
         title={

@@ -24,9 +24,9 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { PageHero } from "@/components/layout/PageHero";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import {
   buildAlternates,
-  buildBreadcrumbJsonLd,
   buildFaqJsonLd,
   localePath,
 } from "@/lib/seo";
@@ -110,17 +110,6 @@ export default async function MednaisLandingPage({
   };
   const faqItems = t.raw("faq.items") as FaqItem[];
 
-  const breadcrumbJsonLd = buildBreadcrumbJsonLd([
-    { name: tNav("home"), url: localePath(locale, "/") },
-    {
-      name: t("breadcrumbs.catalog"),
-      url: localePath(locale, "/catalog"),
-    },
-    {
-      name: t("breadcrumbs.product"),
-      url: localePath(locale, "/solutions/mednais"),
-    },
-  ]);
   const faqJsonLd = buildFaqJsonLd(
     faqItems.map((f) => ({ q: f.q, a: f.a }))
   );
@@ -145,15 +134,20 @@ export default async function MednaisLandingPage({
       url: "https://www.viena.by",
     },
   };
-  const jsonLdNodes: Record<string, unknown>[] = [
-    productJsonLd,
-    breadcrumbJsonLd,
-  ];
+  const jsonLdNodes: Record<string, unknown>[] = [productJsonLd];
   if (faqJsonLd) jsonLdNodes.push(faqJsonLd);
 
   return (
     <>
       <JsonLd data={jsonLdNodes} />
+
+      <Breadcrumbs
+        items={[
+          { name: tNav("home"), href: "/" },
+          { name: t("breadcrumbs.catalog"), href: "/catalog" },
+          { name: t("breadcrumbs.product"), href: "/solutions/mednais" },
+        ]}
+      />
 
       <PageHero
         brandLogo={{

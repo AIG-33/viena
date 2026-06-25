@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getLocale, getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { PageHero } from "@/components/layout/PageHero";
+import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { buildAlternates } from "@/lib/seo";
 import { applyLocaleAll, type Translatable } from "@/lib/i18n-data";
 import type { Locale } from "@/i18n/routing";
@@ -70,6 +71,13 @@ export default async function MOHTimelinePage({
 
   return (
     <>
+      <Breadcrumbs
+        items={[
+          { name: tNav("home"), href: "/" },
+          { name: tNav("projects"), href: "/projects" },
+          { name: tNav("mohLong"), href: "/projects/moh" },
+        ]}
+      />
       <PageHero
         eyebrow={
           <>

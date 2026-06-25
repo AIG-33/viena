@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import { PageHero } from "@/components/layout/PageHero";
+import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { buildAlternates } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
 
@@ -46,6 +47,7 @@ export default async function AboutPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("about");
+  const tNav = await getTranslations("nav");
 
   const principleKeys = ["directContracts", "noSubstitution", "openMarket", "dialog"] as const;
   const credentialKeys = [
@@ -72,6 +74,12 @@ export default async function AboutPage({
 
   return (
     <>
+      <Breadcrumbs
+        items={[
+          { name: tNav("home"), href: "/" },
+          { name: tNav("about"), href: "/about" },
+        ]}
+      />
       <PageHero
         eyebrow={t("hero.eyebrow")}
         title={

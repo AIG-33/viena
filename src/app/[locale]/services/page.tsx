@@ -4,6 +4,7 @@ import { getAllServices } from "@/lib/data";
 import { ServiceCard } from "@/components/services/ServiceCard";
 import { ProcessTimeline } from "@/components/services/ProcessTimeline";
 import { PageHero } from "@/components/layout/PageHero";
+import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { buildAlternates } from "@/lib/seo";
 import type { Metadata } from "next";
 import type { Locale } from "@/i18n/routing";
@@ -30,11 +31,18 @@ export default async function ServicesPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("services");
+  const tNav = await getTranslations("nav");
   const services = getAllServices(locale);
   const stats = t.raw("hero.stats") as { k: string; v: string }[];
 
   return (
     <>
+      <Breadcrumbs
+        items={[
+          { name: tNav("home"), href: "/" },
+          { name: tNav("services"), href: "/services" },
+        ]}
+      />
       <PageHero
         eyebrow={t("hero.eyebrow")}
         title={

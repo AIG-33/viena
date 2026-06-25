@@ -12,10 +12,10 @@ import { useCart } from "@/context/CartContext";
 const NAV_LINKS = [
   { href: "/about", key: "about" },
   { href: "/catalog", key: "catalog" },
+  { href: "/services", key: "services" },
   { href: "/manufacturers", key: "manufacturers" },
-  { href: "/blog", key: "blog" },
   { href: "/projects", key: "projects" },
-  { href: "/projects/moh", key: "moh" },
+  { href: "/blog", key: "blog" },
   { href: "/contacts", key: "contacts" },
 ] as const;
 

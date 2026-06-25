@@ -4,6 +4,7 @@ import { ContactInfoCard } from "@/components/contacts/ContactInfoCard";
 import { CopyChip } from "@/components/contacts/CopyChip";
 import { YandexMap } from "@/components/contacts/YandexMap";
 import { PageHero } from "@/components/layout/PageHero";
+import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { buildAlternates } from "@/lib/seo";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -84,6 +85,7 @@ export default async function ContactsPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("contacts");
+  const tNav = await getTranslations("nav");
 
   const infoCards: Array<{
     label: string;
@@ -127,6 +129,12 @@ export default async function ContactsPage({
 
   return (
     <>
+      <Breadcrumbs
+        items={[
+          { name: tNav("home"), href: "/" },
+          { name: tNav("contacts"), href: "/contacts" },
+        ]}
+      />
       <PageHero
         eyebrow={t("hero.eyebrow")}
         title={

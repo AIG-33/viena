@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { getAllProjects } from "@/lib/data";
 import { ProjectCard } from "@/components/projects/ProjectCard";
 import { PageHero } from "@/components/layout/PageHero";
+import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { buildAlternates } from "@/lib/seo";
 import type { Metadata } from "next";
 import type { Locale } from "@/i18n/routing";
@@ -29,10 +30,17 @@ export default async function ProjectsPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("projects");
+  const tNav = await getTranslations("nav");
   const projects = getAllProjects(locale);
 
   return (
     <>
+      <Breadcrumbs
+        items={[
+          { name: tNav("home"), href: "/" },
+          { name: tNav("projects"), href: "/projects" },
+        ]}
+      />
       <PageHero
         eyebrow={t("hero.eyebrow")}
         title={

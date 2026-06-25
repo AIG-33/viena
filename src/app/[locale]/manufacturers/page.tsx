@@ -4,6 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { getAllManufacturers, getAllProducts } from "@/lib/data";
 import { ManufacturerCard } from "@/components/manufacturers/ManufacturerCard";
 import { PageHero } from "@/components/layout/PageHero";
+import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { buildAlternates } from "@/lib/seo";
 import type { Locale } from "@/i18n/routing";
 
@@ -31,6 +32,7 @@ export default async function ManufacturersPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("manufacturersPage");
+  const tNav = await getTranslations("nav");
   const manufacturers = getAllManufacturers(locale);
   const totalSku = getAllProducts(locale).length;
   const featured = manufacturers.filter((m) => m.featured);
@@ -41,6 +43,12 @@ export default async function ManufacturersPage({
 
   return (
     <>
+      <Breadcrumbs
+        items={[
+          { name: tNav("home"), href: "/" },
+          { name: tNav("manufacturers"), href: "/manufacturers" },
+        ]}
+      />
       <PageHero
         eyebrow={t("hero.eyebrow", { count: manufacturers.length })}
         title={
