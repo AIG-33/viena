@@ -117,6 +117,18 @@ export function getVacuumFamilies(locale: Locale = "ru"): {
   return { families, subcategories, capColors };
 }
 
+/**
+ * Consumables accessor — returns the family `Product[]` for the consumables
+ * category (each family carries `variantAttributes` + `variants`). Used by the
+ * bespoke configurator UI for `/catalog/consumables`.
+ */
+export function getConsumableFamilies(locale: Locale = "ru"): Product[] {
+  return applyLocaleAll(
+    allProductsRaw.filter((p) => p.categoryId === "consumables"),
+    locale
+  ) as Product[];
+}
+
 export function getProductBySlug(
   categoryId: string,
   slug: string,

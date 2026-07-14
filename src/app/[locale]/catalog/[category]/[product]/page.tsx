@@ -15,6 +15,7 @@ import { ProductDataTable } from "@/components/product/ProductDataTable";
 import { RelatedProducts } from "@/components/product/RelatedProducts";
 import { AddToCartActions } from "@/components/product/AddToCartActions";
 import { VacuumProductDetail } from "@/components/product/VacuumProductDetail";
+import { VariantProductDetail } from "@/components/product/VariantProductDetail";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
   buildAlternates,
@@ -140,9 +141,15 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
       <section className="bg-white pb-16">
         <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
-          {category === "vacuum-systems" ? (
+          {category === "vacuum-systems" ||
+          (category === "consumables" &&
+            (product.variants?.length ?? 0) > 0) ? (
             <div className="mt-6 mb-14">
-              <VacuumProductDetail family={product} />
+              {category === "vacuum-systems" ? (
+                <VacuumProductDetail family={product} />
+              ) : (
+                <VariantProductDetail family={product} />
+              )}
               {(cat || product.tags.length > 0 || manufacturer) && (
                 <div className="flex flex-wrap gap-2 mt-6">
                   {cat && (

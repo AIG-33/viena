@@ -7,9 +7,11 @@ import {
   getCategoryById,
   getProductsByCategoryId,
   getVacuumFamilies,
+  getConsumableFamilies,
 } from "@/lib/data";
 import { ProductGrid } from "@/components/catalog/ProductGrid";
 import { VacuumCatalog } from "@/components/catalog/VacuumCatalog";
+import { ConsumablesCatalog } from "@/components/catalog/ConsumablesCatalog";
 import { CatalogSearch } from "@/components/catalog/CatalogSearch";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
@@ -153,16 +155,18 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   const tCatalog = await getTranslations("catalog");
 
   const isVacuum = category === "vacuum-systems";
+  const isConsumables = category === "consumables";
   const vacuumData = isVacuum ? getVacuumFamilies(locale) : null;
+  const consumableFamilies = isConsumables ? getConsumableFamilies(locale) : null;
   const products = isVacuum
     ? (vacuumData?.families ?? [])
-    : getProductsByCategoryId(category, locale);
-  const skuCount = isVacuum
-    ? (vacuumData?.families ?? []).reduce(
-        (s, f) => s + (f.variants?.length ?? 0),
-        0
-      )
-    : products.length;
+    : isConsumables
+      ? (consumableFamilies ?? [])
+      : getProductsByCategoryId(category, locale);
+  const skuCount =
+    isVacuum || isConsumables
+      ? products.reduce((s, f) => s + (f.variants?.length ?? 0), 0)
+      : products.length;
 
   const categoryJsonLd = buildCategoryJsonLd({
     category: cat,
@@ -222,7 +226,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             <div>
               <span className="eyebrow">
                 <span className="dot" />
-                {isVacuum
+                {isVacuum || isConsumables
                   ? `${products.length} · ${skuCount} SKU`
                   : tCatalog("productCount", { count: products.length })}
               </span>
@@ -255,6 +259,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               subcategories={vacuumData.subcategories}
               capColors={vacuumData.capColors}
             />
+          ) : isConsumables && consumableFamilies ? (
+            <ConsumablesCatalog families={consumableFamilies} />
           ) : (
             <ProductGrid products={products} />
           )}

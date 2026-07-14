@@ -37,6 +37,10 @@ export interface ProductVariant {
   label?: string | null;
   /** Free-form flags (e.g. `g-barcode`, `high-altitude`, `sterile`). */
   flags?: string[];
+  /** Per-variant image (consumables) — the gallery follows the selection. */
+  image?: string | null;
+  /** Per-variant long description / packaging note (consumables). */
+  pack_note?: string | null;
   // Free-form scalar attributes for non-tube items (transport, accessories).
   [key: string]: string | string[] | null | undefined;
 }
