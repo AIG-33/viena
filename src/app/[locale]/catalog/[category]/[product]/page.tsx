@@ -142,7 +142,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
       <section className="bg-white pb-16">
         <div className="max-w-[1320px] mx-auto px-4 md:px-10 lg:px-14">
           {category === "vacuum-systems" ||
-          (category === "consumables" &&
+          ((category === "consumables" || category === "lancets") &&
             (product.variants?.length ?? 0) > 0) ? (
             <div className="mt-6 mb-14">
               {category === "vacuum-systems" ? (

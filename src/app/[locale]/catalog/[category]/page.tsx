@@ -8,10 +8,12 @@ import {
   getProductsByCategoryId,
   getVacuumFamilies,
   getConsumableFamilies,
+  getLancetFamilies,
 } from "@/lib/data";
 import { ProductGrid } from "@/components/catalog/ProductGrid";
 import { VacuumCatalog } from "@/components/catalog/VacuumCatalog";
 import { ConsumablesCatalog } from "@/components/catalog/ConsumablesCatalog";
+import { VariantCatalog } from "@/components/catalog/VariantCatalog";
 import { CatalogSearch } from "@/components/catalog/CatalogSearch";
 import { JsonLd } from "@/components/seo/JsonLd";
 import {
@@ -56,6 +58,12 @@ const CATEGORY_TINT: Record<
     tint2: "253, 164, 175",
     blob1: "rgba(253, 164, 175, 0.40)",
     blob2: "rgba(254, 205, 211, 0.55)",
+  },
+  lancets: {
+    tint1: "254, 202, 202",
+    tint2: "252, 165, 165",
+    blob1: "rgba(248, 113, 113, 0.34)",
+    blob2: "rgba(254, 202, 202, 0.55)",
   },
   equipment: {
     tint1: "199, 210, 254",
@@ -156,17 +164,21 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
   const isVacuum = category === "vacuum-systems";
   const isConsumables = category === "consumables";
+  const isLancets = category === "lancets";
+  const isVariantCatalog = isVacuum || isConsumables || isLancets;
   const vacuumData = isVacuum ? getVacuumFamilies(locale) : null;
   const consumableFamilies = isConsumables ? getConsumableFamilies(locale) : null;
+  const lancetFamilies = isLancets ? getLancetFamilies(locale) : null;
   const products = isVacuum
     ? (vacuumData?.families ?? [])
     : isConsumables
       ? (consumableFamilies ?? [])
-      : getProductsByCategoryId(category, locale);
-  const skuCount =
-    isVacuum || isConsumables
-      ? products.reduce((s, f) => s + (f.variants?.length ?? 0), 0)
-      : products.length;
+      : isLancets
+        ? (lancetFamilies ?? [])
+        : getProductsByCategoryId(category, locale);
+  const skuCount = isVariantCatalog
+    ? products.reduce((s, f) => s + (f.variants?.length ?? 0), 0)
+    : products.length;
 
   const categoryJsonLd = buildCategoryJsonLd({
     category: cat,
@@ -226,7 +238,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             <div>
               <span className="eyebrow">
                 <span className="dot" />
-                {isVacuum || isConsumables
+                {isVariantCatalog
                   ? `${products.length} · ${skuCount} SKU`
                   : tCatalog("productCount", { count: products.length })}
               </span>
@@ -261,6 +273,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             />
           ) : isConsumables && consumableFamilies ? (
             <ConsumablesCatalog families={consumableFamilies} />
+          ) : isLancets && lancetFamilies ? (
+            <VariantCatalog families={lancetFamilies} />
           ) : (
             <ProductGrid products={products} />
           )}

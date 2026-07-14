@@ -129,6 +129,18 @@ export function getConsumableFamilies(locale: Locale = "ru"): Product[] {
   ) as Product[];
 }
 
+/**
+ * Lancets accessor — returns the family `Product[]` for the lancets category
+ * (each family carries `variantAttributes` + `variants`). Used by the shared
+ * variant configurator UI for `/catalog/lancets`.
+ */
+export function getLancetFamilies(locale: Locale = "ru"): Product[] {
+  return applyLocaleAll(
+    allProductsRaw.filter((p) => p.categoryId === "lancets"),
+    locale
+  ) as Product[];
+}
+
 export function getProductBySlug(
   categoryId: string,
   slug: string,
