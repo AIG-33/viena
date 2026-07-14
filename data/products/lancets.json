@@ -1,12 +1,12 @@
 [
   {
-    "id": "lan-family-001",
-    "slug": "lantsety-bezopasnye",
-    "name": "Ланцеты безопасные Linkfar (Lianfa)",
-    "shortDescription": "Безопасные одноразовые ланцеты и скарификаторы 17G–30G, глубина прокола 1,2–2,2 мм",
-    "description": "Безопасные одноразовые ланцеты Linkfar (Lianfa) для забора капиллярной крови: пресс-активируемые серии PA, PA2 и Lite, с регулируемой глубиной и нажимные кнопочные. Игла полностью скрыта в корпусе, после срабатывания автоматически втягивается и блокируется, что исключает повторное использование и риск случайного травмирования. Диаметр иглы 17G–30G и глубина прокола 1,2–2,2 мм закрывают все сценарии — от щадящего капиллярного забора у новорождённых и педиатрии до забора большого объёма крови; лезвийные скарификаторы 17G/18G предназначены для пяточного прокола.",
+    "id": "lan-pa",
+    "slug": "lantsety-bezopasnye-pa",
+    "name": "Ланцеты безопасные, серия PA",
+    "shortDescription": "Пресс-активируемые безопасные ланцеты PA, 17G–30G, глубина 1,2–2,2 мм",
+    "description": "Пресс-активируемые безопасные ланцеты Linkfar (Lianfa) серии PA — базовая линейка: срабатывают при прижатии к коже, игла полностью скрыта в корпусе и после срабатывания автоматически втягивается и блокируется. Включает игольчатые модели 21G–30G и лезвийные скарификаторы 17G/18G для пяточного прокола.",
     "categoryId": "lancets",
-    "subcategory": "lantsety-bezopasnye",
+    "subcategory": "lantsety-bezopasnye-pa",
     "images": [
       "/images/products/lantset-bezopasnyi-razmer-21g-1-8-mm.webp"
     ],
@@ -14,6 +14,10 @@
       {
         "key": "Подкатегория",
         "value": "Ланцеты безопасные"
+      },
+      {
+        "key": "Тип / серия",
+        "value": "PA (пресс-активируемый)"
       },
       {
         "key": "Производитель",
@@ -34,12 +38,6 @@
         "label_zh": "穿刺深度"
       },
       {
-        "key": "type",
-        "label_ru": "Тип / серия",
-        "label_en": "Type / series",
-        "label_zh": "类型 / 系列"
-      },
-      {
         "key": "blade",
         "label_ru": "Исполнение",
         "label_en": "Presentation",
@@ -49,7 +47,6 @@
     "variants": [
       {
         "catalogNumber": "04-2118",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Игольчатый",
         "gauge": "21G",
         "depth": "1,8 мм",
@@ -57,7 +54,6 @@
       },
       {
         "catalogNumber": "04-2120",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Игольчатый",
         "gauge": "21G",
         "depth": "2,0 мм",
@@ -65,7 +61,6 @@
       },
       {
         "catalogNumber": "04-2122",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Игольчатый",
         "gauge": "21G",
         "depth": "2,2 мм",
@@ -73,7 +68,6 @@
       },
       {
         "catalogNumber": "04-2318",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Игольчатый",
         "gauge": "23G",
         "depth": "1,8 мм",
@@ -81,7 +75,6 @@
       },
       {
         "catalogNumber": "04-2320",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Игольчатый",
         "gauge": "23G",
         "depth": "2,0 мм",
@@ -89,7 +82,6 @@
       },
       {
         "catalogNumber": "04-2322",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Игольчатый",
         "gauge": "23G",
         "depth": "2,2 мм",
@@ -97,7 +89,6 @@
       },
       {
         "catalogNumber": "04-2518",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Игольчатый",
         "gauge": "25G",
         "depth": "1,8 мм",
@@ -105,7 +96,6 @@
       },
       {
         "catalogNumber": "04-2618",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Игольчатый",
         "gauge": "26G",
         "depth": "1,8 мм",
@@ -113,7 +103,6 @@
       },
       {
         "catalogNumber": "04-2818",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Игольчатый",
         "gauge": "28G",
         "depth": "1,8 мм",
@@ -121,135 +110,13 @@
       },
       {
         "catalogNumber": "04-3015",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Игольчатый",
         "gauge": "30G",
         "depth": "1,5 мм",
         "image": "/images/products/lantset-bezopasnyi-razmer-30g-1-5-mm-2.webp"
       },
       {
-        "catalogNumber": "09-2122",
-        "type": "Регулируемая глубина",
-        "blade": "Игольчатый",
-        "gauge": "21G",
-        "depth": "2,2 мм",
-        "image": "/images/products/lantset-bezopasnyi-razmer-21g-2-2-mm.webp"
-      },
-      {
-        "catalogNumber": "09-2322",
-        "type": "Регулируемая глубина",
-        "blade": "Игольчатый",
-        "gauge": "23G",
-        "depth": "2,2 мм",
-        "image": "/images/products/lantset-bezopasnyi-razmer-23g-2-2-mm.webp"
-      },
-      {
-        "catalogNumber": "09-2618",
-        "type": "Регулируемая глубина",
-        "blade": "Игольчатый",
-        "gauge": "26G",
-        "depth": "1,8 мм",
-        "image": "/images/products/lantset-bezopasnyi-razmer-26g-1-8-mm.jpg"
-      },
-      {
-        "catalogNumber": "09-2818",
-        "type": "Регулируемая глубина",
-        "blade": "Игольчатый",
-        "gauge": "28G",
-        "depth": "1,8 мм",
-        "image": "/images/products/lantset-bezopasnyi-razmer-28g-1-8-mm.webp"
-      },
-      {
-        "catalogNumber": "09-3015",
-        "type": "Регулируемая глубина",
-        "blade": "Игольчатый",
-        "gauge": "30G",
-        "depth": "1,5 мм",
-        "image": "/images/products/lantset-bezopasnyi-razmer-30g-1-5-mm.webp"
-      },
-      {
-        "catalogNumber": "10-1826",
-        "type": "Пресс-активируемый (Lite)",
-        "blade": "Игольчатый",
-        "gauge": "26G",
-        "depth": "1,0–2,2 мм",
-        "image": "/images/products/lantset-bezopasnyi-razmer-26g-1-0-2-2-mm.jpg"
-      },
-      {
-        "catalogNumber": "10-1828",
-        "type": "Пресс-активируемый (Lite)",
-        "blade": "Игольчатый",
-        "gauge": "28G",
-        "depth": "1,0–2,2 мм",
-        "image": "/images/products/lantset-bezopasnyi-razmer-28g-1-0-2-2-mm.webp"
-      },
-      {
-        "catalogNumber": "11-2122",
-        "type": "Пресс-активируемый (PA2)",
-        "blade": "Игольчатый",
-        "gauge": "21G",
-        "depth": "2,2 мм",
-        "image": "/images/products/lantset-bezopasnyi-razmer-21g-2-2-mm-3.webp"
-      },
-      {
-        "catalogNumber": "11-2322",
-        "type": "Пресс-активируемый (PA2)",
-        "blade": "Игольчатый",
-        "gauge": "23G",
-        "depth": "2,2 мм",
-        "image": "/images/products/lantset-bezopasnyi-razmer-23g-2-2-mm-3.webp"
-      },
-      {
-        "catalogNumber": "11-2618",
-        "type": "Пресс-активируемый (PA2)",
-        "blade": "Игольчатый",
-        "gauge": "26G",
-        "depth": "1,8 мм",
-        "image": "/images/products/lantset-bezopasnyi-razmer-26g-1-8-mm-3.webp"
-      },
-      {
-        "catalogNumber": "11-2818",
-        "type": "Пресс-активируемый (PA2)",
-        "blade": "Игольчатый",
-        "gauge": "28G",
-        "depth": "1,8 мм",
-        "image": "/images/products/lantset-bezopasnyi-razmer-28g-1-8-mm-3.webp"
-      },
-      {
-        "catalogNumber": "11-3015",
-        "type": "Пресс-активируемый (PA2)",
-        "blade": "Игольчатый",
-        "gauge": "30G",
-        "depth": "1,5 мм",
-        "image": "/images/products/lantset-bezopasnyi-razmer-30g-1-5-mm-3.webp"
-      },
-      {
-        "catalogNumber": "12-2118",
-        "type": "Нажимной (кнопочный)",
-        "blade": "Игольчатый",
-        "gauge": "21G",
-        "depth": "1,8 мм",
-        "image": "/images/products/lantset-bezopasnyi-razmer-21g-1-8-mm-2.webp"
-      },
-      {
-        "catalogNumber": "12-2318",
-        "type": "Нажимной (кнопочный)",
-        "blade": "Игольчатый",
-        "gauge": "23G",
-        "depth": "1,8 мм",
-        "image": "/images/products/lantset-bezopasnyi-razmer-23g-1-8-mm-2.webp"
-      },
-      {
-        "catalogNumber": "12-2816",
-        "type": "Нажимной (кнопочный)",
-        "blade": "Игольчатый",
-        "gauge": "28G",
-        "depth": "1,6 мм",
-        "image": "/images/products/lantset-bezopasnyi-razmer-28g-1-6-mm.webp"
-      },
-      {
         "catalogNumber": "04-1712",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Лезвийный (скарификатор)",
         "gauge": "17G",
         "depth": "1,2 мм",
@@ -257,7 +124,6 @@
       },
       {
         "catalogNumber": "04-1716",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Лезвийный (скарификатор)",
         "gauge": "17G",
         "depth": "1,6 мм",
@@ -265,7 +131,6 @@
       },
       {
         "catalogNumber": "04-1720",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Лезвийный (скарификатор)",
         "gauge": "17G",
         "depth": "2,0 мм",
@@ -273,7 +138,6 @@
       },
       {
         "catalogNumber": "04-1815",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Лезвийный (скарификатор)",
         "gauge": "18G",
         "depth": "1,5 мм",
@@ -281,7 +145,6 @@
       },
       {
         "catalogNumber": "04-1818",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Лезвийный (скарификатор)",
         "gauge": "18G",
         "depth": "1,8 мм",
@@ -289,7 +152,6 @@
       },
       {
         "catalogNumber": "04-1822",
-        "type": "Пресс-активируемый (PA)",
         "blade": "Лезвийный (скарификатор)",
         "gauge": "18G",
         "depth": "2,2 мм",
@@ -305,14 +167,519 @@
     "sort": 1,
     "i18n": {
       "en": {
-        "name": "Safety lancets Linkfar (Lianfa)",
-        "shortDescription": "Safety single-use lancets and blades 17G–30G, penetration depth 1.2–2.2 mm",
-        "description": "Single-use safety lancets Linkfar (Lianfa) for capillary blood sampling: pressure-activated PA, PA2 and Lite series, adjustable-depth and push-button versions. The needle is fully shielded inside the body and retracts automatically after activation, preventing reuse and accidental injury. Gauges 17G–30G and 1.2–2.2 mm penetration depth cover every scenario — from gentle neonatal and pediatric sampling to high-volume collection; 17G/18G blades are intended for heel-stick sampling."
+        "name": "Safety lancets, PA series",
+        "shortDescription": "Pressure-activated PA safety lancets, 17G–30G, depth 1.2–2.2 mm",
+        "description": "Pressure-activated Linkfar (Lianfa) PA safety lancets — the base line: activated by pressing against the skin, the needle is fully shielded and retracts and locks automatically after use. Includes 21G–30G needle models and 17G/18G blades for heel-stick sampling."
       },
       "zh": {
-        "name": "安全采血针 Linkfar (Lianfa)",
-        "shortDescription": "一次性安全采血针与刀片式 17G–30G，穿刺深度 1.2–2.2 毫米",
-        "description": "Linkfar (Lianfa) 一次性安全采血针，用于毛细血管采血：压力激活 PA、PA2 与 Lite 系列、可调深度及按钮式。针头完全隐藏于针体内，激活后自动回缩并锁定，防止重复使用和意外伤害。17G–30G 针径及 1.2–2.2 毫米穿刺深度覆盖各种场景——从温和的新生儿与儿科采血到大容量采集；17G/18G 刀片式用于足跟采血。"
+        "name": "安全采血针 PA 系列",
+        "shortDescription": "压力激活 PA 安全采血针，17G–30G，深度 1.2–2.2 毫米",
+        "description": "Linkfar (Lianfa) PA 系列压力激活安全采血针——基础系列：贴皮加压即触发，针头完全隐藏于针体内，使用后自动回缩并锁定。包含 21G–30G 针式型号及用于足跟采血的 17G/18G 刀片式。"
+      }
+    },
+    "searchKeywords": [
+      "ланцет",
+      "ланцеты",
+      "ланцеты для забора крови",
+      "ланцеты для забора капиллярной крови",
+      "одноразовый ланцет",
+      "безопасный ланцет",
+      "автоматический ланцет",
+      "ланцет с автоматическим убором иглы",
+      "ланцет для глюкометра",
+      "ланцет для глюкозы",
+      "ланцет педиатрический",
+      "ланцет для новорожденных",
+      "ланцет для прокола пальца",
+      "ланцет для прокола пятки",
+      "скарификатор",
+      "одноразовый скарификатор",
+      "blood lancet",
+      "safety lancet",
+      "купить ланцеты",
+      "купить ланцеты в Минске",
+      "ланцеты Linkfar",
+      "ланцеты Lianfa",
+      "Linkfar",
+      "Lianfa",
+      "Линкфар",
+      "пресс-активируемый ланцет",
+      "ланцет PA",
+      "ланцет PA2",
+      "ланцет с регулируемой глубиной",
+      "лезвийный ланцет",
+      "скарификатор для пятки"
+    ]
+  },
+  {
+    "id": "lan-adjustable",
+    "slug": "lantsety-bezopasnye-reguliruemye",
+    "name": "Ланцеты безопасные с регулируемой глубиной",
+    "shortDescription": "Безопасные ланцеты с регулируемой глубиной прокола под тип кожи и объём крови",
+    "description": "Безопасные ланцеты Linkfar (Lianfa) с регулируемой глубиной прокола — несколько ступеней глубины позволяют точно подобрать прокол под тип кожи и требуемый объём крови. Игла полностью скрыта, стерильна и после срабатывания блокируется, исключая повторное использование.",
+    "categoryId": "lancets",
+    "subcategory": "lantsety-bezopasnye-reguliruemye",
+    "images": [
+      "/images/products/lantset-bezopasnyi-razmer-21g-2-2-mm.webp"
+    ],
+    "specs": [
+      {
+        "key": "Подкатегория",
+        "value": "Ланцеты безопасные"
+      },
+      {
+        "key": "Тип / серия",
+        "value": "С регулируемой глубиной"
+      },
+      {
+        "key": "Производитель",
+        "value": "Linkfar (Lianfa)"
+      }
+    ],
+    "variantAttributes": [
+      {
+        "key": "gauge",
+        "label_ru": "Размер иглы",
+        "label_en": "Gauge",
+        "label_zh": "针径"
+      },
+      {
+        "key": "depth",
+        "label_ru": "Глубина прокола",
+        "label_en": "Penetration depth",
+        "label_zh": "穿刺深度"
+      },
+      {
+        "key": "blade",
+        "label_ru": "Исполнение",
+        "label_en": "Presentation",
+        "label_zh": "结构"
+      }
+    ],
+    "variants": [
+      {
+        "catalogNumber": "09-2122",
+        "blade": "Игольчатый",
+        "gauge": "21G",
+        "depth": "2,2 мм",
+        "image": "/images/products/lantset-bezopasnyi-razmer-21g-2-2-mm.webp"
+      },
+      {
+        "catalogNumber": "09-2322",
+        "blade": "Игольчатый",
+        "gauge": "23G",
+        "depth": "2,2 мм",
+        "image": "/images/products/lantset-bezopasnyi-razmer-23g-2-2-mm.webp"
+      },
+      {
+        "catalogNumber": "09-2618",
+        "blade": "Игольчатый",
+        "gauge": "26G",
+        "depth": "1,8 мм",
+        "image": "/images/products/lantset-bezopasnyi-razmer-26g-1-8-mm.jpg"
+      },
+      {
+        "catalogNumber": "09-2818",
+        "blade": "Игольчатый",
+        "gauge": "28G",
+        "depth": "1,8 мм",
+        "image": "/images/products/lantset-bezopasnyi-razmer-28g-1-8-mm.webp"
+      },
+      {
+        "catalogNumber": "09-3015",
+        "blade": "Игольчатый",
+        "gauge": "30G",
+        "depth": "1,5 мм",
+        "image": "/images/products/lantset-bezopasnyi-razmer-30g-1-5-mm.webp"
+      }
+    ],
+    "tags": [],
+    "featured": false,
+    "inStock": true,
+    "catalogNumber": "09-2122",
+    "manufacturer": "lianfa",
+    "createdAt": "2024-01-01",
+    "sort": 2,
+    "i18n": {
+      "en": {
+        "name": "Adjustable-depth safety lancets",
+        "shortDescription": "Safety lancets with adjustable penetration depth for skin type and blood volume",
+        "description": "Adjustable-depth Linkfar (Lianfa) safety lancets — several depth steps let you match the puncture precisely to skin type and required blood volume. The needle is fully shielded, sterile, and locks after activation to prevent reuse."
+      },
+      "zh": {
+        "name": "可调深度安全采血针",
+        "shortDescription": "可调穿刺深度安全采血针，适配肤质与采血量",
+        "description": "Linkfar (Lianfa) 可调深度安全采血针——多档深度可根据肤质和所需采血量精确匹配穿刺。针头完全隐藏、无菌，激活后锁定，防止重复使用。"
+      }
+    },
+    "searchKeywords": [
+      "ланцет",
+      "ланцеты",
+      "ланцеты для забора крови",
+      "ланцеты для забора капиллярной крови",
+      "одноразовый ланцет",
+      "безопасный ланцет",
+      "автоматический ланцет",
+      "ланцет с автоматическим убором иглы",
+      "ланцет для глюкометра",
+      "ланцет для глюкозы",
+      "ланцет педиатрический",
+      "ланцет для новорожденных",
+      "ланцет для прокола пальца",
+      "ланцет для прокола пятки",
+      "скарификатор",
+      "одноразовый скарификатор",
+      "blood lancet",
+      "safety lancet",
+      "купить ланцеты",
+      "купить ланцеты в Минске",
+      "ланцеты Linkfar",
+      "ланцеты Lianfa",
+      "Linkfar",
+      "Lianfa",
+      "Линкфар",
+      "пресс-активируемый ланцет",
+      "ланцет PA",
+      "ланцет PA2",
+      "ланцет с регулируемой глубиной",
+      "лезвийный ланцет",
+      "скарификатор для пятки"
+    ]
+  },
+  {
+    "id": "lan-pa-lite",
+    "slug": "lantsety-bezopasnye-pa-lite",
+    "name": "Ланцеты безопасные, серия PA Lite",
+    "shortDescription": "Облегчённые пресс-активируемые ланцеты PA Lite с мягким проколом 1,0–2,2 мм",
+    "description": "Облегчённые пресс-активируемые безопасные ланцеты Linkfar (Lianfa) серии PA Lite — компактный корпус и мягкий прокол с диапазоном глубины 1,0–2,2 мм для комфортного капиллярного забора. Игла автоматически втягивается и блокируется после срабатывания. (Название серии — рабочее.)",
+    "categoryId": "lancets",
+    "subcategory": "lantsety-bezopasnye-pa-lite",
+    "images": [
+      "/images/products/lantset-bezopasnyi-razmer-26g-1-0-2-2-mm.jpg"
+    ],
+    "specs": [
+      {
+        "key": "Подкатегория",
+        "value": "Ланцеты безопасные"
+      },
+      {
+        "key": "Тип / серия",
+        "value": "PA Lite (облегчённый)"
+      },
+      {
+        "key": "Производитель",
+        "value": "Linkfar (Lianfa)"
+      }
+    ],
+    "variantAttributes": [
+      {
+        "key": "gauge",
+        "label_ru": "Размер иглы",
+        "label_en": "Gauge",
+        "label_zh": "针径"
+      },
+      {
+        "key": "depth",
+        "label_ru": "Глубина прокола",
+        "label_en": "Penetration depth",
+        "label_zh": "穿刺深度"
+      },
+      {
+        "key": "blade",
+        "label_ru": "Исполнение",
+        "label_en": "Presentation",
+        "label_zh": "结构"
+      }
+    ],
+    "variants": [
+      {
+        "catalogNumber": "10-1826",
+        "blade": "Игольчатый",
+        "gauge": "26G",
+        "depth": "1,0–2,2 мм",
+        "image": "/images/products/lantset-bezopasnyi-razmer-26g-1-0-2-2-mm.jpg"
+      },
+      {
+        "catalogNumber": "10-1828",
+        "blade": "Игольчатый",
+        "gauge": "28G",
+        "depth": "1,0–2,2 мм",
+        "image": "/images/products/lantset-bezopasnyi-razmer-28g-1-0-2-2-mm.webp"
+      }
+    ],
+    "tags": [],
+    "featured": false,
+    "inStock": true,
+    "catalogNumber": "10-1826",
+    "manufacturer": "lianfa",
+    "createdAt": "2024-01-01",
+    "sort": 3,
+    "i18n": {
+      "en": {
+        "name": "Safety lancets, PA Lite series",
+        "shortDescription": "Lightweight pressure-activated PA Lite lancets with a soft 1.0–2.2 mm puncture",
+        "description": "Lightweight pressure-activated Linkfar (Lianfa) PA Lite safety lancets — a compact body and soft puncture with a 1.0–2.2 mm depth range for comfortable capillary sampling. The needle retracts and locks automatically after activation. (Series name is best-effort.)"
+      },
+      "zh": {
+        "name": "安全采血针 PA Lite 系列",
+        "shortDescription": "轻量型 PA Lite 压力激活采血针，柔和穿刺 1.0–2.2 毫米",
+        "description": "Linkfar (Lianfa) PA Lite 系列轻量型压力激活安全采血针——紧凑针体，柔和穿刺，深度范围 1.0–2.2 毫米，采血更舒适。激活后针头自动回缩并锁定。（系列名称为暂定。）"
+      }
+    },
+    "searchKeywords": [
+      "ланцет",
+      "ланцеты",
+      "ланцеты для забора крови",
+      "ланцеты для забора капиллярной крови",
+      "одноразовый ланцет",
+      "безопасный ланцет",
+      "автоматический ланцет",
+      "ланцет с автоматическим убором иглы",
+      "ланцет для глюкометра",
+      "ланцет для глюкозы",
+      "ланцет педиатрический",
+      "ланцет для новорожденных",
+      "ланцет для прокола пальца",
+      "ланцет для прокола пятки",
+      "скарификатор",
+      "одноразовый скарификатор",
+      "blood lancet",
+      "safety lancet",
+      "купить ланцеты",
+      "купить ланцеты в Минске",
+      "ланцеты Linkfar",
+      "ланцеты Lianfa",
+      "Linkfar",
+      "Lianfa",
+      "Линкфар",
+      "пресс-активируемый ланцет",
+      "ланцет PA",
+      "ланцет PA2",
+      "ланцет с регулируемой глубиной",
+      "лезвийный ланцет",
+      "скарификатор для пятки"
+    ]
+  },
+  {
+    "id": "lan-pa2",
+    "slug": "lantsety-bezopasnye-pa2",
+    "name": "Ланцеты безопасные, серия PA2",
+    "shortDescription": "Пресс-активируемые ланцеты PA2 с усиленным механизмом двойной пружины",
+    "description": "Пресс-активируемые безопасные ланцеты Linkfar (Lianfa) серии PA2 — усиленный механизм двойной пружины обеспечивает более чёткое срабатывание и стабильную глубину прокола. Срабатывают при прижатии к коже, игла автоматически втягивается и блокируется после использования.",
+    "categoryId": "lancets",
+    "subcategory": "lantsety-bezopasnye-pa2",
+    "images": [
+      "/images/products/lantset-bezopasnyi-razmer-21g-2-2-mm-3.webp"
+    ],
+    "specs": [
+      {
+        "key": "Подкатегория",
+        "value": "Ланцеты безопасные"
+      },
+      {
+        "key": "Тип / серия",
+        "value": "PA2 (пресс-активируемый, усиленный)"
+      },
+      {
+        "key": "Производитель",
+        "value": "Linkfar (Lianfa)"
+      }
+    ],
+    "variantAttributes": [
+      {
+        "key": "gauge",
+        "label_ru": "Размер иглы",
+        "label_en": "Gauge",
+        "label_zh": "针径"
+      },
+      {
+        "key": "depth",
+        "label_ru": "Глубина прокола",
+        "label_en": "Penetration depth",
+        "label_zh": "穿刺深度"
+      },
+      {
+        "key": "blade",
+        "label_ru": "Исполнение",
+        "label_en": "Presentation",
+        "label_zh": "结构"
+      }
+    ],
+    "variants": [
+      {
+        "catalogNumber": "11-2122",
+        "blade": "Игольчатый",
+        "gauge": "21G",
+        "depth": "2,2 мм",
+        "image": "/images/products/lantset-bezopasnyi-razmer-21g-2-2-mm-3.webp"
+      },
+      {
+        "catalogNumber": "11-2322",
+        "blade": "Игольчатый",
+        "gauge": "23G",
+        "depth": "2,2 мм",
+        "image": "/images/products/lantset-bezopasnyi-razmer-23g-2-2-mm-3.webp"
+      },
+      {
+        "catalogNumber": "11-2618",
+        "blade": "Игольчатый",
+        "gauge": "26G",
+        "depth": "1,8 мм",
+        "image": "/images/products/lantset-bezopasnyi-razmer-26g-1-8-mm-3.webp"
+      },
+      {
+        "catalogNumber": "11-2818",
+        "blade": "Игольчатый",
+        "gauge": "28G",
+        "depth": "1,8 мм",
+        "image": "/images/products/lantset-bezopasnyi-razmer-28g-1-8-mm-3.webp"
+      },
+      {
+        "catalogNumber": "11-3015",
+        "blade": "Игольчатый",
+        "gauge": "30G",
+        "depth": "1,5 мм",
+        "image": "/images/products/lantset-bezopasnyi-razmer-30g-1-5-mm-3.webp"
+      }
+    ],
+    "tags": [],
+    "featured": true,
+    "inStock": true,
+    "catalogNumber": "11-2122",
+    "manufacturer": "lianfa",
+    "createdAt": "2024-01-01",
+    "sort": 4,
+    "i18n": {
+      "en": {
+        "name": "Safety lancets, PA2 series",
+        "shortDescription": "Pressure-activated PA2 lancets with a reinforced double-spring mechanism",
+        "description": "Pressure-activated Linkfar (Lianfa) PA2 safety lancets — a reinforced double-spring mechanism delivers a crisper trigger and more consistent penetration depth. Activated on skin contact; the needle retracts and locks automatically after use."
+      },
+      "zh": {
+        "name": "安全采血针 PA2 系列",
+        "shortDescription": "带加强双弹簧机构的 PA2 压力激活采血针",
+        "description": "Linkfar (Lianfa) PA2 系列压力激活安全采血针——加强双弹簧机构带来更利落的触发和更稳定的穿刺深度。贴皮触发，使用后针头自动回缩并锁定。"
+      }
+    },
+    "searchKeywords": [
+      "ланцет",
+      "ланцеты",
+      "ланцеты для забора крови",
+      "ланцеты для забора капиллярной крови",
+      "одноразовый ланцет",
+      "безопасный ланцет",
+      "автоматический ланцет",
+      "ланцет с автоматическим убором иглы",
+      "ланцет для глюкометра",
+      "ланцет для глюкозы",
+      "ланцет педиатрический",
+      "ланцет для новорожденных",
+      "ланцет для прокола пальца",
+      "ланцет для прокола пятки",
+      "скарификатор",
+      "одноразовый скарификатор",
+      "blood lancet",
+      "safety lancet",
+      "купить ланцеты",
+      "купить ланцеты в Минске",
+      "ланцеты Linkfar",
+      "ланцеты Lianfa",
+      "Linkfar",
+      "Lianfa",
+      "Линкфар",
+      "пресс-активируемый ланцет",
+      "ланцет PA",
+      "ланцет PA2",
+      "ланцет с регулируемой глубиной",
+      "лезвийный ланцет",
+      "скарификатор для пятки"
+    ]
+  },
+  {
+    "id": "lan-push-button",
+    "slug": "lantsety-bezopasnye-nazhimnye",
+    "name": "Ланцеты безопасные, нажимные (кнопочные)",
+    "shortDescription": "Нажимные кнопочные безопасные ланцеты — прокол по нажатию кнопки",
+    "description": "Нажимные (кнопочные) безопасные ланцеты Linkfar (Lianfa) — прокол выполняется по нажатию кнопки, что даёт контроль над моментом срабатывания без прижатия к коже. Игла автоматически втягивается и блокируется после использования. (Название серии — рабочее.)",
+    "categoryId": "lancets",
+    "subcategory": "lantsety-bezopasnye-nazhimnye",
+    "images": [
+      "/images/products/lantset-bezopasnyi-razmer-21g-1-8-mm-2.webp"
+    ],
+    "specs": [
+      {
+        "key": "Подкатегория",
+        "value": "Ланцеты безопасные"
+      },
+      {
+        "key": "Тип / серия",
+        "value": "Нажимной (кнопочный)"
+      },
+      {
+        "key": "Производитель",
+        "value": "Linkfar (Lianfa)"
+      }
+    ],
+    "variantAttributes": [
+      {
+        "key": "gauge",
+        "label_ru": "Размер иглы",
+        "label_en": "Gauge",
+        "label_zh": "针径"
+      },
+      {
+        "key": "depth",
+        "label_ru": "Глубина прокола",
+        "label_en": "Penetration depth",
+        "label_zh": "穿刺深度"
+      },
+      {
+        "key": "blade",
+        "label_ru": "Исполнение",
+        "label_en": "Presentation",
+        "label_zh": "结构"
+      }
+    ],
+    "variants": [
+      {
+        "catalogNumber": "12-2118",
+        "blade": "Игольчатый",
+        "gauge": "21G",
+        "depth": "1,8 мм",
+        "image": "/images/products/lantset-bezopasnyi-razmer-21g-1-8-mm-2.webp"
+      },
+      {
+        "catalogNumber": "12-2318",
+        "blade": "Игольчатый",
+        "gauge": "23G",
+        "depth": "1,8 мм",
+        "image": "/images/products/lantset-bezopasnyi-razmer-23g-1-8-mm-2.webp"
+      },
+      {
+        "catalogNumber": "12-2816",
+        "blade": "Игольчатый",
+        "gauge": "28G",
+        "depth": "1,6 мм",
+        "image": "/images/products/lantset-bezopasnyi-razmer-28g-1-6-mm.webp"
+      }
+    ],
+    "tags": [],
+    "featured": false,
+    "inStock": true,
+    "catalogNumber": "12-2118",
+    "manufacturer": "lianfa",
+    "createdAt": "2024-01-01",
+    "sort": 5,
+    "i18n": {
+      "en": {
+        "name": "Push-button safety lancets",
+        "shortDescription": "Push-button safety lancets — puncture triggered by a button press",
+        "description": "Push-button Linkfar (Lianfa) safety lancets — the puncture is triggered by pressing a button, giving control over the moment of activation without pressing on the skin. The needle retracts and locks automatically after use. (Series name is best-effort.)"
+      },
+      "zh": {
+        "name": "按钮式安全采血针",
+        "shortDescription": "按钮式安全采血针——按下按钮即触发穿刺",
+        "description": "Linkfar (Lianfa) 按钮式安全采血针——按下按钮即触发穿刺，无需贴皮加压即可掌控触发时机。使用后针头自动回缩并锁定。（系列名称为暂定。）"
       }
     },
     "searchKeywords": [
